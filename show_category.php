@@ -1,16 +1,10 @@
 <?php
 require_once 'db_connection.php';
 
-// خواندن JSON ورودی
-$json = file_get_contents('php://input');
-$data = json_decode($json);
-
-// اگر id ارسال نشده بود
-if (!isset($data->id)) {
-    http_response_code(400);
-    echo json_encode(['error' => 'شناسه (id) ارسال نشده است']);
-    exit;
-}
+// نمایش خطاها (برای توسعه)
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 // گرفتن همه دسته‌ها
 $stmt = $conn->query("SELECT id, name, slug, parent_id FROM categories WHERE status = 'active'");
@@ -31,8 +25,11 @@ function buildCategoryTree(array $categories, $parentId = null) {
     return $branch;
 }
 
+// ساخت درخت و ارسال خروجی
 $tree = buildCategoryTree($categories);
+header("Content-Type: application/json; charset=utf-8");
 echo json_encode($tree, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+
 
 
 
