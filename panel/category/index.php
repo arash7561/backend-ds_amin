@@ -10,6 +10,7 @@ $description = $data->description;
 $slug = $data->slug;
 $parent_id = $data->parent_id;
 $status = $data->status;
+$image = $data->image;
 
 $error;
 
@@ -30,9 +31,9 @@ else {
     $category = $stmt->fetch();
 
     if($category  === false){
-        $query = "INSERT INTO categories (name, description, slug, parent_id, status) VALUES (?, ?, ?, ?, ?)";
+        $query = "INSERT INTO categories (name, description, slug, parent_id, status, image) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($query);
-        $stmt->execute([$name, $description, $slug, $parent_id, $status]);
+        $stmt->execute([$name, $description, $slug, $parent_id, $status, $image]);
 
         if($stmt){
             $response = ['status' => true];
