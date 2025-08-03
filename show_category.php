@@ -7,7 +7,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // گرفتن همه دسته‌ها
-$stmt = $conn->query("SELECT id, name, slug, parent_id FROM categories WHERE status = 'active'");
+$stmt = $conn->query("SELECT id, name, slug, image, parent_id FROM categories WHERE status = 'active'");
 $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // ساخت درخت دسته‌بندی
