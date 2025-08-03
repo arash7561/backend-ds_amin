@@ -2,54 +2,73 @@
 
 require_once '../../db_connection.php';
 header('Content-Type: application/json');
+
+// خواندن JSON ورودی
 $json = file_get_contents('php://input');
 $data = json_decode($json);
 
-$name = $data->name;
-$description = $data->description;
-$slug = $data->slug;
-$parent_id = $data->parent_id;
-$status = $data->status;
-$image = $data->image;
+// پاکسازی داده‌ها
+$name = htmlspecialchars(trim($data->name ?? ''));
+$description = htmlspecialchars(trim($data->description ?? ''));
+$slug = htmlspecialchars(trim($data->slug ?? ''));
+$parent_id = $data->parent_id ?? null;
+$status = $data->status ?? 1;
+$imageBase64 = $data->image ?? null;
 
-$error;
+$errors = [];
 
-if(empty($name)) {
-    $error = 'نام خالی است';
-}
-elseif(empty($description)) {
-    $error = 'توضیحات خالی است';
-}
-elseif(empty($slug)) {
-    $error = 'اسلاگ خالی است';
-}
+// اعتبارسنجی فیلدها
+if ($name === '') $errors[] = 'نام خالی است';
+if ($description === '') $errors[] = 'توضیحات خالی است';
+if ($slug === '') $errors[] = 'اسلاگ خالی است';
 
-else {
-    $query = "SELECT * FROM categories WHERE slug = ?";
-    $stmt = $conn->prepare($query);
-    $stmt->execute([$slug]);
-    $category = $stmt->fetch();
-
-    if($category  === false){
-        $query = "INSERT INTO categories (name, description, slug, parent_id, status, image) VALUES (?, ?, ?, ?, ?, ?)";
-        $stmt = $conn->prepare($query);
-        $stmt->execute([$name, $description, $slug, $parent_id, $status, $image]);
-
-        if($stmt){
-            $response = ['status' => true];
-            $response['message'] = 'دسته بندی با موفقیت انجام شد';
+// بررسی و ذخیره تصویر در صورت وجود
+$imagePath = null;
+if ($imageBase64) {
+    if (preg_match('/^data:image\/(\w+);base64,/', $imageBase64, $type)) {
+        $imageData = substr($imageBase64, strpos($imageBase64, ',') + 1);
+        $imageData = base64_decode($imageData);
+        if ($imageData === false) {
+            $errors[] = 'فرمت تصویر نامعتبر است';
         } else {
-            $response = ['status' => false];
-            $response['message'] = 'دسته بندی با موفقیت انجام نشد';
+            $ext = strtolower($type[1]);
+            $fileName = uniqid('cat_') . '.' . $ext;
+            $uploadDir = '../../uploads/categories/';
+            if (!is_dir($uploadDir)) {
+                mkdir($uploadDir, 0777, true);
+            }
+            $filePath = $uploadDir . $fileName;
+            file_put_contents($filePath, $imageData);
+            $imagePath = 'uploads/categories/' . $fileName;
         }
     } else {
-        $response = ['status' => false];
-        $response['message'] = 'اسلاگ قبلا ثبت شده است';
+        $errors[] = 'ساختار تصویر نامعتبر است';
     }
-
-    echo json_encode($response, JSON_UNESCAPED_UNICODE);
 }
 
-if(isset($error)) {
-    echo json_encode(['status' => false, 'message' => $error], JSON_UNESCAPED_UNICODE);
+if (!empty($errors)) {
+    echo json_encode(['status' => false, 'message' => implode(' | ', $errors)], JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+try {
+    // بررسی تکراری نبودن اسلاگ
+    $stmt = $conn->prepare("SELECT id FROM categories WHERE slug = ?");
+    $stmt->execute([$slug]);
+    if ($stmt->fetch()) {
+        echo json_encode(['status' => false, 'message' => 'اسلاگ قبلاً ثبت شده است.'], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+
+    // درج دسته‌بندی
+    $stmt = $conn->prepare("INSERT INTO categories (name, description, slug, parent_id, status, image) VALUES (?, ?, ?, ?, ?, ?)");
+    $result = $stmt->execute([$name, $description, $slug, $parent_id, $status, $imagePath]);
+
+    if ($result) {
+        echo json_encode(['status' => true, 'message' => 'دسته بندی با موفقیت ایجاد شد.'], JSON_UNESCAPED_UNICODE);
+    } else {
+        echo json_encode(['status' => false, 'message' => 'در ثبت دسته بندی مشکلی پیش آمد.'], JSON_UNESCAPED_UNICODE);
+    }
+} catch (PDOException $e) {
+    echo json_encode(['status' => false, 'message' => 'خطای پایگاه داده: ' . $e->getMessage()], JSON_UNESCAPED_UNICODE);
 }
