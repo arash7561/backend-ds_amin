@@ -20,7 +20,6 @@ $errors = [];
 
 // اعتبارسنجی ساده
 if ($name === '') $errors[] = 'نام خالی است';
-if ($description === '') $errors[] = 'توضیحات خالی است';
 if ($slug === '') $errors[] = 'اسلاگ خالی است';
 
 // بررسی فایل تصویر
@@ -46,9 +45,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
             $errors[] = 'در ذخیره‌سازی تصویر خطا رخ داد.';
         }
     }
-} else {
-    $errors[] = 'فایل تصویر ارسال نشده است.';
-}
+} 
 
 if (!empty($errors)) {
     echo json_encode(['status' => false, 'message' => implode(' | ', $errors)], JSON_UNESCAPED_UNICODE);

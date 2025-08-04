@@ -1,26 +1,70 @@
 <?php
 
 require_once '../../db_connection.php';
+
+// CORS headers
+header('Access-Control-Allow-Origin: http://localhost:3000');
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json');
 
-$json = file_get_contents('php://input');
-$data = json_decode($json);
+// Handle preflight OPTIONS request
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
 
-$name = trim($data->name ?? '');
-$description = trim($data->description ?? '');
-$slug = trim($data->slug ?? '');
-$parent_id = $data->parent_id ?? null;
-$status = $data->status ?? null;
-$image = trim($data->image ?? '');
+// بررسی نوع درخواست
+if (isset($_FILES['image'])) {
+    // درخواست با فایل (FormData)
+    $id = $_POST['id'] ?? null;
+    $name = trim($_POST['name'] ?? '');
+    $description = trim($_POST['description'] ?? '');
+    $slug = trim($_POST['slug'] ?? '');
+    $parent_id = $_POST['parent_id'] ?? null;
+    $status = (int)($_POST['status'] ?? 1);
+    $image = '';
+    
+    // پردازش فایل آپلود شده
+    $file = $_FILES['image'];
+    $allowedTypes = ['image/jpg', 'image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+    
+    if (in_array($file['type'], $allowedTypes) && $file['size'] <= 5 * 1024 * 1024) {
+        $uploadDir = '../../uploads/categories/';
+        if (!is_dir($uploadDir)) {
+            mkdir($uploadDir, 0777, true);
+        }
+        
+        $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
+        $fileName = uniqid() . '.' . $extension;
+        $filePath = $uploadDir . $fileName;
+        
+        if (move_uploaded_file($file['tmp_name'], $filePath)) {
+            $image = 'uploads/categories/' . $fileName;
+        }
+    }
+} else {
+    // درخواست JSON معمولی
+    $json = file_get_contents('php://input');
+    $data = json_decode($json);
+    
+    $id = $data->id ?? null;
+    $name = trim($data->name ?? '');
+    $description = trim($data->description ?? '');
+    $slug = trim($data->slug ?? '');
+    $parent_id = $data->parent_id ?? null;
+    $status = (int)($data->status ?? 1);
+    $image = trim($data->image ?? '');
+}
 
 $errors = [];
 
+if (!$id || !is_numeric($id)) $errors[] = 'آیدی دسته بندی معتبر نیست';
 if ($name === '') $errors[] = 'عنوان خالی است';
-if ($description === '') $errors[] = 'توضیحات خالی است';
 if ($slug === '') $errors[] = 'اسلاگ خالی است';
 if (!isset($parent_id)) $errors[] = 'دسته بندی خالی است';
-if (!in_array($status, [0, 1], true)) $errors[] = 'وضعیت نامعتبر است';
-if ($image === '') $errors[] = 'تصویر خالی است';
+if (!in_array($status, [0, 1], true)) $errors[] = 'وضعیت نامعتبر است: ' . $status;
+
 
 
 if (!empty($errors)) {
@@ -29,19 +73,29 @@ if (!empty($errors)) {
 }
 
 try {
-    // بررسی وجود محصول با slug داده شده
-    $stmt = $conn->prepare("SELECT id FROM categories WHERE slug = ?");
-    $stmt->execute([$slug]);
+    // بررسی وجود دسته بندی با ID داده شده
+    $stmt = $conn->prepare("SELECT id FROM categories WHERE id = ?");
+    $stmt->execute([$id]);
     $category = $stmt->fetch();
 
     if (!$category) {
-        echo json_encode(['status' => false, 'message' => 'دسته بندی با این اسلاگ پیدا نشد.'], JSON_UNESCAPED_UNICODE);
+        echo json_encode(['status' => false, 'message' => 'دسته بندی پیدا نشد.'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
-    // آپدیت محصول
-    $stmt = $conn->prepare("UPDATE categories SET name = ?, description = ?, parent_id = ?, status = ?, image = ? WHERE slug = ?");
-    $result = $stmt->execute([$name, $description, $parent_id, $status, $image, $slug]);
+    // بررسی تکراری بودن slug
+    $stmt = $conn->prepare("SELECT id FROM categories WHERE slug = ? AND id != ?");
+    $stmt->execute([$slug, $id]);
+    $existingCategory = $stmt->fetch();
+    
+    if ($existingCategory) {
+        echo json_encode(['status' => false, 'message' => 'این اسلاگ قبلاً استفاده شده است.'], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+
+    // آپدیت دسته بندی
+    $stmt = $conn->prepare("UPDATE categories SET name = ?, slug = ?, description = ?, parent_id = ?, status = ?, image = ? WHERE id = ?");
+    $result = $stmt->execute([$name, $slug, $description, $parent_id, $status, $image, $id]);
 
     if ($result) {
         echo json_encode(['status' => true, 'message' => 'دسته بندی با موفقیت ویرایش شد.'], JSON_UNESCAPED_UNICODE);

@@ -1,13 +1,20 @@
 <?php
 require_once 'db_connection.php';
 
-// نمایش خطاها (برای توسعه)
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// CORS headers
+header('Access-Control-Allow-Origin: http://localhost:3000');
+header('Access-Control-Allow-Methods: GET, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
+header('Content-Type: application/json');
 
-// گرفتن همه دسته‌ها
-$stmt = $conn->query("SELECT id, name, slug, image, parent_id, status FROM categories WHERE status = 1");
+// Handle preflight OPTIONS request
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
+
+// گرفتن همه دسته‌ها (فعال و غیرفعال) برای پنل ادمین
+$stmt = $conn->query("SELECT id, name, slug, image, parent_id, status FROM categories");
 $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // ساخت درخت دسته‌بندی
@@ -27,11 +34,6 @@ function buildCategoryTree(array $categories, $parentId = null) {
 
 // ساخت درخت و ارسال خروجی
 $tree = buildCategoryTree($categories);
-header("Content-Type: application/json; charset=utf-8");
 echo json_encode($tree, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
-
-
-
-
-
+?>
