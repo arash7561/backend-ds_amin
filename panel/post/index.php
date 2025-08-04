@@ -3,72 +3,71 @@
 require_once '../../db_connection.php';
 header('Content-Type: application/json');
 
-// فقط درخواست POST رو قبول کن
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    echo json_encode(['status' => false, 'message' => 'فقط درخواست POST مجاز است.'], JSON_UNESCAPED_UNICODE);
-    exit;
-}
+$json = file_get_contents('php://input');
+$data = json_decode($json);
 
-// دریافت و پاکسازی داده‌ها
-$name = htmlspecialchars(trim($_POST['name'] ?? ''));
-$description = htmlspecialchars(trim($_POST['description'] ?? ''));
-$slug = htmlspecialchars(trim($_POST['slug'] ?? ''));
-$parent_id = $_POST['parent_id'] ?? null;
-$status = $_POST['status'] ?? 1;
+// استخراج داده‌ها با فیلتر XSS و اطمینان از وجود مقدار
+$title = htmlspecialchars(trim($data->title ?? ''));
+$description = htmlspecialchars(trim($data->description ?? ''));
+$slug = htmlspecialchars(trim($data->slug ?? ''));
+$cat_id = $data->cat_id ?? null;
+$status = $data->status ?? null;
+$image = htmlspecialchars(trim($data->image ?? ''));
+$stock = $data->stock ?? null;
+$price = $data->price ?? null;
+$discount_percent = $data->discount_percent ?? 0;
 
 $errors = [];
 
-// اعتبارسنجی ساده
-if ($name === '') $errors[] = 'نام خالی است';
+// اعتبارسنجی
+if ($title === '') $errors[] = 'عنوان خالی است';
 if ($description === '') $errors[] = 'توضیحات خالی است';
 if ($slug === '') $errors[] = 'اسلاگ خالی است';
-
-// بررسی فایل تصویر
-$imagePath = null;
-if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-    $fileTmpPath = $_FILES['image']['tmp_name'];
-    $fileName = basename($_FILES['image']['name']);
-    $fileExt = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
-
-    $allowedExt = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
-    if (!in_array($fileExt, $allowedExt)) {
-        $errors[] = 'فرمت تصویر مجاز نیست.';
-    } else {
-        $newFileName = uniqid('cat_') . '.' . $fileExt;
-        $uploadDir = '../../uploads/categories/';
-        if (!is_dir($uploadDir)) {
-            mkdir($uploadDir, 0777, true);
-        }
-        $destPath = $uploadDir . $newFileName;
-        if (move_uploaded_file($fileTmpPath, $destPath)) {
-            $imagePath = 'uploads/categories/' . $newFileName;
-        } else {
-            $errors[] = 'در ذخیره‌سازی تصویر خطا رخ داد.';
-        }
-    }
-} else {
-    $errors[] = 'فایل تصویر ارسال نشده است.';
-}
+if (!isset($cat_id)) $errors[] = 'دسته‌بندی خالی است';
+if (!in_array($status, [0, 1], true)) $errors[] = 'وضعیت نامعتبر است';
+if ($image === '') $errors[] = 'تصویر خالی است';
+if (!is_numeric($stock)) $errors[] = 'موجودی نامعتبر است';
+if (!is_numeric($price)) $errors[] = 'قیمت نامعتبر است';
+if (!is_numeric($discount_percent) || $discount_percent < 0 || $discount_percent > 100)
+    $errors[] = 'درصد تخفیف باید بین ۰ تا ۱۰۰ باشد';
 
 if (!empty($errors)) {
     echo json_encode(['status' => false, 'message' => implode(' | ', $errors)], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
-// بررسی تکراری نبودن اسلاگ
-$stmt = $conn->prepare("SELECT id FROM categories WHERE slug = ?");
-$stmt->execute([$slug]);
-if ($stmt->fetch()) {
-    echo json_encode(['status' => false, 'message' => 'اسلاگ قبلاً ثبت شده است.'], JSON_UNESCAPED_UNICODE);
-    exit;
-}
+// محاسبه قیمت تخفیف‌خورده
+$discount_price = $price - ($price * $discount_percent / 100);
 
-// ذخیره در دیتابیس
-$stmt = $conn->prepare("INSERT INTO categories (name, description, slug, parent_id, status, image) VALUES (?, ?, ?, ?, ?, ?)");
-$result = $stmt->execute([$name, $description, $slug, $parent_id, $status, $imagePath]);
+try {
+    // بررسی یکتا بودن slug
+    $stmt = $conn->prepare("SELECT id FROM products WHERE slug = ?");
+    $stmt->execute([$slug]);
+    $existing = $stmt->fetch();
 
-if ($result) {
-    echo json_encode(['status' => true, 'message' => 'دسته‌بندی با موفقیت ایجاد شد.'], JSON_UNESCAPED_UNICODE);
-} else {
-    echo json_encode(['status' => false, 'message' => 'ثبت دسته‌بندی با مشکل مواجه شد.'], JSON_UNESCAPED_UNICODE);
+    if ($existing) {
+        echo json_encode(['status' => false, 'message' => 'اسلاگ قبلاً ثبت شده است.'], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+
+    // درج محصول
+    $stmt = $conn->prepare("INSERT INTO products 
+        (title, description, slug, cat_id, status, image, stock, price, discount_price) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+    $result = $stmt->execute([
+        $title, $description, $slug, $cat_id, $status, $image, $stock, $price, $discount_price
+    ]);
+
+    if ($result) {
+        echo json_encode(['status' => true, 'message' => 'محصول با موفقیت ثبت شد.'], JSON_UNESCAPED_UNICODE);
+    } else {
+        echo json_encode(['status' => false, 'message' => 'در ثبت محصول مشکلی پیش آمد.'], JSON_UNESCAPED_UNICODE);
+    }
+
+} catch (PDOException $e) {
+    echo json_encode([
+        'status' => false,
+        'message' => 'خطای پایگاه داده: ' . $e->getMessage()
+    ], JSON_UNESCAPED_UNICODE);
 }
