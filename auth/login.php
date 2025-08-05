@@ -32,13 +32,13 @@ try {
         exit;
     }
 
-    // جلوگیری از ارسال مکرر OTP (حداقل 120 ثانیه فاصله)
+    // جلوگیری از ارسال مکرر OTP (حداقل 30 ثانیه فاصله)
     $stmt = $conn->prepare("SELECT created_at FROM otp_requests WHERE mobile = ? ORDER BY created_at DESC LIMIT 1");
     $stmt->execute([$mobile]);
     $last_request = $stmt->fetchColumn();
 
-    if ($last_request && strtotime($last_request) > strtotime('-120 seconds')) {
-        echo json_encode(['status' => false, 'message' => 'لطفاً بعد از ۲ دقیقه دوباره تلاش کنید.'], JSON_UNESCAPED_UNICODE);
+    if ($last_request && strtotime($last_request) > strtotime('-30 seconds')) {
+        echo json_encode(['status' => false, 'message' => 'لطفاً بعد از 30 ثانیه دوباره تلاش کنید.'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
