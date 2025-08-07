@@ -8,6 +8,7 @@ $data = json_decode($json);
 
 $name   = trim($data->name ?? '');
 $mobile = trim($data->mobile ?? '');
+$guest_token = trim($data->guest_token ?? '');
 $response = [];
 
 // بررسی اولیه
@@ -39,8 +40,8 @@ try {
     $register_token = bin2hex(random_bytes(32));
 
     // درج اطلاعات در جدول موقت otp_requests
-    $stmt = $conn->prepare("INSERT INTO otp_requests (name, mobile, otp_code, otp_expires_at, register_token) VALUES (?, ?, ?, ?, ?)");
-    $stmt->execute([$name, $mobile, $otp_code, $otp_expires_at, $register_token]);
+    $stmt = $conn->prepare("INSERT INTO otp_requests (name, mobile, otp_code, otp_expires_at, register_token, guest_token) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->execute([$name, $mobile, $otp_code, $otp_expires_at, $register_token, $guest_token]);
 
     echo json_encode([
         'status' => true,

@@ -11,6 +11,7 @@ $json = file_get_contents('php://input');
 $data = json_decode($json);
 
 $mobile = trim($data->mobile ?? '');
+$guestToken = trim($data->guest_token ?? ''); // ✅ دریافت guest_token
 
 if (empty($mobile) || !preg_match('/^09\d{9}$/', $mobile)) {
     echo json_encode(['status' => false, 'message' => 'شماره موبایل نامعتبر است.'], JSON_UNESCAPED_UNICODE);
@@ -32,6 +33,20 @@ try {
         exit;
     }
 
+    $userId = $user['id'];
+
+    // ✅ انتقال سبد مهمان (اگر وجود دارد)
+    if (!empty($guestToken)) {
+        $stmt = $conn->prepare("SELECT id FROM carts WHERE guest_token = ?");
+        $stmt->execute([$guestToken]);
+        $guestCart = $stmt->fetch();
+
+        if ($guestCart) {
+            $stmt = $conn->prepare("UPDATE carts SET user_id = ?, guest_token = NULL WHERE id = ?");
+            $stmt->execute([$userId, $guestCart['id']]);
+        }
+    }
+
     // جلوگیری از ارسال مکرر OTP (حداقل 30 ثانیه فاصله)
     $stmt = $conn->prepare("SELECT created_at FROM otp_requests WHERE mobile = ? ORDER BY created_at DESC LIMIT 1");
     $stmt->execute([$mobile]);
@@ -43,23 +58,23 @@ try {
     }
 
     // تولید OTP و توکن ثبت نام
-    $otp_code = random_int(100000, 999999); // امن‌تر از rand
+    $otp_code = random_int(100000, 999999);
     $otp_expires_at = date('Y-m-d H:i:s', strtotime('+5 minutes'));
-    $register_token = bin2hex(random_bytes(16)); // توکن 32 حرفی تصادفی
+    $register_token = bin2hex(random_bytes(16));
 
     // ذخیره در جدول otp_requests
     $stmt = $conn->prepare("INSERT INTO otp_requests (mobile, otp_code, otp_expires_at, register_token, created_at) 
                             VALUES (?, ?, ?, ?, NOW())");
     $stmt->execute([$mobile, $otp_code, $otp_expires_at, $register_token]);
 
-    // ارسال پیامک (باید خودت این تابع رو بسازی)
+    // ارسال پیامک (اختیاری)
     // send_sms($mobile, "کد تایید شما: $otp_code");
 
     echo json_encode([
         'status' => true,
         'message' => 'کد تایید ارسال شد.',
         'register_token' => $register_token
-        // 'otp' => $otp_code // فقط در محیط تست، در نسخه نهایی حذف شود
+        // 'otp' => $otp_code // فقط برای تست
     ], JSON_UNESCAPED_UNICODE);
 
 } catch (PDOException $e) {
