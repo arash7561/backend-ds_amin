@@ -25,7 +25,7 @@ try {
     $request = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$request) {
-        echo json_encode(['status' => false, 'message' => 'توکن یا کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
+        echo json_encode(['status' => false, 'message' => 'کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
@@ -53,7 +53,7 @@ try {
     $payload = [
         'iss' => 'http://localhost', // منبع صادرکننده
         'iat' => time(),             // زمان صدور
-        'exp' => time() + 3600,      // زمان انقضا (یک ساعت)
+        'exp' => time() + (15 * 24 * 60 * 60), // زمان انقضا (15 روز)
         'uid' => $user['id'],        // شناسه کاربر
         'mobile' => $user['mobile']  // (اختیاری) موبایل یا اطلاعات اضافه
     ];
