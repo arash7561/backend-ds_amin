@@ -1,92 +1,78 @@
 <?php
-header('Content-Type: application/json; charset=utf-8');
+header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: http://localhost:3000');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization, X-CSRF-Token, X-Requested-With');
 header('Access-Control-Allow-Credentials: true');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    http_response_code(200);
-    exit();
+    exit(0);
 }
 
-require_once '../config/database.php';
-require_once '../vendor/autoload.php';
-
-use Firebase\JWT\JWT;
-use Firebase\JWT\Key;
-
-function sendResponse($status, $message, $data = null) {
-    echo json_encode([
-        'status' => $status,
-        'message' => $message,
-        'data' => $data
-    ], JSON_UNESCAPED_UNICODE);
-    exit();
-}
-
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    sendResponse(false, 'فقط درخواست POST مجاز است');
-}
-
-// بررسی CSRF Token
-$headers = getallheaders();
-$csrfToken = $headers['X-CSRF-Token'] ?? '';
-if (empty($csrfToken) || strlen($csrfToken) !== 64) {
-    sendResponse(false, 'توکن CSRF نامعتبر است');
-}
-
-// بررسی Authorization Header
-$authHeader = $headers['Authorization'] ?? '';
-if (!$authHeader || !preg_match('/Bearer\s+(.*)$/i', $authHeader, $matches)) {
-    sendResponse(false, 'توکن احراز هویت یافت نشد');
-}
-
-$jwt = $matches[1];
-$secretKey = "your-secret-key-2024";
+require_once('../config/config.php');
 
 try {
-    $decoded = JWT::decode($jwt, new Key($secretKey, 'HS256'));
-    $userId = $decoded->user_id;
-} catch (Exception $e) {
-    sendResponse(false, 'توکن نامعتبر است');
-}
-
-$input = json_decode(file_get_contents('php://input'), true);
-$phone = trim($input['phone'] ?? '');
-
-if (empty($phone)) {
-    sendResponse(false, 'شماره تلفن نمی‌تواند خالی باشد');
-}
-
-// اعتبارسنجی شماره تلفن ایرانی
-if (!preg_match('/^09[0-9]{9}$/', $phone)) {
-    sendResponse(false, 'شماره تلفن باید با 09 شروع شده و 11 رقم باشد');
-}
-
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $input = json_decode(file_get_contents('php://input'), true);
     
-    // بررسی تکراری نبودن شماره تلفن
+    if (!$input || !isset($input['phone'])) {
+        echo json_encode(['status' => false, 'message' => 'شماره تلفن ارسال نشده است']);
+        exit;
+    }
+    
+    $phone = trim($input['phone']);
+    
+    // Validate phone number
+    if (!preg_match('/^09[0-9]{9}$/', $phone)) {
+        echo json_encode(['status' => false, 'message' => 'شماره تلفن نامعتبر است']);
+        exit;
+    }
+    
+    // Get JWT token from Authorization header
+    $headers = getallheaders();
+    $authHeader = isset($headers['Authorization']) ? $headers['Authorization'] : '';
+    
+    if (!$authHeader || !preg_match('/Bearer\s+(.*)$/i', $authHeader, $matches)) {
+        echo json_encode(['status' => false, 'message' => 'توکن احراز هویت یافت نشد']);
+        exit;
+    }
+    
+    $token = $matches[1];
+    
+    // Decode JWT token
+    $tokenParts = explode('.', $token);
+    if (count($tokenParts) !== 3) {
+        echo json_encode(['status' => false, 'message' => 'توکن نامعتبر است']);
+        exit;
+    }
+    
+    $payload = json_decode(base64_decode($tokenParts[1]), true);
+    if (!$payload || !isset($payload['user_id'])) {
+        echo json_encode(['status' => false, 'message' => 'توکن نامعتبر است']);
+        exit;
+    }
+    
+    $userId = $payload['user_id'];
+    
+    // Check if phone number already exists for another user
     $checkStmt = $pdo->prepare("SELECT id FROM users WHERE mobile = ? AND id != ?");
     $checkStmt->execute([$phone, $userId]);
     
-    if ($checkStmt->rowCount() > 0) {
-        sendResponse(false, 'این شماره تلفن قبلاً ثبت شده است');
+    if ($checkStmt->fetch()) {
+        echo json_encode(['status' => false, 'message' => 'این شماره تلفن قبلاً ثبت شده است']);
+        exit;
     }
     
-    $stmt = $pdo->prepare("UPDATE users SET mobile = ? WHERE id = ?");
-    $result = $stmt->execute([$phone, $userId]);
+    // Update phone number
+    $updateStmt = $pdo->prepare("UPDATE users SET mobile = ? WHERE id = ?");
+    $result = $updateStmt->execute([$phone, $userId]);
     
     if ($result) {
-        sendResponse(true, 'شماره تلفن با موفقیت بروزرسانی شد', ['phone' => $phone]);
+        echo json_encode(['status' => true, 'message' => 'شماره تلفن با موفقیت بروزرسانی شد']);
     } else {
-        sendResponse(false, 'خطا در بروزرسانی شماره تلفن');
+        echo json_encode(['status' => false, 'message' => 'خطا در بروزرسانی شماره تلفن']);
     }
     
-} catch (PDOException $e) {
-    error_log("Database error: " . $e->getMessage());
-    sendResponse(false, 'خطا در ارتباط با پایگاه داده');
+} catch (Exception $e) {
+    echo json_encode(['status' => false, 'message' => 'خطا در سرور: ' . $e->getMessage()]);
 }
 ?>

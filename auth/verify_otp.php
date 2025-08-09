@@ -5,11 +5,18 @@ header("Content-Type: application/json; charset=UTF-8");
 $json = file_get_contents('php://input');
 $data = json_decode($json);
 
+// Debug logging
+error_log('Received JSON: ' . $json);
+error_log('Decoded data: ' . print_r($data, true));
+
 $register_token = trim($data->register_token ?? '');
 $otp_code = trim($data->otp_code ?? '');
 
+error_log('Register token: ' . $register_token);
+error_log('OTP code: ' . $otp_code);
+
 if (empty($register_token) || empty($otp_code)) {
-    echo json_encode(['status' => false, 'message' => 'توکن ثبت‌نام و کد تایید الزامی است.'], JSON_UNESCAPED_UNICODE);
+    echo json_encode(['status' => false, 'message' => '   کد تایید الزامی است'], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
@@ -33,25 +40,26 @@ try {
     $mobile = $request['mobile'];
     $name = $request['name'];
 
-    // چک کردن وجود کاربر در جدول users
+    // چک کردن وجود کاربر با همین شماره
     $stmt = $conn->prepare("SELECT id FROM users WHERE mobile = ?");
     $stmt->execute([$mobile]);
-    $user = $stmt->fetch();
+    $existingUser = $stmt->fetch();
 
-    if ($user) {
+    if ($existingUser) {
         echo json_encode(['status' => false, 'message' => 'این شماره موبایل قبلا ثبت شده است. لطفا وارد شوید.'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
-    // ثبت نهایی کاربر
+    // ثبت نهایی کاربر جدید
     $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, created_at) VALUES (?, ?, 1, NOW())");
     $stmt->execute([$name, $mobile]);
+    $message = 'ثبت نام با موفقیت انجام شد.';
 
     // حذف درخواست OTP (اختیاری)
     $stmt = $conn->prepare("DELETE FROM otp_requests WHERE id = ?");
     $stmt->execute([$request['id']]);
 
-    echo json_encode(['status' => true, 'message' => 'ثبت نام با موفقیت انجام شد.'], JSON_UNESCAPED_UNICODE);
+    echo json_encode(['status' => true, 'message' => $message], JSON_UNESCAPED_UNICODE);
 
 } catch (PDOException $e) {
     echo json_encode(['status' => false, 'message' => 'خطای سرور: ' . $e->getMessage()], JSON_UNESCAPED_UNICODE);
