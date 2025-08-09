@@ -40,12 +40,12 @@ if (count($tokenParts) !== 3) {
 }
 
 $payload = json_decode(base64_decode($tokenParts[1]), true);
-if (!$payload || !isset($payload['user_id'])) {
+if (!$payload || !isset($payload['uid'])) {
     echo json_encode(['status' => false, 'message' => 'توکن نامعتبر است'], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
-$userId = $payload['user_id'];
+$userId = $payload['uid'];
 
 try {
     // جستجو رکورد درخواست OTP با توکن و کد

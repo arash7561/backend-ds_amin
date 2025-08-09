@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
 }
 
-require_once('../config/config.php');
+require_once __DIR__ . '/../db_connection.php';
 
 try {
     $input = json_decode(file_get_contents('php://input'), true);
@@ -46,15 +46,15 @@ try {
     }
     
     $payload = json_decode(base64_decode($tokenParts[1]), true);
-    if (!$payload || !isset($payload['user_id'])) {
+    if (!$payload || !isset($payload['uid'])) {
         echo json_encode(['status' => false, 'message' => 'توکن نامعتبر است']);
         exit;
     }
     
-    $userId = $payload['user_id'];
+    $userId = $payload['uid'];
     
     // Check if phone number already exists for another user
-    $checkStmt = $pdo->prepare("SELECT id FROM users WHERE mobile = ? AND id != ?");
+    $checkStmt = $conn->prepare("SELECT id FROM users WHERE mobile = ? AND id != ?");
     $checkStmt->execute([$phone, $userId]);
     
     if ($checkStmt->fetch()) {
@@ -63,7 +63,7 @@ try {
     }
     
     // Update phone number
-    $updateStmt = $pdo->prepare("UPDATE users SET mobile = ? WHERE id = ?");
+    $updateStmt = $conn->prepare("UPDATE users SET mobile = ? WHERE id = ?");
     $result = $updateStmt->execute([$phone, $userId]);
     
     if ($result) {

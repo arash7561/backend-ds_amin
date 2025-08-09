@@ -1,6 +1,12 @@
 <?php
 require_once '../db_connection.php';
+require_once '../vendor/autoload.php'; // برای JWT
+
+use Firebase\JWT\JWT;
+
 header("Content-Type: application/json; charset=UTF-8");
+
+$secret_key = 'your-secret-key'; // پیشنهاد میشه از env بخونی
 
 $json = file_get_contents('php://input');
 $data = json_decode($json);
@@ -39,6 +45,7 @@ try {
 
     $mobile = $request['mobile'];
     $name = $request['name'];
+    $guestToken = $request['guest_token'] ?? null;
 
     // چک کردن وجود کاربر با همین شماره
     $stmt = $conn->prepare("SELECT id FROM users WHERE mobile = ?");
@@ -55,11 +62,43 @@ try {
     $stmt->execute([$name, $mobile]);
     $message = 'ثبت نام با موفقیت انجام شد.';
 
-    // حذف درخواست OTP (اختیاری)
+    // گرفتن user_id جدید
+    $userId = $conn->lastInsertId();
+
+    // ✅ انتقال سبد مهمان (اگر وجود دارد)
+    if (!empty($guestToken)) {
+        $stmt = $conn->prepare("SELECT id FROM carts WHERE guest_token = ?");
+        $stmt->execute([$guestToken]);
+        $guestCart = $stmt->fetch();
+
+        if ($guestCart) {
+            $stmt = $conn->prepare("UPDATE carts SET user_id = ?, guest_token = NULL WHERE id = ?");
+            $stmt->execute([$userId, $guestCart['id']]);
+        }
+    }
+
+    // تولید توکن JWT
+    $payload = [
+        'iss' => 'http://localhost',   // یا آدرس دامنه‌ی خودت
+        'iat' => time(),
+        'exp' => time() + 864000,       // 10 روز اعتبار
+        'uid' => $userId,
+        'mobile' => $mobile
+    ];
+
+    $jwt = JWT::encode($payload, $secret_key, 'HS256');
+
+    // حذف درخواست OTP
     $stmt = $conn->prepare("DELETE FROM otp_requests WHERE id = ?");
     $stmt->execute([$request['id']]);
 
-    echo json_encode(['status' => true, 'message' => $message], JSON_UNESCAPED_UNICODE);
+    // پاسخ نهایی
+    echo json_encode([
+        'status' => true,
+        'message' => 'ثبت نام با موفقیت انجام شد.',
+        'token' => $jwt,
+        'uid' => $userId
+    ], JSON_UNESCAPED_UNICODE);
 
 } catch (PDOException $e) {
     echo json_encode(['status' => false, 'message' => 'خطای سرور: ' . $e->getMessage()], JSON_UNESCAPED_UNICODE);
