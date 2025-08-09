@@ -35,7 +35,7 @@ try {
     $request = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$request) {
-        echo json_encode(['status' => false, 'message' => 'توکن یا کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
+        echo json_encode(['status' => false, 'message' => 'کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
@@ -67,11 +67,11 @@ try {
     $guest_token = $request['guest_token'];
     
     $payload = [
-        'iss' => 'http://localhost',
-        'iat' => time(),
-        'exp' => time() + 864000,
-        'uid' => $user['id'],
-        'mobile' => $user['mobile']
+        'iss' => 'http://localhost', // منبع صادرکننده
+        'iat' => time(),             // زمان صدور
+        'exp' => time() + 3600,      // زمان انقضا (یک ساعت)
+        'uid' => $user['id'],        // شناسه کاربر
+        'mobile' => $user['mobile']  // (اختیاری) موبایل یا اطلاعات اضافه
     ];
 
     $jwt = JWT::encode($payload, $secret_key, 'HS256');

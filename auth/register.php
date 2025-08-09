@@ -6,14 +6,14 @@ header("Content-Type: application/json; charset=UTF-8");
 $json = file_get_contents('php://input');
 $data = json_decode($json);
 
-$name   = trim($data->name ?? '');
+$name   = trim($data->username ?? '');
 $mobile = trim($data->mobile ?? '');
 $guest_token = trim($data->guest_token ?? '');
 $response = [];
 
 // بررسی اولیه
 if (empty($name)) {
-    echo json_encode(['status' => false, 'message' => 'نام و نام خانوادگی الزامی است.'], JSON_UNESCAPED_UNICODE);
+    echo json_encode(['status' => false, 'message' => 'نام کاربری الزامی است.'], JSON_UNESCAPED_UNICODE);
     exit;
 }
 

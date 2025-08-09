@@ -26,7 +26,7 @@ try {
     $request = $stmt->fetch();
 
     if (!$request) {
-        echo json_encode(['status' => false, 'message' => 'توکن یا کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
+        echo json_encode(['status' => false, 'message' => 'کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
