@@ -81,7 +81,7 @@ try {
     $payload = [
         'iss' => 'http://localhost',   // یا آدرس دامنه‌ی خودت
         'iat' => time(),
-        'exp' => time() + 864000,       // 10 روز اعتبار
+        'exp' => time() + (15 * 24 * 3600), // 15 روز اعتبار
         'uid' => $userId,
         'mobile' => $mobile
     ];
