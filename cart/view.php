@@ -31,11 +31,13 @@ try {
 
     $cartId = $cart['id'];
 
-    // گرفتن آیتم‌های سبد همراه با اطلاعات محصول
+    // گرفتن آیتم‌های سبد همراه با اطلاعات محصول و قطر و طول انتخاب شده
     $stmt = $conn->prepare("
         SELECT 
             ci.id AS cart_item_id,
             ci.quantity,
+            ci.selected_diameter,
+            ci.selected_length,
             p.id AS product_id,
             p.title,
             p.price,

@@ -1,18 +1,14 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ds_amin";
+// Load database configuration
+$config = require_once 'config/database.php';
 
-try{
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+try {
+    $dsn = "mysql:host={$config['host']};dbname={$config['dbname']};charset={$config['charset']}";
+    $conn = new PDO($dsn, $config['username'], $config['password'], $config['options']);
     return $conn;
-}
-catch(PDOException $e)
-{
-    echo "error : " . $e->getMessage();
+} catch(PDOException $e) {
+    error_log("Database connection error: " . $e->getMessage());
     return false;
 }
 

@@ -2,9 +2,9 @@
 require_once 'db_connection.php';
 
 // CORS headers
-header('Access-Control-Allow-Origin: http://localhost:3000');
-header('Access-Control-Allow-Methods: GET, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Allow-Origin: *'); // یا آدرس دقیق فرانت‌اند خود را قرار دهید
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Content-Type: application/json');
 
 // Handle preflight OPTIONS request
