@@ -7,11 +7,12 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// گرفتن محصولات همراه با نام دسته‌بندی
+// گرفتن محصولات همراه با نام دسته‌بندی (بدون شرط WHERE و با LEFT JOIN)
 $sql = "
 SELECT 
     products.id,
     products.title,
+    products.description,
     products.slug,
     products.image,
     products.price,
@@ -21,10 +22,8 @@ SELECT
     categories.name AS category_name
 FROM 
     products
-JOIN 
+LEFT JOIN 
     categories ON products.cat_id = categories.id
-WHERE 
-    products.status = 'active'
 ";
 
 $stmt = $conn->query($sql);
@@ -32,4 +31,9 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // ارسال خروجی به صورت JSON
 header("Content-Type: application/json; charset=utf-8");
-echo json_encode($products, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+
+if ($products && count($products) > 0) {
+    echo json_encode($products, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+} else {
+    echo json_encode(["debug" => "هیچ محصولی یافت نشد."], JSON_UNESCAPED_UNICODE);
+}
