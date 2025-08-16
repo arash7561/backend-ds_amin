@@ -19,6 +19,7 @@ SELECT
     products.discount_price,
     products.stock,
     products.cat_id,
+    products.views,
     categories.name AS category_name
 FROM 
     products
@@ -28,6 +29,14 @@ LEFT JOIN
 
 $stmt = $conn->query($sql);
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// افزایش تعداد بازدید برای هر محصول
+foreach ($products as &$product) {
+    $updateStmt = $conn->prepare("UPDATE products SET views = views + 1 WHERE id = ?");
+    $updateStmt->execute([$product['id']]);
+    // بروزرسانی مقدار بازدید در آرایه خروجی
+    $product['views'] += 1;
+}
 
 // ارسال خروجی به صورت JSON
 header("Content-Type: application/json; charset=utf-8");
