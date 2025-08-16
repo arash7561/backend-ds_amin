@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../db_connection.php';
+$conn = getPDO();
 $auth = require_once '../auth/auth_check.php';
 
 header('Content-Type: application/json');

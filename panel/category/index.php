@@ -1,6 +1,7 @@
 <?php
 
 require_once '../../db_connection.php';
+$conn = getPDO();
 header('Content-Type: application/json');
 
 // فقط درخواست POST رو قبول کن

@@ -1,5 +1,7 @@
 <?php
 require_once '../db_connection.php';
+$conn = getPDO();
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Firebase\JWT\JWT;

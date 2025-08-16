@@ -1,5 +1,6 @@
 <?php
 require_once 'db_connection.php';
+$conn = getPDO();
 ?>
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">

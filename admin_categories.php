@@ -1,5 +1,6 @@
 <?php
-require_once 'db_connection.php';
+require_once '../db_connection.php';
+$conn = getPDO();
 
 // CORS headers
 header('Access-Control-Allow-Origin: *'); // یا آدرس دقیق فرانت‌اند خود را قرار دهید

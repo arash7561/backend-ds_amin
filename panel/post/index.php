@@ -1,6 +1,7 @@
 <?php
 
 require_once '../../db_connection.php';
+$conn = getPDO();
 header('Content-Type: application/json');
 
 $json = file_get_contents('php://input');

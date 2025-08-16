@@ -1,5 +1,6 @@
 <?php
 require_once 'db_connection.php';
+$conn = getPDO();
 
 // Get product ID from URL
 $product_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;

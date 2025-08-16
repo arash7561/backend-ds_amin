@@ -6,6 +6,7 @@ header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Content-Type: application/json');
 
 require_once '../db_connection.php';
+$conn = getPDO();
 require_once '../vendor/autoload.php'; // اضافه کردن JWT
 
 use Firebase\JWT\JWT;

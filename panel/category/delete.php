@@ -1,6 +1,7 @@
 <?php
 
 require_once '../../db_connection.php';
+$conn = getPDO();
 
 // CORS headers
 header('Access-Control-Allow-Origin: http://localhost:3000');

@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once '../db_connection.php';
+$conn = getPDO();
 
 // Check if admin is logged in
 if (!isset($_SESSION['admin_id'])) {

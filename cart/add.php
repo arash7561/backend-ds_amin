@@ -1,12 +1,12 @@
 <?php
-require_once __DIR__ . '/../db_connection.php'; 
+require_once __DIR__ . '../../db_connection.php'; 
 $auth = require_once '../auth/auth_check.php';
 $userId = $auth['user_id'] ?? null;
 
 header('Content-Type: application/json; charset=UTF-8');
 
 error_log("UserID: " . var_export($userId, true));
-
+$conn = getPDO();
 function getDiscountPercentByQuantity($quantity, $rules) {
     $applicable_discount = 0;
     foreach ($rules as $rule) {

@@ -1,5 +1,6 @@
 <?php
 require_once 'db_connection.php';
+$conn = getPDO();
 
 // نمایش خطاها (برای توسعه)
 ini_set('display_errors', 1);

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../../db_connection.php'; 
+$conn = getPDO();
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
