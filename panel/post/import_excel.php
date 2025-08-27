@@ -5,12 +5,57 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
+// تبدیل متن به slug
 function makeSlug($string) {
     $slug = mb_strtolower($string, 'UTF-8');
     $slug = preg_replace('/[^a-z0-9\s-]/u', '', $slug);
     $slug = preg_replace('/[\s-]+/', '-', $slug);
     $slug = trim($slug, '-');
     return $slug;
+}
+
+// اگر عنوان خالی بود یک slug تصادفی بسازه
+function makeSlugUnique($string) {
+    $slug = makeSlug($string);
+    if (empty($slug)) {
+        $slug = uniqid("item-");
+    }
+    return $slug;
+}
+
+// بررسی یونیک بودن slug در دیتابیس
+function getUniqueSlug($conn, $slug) {
+    $baseSlug = $slug;
+    $i = 1;
+    while (true) {
+        $stmt = $conn->prepare("SELECT COUNT(*) FROM products WHERE slug = :slug");
+        $stmt->execute([':slug' => $slug]);
+        $count = $stmt->fetchColumn();
+        if ($count == 0) {
+            return $slug;
+        }
+        $slug = $baseSlug . '-' . $i;
+        $i++;
+    }
+}
+
+// تبدیل رشته اکسل به JSON ابعاد
+// مثال ورودی اکسل: 100x10,120x12,150x15
+function parseDimensions($string) {
+    $dimensions = [];
+    $pairs = explode(',', $string);
+    foreach ($pairs as $pair) {
+        $parts = explode('x', $pair);
+        if (count($parts) == 2) {
+            $length = (float) trim($parts[0]);
+            $diameter = (float) trim($parts[1]);
+            $dimensions[] = [
+                "length" => $length,
+                "diameter" => $diameter
+            ];
+        }
+    }
+    return !empty($dimensions) ? json_encode($dimensions, JSON_UNESCAPED_UNICODE) : null;
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -32,22 +77,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             die("❌ اتصال به پایگاه داده برقرار نشده است.");
         }
 
-        $sql = "INSERT INTO products (title, description, slug, cat_id, status, image, stock, price, discount_price) 
-                VALUES (:title, :description, :slug, :cat_id, :status, :image, :stock, :price, :discount_price)";
+        $sql = "INSERT INTO products 
+                    (title, description, slug, cat_id, status, image, stock, price, discount_price,
+                     type, brand, line_count, grade, half_finished, dimensions) 
+                VALUES 
+                    (:title, :description, :slug, :cat_id, :status, :image, :stock, :price, :discount_price,
+                     :type, :brand, :line_count, :grade, :half_finished, :dimensions)";
         $stmt = $conn->prepare($sql);
 
         foreach ($data as $row) {
             $title = $row[0] ?? '';
+
+            // ساختن slug و تضمین یونیک بودنش
+            $slug = makeSlugUnique($title);
+            $slug = getUniqueSlug($conn, $slug);
+
+            // گرفتن ابعاد (ستون 14 اکسل)
+            $dimensions = isset($row[14]) ? parseDimensions($row[14]) : null;
+
             $stmt->execute([
                 ':title' => $title,
                 ':description' => $row[1] ?? '',
-                ':slug' => makeSlug($title),
+                ':slug' => $slug,
                 ':cat_id' => isset($row[3]) ? (int)$row[3] : 0,
                 ':status' => isset($row[4]) ? (int)$row[4] : 0,
                 ':image' => $row[5] ?? '',
                 ':stock' => isset($row[6]) ? (int)$row[6] : 0,
                 ':price' => isset($row[7]) ? (float)$row[7] : 0,
                 ':discount_price' => isset($row[8]) ? (float)$row[8] : 0,
+                ':type' => $row[9] ?? null,
+                ':brand' => $row[10] ?? null,
+                ':line_count' => isset($row[11]) ? (int)$row[11] : null,
+                ':grade' => isset($row[12]) ? (float)$row[12] : null,
+                ':half_finished' => $row[13] ?? null,
+                ':dimensions' => $dimensions
             ]);
         }
 

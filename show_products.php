@@ -20,6 +20,12 @@ SELECT
     products.stock,
     products.cat_id,
     products.views,
+    products.type,
+    products.brand,
+    products.line_count,
+    products.grade,
+    products.half_finished,
+    products.dimensions,
     categories.name AS category_name
 FROM 
     products
