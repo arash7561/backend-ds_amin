@@ -29,6 +29,7 @@ SELECT
     products.grade,
     products.half_finished,
     products.dimensions,
+    products.status,
     categories.name AS category_name
 FROM 
     products

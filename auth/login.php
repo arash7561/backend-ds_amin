@@ -57,10 +57,16 @@ try {
     $otp_expires_at = date('Y-m-d H:i:s', strtotime('+5 minutes'));
     $register_token = bin2hex(random_bytes(16));
 
+    // گرفتن نام کاربر از جدول users
+    $stmt = $conn->prepare("SELECT name FROM users WHERE mobile = ?");
+    $stmt->execute([$mobile]);
+    $userInfo = $stmt->fetch(PDO::FETCH_ASSOC);
+    $userName = $userInfo['name'] ?? '';
+
     // ذخیره در جدول otp_requests
-    $stmt = $conn->prepare("INSERT INTO otp_requests (mobile, otp_code, otp_expires_at, register_token, created_at) 
-                            VALUES (?, ?, ?, ?, NOW())");
-    $stmt->execute([$mobile, $otp_code, $otp_expires_at, $register_token]);
+    $stmt = $conn->prepare("INSERT INTO otp_requests (name, mobile, otp_code, otp_expires_at, register_token, created_at) 
+                            VALUES (?, ?, ?, ?, ?, NOW())");
+    $stmt->execute([$userName, $mobile, $otp_code, $otp_expires_at, $register_token]);
 
     // ارسال پیامک (اختیاری)
     // send_sms($mobile, "کد تایید شما: $otp_code");

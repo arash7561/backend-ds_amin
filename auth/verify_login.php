@@ -49,6 +49,7 @@ try {
     }
 
     $mobile = $request['mobile'];
+    $name = $request['name'] ?? '';
 
     // چک کردن وجود کاربر با همین شماره
     $stmt = $conn->prepare("SELECT id FROM users WHERE mobile = ?");
@@ -67,7 +68,7 @@ try {
     $payload = [
         'iss' => 'http://localhost',   // یا دامنه واقعی‌ات
         'iat' => time(),
-        'exp' => time() + (24 * 60 * 60), // 24 ساعت اعتبار
+        'exp' => time() + (15 * 24 * 3600), // 15 روز اعتبار
         'uid' => $userId,
         'mobile' => $mobile
     ];

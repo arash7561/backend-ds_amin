@@ -1,11 +1,21 @@
 <?php
+// CORS headers - باید در ابتدا باشد
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
+header("Content-Type: application/json; charset=UTF-8");
+
 require_once '../db_connection.php';
 $conn = getPDO();
 require_once '../vendor/autoload.php'; // برای JWT
 
 use Firebase\JWT\JWT;
 
-header("Content-Type: application/json; charset=UTF-8");
+// Handle preflight OPTIONS request
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
 
 $secret_key = 'your-secret-key'; // پیشنهاد میشه از env بخونی
 
@@ -22,8 +32,14 @@ $otp_code = trim($data->otp_code ?? '');
 error_log('Register token: ' . $register_token);
 error_log('OTP code: ' . $otp_code);
 
+// بررسی اینکه آیا JSON به درستی parse شده یا نه
+if (json_last_error() !== JSON_ERROR_NONE) {
+    echo json_encode(['status' => false, 'message' => 'خطا در پردازش درخواست: ' . json_last_error_msg()], JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
 if (empty($register_token) || empty($otp_code)) {
-    echo json_encode(['status' => false, 'message' => '   کد تایید الزامی است'], JSON_UNESCAPED_UNICODE);
+    echo json_encode(['status' => false, 'message' => 'کد تایید الزامی است'], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
@@ -33,8 +49,21 @@ try {
     $stmt->execute([$register_token, $otp_code]);
     $request = $stmt->fetch();
 
+    error_log('Query result: ' . print_r($request, true));
+
     if (!$request) {
-        echo json_encode(['status' => false, 'message' => 'کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
+        // بررسی اینکه آیا توکن وجود دارد یا نه
+        $stmt = $conn->prepare("SELECT * FROM otp_requests WHERE register_token = ?");
+        $stmt->execute([$register_token]);
+        $tokenExists = $stmt->fetch();
+        
+        if ($tokenExists) {
+            error_log('Token exists but OTP code is wrong. Expected: ' . $tokenExists['otp_code'] . ', Received: ' . $otp_code);
+            echo json_encode(['status' => false, 'message' => 'کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
+        } else {
+            error_log('Token does not exist: ' . $register_token);
+            echo json_encode(['status' => false, 'message' => 'توکن نامعتبر است.'], JSON_UNESCAPED_UNICODE);
+        }
         exit;
     }
 
