@@ -20,11 +20,44 @@ if (empty($mobile) || !preg_match('/^09\d{9}$/', $mobile)) {
 }
 
 try {
-    // حذف رکوردهای خیلی قدیمی‌تر از 5 دقیقه (برای تمیزکاری)
+    // حذف رکوردهای خیلی قدیمی‌تر از 5 دقیقه (تمیزکاری)
     $stmt = $conn->prepare("DELETE FROM otp_requests WHERE created_at < NOW() - INTERVAL 5 MINUTE");
     $stmt->execute();
 
-    // بررسی وجود کاربر
+    // چک اینکه شماره متعلق به ادمین است یا نه
+    $stmt = $conn->prepare("SELECT id FROM admin_users WHERE mobile = ?");
+    $stmt->execute([$mobile]);
+    $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($admin) {
+        // حذف OTPهای قبلی همین شماره
+        $stmt = $conn->prepare("DELETE FROM otp_requests WHERE mobile = ?");
+        $stmt->execute([$mobile]);
+
+        // تولید OTP و توکن ثبت نام برای ادمین
+        $otp_code = random_int(100000, 999999);
+        $otp_expires_at = date('Y-m-d H:i:s', strtotime('+5 minutes'));
+        $register_token = bin2hex(random_bytes(16));
+
+        // ذخیره در جدول otp_requests
+        $stmt = $conn->prepare("INSERT INTO otp_requests (mobile, otp_code, otp_expires_at, register_token, created_at) 
+                                VALUES (?, ?, ?, ?, NOW())");
+        $stmt->execute([$mobile, $otp_code, $otp_expires_at, $register_token]);
+
+        // ارسال پیامک (اختیاری)
+        // send_sms($mobile, "کد تایید شما: $otp_code");
+
+        echo json_encode([
+            'status' => true,
+            'is_admin' => true,
+            'message' => 'کد تایید به شماره ادمین ارسال شد.',
+            'register_token' => $register_token
+            // 'otp' => $otp_code // فقط برای تست
+        ], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+
+    // بررسی وجود کاربر معمولی
     $stmt = $conn->prepare("SELECT id FROM users WHERE mobile = ?");
     $stmt->execute([$mobile]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -36,7 +69,7 @@ try {
 
     $userId = $user['id'];
 
-    // ✅ انتقال سبد مهمان (اگر وجود دارد)
+    // انتقال سبد مهمان (اگر وجود دارد)
     if (!empty($guestToken)) {
         $stmt = $conn->prepare("SELECT id FROM carts WHERE guest_token = ?");
         $stmt->execute([$guestToken]);
@@ -52,7 +85,7 @@ try {
     $stmt = $conn->prepare("DELETE FROM otp_requests WHERE mobile = ?");
     $stmt->execute([$mobile]);
 
-    // تولید OTP و توکن ثبت نام
+    // تولید OTP و توکن ثبت نام برای کاربر
     $otp_code = random_int(100000, 999999);
     $otp_expires_at = date('Y-m-d H:i:s', strtotime('+5 minutes'));
     $register_token = bin2hex(random_bytes(16));
@@ -67,6 +100,7 @@ try {
 
     echo json_encode([
         'status' => true,
+        'is_admin' => false,
         'message' => 'کد تایید ارسال شد.',
         'register_token' => $register_token
         // 'otp' => $otp_code // فقط برای تست

@@ -50,29 +50,63 @@ try {
 
     $mobile = $request['mobile'];
 
-    // چک کردن وجود کاربر با همین شماره
+    // 🔹 اول چک کنیم ادمین است یا نه
+    $stmt = $conn->prepare("SELECT id FROM admin_users WHERE mobile = ?");
+    $stmt->execute([$mobile]);
+    $admin = $stmt->fetch();
+
+    if ($admin) {
+        $adminId = $admin['id'];
+
+        // ساخت payload JWT برای ادمین
+        $payload = [
+            'iss' => 'http://localhost',
+            'iat' => time(),
+            'exp' => time() + (24 * 60 * 60),
+            'aid' => $adminId,
+            'mobile' => $mobile,
+            'role' => 'admin'
+        ];
+
+        $jwt_token = JWT::encode($payload, $secret_key, 'HS256');
+
+        // حذف درخواست OTP پس از ورود موفق
+        $stmt = $conn->prepare("DELETE FROM otp_requests WHERE id = ?");
+        $stmt->execute([$request['id']]);
+
+        echo json_encode([
+            'status' => true,
+            'is_admin' => true,
+            'message' => 'ورود ادمین موفقیت‌آمیز بود.',
+            'token' => $jwt_token,
+            'aid' => $adminId,
+            'admin_panel_url' => '/ds_amin/panel/admin/login_admin.php'
+        ], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+
+    // 🔹 اگر ادمین نبود → بررسی کاربر معمولی
     $stmt = $conn->prepare("SELECT id FROM users WHERE mobile = ?");
     $stmt->execute([$mobile]);
     $user = $stmt->fetch();
 
     if (!$user) {
-        // کاربر ثبت‌نام نشده؛ پس پیام مناسب بده
         echo json_encode(['status' => false, 'message' => 'کاربر با این شماره ثبت‌نام نکرده است. لطفا ابتدا ثبت‌نام کنید.'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 
     $userId = $user['id'];
 
-    // ساخت payload JWT با userId برای احراز هویت دقیق
+    // ساخت payload JWT برای کاربر
     $payload = [
-        'iss' => 'http://localhost',   // یا دامنه واقعی‌ات
+        'iss' => 'http://localhost',
         'iat' => time(),
-        'exp' => time() + (24 * 60 * 60), // 24 ساعت اعتبار
+        'exp' => time() + (24 * 60 * 60),
         'uid' => $userId,
-        'mobile' => $mobile
+        'mobile' => $mobile,
+        'role' => 'user'
     ];
 
-    // تولید JWT با کلید مخفی و الگوریتم HS256
     $jwt_token = JWT::encode($payload, $secret_key, 'HS256');
 
     // حذف درخواست OTP پس از ورود موفق
@@ -81,6 +115,7 @@ try {
 
     echo json_encode([
         'status' => true,
+        'is_admin' => false,
         'message' => 'ورود موفقیت آمیز بود.',
         'token' => $jwt_token,
         'uid' => $userId
