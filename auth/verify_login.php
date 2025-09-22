@@ -49,6 +49,7 @@ try {
     }
 
     $mobile = $request['mobile'];
+    $name = $request['name'] ?? '';
 
     // 🔹 اول چک کنیم ادمین است یا نه
     $stmt = $conn->prepare("SELECT id FROM admin_users WHERE mobile = ?");
@@ -101,7 +102,7 @@ try {
     $payload = [
         'iss' => 'http://localhost',
         'iat' => time(),
-        'exp' => time() + (24 * 60 * 60),
+        'exp' => time() + (15 * 24 * 3600), // 15 روز اعتبار
         'uid' => $userId,
         'mobile' => $mobile,
         'role' => 'user'

@@ -7,7 +7,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// گرفتن محصولات همراه با نام دسته‌بندی (بدون شرط WHERE و با LEFT JOIN)
+// بررسی آیا ID محصول خاصی درخواست شده
+$product_id = $_GET['id'] ?? null;
+
+// گرفتن محصولات همراه با نام دسته‌بندی
 $sql = "
 SELECT 
     products.id,
@@ -26,6 +29,7 @@ SELECT
     products.grade,
     products.half_finished,
     products.dimensions,
+    products.status,
     categories.name AS category_name
 FROM 
     products
@@ -33,7 +37,17 @@ LEFT JOIN
     categories ON products.cat_id = categories.id
 ";
 
-$stmt = $conn->query($sql);
+// اگر ID محصول خاصی درخواست شده، فیلتر اضافه کن
+if ($product_id && is_numeric($product_id)) {
+    $sql .= " WHERE products.id = :product_id";
+}
+
+$stmt = $conn->prepare($sql);
+if ($product_id && is_numeric($product_id)) {
+    $stmt->execute([':product_id' => $product_id]);
+} else {
+    $stmt->execute();
+}
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // افزایش تعداد بازدید برای هر محصول
@@ -48,7 +62,12 @@ foreach ($products as &$product) {
 header("Content-Type: application/json; charset=utf-8");
 
 if ($products && count($products) > 0) {
-    echo json_encode($products, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    // اگر یک محصول خاص درخواست شده، فقط آن محصول را برگردان
+    if ($product_id && is_numeric($product_id)) {
+        echo json_encode($products[0], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    } else {
+        echo json_encode($products, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    }
 } else {
     echo json_encode(["debug" => "هیچ محصولی یافت نشد."], JSON_UNESCAPED_UNICODE);
 }
