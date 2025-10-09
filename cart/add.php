@@ -4,6 +4,16 @@ $auth = require_once '../auth/auth_check.php';
 $userId = $auth['user_id'] ?? null;
 
 header('Content-Type: application/json; charset=UTF-8');
+header('Access-Control-Allow-Origin: http://localhost:3002');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
+header('Access-Control-Allow-Credentials: true');
+
+// Handle preflight OPTIONS request
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
 
 error_log("UserID: " . var_export($userId, true));
 $conn = getPDO();
@@ -55,18 +65,39 @@ try {
 
     // اعتبارسنجی قطر و طول انتخابی بر اساس dimensions
     $dimensions = json_decode($product['dimensions'], true);
-    $validDiameters = $dimensions['diameters'] ?? [];
-    $validLengths = $dimensions['lengths'] ?? [];
-
-    if (!in_array($selectedDiameter, $validDiameters)) {
-        http_response_code(400);
-        echo json_encode(['error' => 'قطر انتخاب شده معتبر نیست.']);
-        exit;
+    
+    // پشتیبانی از هر دو فرمت: {"diameters": [], "lengths": []} و {"diameter": "1", "length": "1"}
+    $validDiameters = [];
+    $validLengths = [];
+    
+    if (isset($dimensions['diameters']) && is_array($dimensions['diameters'])) {
+        $validDiameters = $dimensions['diameters'];
+    } elseif (isset($dimensions['diameter'])) {
+        $validDiameters = [$dimensions['diameter']];
     }
-    if (!in_array($selectedLength, $validLengths)) {
-        http_response_code(400);
-        echo json_encode(['error' => 'طول انتخاب شده معتبر نیست.']);
-        exit;
+    
+    if (isset($dimensions['lengths']) && is_array($dimensions['lengths'])) {
+        $validLengths = $dimensions['lengths'];
+    } elseif (isset($dimensions['length'])) {
+        $validLengths = [$dimensions['length']];
+    }
+
+    // اگر dimensions خالی است یا قطر/طول تعریف نشده، اعتبارسنجی را رد کن
+    if (empty($validDiameters) && empty($validLengths)) {
+        // اگر dimensions خالی است، اجازه اضافه کردن بده
+        error_log("Product {$productId} has empty dimensions, skipping validation");
+    } else {
+        // اعتبارسنجی فقط اگر dimensions تعریف شده باشد
+        if (!empty($validDiameters) && !in_array($selectedDiameter, $validDiameters)) {
+            http_response_code(400);
+            echo json_encode(['error' => 'قطر انتخاب شده معتبر نیست.']);
+            exit;
+        }
+        if (!empty($validLengths) && !in_array($selectedLength, $validLengths)) {
+            http_response_code(400);
+            echo json_encode(['error' => 'طول انتخاب شده معتبر نیست.']);
+            exit;
+        }
     }
 
     // بررسی موجودی

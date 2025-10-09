@@ -1,6 +1,6 @@
 <?php
 // CORS headers - باید در ابتدا باشد
-header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Origin: http://localhost:3000');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Content-Type: application/json');
@@ -23,8 +23,15 @@ $secret_key = 'your-secret-key'; // حتما این کلید رو امن نگه 
 $json = file_get_contents('php://input');
 $data = json_decode($json);
 
+// Debug logging
+error_log('verify_login.php - Received JSON: ' . $json);
+error_log('verify_login.php - Decoded data: ' . print_r($data, true));
+
 $register_token = trim($data->register_token ?? '');
 $otp_code = trim($data->otp_code ?? '');
+
+error_log('verify_login.php - Register token: ' . $register_token);
+error_log('verify_login.php - OTP code: ' . $otp_code);
 
 if (empty($register_token) || empty($otp_code)) {
     echo json_encode(['status' => false, 'message' => 'توکن و کد تایید الزامی است.'], JSON_UNESCAPED_UNICODE);
@@ -32,10 +39,15 @@ if (empty($register_token) || empty($otp_code)) {
 }
 
 try {
+    // تست اتصال دیتابیس
+    error_log('verify_login.php - Database connection test');
+    
     // جستجو رکورد درخواست OTP با توکن و کد
     $stmt = $conn->prepare("SELECT * FROM otp_requests WHERE register_token = ? AND otp_code = ?");
     $stmt->execute([$register_token, $otp_code]);
     $request = $stmt->fetch();
+    
+    error_log('verify_login.php - Query result: ' . print_r($request, true));
 
     if (!$request) {
         echo json_encode(['status' => false, 'message' => 'کد تایید اشتباه است.'], JSON_UNESCAPED_UNICODE);
