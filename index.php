@@ -7,7 +7,7 @@ $conn = getPDO();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فروشگاه آنلاین</title>
+    <title>فروشگاه داروخانه صنعتی امین</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
