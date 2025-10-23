@@ -20,6 +20,7 @@ class ComposerStaticInit0e11165a2165e24403fee4cba9b3b7fc
         ),
         'M' => 
         array (
+            'Melipayamak\\' => 12,
             'Matrix\\' => 7,
         ),
         'F' => 
@@ -54,6 +55,10 @@ class ComposerStaticInit0e11165a2165e24403fee4cba9b3b7fc
         'PhpOffice\\PhpSpreadsheet\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
+        ),
+        'Melipayamak\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/melipayamak/php/src',
         ),
         'Matrix\\' => 
         array (

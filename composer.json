@@ -1,6 +1,7 @@
 {
     "require": {
         "firebase/php-jwt": "^6.11",
-        "phpoffice/phpspreadsheet": "^4.5"
+        "phpoffice/phpspreadsheet": "^4.5",
+        "melipayamak/php": "^1.0"
     }
 }

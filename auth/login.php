@@ -9,10 +9,9 @@ require_once '../db_connection.php';
 $conn = getPDO();
 require_once __DIR__ . '/../vendor/autoload.php';
 
-
-
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
+use Melipayamak\MelipayamakApi; // اضافه برای ملی‌پیامک
 
 // Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
@@ -42,22 +41,30 @@ try {
     $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($admin) {
-        // حذف OTPهای قبلی همین شماره
         $stmt = $conn->prepare("DELETE FROM otp_requests WHERE mobile = ?");
         $stmt->execute([$mobile]);
 
-        // تولید OTP و توکن ثبت نام برای ادمین
         $otp_code = random_int(100000, 999999);
         $otp_expires_at = date('Y-m-d H:i:s', strtotime('+5 minutes'));
         $register_token = bin2hex(random_bytes(16));
 
-        // ذخیره در جدول otp_requests
         $stmt = $conn->prepare("INSERT INTO otp_requests (mobile, otp_code, otp_expires_at, register_token, created_at) 
                                 VALUES (?, ?, ?, ?, NOW())");
         $stmt->execute([$mobile, $otp_code, $otp_expires_at, $register_token]);
 
-        // ارسال پیامک (اختیاری)
-        // send_sms($mobile, "کد تایید شما: $otp_code");
+        // ارسال پیامک با ملی پیامک
+        $username = '9128375080';
+        $password = '8T05B';
+        $from = '50002710065080';
+        $text = "کد تایید ادمین: $otp_code";
+
+        try {
+            $api = new MelipayamakApi($username, $password);
+            $sms = $api->sms();
+            $sms->send($mobile, $from, $text);
+        } catch (Exception $e) {
+            error_log("SMS Error: " . $e->getMessage());
+        }
 
         echo json_encode([
             'status' => true,
@@ -69,7 +76,6 @@ try {
         exit;
     }
 
-    // بررسی وجود کاربر معمولی
     $stmt = $conn->prepare("SELECT id FROM users WHERE mobile = ?");
     $stmt->execute([$mobile]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -81,7 +87,6 @@ try {
 
     $userId = $user['id'];
 
-    // انتقال سبد مهمان (اگر وجود دارد)
     if (!empty($guestToken)) {
         $stmt = $conn->prepare("SELECT id FROM carts WHERE guest_token = ?");
         $stmt->execute([$guestToken]);
@@ -93,28 +98,35 @@ try {
         }
     }
 
-    // حذف درخواست‌های قبلی همین شماره
     $stmt = $conn->prepare("DELETE FROM otp_requests WHERE mobile = ?");
     $stmt->execute([$mobile]);
 
-    // تولید OTP و توکن ثبت نام برای کاربر
     $otp_code = random_int(100000, 999999);
     $otp_expires_at = date('Y-m-d H:i:s', strtotime('+5 minutes'));
     $register_token = bin2hex(random_bytes(16));
 
-    // گرفتن نام کاربر از جدول users
     $stmt = $conn->prepare("SELECT name FROM users WHERE mobile = ?");
     $stmt->execute([$mobile]);
     $userInfo = $stmt->fetch(PDO::FETCH_ASSOC);
     $userName = $userInfo['name'] ?? '';
 
-    // ذخیره در جدول otp_requests
     $stmt = $conn->prepare("INSERT INTO otp_requests (name, mobile, otp_code, otp_expires_at, register_token, created_at) 
                             VALUES (?, ?, ?, ?, ?, NOW())");
     $stmt->execute([$userName, $mobile, $otp_code, $otp_expires_at, $register_token]);
 
-    // ارسال پیامک (اختیاری)
-    // send_sms($mobile, "کد تایید شما: $otp_code");
+    // ارسال پیامک با ملی پیامک
+    $username = '9128375080';
+    $password = '8T05B';
+    $from = '50002710065080';
+    $text = " $userName عزیز کد تایید شما برای ورود به داروخانه صنعتی امین  :  $otp_code";
+
+    try {
+        $api = new MelipayamakApi($username, $password);
+        $sms = $api->sms();
+        $sms->send($mobile, $from, $text);
+    } catch (Exception $e) {
+        error_log("SMS Error: " . $e->getMessage());
+    }
 
     echo json_encode([
         'status' => true,
