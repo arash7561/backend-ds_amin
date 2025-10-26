@@ -1,7 +1,20 @@
 <?php
 require_once __DIR__ . '/../db_connection.php';
 $conn = getPDO();
-$auth = require_once '../auth/auth_check.php';
+require_once __DIR__ . '/../auth/jwt_utils.php';
+
+// دریافت توکن از هدر Authorization
+$headers = getallheaders();
+$authHeader = $headers['Authorization'] ?? '';
+$userId = null;
+
+if ($authHeader && preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
+    $jwt = $matches[1];
+    $authResult = verify_jwt_token($jwt);
+    if ($authResult['valid']) {
+        $userId = $authResult['uid'];
+    }
+}
 
 header('Content-Type: application/json');
 

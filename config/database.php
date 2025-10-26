@@ -2,7 +2,7 @@
 // Database configuration
 return [
     'host' => 'localhost',
-    'dbname' => 'aminin_ds_amini',
+    'dbname' => 'ds_amin',
     'username' => 'root',
     'password' => '', // در محیط تولید حتماً رمز عبور قوی تنظیم کنید
     'charset' => 'utf8mb4',

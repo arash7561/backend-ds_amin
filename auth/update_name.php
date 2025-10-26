@@ -1,12 +1,12 @@
 <?php
-require_once '../db_connection.php';
+require_once __DIR__ . '/../db_connection.php';
 $conn = getPDO();
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
-header('Access-Control-Allow-Origin: http://localhost:3000');
+header('Access-Control-Allow-Origin: http://localhost:3002');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization, X-CSRF-Token, X-Requested-With');
 header('Access-Control-Allow-Credentials: true');

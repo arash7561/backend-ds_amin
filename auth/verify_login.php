@@ -1,13 +1,13 @@
 <?php
 // CORS headers - باید در ابتدا باشد
-header('Access-Control-Allow-Origin: http://localhost:3000');
+header('Access-Control-Allow-Origin: http://localhost:3002');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Content-Type: application/json');
 
-require_once '../db_connection.php';
+require_once __DIR__ . '/../db_connection.php';
 $conn = getPDO();
-require_once '../vendor/autoload.php'; // اضافه کردن JWT
+require_once __DIR__ . '/../vendor/autoload.php'; // اضافه کردن JWT
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;

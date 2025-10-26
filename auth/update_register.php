@@ -1,6 +1,6 @@
 <?php
 
-require_once '../db_connection.php';
+require_once __DIR__ . '/../db_connection.php';
 $conn = getPDO();
 header("Content-Type: application/json; charset=utf-8");
 
