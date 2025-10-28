@@ -1,5 +1,13 @@
 <?php
-// CORS headers - Allow from any localhost origin for development
+// Enable error reporting for debugging but don't display errors
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+
+// Start output buffering at the very beginning to catch any unexpected output
+ob_start();
+
+// CORS headers - Allow from any localhost origin for development AND production
 $allowed_origins = [
     'http://localhost:3000',
     'http://localhost:3001',
@@ -7,6 +15,8 @@ $allowed_origins = [
     'http://127.0.0.1:3000',
     'http://127.0.0.1:3001',
     'http://127.0.0.1:3002',
+    'https://aminindpharm.ir',
+    'http://aminindpharm.ir'
 ];
 
 $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
@@ -14,7 +24,11 @@ if (!$origin && isset($_SERVER['HTTP_REFERER'])) {
     $origin = preg_replace('#^([^/]+://[^/]+).*$#', '$1', $_SERVER['HTTP_REFERER']);
 }
 
-if (in_array($origin, $allowed_origins) || (strpos($origin, 'http://localhost') !== false || strpos($origin, 'http://127.0.0.1') !== false)) {
+if (in_array($origin, $allowed_origins) || 
+    (strpos($origin, 'http://localhost') !== false || 
+     strpos($origin, 'http://127.0.0.1') !== false ||
+     strpos($origin, 'https://aminindpharm.ir') !== false ||
+     strpos($origin, 'http://aminindpharm.ir') !== false)) {
     header('Access-Control-Allow-Origin: ' . $origin);
 }
 
@@ -22,6 +36,9 @@ header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization, X-CSRF-Token, X-Requested-With');
 header('Access-Control-Allow-Credentials: true');
 header('Content-Type: application/json; charset=UTF-8');
+
+// Clear any output before this point
+ob_end_clean();
 
 // Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
@@ -34,8 +51,29 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit();
 }
 
-require_once __DIR__ . '/../db_connection.php';
-require_once __DIR__ . '/../vendor/autoload.php';
+// Load dependencies with error handling
+try {
+    require_once __DIR__ . '/../db_connection.php';
+} catch (Exception $e) {
+    error_log("db_connection error: " . $e->getMessage());
+    echo json_encode(['status' => false, 'message' => 'خطا در اتصال به دیتابیس'], JSON_UNESCAPED_UNICODE);
+    exit();
+}
+
+// Check if vendor/autoload.php exists
+if (!file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    error_log("vendor/autoload.php not found");
+    echo json_encode(['status' => false, 'message' => 'فایل autoload پیدا نشد'], JSON_UNESCAPED_UNICODE);
+    exit();
+}
+
+try {
+    require_once __DIR__ . '/../vendor/autoload.php';
+} catch (Exception $e) {
+    error_log("autoload error: " . $e->getMessage());
+    echo json_encode(['status' => false, 'message' => 'خطا در بارگذاری کتابخانه‌ها: ' . $e->getMessage()], JSON_UNESCAPED_UNICODE);
+    exit();
+}
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
@@ -88,7 +126,31 @@ try {
         $stmt = $conn->prepare("SELECT name, mobile, created_at, role FROM users WHERE id = ?");
         $stmt->execute([$userId]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        $userRole = $user['role'] ?? 'user';
+        
+        if ($user) {
+            // استفاده از role از جدول users
+            $userRole = $user['role'] ?? 'user';
+            error_log("User role from database: " . $userRole . " for user: " . $userId);
+            
+            // اگر role وجود نداشت، از جدول admin_users چک کنیم (backward compatibility)
+            if (empty($user['role']) && !empty($user['mobile'])) {
+                $stmt = $conn->prepare("SELECT id FROM admin_users WHERE mobile = ?");
+                $stmt->execute([$user['mobile']]);
+                $isAdminCheck = $stmt->fetch();
+                
+                if ($isAdminCheck) {
+                    $userRole = 'admin';
+                    error_log("User is admin based on admin_users table");
+                    
+                    // آپدیت role در جدول users
+                    $stmt = $conn->prepare("UPDATE users SET role = 'admin' WHERE id = ?");
+                    $stmt->execute([$userId]);
+                }
+            }
+        } else {
+            $userRole = 'user';
+            error_log("User not found, setting role as 'user'");
+        }
     }
     
     if (!$userId && !$adminId) {

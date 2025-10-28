@@ -1,5 +1,5 @@
 <?php
-// CORS headers - Allow from any localhost origin for development
+// CORS headers - Allow from localhost and production domain
 $allowed_origins = [
     'http://localhost:3000',
     'http://localhost:3001',
@@ -7,6 +7,8 @@ $allowed_origins = [
     'http://127.0.0.1:3000',
     'http://127.0.0.1:3001',
     'http://127.0.0.1:3002',
+    'https://aminindpharm.ir',
+    'http://aminindpharm.ir'
 ];
 
 $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
@@ -14,7 +16,11 @@ if (!$origin && isset($_SERVER['HTTP_REFERER'])) {
     $origin = preg_replace('#^([^/]+://[^/]+).*$#', '$1', $_SERVER['HTTP_REFERER']);
 }
 
-if (in_array($origin, $allowed_origins) || (strpos($origin, 'http://localhost') !== false || strpos($origin, 'http://127.0.0.1') !== false)) {
+if (in_array($origin, $allowed_origins) || 
+    (strpos($origin, 'http://localhost') !== false || 
+     strpos($origin, 'http://127.0.0.1') !== false ||
+     strpos($origin, 'https://aminindpharm.ir') !== false ||
+     strpos($origin, 'http://aminindpharm.ir') !== false)) {
     header('Access-Control-Allow-Origin: ' . $origin);
 }
 

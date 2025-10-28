@@ -1,0 +1,20 @@
+# Enable error reporting for debugging (on server)
+php_flag display_errors Off
+php_flag log_errors On
+php_value error_log error_log.txt
+
+# Don't show directory listings
+Options -Indexes
+
+# CORS Headers (if not set in PHP)
+# Header add Access-Control-Allow-Origin "*"
+
+# Prevent access to sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Custom error pages (optional)
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html

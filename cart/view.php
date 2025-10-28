@@ -1,5 +1,13 @@
 <?php
-// CORS headers - Allow from any localhost origin for development
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+
+// Start output buffering at the very beginning
+ob_start();
+
+// CORS headers - Allow from localhost and production domain
 $allowed_origins = [
     'http://localhost:3000',
     'http://localhost:3001',
@@ -7,6 +15,8 @@ $allowed_origins = [
     'http://127.0.0.1:3000',
     'http://127.0.0.1:3001',
     'http://127.0.0.1:3002',
+    'https://aminindpharm.ir',
+    'http://aminindpharm.ir'
 ];
 
 $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
@@ -14,7 +24,11 @@ if (!$origin && isset($_SERVER['HTTP_REFERER'])) {
     $origin = preg_replace('#^([^/]+://[^/]+).*$#', '$1', $_SERVER['HTTP_REFERER']);
 }
 
-if (in_array($origin, $allowed_origins) || (strpos($origin, 'http://localhost') !== false || strpos($origin, 'http://127.0.0.1') !== false)) {
+if (in_array($origin, $allowed_origins) || 
+    (strpos($origin, 'http://localhost') !== false || 
+     strpos($origin, 'http://127.0.0.1') !== false ||
+     strpos($origin, 'https://aminindpharm.ir') !== false ||
+     strpos($origin, 'http://aminindpharm.ir') !== false)) {
     header('Access-Control-Allow-Origin: ' . $origin);
 }
 
@@ -23,14 +37,37 @@ header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Access-Control-Allow-Credentials: true');
 header("Content-Type: application/json; charset=UTF-8");
 
+// Clear any output before this point
+ob_end_clean();
+
 // Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit();
 }
 
-require_once __DIR__ . '/../db_connection.php';
-require_once __DIR__ . '/../auth/jwt_utils.php';
+// Test database connection
+try {
+    require_once __DIR__ . '/../db_connection.php';
+    require_once __DIR__ . '/../auth/jwt_utils.php';
+    
+    $conn = getPDO();
+    
+    if (!$conn) {
+        throw new Exception('Database connection failed');
+    }
+    
+    // Clear any output that might have been generated
+    ob_end_clean();
+} catch (Exception $e) {
+    ob_end_clean();
+    error_log("Database connection error in view.php: " . $e->getMessage());
+    echo json_encode([
+        'status' => false,
+        'message' => 'خطا در اتصال به دیتابیس: ' . $e->getMessage()
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+}
 
 // دریافت توکن از هدر Authorization
 $headers = getallheaders();
@@ -44,8 +81,6 @@ if ($authHeader && preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
         $userId = $authResult['uid'];
     }
 }
-
-$conn = getPDO();
 
 $json = file_get_contents('php://input');
 $data = json_decode($json);
