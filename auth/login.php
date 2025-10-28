@@ -188,7 +188,7 @@ try {
     $username = '9128375080';
     $password = '8T05B';
     $from = '50002710065080';
-    $text = " $userName عزیز کد تایید شما برای ورود به داروخانه صنعتی امین  :  $otp_code";
+    $text = " $userName عزیز کد تایید شما   :  $otp_code";
 
     try {
         $api = new MelipayamakApi($username, $password);

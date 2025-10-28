@@ -32,6 +32,7 @@ $stock = $data['stock'] ?? null;
 $price = $data['price'] ?? null;
 $discount_percent = $data['discount_percent'] ?? 0;
 $size = htmlspecialchars(trim($data['size'] ?? ''));
+$width = htmlspecialchars(trim($data['width'] ?? ''));
 $type = htmlspecialchars(trim($data['type'] ?? ''));
 $brand = htmlspecialchars(trim($data['brand'] ?? ''));
 $line_count = $data['line_count'] ?? null;
@@ -178,11 +179,11 @@ try {
 
     // درج محصول با تمام فیلدها
     $stmt = $conn->prepare("INSERT INTO products 
-        (title, description, slug, cat_id, status, image, stock, price, discount_price, discount_percent, dimensions, size, type, brand, line_count, grade, half_finished, views, custom_specifications) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        (title, description, slug, cat_id, width, status, image, stock, price, discount_price, discount_percent, dimensions, size, type, brand, line_count, grade, half_finished, views, custom_specifications) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $result = $stmt->execute([
-        $title, $description, $slug, $cat_id, $status, $image, $stock, $price, $discount_price, $discount_percent, $dimensions, $size, $type, $brand, $line_count, $grade, $half_finished, $views, json_encode($custom_specifications, JSON_UNESCAPED_UNICODE)
+        $title, $description, $slug, $cat_id, $width, $status, $image, $stock, $price, $discount_price, $discount_percent, $dimensions, $size, $type, $brand, $line_count, $grade, $half_finished, $views, json_encode($custom_specifications, JSON_UNESCAPED_UNICODE)
     ]);
 
     if ($result) {

@@ -86,8 +86,7 @@ try {
     $username = '9128375080'; // نام کاربری پنل ملی پیامک
     $password = '8T05B'; // رمز عبور پنل ملی پیامک
     $from = '50002710065080';       // شماره اختصاصی ارسال‌کننده (مثلاً 5000...)
-    $text = " $name عزیز کد تایید شما برای ثبت نام در داروخانه صنعتی امین  :  $otp_code";
-
+    $text = " $name عزیز کد تایید شما   :  $otp_code";
     try {
         $api = new MelipayamakApi($username, $password);
         $sms = $api->sms();
