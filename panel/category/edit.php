@@ -74,10 +74,10 @@ if (!empty($errors)) {
 }
 
 try {
-    // بررسی وجود دسته بندی با ID داده شده
-    $stmt = $conn->prepare("SELECT id FROM categories WHERE id = ?");
+    // بررسی وجود دسته بندی با ID داده شده و دریافت تصویر فعلی
+    $stmt = $conn->prepare("SELECT id, image FROM categories WHERE id = ?");
     $stmt->execute([$id]);
-    $category = $stmt->fetch();
+    $category = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$category) {
         echo json_encode(['status' => false, 'message' => 'دسته بندی پیدا نشد.'], JSON_UNESCAPED_UNICODE);
@@ -94,9 +94,18 @@ try {
         exit;
     }
 
+    // اگر image خالی یا null بود، تصویر قبلی رو نگه دار
+    $finalImage = $image;
+    if (empty($image) || $image === '' || $image === null) {
+        $finalImage = $category['image'] ?? '';
+    }
+
+    // تبدیل parent_id به null اگر 0 یا خالی باشد
+    $finalParentId = ($parent_id === 0 || $parent_id === '0' || $parent_id === null || $parent_id === '') ? null : (int)$parent_id;
+
     // آپدیت دسته بندی
     $stmt = $conn->prepare("UPDATE categories SET name = ?, slug = ?, description = ?, parent_id = ?, status = ?, image = ? WHERE id = ?");
-    $result = $stmt->execute([$name, $slug, $description, $parent_id, $status, $image, $id]);
+    $result = $stmt->execute([$name, $slug, $description, $finalParentId, $status, $finalImage, $id]);
 
     if ($result) {
         echo json_encode(['status' => true, 'message' => 'دسته بندی با موفقیت ویرایش شد.'], JSON_UNESCAPED_UNICODE);
