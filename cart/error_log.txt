@@ -1,0 +1,992 @@
+[28-Oct-2025 15:17:47 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:17:47 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:17:47 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:17:47 UTC] Found cart with ID: 49
+[28-Oct-2025 15:17:47 UTC] Found 1 items in cart
+[28-Oct-2025 15:18:04 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:18:04 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:18:04 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:18:04 UTC] Found cart with ID: 49
+[28-Oct-2025 15:18:04 UTC] Found 1 items in cart
+[28-Oct-2025 15:25:09 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:25:09 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:25:09 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:25:09 UTC] Found cart with ID: 49
+[28-Oct-2025 15:25:09 UTC] Found 1 items in cart
+[28-Oct-2025 15:25:12 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:25:12 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:25:12 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:25:12 UTC] Found cart with ID: 49
+[28-Oct-2025 15:25:12 UTC] Found 1 items in cart
+[28-Oct-2025 15:25:51 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:25:51 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:25:51 UTC] View cart for userId: 3
+[28-Oct-2025 15:25:51 UTC] Found cart with ID: 47
+[28-Oct-2025 15:25:51 UTC] Found 3 items in cart
+[28-Oct-2025 15:25:52 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:25:52 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:25:52 UTC] View cart for userId: 3
+[28-Oct-2025 15:25:52 UTC] Found cart with ID: 47
+[28-Oct-2025 15:25:52 UTC] Found 3 items in cart
+[28-Oct-2025 15:25:55 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:25:55 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:25:55 UTC] View cart for userId: 3
+[28-Oct-2025 15:25:55 UTC] Found cart with ID: 47
+[28-Oct-2025 15:25:55 UTC] Found 3 items in cart
+[28-Oct-2025 15:25:56 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:25:56 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:25:56 UTC] View cart for userId: 3
+[28-Oct-2025 15:25:56 UTC] Found cart with ID: 47
+[28-Oct-2025 15:25:56 UTC] Found 3 items in cart
+[28-Oct-2025 15:25:57 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:25:57 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:25:57 UTC] View cart for userId: 3
+[28-Oct-2025 15:25:57 UTC] Found cart with ID: 47
+[28-Oct-2025 15:25:57 UTC] Found 3 items in cart
+[28-Oct-2025 15:26:14 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:26:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:26:14 UTC] View cart for userId: 3
+[28-Oct-2025 15:26:14 UTC] Found cart with ID: 47
+[28-Oct-2025 15:26:14 UTC] Found 3 items in cart
+[28-Oct-2025 15:26:14 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:26:14 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:26:14 UTC] View cart for userId: 3
+[28-Oct-2025 15:26:14 UTC] Found cart with ID: 47
+[28-Oct-2025 15:26:14 UTC] Found 3 items in cart
+[28-Oct-2025 15:26:30 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:26:30 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:26:30 UTC] View cart for userId: 3
+[28-Oct-2025 15:26:30 UTC] Found cart with ID: 47
+[28-Oct-2025 15:26:30 UTC] Found 3 items in cart
+[28-Oct-2025 15:26:30 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:26:30 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:26:30 UTC] View cart for userId: 3
+[28-Oct-2025 15:26:30 UTC] Found cart with ID: 47
+[28-Oct-2025 15:26:30 UTC] Found 3 items in cart
+[28-Oct-2025 15:26:35 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:26:35 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:26:35 UTC] View cart for userId: 3
+[28-Oct-2025 15:26:35 UTC] Found cart with ID: 47
+[28-Oct-2025 15:26:35 UTC] Found 3 items in cart
+[28-Oct-2025 15:26:35 UTC] View cart - userId from auth: 3
+[28-Oct-2025 15:26:35 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:26:35 UTC] View cart for userId: 3
+[28-Oct-2025 15:26:35 UTC] Found cart with ID: 47
+[28-Oct-2025 15:26:35 UTC] Found 3 items in cart
+[28-Oct-2025 15:27:08 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:27:08 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:27:08 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:27:08 UTC] Found cart with ID: 49
+[28-Oct-2025 15:27:08 UTC] Found 1 items in cart
+[28-Oct-2025 15:27:08 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:27:08 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:27:08 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:27:08 UTC] Found cart with ID: 49
+[28-Oct-2025 15:27:08 UTC] Found 1 items in cart
+[28-Oct-2025 15:28:26 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:28:26 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:28:26 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:28:26 UTC] Found cart with ID: 49
+[28-Oct-2025 15:28:26 UTC] Found 1 items in cart
+[28-Oct-2025 15:28:26 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:28:26 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:28:26 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:28:26 UTC] Found cart with ID: 49
+[28-Oct-2025 15:28:26 UTC] Found 1 items in cart
+[28-Oct-2025 15:32:13 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:32:13 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:32:13 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:32:13 UTC] Found cart with ID: 49
+[28-Oct-2025 15:32:13 UTC] Found 1 items in cart
+[28-Oct-2025 15:32:13 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:32:13 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:32:13 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:32:13 UTC] Found cart with ID: 49
+[28-Oct-2025 15:32:13 UTC] Found 1 items in cart
+[28-Oct-2025 15:32:15 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:32:15 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:32:15 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:32:15 UTC] Found cart with ID: 49
+[28-Oct-2025 15:32:15 UTC] Found 1 items in cart
+[28-Oct-2025 15:32:15 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:32:15 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:32:15 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:32:15 UTC] Found cart with ID: 49
+[28-Oct-2025 15:32:15 UTC] Found 1 items in cart
+[28-Oct-2025 15:32:22 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:32:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:32:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:32:22 UTC] Found cart with ID: 49
+[28-Oct-2025 15:32:22 UTC] Found 1 items in cart
+[28-Oct-2025 15:32:22 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:32:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:32:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:32:22 UTC] Found cart with ID: 49
+[28-Oct-2025 15:32:22 UTC] Found 1 items in cart
+[28-Oct-2025 15:33:47 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:33:47 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:33:47 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:33:47 UTC] Found cart with ID: 49
+[28-Oct-2025 15:33:47 UTC] Found 1 items in cart
+[28-Oct-2025 15:33:48 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:33:48 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:33:48 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:33:48 UTC] Found cart with ID: 49
+[28-Oct-2025 15:33:48 UTC] Found 1 items in cart
+[28-Oct-2025 15:34:00 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:34:00 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:34:00 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:34:00 UTC] Found cart with ID: 49
+[28-Oct-2025 15:34:00 UTC] Found 1 items in cart
+[28-Oct-2025 15:34:00 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:34:00 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:34:00 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:34:00 UTC] Found cart with ID: 49
+[28-Oct-2025 15:34:00 UTC] Found 1 items in cart
+[28-Oct-2025 15:34:07 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:34:07 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:34:07 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:34:07 UTC] Found cart with ID: 49
+[28-Oct-2025 15:34:07 UTC] Found 1 items in cart
+[28-Oct-2025 15:34:08 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:34:08 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:34:08 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:34:08 UTC] Found cart with ID: 49
+[28-Oct-2025 15:34:08 UTC] Found 1 items in cart
+[28-Oct-2025 15:34:20 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:34:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:34:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:34:20 UTC] Found cart with ID: 49
+[28-Oct-2025 15:34:20 UTC] Found 1 items in cart
+[28-Oct-2025 15:34:20 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:34:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:34:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:34:20 UTC] Found cart with ID: 49
+[28-Oct-2025 15:34:20 UTC] Found 1 items in cart
+[28-Oct-2025 15:35:41 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:35:41 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:35:41 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:35:41 UTC] Found cart with ID: 49
+[28-Oct-2025 15:35:41 UTC] Found 1 items in cart
+[28-Oct-2025 15:35:41 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:35:41 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:35:41 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:35:41 UTC] Found cart with ID: 49
+[28-Oct-2025 15:35:41 UTC] Found 1 items in cart
+[28-Oct-2025 15:38:03 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:38:03 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:38:03 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:38:03 UTC] Found cart with ID: 49
+[28-Oct-2025 15:38:03 UTC] Found 1 items in cart
+[28-Oct-2025 15:38:04 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:38:04 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:38:04 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:38:04 UTC] Found cart with ID: 49
+[28-Oct-2025 15:38:04 UTC] Found 1 items in cart
+[28-Oct-2025 15:38:11 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:38:11 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:38:11 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:38:11 UTC] Found cart with ID: 49
+[28-Oct-2025 15:38:11 UTC] Found 1 items in cart
+[28-Oct-2025 15:38:11 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:38:11 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:38:11 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:38:11 UTC] Found cart with ID: 49
+[28-Oct-2025 15:38:11 UTC] Found 1 items in cart
+[28-Oct-2025 15:38:39 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:38:39 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:38:39 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:38:39 UTC] Found cart with ID: 49
+[28-Oct-2025 15:38:39 UTC] Found 1 items in cart
+[28-Oct-2025 15:38:39 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:38:39 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:38:39 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:38:39 UTC] Found cart with ID: 49
+[28-Oct-2025 15:38:39 UTC] Found 1 items in cart
+[28-Oct-2025 15:40:48 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:40:48 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:40:48 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:40:48 UTC] Found cart with ID: 49
+[28-Oct-2025 15:40:48 UTC] Found 1 items in cart
+[28-Oct-2025 15:40:49 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:40:49 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:40:49 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:40:49 UTC] Found cart with ID: 49
+[28-Oct-2025 15:40:49 UTC] Found 1 items in cart
+[28-Oct-2025 15:41:22 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:41:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:41:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:41:22 UTC] Found cart with ID: 49
+[28-Oct-2025 15:41:22 UTC] Found 1 items in cart
+[28-Oct-2025 15:41:22 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:41:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:41:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:41:22 UTC] Found cart with ID: 49
+[28-Oct-2025 15:41:22 UTC] Found 1 items in cart
+[28-Oct-2025 15:41:24 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:41:24 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:41:24 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:41:24 UTC] Found cart with ID: 49
+[28-Oct-2025 15:41:24 UTC] Found 1 items in cart
+[28-Oct-2025 15:41:24 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:41:24 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:41:24 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:41:24 UTC] Found cart with ID: 49
+[28-Oct-2025 15:41:24 UTC] Found 1 items in cart
+[28-Oct-2025 15:41:26 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:41:26 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:41:26 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:41:26 UTC] Found cart with ID: 49
+[28-Oct-2025 15:41:26 UTC] Found 1 items in cart
+[28-Oct-2025 15:41:26 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 15:41:26 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:41:26 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:41:26 UTC] Found cart with ID: 49
+[28-Oct-2025 15:41:26 UTC] Found 1 items in cart
+[28-Oct-2025 15:44:28 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:44:28 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:44:28 UTC] View cart for userId: 21
+[28-Oct-2025 15:44:28 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:44:28 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:44:28 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:44:28 UTC] View cart for userId: 21
+[28-Oct-2025 15:44:28 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:44:33 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:44:33 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:44:33 UTC] View cart for userId: 21
+[28-Oct-2025 15:44:33 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:44:33 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:44:33 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:44:33 UTC] View cart for userId: 21
+[28-Oct-2025 15:44:33 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:44:50 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:44:50 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:44:50 UTC] View cart for userId: 21
+[28-Oct-2025 15:44:50 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:44:50 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:44:50 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:44:50 UTC] View cart for userId: 21
+[28-Oct-2025 15:44:50 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:45:12 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:45:12 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:45:12 UTC] View cart for userId: 21
+[28-Oct-2025 15:45:12 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:45:12 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:45:12 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:45:12 UTC] View cart for userId: 21
+[28-Oct-2025 15:45:12 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:45:56 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:45:56 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:45:56 UTC] View cart for userId: 21
+[28-Oct-2025 15:45:56 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:45:56 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:45:56 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:45:56 UTC] View cart for userId: 21
+[28-Oct-2025 15:45:56 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:45:59 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:45:59 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:45:59 UTC] View cart for userId: 21
+[28-Oct-2025 15:45:59 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:45:59 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:45:59 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:45:59 UTC] View cart for userId: 21
+[28-Oct-2025 15:45:59 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:46:31 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:31 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:46:31 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:31 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:46:31 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:31 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:46:31 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:31 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:46:35 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:35 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:46:35 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:35 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:46:35 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:35 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:46:35 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:35 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:46:55 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:55 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:46:55 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:55 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:46:56 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:56 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:46:56 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:56 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:46:58 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:58 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:46:58 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:58 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:46:58 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:46:58 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:46:58 UTC] View cart for userId: 21
+[28-Oct-2025 15:46:58 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:47:45 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:47:45 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:47:45 UTC] View cart for userId: 21
+[28-Oct-2025 15:47:45 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:47:45 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:47:45 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:47:45 UTC] View cart for userId: 21
+[28-Oct-2025 15:47:45 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:49:15 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:49:15 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:49:15 UTC] View cart for userId: 21
+[28-Oct-2025 15:49:15 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:49:15 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:49:15 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:49:15 UTC] View cart for userId: 21
+[28-Oct-2025 15:49:15 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:49:18 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:49:18 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:49:18 UTC] View cart for userId: 21
+[28-Oct-2025 15:49:18 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:49:18 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:49:18 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:49:18 UTC] View cart for userId: 21
+[28-Oct-2025 15:49:18 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:49:20 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:49:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:49:20 UTC] View cart for userId: 21
+[28-Oct-2025 15:49:20 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:49:20 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:49:20 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:49:20 UTC] View cart for userId: 21
+[28-Oct-2025 15:49:20 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:50:14 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:50:14 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:14 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:50:14 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:14 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:50:14 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:14 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:50:17 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:17 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:50:17 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:17 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:50:17 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:17 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:50:17 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:17 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:50:42 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:42 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:50:42 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:42 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:50:42 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:42 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:50:42 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:42 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:50:46 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:46 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:50:46 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:46 UTC] No cart found for userId: 21 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:50:46 UTC] View cart - userId from auth: '21'
+[28-Oct-2025 15:50:46 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:50:46 UTC] View cart for userId: 21
+[28-Oct-2025 15:50:46 UTC] No cart found for userId: 21 or guestToken: 
+[28-Oct-2025 15:51:53 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:51:53 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:51:53 UTC] View cart for userId: 22
+[28-Oct-2025 15:51:53 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:51:54 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:51:54 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:51:54 UTC] View cart for userId: 22
+[28-Oct-2025 15:51:54 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:51:59 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:51:59 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:51:59 UTC] View cart for userId: 22
+[28-Oct-2025 15:51:59 UTC] No cart found for userId: 22 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:51:59 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:51:59 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:51:59 UTC] View cart for userId: 22
+[28-Oct-2025 15:51:59 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:52:03 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:52:03 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:52:03 UTC] View cart for userId: 22
+[28-Oct-2025 15:52:03 UTC] No cart found for userId: 22 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:52:03 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:52:03 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:52:03 UTC] View cart for userId: 22
+[28-Oct-2025 15:52:03 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:52:23 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:52:23 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:52:23 UTC] View cart for userId: 22
+[28-Oct-2025 15:52:23 UTC] No cart found for userId: 22 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:52:23 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:52:23 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:52:23 UTC] View cart for userId: 22
+[28-Oct-2025 15:52:23 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:52:26 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:52:26 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:52:26 UTC] View cart for userId: 22
+[28-Oct-2025 15:52:26 UTC] No cart found for userId: 22 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:52:26 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:52:26 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:52:26 UTC] View cart for userId: 22
+[28-Oct-2025 15:52:26 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:56:53 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:56:53 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 15:56:53 UTC] View cart for userId: 22
+[28-Oct-2025 15:56:53 UTC] No cart found for userId: 22 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 15:56:53 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:56:53 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:56:53 UTC] View cart for userId: 22
+[28-Oct-2025 15:56:53 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:59:00 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:59:00 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:59:00 UTC] View cart for userId: 22
+[28-Oct-2025 15:59:00 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 15:59:02 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 15:59:02 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 15:59:02 UTC] View cart for userId: 22
+[28-Oct-2025 15:59:02 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 16:01:08 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 16:01:08 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 16:01:08 UTC] View cart for userId: 22
+[28-Oct-2025 16:01:08 UTC] No cart found for userId: 22 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 16:01:08 UTC] View cart - userId from auth: '22'
+[28-Oct-2025 16:01:08 UTC] View cart - guestToken from body: NULL
+[28-Oct-2025 16:01:08 UTC] View cart for userId: 22
+[28-Oct-2025 16:01:08 UTC] No cart found for userId: 22 or guestToken: 
+[28-Oct-2025 16:02:14 UTC] View cart - userId from auth: NULL
+[28-Oct-2025 16:02:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[28-Oct-2025 16:02:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[28-Oct-2025 16:02:14 UTC] Found cart with ID: 49
+[28-Oct-2025 16:02:14 UTC] Found 1 items in cart
+[31-Oct-2025 12:52:29 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:52:29 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:52:29 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:52:29 UTC] Found cart with ID: 49
+[31-Oct-2025 12:52:29 UTC] Found 1 items in cart
+[31-Oct-2025 12:54:57 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:54:57 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:54:57 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:54:57 UTC] Found cart with ID: 49
+[31-Oct-2025 12:54:57 UTC] Found 0 items in cart
+[31-Oct-2025 12:55:20 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:55:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:55:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:55:20 UTC] Found cart with ID: 49
+[31-Oct-2025 12:55:20 UTC] Found 0 items in cart
+[31-Oct-2025 12:55:40 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:55:40 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:55:40 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:55:40 UTC] Found cart with ID: 49
+[31-Oct-2025 12:55:40 UTC] Found 0 items in cart
+[31-Oct-2025 12:57:01 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:57:01 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:57:01 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:57:01 UTC] Found cart with ID: 49
+[31-Oct-2025 12:57:01 UTC] Found 0 items in cart
+[31-Oct-2025 12:57:03 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:57:03 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:57:03 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:57:03 UTC] Found cart with ID: 49
+[31-Oct-2025 12:57:03 UTC] Found 0 items in cart
+[31-Oct-2025 12:57:35 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:57:35 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:57:35 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:57:35 UTC] Found cart with ID: 49
+[31-Oct-2025 12:57:35 UTC] Found 0 items in cart
+[31-Oct-2025 12:58:22 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:58:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:58:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:58:22 UTC] Found cart with ID: 49
+[31-Oct-2025 12:58:22 UTC] Found 0 items in cart
+[31-Oct-2025 12:58:23 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 12:58:23 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 12:58:23 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 12:58:23 UTC] Found cart with ID: 49
+[31-Oct-2025 12:58:23 UTC] Found 0 items in cart
+[31-Oct-2025 13:12:03 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:12:03 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:12:03 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:12:03 UTC] Found cart with ID: 49
+[31-Oct-2025 13:12:03 UTC] Found 0 items in cart
+[31-Oct-2025 13:12:04 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:12:04 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:12:04 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:12:04 UTC] Found cart with ID: 49
+[31-Oct-2025 13:12:04 UTC] Found 0 items in cart
+[31-Oct-2025 13:12:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:12:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:12:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:12:14 UTC] Found cart with ID: 49
+[31-Oct-2025 13:12:14 UTC] Found 0 items in cart
+[31-Oct-2025 13:12:15 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:12:15 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:12:15 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:12:15 UTC] Found cart with ID: 49
+[31-Oct-2025 13:12:15 UTC] Found 0 items in cart
+[31-Oct-2025 13:14:10 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:14:10 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:14:10 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:14:10 UTC] Found cart with ID: 49
+[31-Oct-2025 13:14:10 UTC] Found 0 items in cart
+[31-Oct-2025 13:21:01 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:21:01 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:21:01 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:21:01 UTC] Found cart with ID: 49
+[31-Oct-2025 13:21:01 UTC] Found 0 items in cart
+[31-Oct-2025 13:21:24 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:21:24 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:21:24 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:21:24 UTC] Found cart with ID: 49
+[31-Oct-2025 13:21:24 UTC] Found 0 items in cart
+[31-Oct-2025 13:21:24 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:21:24 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:21:24 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:21:24 UTC] Found cart with ID: 49
+[31-Oct-2025 13:21:24 UTC] Found 0 items in cart
+[31-Oct-2025 13:21:44 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:21:44 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:21:44 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:21:44 UTC] Found cart with ID: 49
+[31-Oct-2025 13:21:44 UTC] Found 0 items in cart
+[31-Oct-2025 13:22:16 UTC] UserID: NULL
+[31-Oct-2025 13:22:16 UTC] Product 232 has empty dimensions, skipping validation
+[31-Oct-2025 13:22:16 UTC] Existing guest cart found token=371b86e891e613c3ef0e05b1ea9df40e, cartId=49
+[31-Oct-2025 13:22:16 UTC] Inserted new cart_item for cartId=49, productId=232
+[31-Oct-2025 13:22:16 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:22:16 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:22:16 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:22:16 UTC] Found cart with ID: 49
+[31-Oct-2025 13:22:16 UTC] Found 1 items in cart
+[31-Oct-2025 13:23:22 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:23:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:23:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:23:22 UTC] Found cart with ID: 49
+[31-Oct-2025 13:23:22 UTC] Found 0 items in cart
+[31-Oct-2025 13:23:55 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 13:23:55 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 13:23:55 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 13:23:55 UTC] Found cart with ID: 49
+[31-Oct-2025 13:23:55 UTC] Found 0 items in cart
+[31-Oct-2025 14:04:08 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:04:08 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:04:08 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:04:08 UTC] Found cart with ID: 49
+[31-Oct-2025 14:04:08 UTC] Found 0 items in cart
+[31-Oct-2025 14:05:16 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:05:16 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:05:16 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:05:16 UTC] Found cart with ID: 49
+[31-Oct-2025 14:05:16 UTC] Found 0 items in cart
+[31-Oct-2025 14:05:29 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:05:29 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:05:29 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:05:29 UTC] Found cart with ID: 49
+[31-Oct-2025 14:05:29 UTC] Found 0 items in cart
+[31-Oct-2025 14:06:48 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:06:48 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:06:48 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:06:48 UTC] Found cart with ID: 49
+[31-Oct-2025 14:06:48 UTC] Found 0 items in cart
+[31-Oct-2025 14:16:13 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:16:13 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:16:13 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:16:13 UTC] Found cart with ID: 49
+[31-Oct-2025 14:16:13 UTC] Found 0 items in cart
+[31-Oct-2025 14:16:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:16:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:16:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:16:14 UTC] Found cart with ID: 49
+[31-Oct-2025 14:16:14 UTC] Found 0 items in cart
+[31-Oct-2025 14:21:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:21:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:21:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:21:14 UTC] Found cart with ID: 49
+[31-Oct-2025 14:21:14 UTC] Found 0 items in cart
+[31-Oct-2025 14:21:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:21:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:21:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:21:14 UTC] Found cart with ID: 49
+[31-Oct-2025 14:21:14 UTC] Found 0 items in cart
+[31-Oct-2025 14:27:37 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:27:37 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:27:37 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:27:37 UTC] Found cart with ID: 49
+[31-Oct-2025 14:27:37 UTC] Found 0 items in cart
+[31-Oct-2025 14:27:37 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:27:37 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:27:37 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:27:37 UTC] Found cart with ID: 49
+[31-Oct-2025 14:27:37 UTC] Found 0 items in cart
+[31-Oct-2025 14:30:17 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:30:17 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:30:17 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:30:17 UTC] Found cart with ID: 49
+[31-Oct-2025 14:30:17 UTC] Found 0 items in cart
+[31-Oct-2025 14:30:17 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:30:17 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:30:17 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:30:17 UTC] Found cart with ID: 49
+[31-Oct-2025 14:30:17 UTC] Found 0 items in cart
+[31-Oct-2025 14:48:40 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:48:40 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:48:40 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:48:40 UTC] Found cart with ID: 49
+[31-Oct-2025 14:48:40 UTC] Found 0 items in cart
+[31-Oct-2025 14:48:40 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:48:40 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:48:40 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:48:40 UTC] Found cart with ID: 49
+[31-Oct-2025 14:48:40 UTC] Found 0 items in cart
+[31-Oct-2025 14:48:50 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:48:50 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:48:50 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:48:50 UTC] Found cart with ID: 49
+[31-Oct-2025 14:48:50 UTC] Found 0 items in cart
+[31-Oct-2025 14:48:50 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:48:50 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:48:50 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:48:50 UTC] Found cart with ID: 49
+[31-Oct-2025 14:48:50 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:04 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:04 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:04 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:04 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:04 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:05 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:05 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:05 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:05 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:05 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:14 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:14 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:14 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:14 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:43 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:43 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:43 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:43 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:43 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:43 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:43 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:43 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:43 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:43 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:59 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:59 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:59 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:59 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:59 UTC] Found 0 items in cart
+[31-Oct-2025 14:49:59 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:49:59 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:49:59 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:49:59 UTC] Found cart with ID: 49
+[31-Oct-2025 14:49:59 UTC] Found 0 items in cart
+[31-Oct-2025 14:50:12 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:50:12 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:50:12 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:50:12 UTC] Found cart with ID: 49
+[31-Oct-2025 14:50:12 UTC] Found 0 items in cart
+[31-Oct-2025 14:50:12 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:50:12 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:50:12 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:50:12 UTC] Found cart with ID: 49
+[31-Oct-2025 14:50:12 UTC] Found 0 items in cart
+[31-Oct-2025 14:50:16 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:50:16 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:50:16 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:50:16 UTC] Found cart with ID: 49
+[31-Oct-2025 14:50:16 UTC] Found 0 items in cart
+[31-Oct-2025 14:50:16 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:50:16 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:50:16 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:50:16 UTC] Found cart with ID: 49
+[31-Oct-2025 14:50:16 UTC] Found 0 items in cart
+[31-Oct-2025 14:50:51 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:50:51 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:50:51 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:50:51 UTC] Found cart with ID: 49
+[31-Oct-2025 14:50:51 UTC] Found 0 items in cart
+[31-Oct-2025 14:50:51 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:50:51 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:50:51 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:50:51 UTC] Found cart with ID: 49
+[31-Oct-2025 14:50:51 UTC] Found 0 items in cart
+[31-Oct-2025 14:51:02 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:51:02 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:51:02 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:51:02 UTC] Found cart with ID: 49
+[31-Oct-2025 14:51:02 UTC] Found 0 items in cart
+[31-Oct-2025 14:51:03 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:51:03 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:51:03 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:51:03 UTC] Found cart with ID: 49
+[31-Oct-2025 14:51:03 UTC] Found 0 items in cart
+[31-Oct-2025 14:51:23 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:51:23 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:51:23 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:51:23 UTC] Found cart with ID: 49
+[31-Oct-2025 14:51:23 UTC] Found 0 items in cart
+[31-Oct-2025 14:51:23 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:51:23 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:51:23 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:51:23 UTC] Found cart with ID: 49
+[31-Oct-2025 14:51:23 UTC] Found 0 items in cart
+[31-Oct-2025 14:51:42 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:51:42 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:51:42 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:51:42 UTC] Found cart with ID: 49
+[31-Oct-2025 14:51:42 UTC] Found 0 items in cart
+[31-Oct-2025 14:51:42 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 14:51:42 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 14:51:42 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 14:51:42 UTC] Found cart with ID: 49
+[31-Oct-2025 14:51:42 UTC] Found 0 items in cart
+[31-Oct-2025 15:02:18 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:02:18 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:02:18 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:02:18 UTC] Found cart with ID: 49
+[31-Oct-2025 15:02:18 UTC] Found 0 items in cart
+[31-Oct-2025 15:02:18 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:02:18 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:02:18 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:02:18 UTC] Found cart with ID: 49
+[31-Oct-2025 15:02:18 UTC] Found 0 items in cart
+[31-Oct-2025 15:02:28 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:02:28 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:02:28 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:02:28 UTC] Found cart with ID: 49
+[31-Oct-2025 15:02:28 UTC] Found 0 items in cart
+[31-Oct-2025 15:02:28 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:02:28 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:02:28 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:02:28 UTC] Found cart with ID: 49
+[31-Oct-2025 15:02:28 UTC] Found 0 items in cart
+[31-Oct-2025 15:06:22 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:06:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:06:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:06:22 UTC] Found cart with ID: 49
+[31-Oct-2025 15:06:22 UTC] Found 0 items in cart
+[31-Oct-2025 15:06:22 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:06:22 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:06:22 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:06:22 UTC] Found cart with ID: 49
+[31-Oct-2025 15:06:22 UTC] Found 0 items in cart
+[31-Oct-2025 15:11:20 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:11:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:11:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:11:20 UTC] Found cart with ID: 49
+[31-Oct-2025 15:11:20 UTC] Found 0 items in cart
+[31-Oct-2025 15:11:20 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:11:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:11:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:11:20 UTC] Found cart with ID: 49
+[31-Oct-2025 15:11:20 UTC] Found 0 items in cart
+[31-Oct-2025 15:45:35 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:45:35 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:45:35 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:45:35 UTC] Found cart with ID: 49
+[31-Oct-2025 15:45:35 UTC] Found 0 items in cart
+[31-Oct-2025 15:45:35 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:45:35 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:45:35 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:45:35 UTC] Found cart with ID: 49
+[31-Oct-2025 15:45:35 UTC] Found 0 items in cart
+[31-Oct-2025 15:47:11 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:47:11 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:47:11 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:47:11 UTC] Found cart with ID: 49
+[31-Oct-2025 15:47:11 UTC] Found 0 items in cart
+[31-Oct-2025 15:47:11 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:47:11 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:47:11 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:47:11 UTC] Found cart with ID: 49
+[31-Oct-2025 15:47:11 UTC] Found 0 items in cart
+[31-Oct-2025 15:47:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:47:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:47:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:47:14 UTC] Found cart with ID: 49
+[31-Oct-2025 15:47:14 UTC] Found 0 items in cart
+[31-Oct-2025 15:47:14 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:47:14 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:47:14 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:47:14 UTC] Found cart with ID: 49
+[31-Oct-2025 15:47:14 UTC] Found 0 items in cart
+[31-Oct-2025 15:50:31 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:50:31 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:50:31 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:50:31 UTC] Found cart with ID: 49
+[31-Oct-2025 15:50:31 UTC] Found 0 items in cart
+[31-Oct-2025 15:50:31 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:50:31 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:50:31 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:50:31 UTC] Found cart with ID: 49
+[31-Oct-2025 15:50:31 UTC] Found 0 items in cart
+[31-Oct-2025 15:50:43 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:50:43 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:50:43 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:50:43 UTC] Found cart with ID: 49
+[31-Oct-2025 15:50:43 UTC] Found 0 items in cart
+[31-Oct-2025 15:50:43 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:50:43 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:50:43 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:50:43 UTC] Found cart with ID: 49
+[31-Oct-2025 15:50:43 UTC] Found 0 items in cart
+[31-Oct-2025 15:51:13 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:51:13 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:51:13 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:51:13 UTC] Found cart with ID: 49
+[31-Oct-2025 15:51:13 UTC] Found 0 items in cart
+[31-Oct-2025 15:51:13 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 15:51:13 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 15:51:13 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 15:51:13 UTC] Found cart with ID: 49
+[31-Oct-2025 15:51:13 UTC] Found 0 items in cart
+[31-Oct-2025 16:01:28 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:01:28 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:01:28 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:01:28 UTC] Found cart with ID: 49
+[31-Oct-2025 16:01:28 UTC] Found 0 items in cart
+[31-Oct-2025 16:01:28 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:01:28 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:01:28 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:01:28 UTC] Found cart with ID: 49
+[31-Oct-2025 16:01:28 UTC] Found 0 items in cart
+[31-Oct-2025 16:05:35 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:05:35 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:05:35 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:05:35 UTC] Found cart with ID: 49
+[31-Oct-2025 16:05:35 UTC] Found 0 items in cart
+[31-Oct-2025 16:05:35 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:05:35 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:05:35 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:05:35 UTC] Found cart with ID: 49
+[31-Oct-2025 16:05:35 UTC] Found 0 items in cart
+[31-Oct-2025 16:07:09 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:07:09 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:07:09 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:07:09 UTC] Found cart with ID: 49
+[31-Oct-2025 16:07:09 UTC] Found 0 items in cart
+[31-Oct-2025 16:07:10 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:07:10 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:07:10 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:07:10 UTC] Found cart with ID: 49
+[31-Oct-2025 16:07:10 UTC] Found 0 items in cart
+[31-Oct-2025 16:17:59 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:17:59 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:17:59 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:17:59 UTC] Found cart with ID: 49
+[31-Oct-2025 16:17:59 UTC] Found 0 items in cart
+[31-Oct-2025 16:17:59 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:17:59 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:17:59 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:17:59 UTC] Found cart with ID: 49
+[31-Oct-2025 16:17:59 UTC] Found 0 items in cart
+[31-Oct-2025 16:18:26 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:18:26 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:18:26 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:18:26 UTC] Found cart with ID: 49
+[31-Oct-2025 16:18:26 UTC] Found 0 items in cart
+[31-Oct-2025 16:18:26 UTC] View cart - userId from auth: NULL
+[31-Oct-2025 16:18:26 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[31-Oct-2025 16:18:26 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[31-Oct-2025 16:18:26 UTC] Found cart with ID: 49
+[31-Oct-2025 16:18:26 UTC] Found 0 items in cart
+[01-Nov-2025 13:25:58 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:25:58 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:25:58 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:25:58 UTC] Found cart with ID: 49
+[01-Nov-2025 13:25:58 UTC] Found 0 items in cart
+[01-Nov-2025 13:31:54 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:31:54 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:31:54 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:31:54 UTC] Found cart with ID: 49
+[01-Nov-2025 13:31:54 UTC] Found 0 items in cart
+[01-Nov-2025 13:32:20 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:32:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:32:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:32:20 UTC] Found cart with ID: 49
+[01-Nov-2025 13:32:20 UTC] Found 0 items in cart
+[01-Nov-2025 13:32:23 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:32:23 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:32:23 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:32:23 UTC] Found cart with ID: 49
+[01-Nov-2025 13:32:23 UTC] Found 0 items in cart
+[01-Nov-2025 13:32:30 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:32:30 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:32:30 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:32:30 UTC] Found cart with ID: 49
+[01-Nov-2025 13:32:30 UTC] Found 0 items in cart
+[01-Nov-2025 13:38:39 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:38:39 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:38:39 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:38:39 UTC] Found cart with ID: 49
+[01-Nov-2025 13:38:39 UTC] Found 0 items in cart
+[01-Nov-2025 13:38:39 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:38:39 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:38:39 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:38:39 UTC] Found cart with ID: 49
+[01-Nov-2025 13:38:39 UTC] Found 0 items in cart
+[01-Nov-2025 13:51:53 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:51:53 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:51:53 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:51:53 UTC] Found cart with ID: 49
+[01-Nov-2025 13:51:53 UTC] Found 0 items in cart
+[01-Nov-2025 13:51:55 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:51:55 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:51:55 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:51:55 UTC] Found cart with ID: 49
+[01-Nov-2025 13:51:55 UTC] Found 0 items in cart
+[01-Nov-2025 13:55:32 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:55:32 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:55:32 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:55:32 UTC] Found cart with ID: 49
+[01-Nov-2025 13:55:32 UTC] Found 0 items in cart
+[01-Nov-2025 13:55:32 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:55:32 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:55:32 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:55:32 UTC] Found cart with ID: 49
+[01-Nov-2025 13:55:32 UTC] Found 0 items in cart
+[01-Nov-2025 13:55:52 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:55:52 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:55:52 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:55:52 UTC] Found cart with ID: 49
+[01-Nov-2025 13:55:52 UTC] Found 0 items in cart
+[01-Nov-2025 13:55:52 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 13:55:52 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 13:55:52 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 13:55:52 UTC] Found cart with ID: 49
+[01-Nov-2025 13:55:52 UTC] Found 0 items in cart
+[01-Nov-2025 14:01:18 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 14:01:18 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 14:01:18 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 14:01:18 UTC] Found cart with ID: 49
+[01-Nov-2025 14:01:18 UTC] Found 0 items in cart
+[01-Nov-2025 14:01:18 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 14:01:18 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 14:01:18 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 14:01:18 UTC] Found cart with ID: 49
+[01-Nov-2025 14:01:18 UTC] Found 0 items in cart
+[01-Nov-2025 14:01:20 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 14:01:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 14:01:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 14:01:20 UTC] Found cart with ID: 49
+[01-Nov-2025 14:01:20 UTC] Found 0 items in cart
+[01-Nov-2025 14:01:20 UTC] View cart - userId from auth: NULL
+[01-Nov-2025 14:01:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Nov-2025 14:01:20 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Nov-2025 14:01:20 UTC] Found cart with ID: 49
+[01-Nov-2025 14:01:20 UTC] Found 0 items in cart
+[02-Nov-2025 13:19:32 UTC] View cart - userId from auth: NULL
+[02-Nov-2025 13:19:32 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[02-Nov-2025 13:19:32 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[02-Nov-2025 13:19:32 UTC] Found cart with ID: 49
+[02-Nov-2025 13:19:32 UTC] Found 0 items in cart
+[02-Nov-2025 13:19:32 UTC] View cart - userId from auth: NULL
+[02-Nov-2025 13:19:32 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[02-Nov-2025 13:19:32 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[02-Nov-2025 13:19:32 UTC] Found cart with ID: 49
+[02-Nov-2025 13:19:32 UTC] Found 0 items in cart

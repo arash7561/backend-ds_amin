@@ -1,37 +1,13 @@
 <?php
 
 // CORS headers - Allow from localhost and production domain
-$allowed_origins = [
-    'http://localhost:3000',
-    'http://localhost:3001',
-    'http://localhost:3002',
-    'http://127.0.0.1:3000',
-    'http://127.0.0.1:3001',
-    'http://127.0.0.1:3002',
-    'https://aminindpharm.ir',
-    'http://aminindpharm.ir'
-];
-
-$origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
-if (!$origin && isset($_SERVER['HTTP_REFERER'])) {
-    $origin = preg_replace('#^([^/]+://[^/]+).*$#', '$1', $_SERVER['HTTP_REFERER']);
-}
-
-if (in_array($origin, $allowed_origins) || 
-    (strpos($origin, 'http://localhost') !== false || 
-     strpos($origin, 'http://127.0.0.1') !== false ||
-     strpos($origin, 'https://aminindpharm.ir') !== false ||
-     strpos($origin, 'http://aminindpharm.ir') !== false)) {
-    header('Access-Control-Allow-Origin: ' . $origin);
-}
-
-header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');
-header('Access-Control-Allow-Credentials: true');
 header("Content-Type: application/json; charset=UTF-8");
 
 // Handle preflight OPTIONS request - MUST BE BEFORE ANY OUTPUT
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit();
 }

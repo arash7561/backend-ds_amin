@@ -1,14 +1,27 @@
 <?php
-require_once 'db_connection.php';
+require_once __DIR__ . '/db_connection.php';
 $conn = getPDO();
+
+// CORS headers
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
+header('Content-Type: application/json; charset=UTF-8');
+
+// Handle preflight OPTIONS request
+if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
 
 // نمایش خطاها (فقط برای توسعه)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// بررسی آیا ID محصول خاصی درخواست شده
-$product_id = $_GET['id'] ?? null;
+try {
+    // بررسی آیا ID محصول خاصی درخواست شده
+    $product_id = $_GET['id'] ?? null;
 
 // گرفتن محصولات همراه با نام دسته‌بندی
 $sql = "
@@ -69,5 +82,12 @@ if ($products && count($products) > 0) {
         echo json_encode($products, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 } else {
-    echo json_encode(["debug" => "هیچ محصولی یافت نشد."], JSON_UNESCAPED_UNICODE);
+        echo json_encode(["debug" => "هیچ محصولی یافت نشد."], JSON_UNESCAPED_UNICODE);
+    }
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode([
+        'error' => true,
+        'message' => 'خطا در دریافت محصولات: ' . $e->getMessage()
+    ], JSON_UNESCAPED_UNICODE);
 }

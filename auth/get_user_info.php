@@ -29,24 +29,25 @@ if (in_array($origin, $allowed_origins) ||
      strpos($origin, 'http://127.0.0.1') !== false ||
      strpos($origin, 'https://aminindpharm.ir') !== false ||
      strpos($origin, 'http://aminindpharm.ir') !== false)) {
-    header('Access-Control-Allow-Origin: ' . $origin);
+    // Removed - using * instead
 }
 
-header('Access-Control-Allow-Methods: POST, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type, Authorization, X-CSRF-Token, X-Requested-With');
-header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Content-Type: application/json; charset=UTF-8');
 
 // Clear any output before this point
 ob_end_clean();
 
 // Handle preflight OPTIONS request
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit();
 }
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode(['status' => false, 'message' => 'فقط درخواست POST مجاز است.'], JSON_UNESCAPED_UNICODE);
     exit();
 }
@@ -132,8 +133,8 @@ try {
             $userRole = $user['role'] ?? 'user';
             error_log("User role from database: " . $userRole . " for user: " . $userId);
             
-            // اگر role وجود نداشت، از جدول admin_users چک کنیم (backward compatibility)
-            if (empty($user['role']) && !empty($user['mobile'])) {
+            // اگر role برابر 'user' است یا خالی است، از جدول admin_users چک کنیم (backward compatibility)
+            if (($user['role'] === 'user' || empty($user['role'])) && !empty($user['mobile'])) {
                 $stmt = $conn->prepare("SELECT id FROM admin_users WHERE mobile = ?");
                 $stmt->execute([$user['mobile']]);
                 $isAdminCheck = $stmt->fetch();
