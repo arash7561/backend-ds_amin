@@ -46000,3 +46000,582 @@
 [08-Nov-2025 14:13:57 UTC] Extracted adminId: NULL
 [08-Nov-2025 14:13:57 UTC] User role from database: admin for user: 22
 [08-Nov-2025 14:13:57 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Received JSON: {"register_token":"9bf989617f1460424eb8bd31793d0bfc","otp_code":"71161"}
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Decoded data: stdClass Object
+(
+    [register_token] => 9bf989617f1460424eb8bd31793d0bfc
+    [otp_code] => 71161
+)
+
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Register token: 9bf989617f1460424eb8bd31793d0bfc
+[08-Nov-2025 14:50:56 UTC] verify_login.php - OTP code: 71161
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Database connection test
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Query result: 
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Received JSON: {"register_token":"9bf989617f1460424eb8bd31793d0bfc","otp_code":"711614"}
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Decoded data: stdClass Object
+(
+    [register_token] => 9bf989617f1460424eb8bd31793d0bfc
+    [otp_code] => 711614
+)
+
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Register token: 9bf989617f1460424eb8bd31793d0bfc
+[08-Nov-2025 14:50:56 UTC] verify_login.php - OTP code: 711614
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Database connection test
+[08-Nov-2025 14:50:56 UTC] verify_login.php - Query result: Array
+(
+    [id] => 150
+    [name] => محمد باشتنی
+    [mobile] => 09024579606
+    [otp_code] => 711614
+    [otp_expires_at] => 2025-11-08 14:55:38
+    [register_token] => 9bf989617f1460424eb8bd31793d0bfc
+    [created_at] => 2025-11-08 18:20:38
+    [guest_token] => 
+)
+
+[08-Nov-2025 14:50:56 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:56 UTC] Extracted userId: 22
+[08-Nov-2025 14:50:56 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:50:56 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:50:56 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:50:56 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:50:56 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:56 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:50:56 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:50:56 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:50:56 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:50:56 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:56 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:50:56 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:50:56 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:56 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:56 UTC] Extracted userId: 22
+[08-Nov-2025 14:50:56 UTC] Extracted userId: 22
+[08-Nov-2025 14:50:56 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:50:56 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:50:56 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:50:56 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:50:57 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:50:57 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:50:57 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:57 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:50:57 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:50:57 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:50:57 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:50:57 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:57 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:50:57 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:50:57 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:57 UTC] Extracted userId: 22
+[08-Nov-2025 14:50:57 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:50:57 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:50:57 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:57 UTC] Extracted userId: 22
+[08-Nov-2025 14:50:57 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:50:57 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:50:59 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:50:59 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:50:59 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:59 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:50:59 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:50:59 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:50:59 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:50:59 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:59 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:50:59 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:50:59 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:59 UTC] Extracted userId: 22
+[08-Nov-2025 14:50:59 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:50:59 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:50:59 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:50:59 UTC] Extracted userId: 22
+[08-Nov-2025 14:50:59 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:50:59 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:52:44 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:52:44 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:52:44 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:52:44 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:52:44 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:52:44 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU'
+[08-Nov-2025 14:52:44 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM0NTYsImV4cCI6MTc2MzkwOTQ1NiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.FVuVOX8KD7Guefl5TQ_LrZTsTh88b0msS4c-SJaAXGU
+[08-Nov-2025 14:52:44 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:52:44 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:52:44 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:52:44 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:52:44 UTC] Extracted userId: 22
+[08-Nov-2025 14:52:44 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:52:44 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:52:44 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613456,"exp":1763909456,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:52:44 UTC] Extracted userId: 22
+[08-Nov-2025 14:52:44 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:52:44 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Received JSON: {"register_token":"26eeb4d22418f34649513e0b7e9e0fd0","otp_code":"49569"}
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Decoded data: stdClass Object
+(
+    [register_token] => 26eeb4d22418f34649513e0b7e9e0fd0
+    [otp_code] => 49569
+)
+
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Register token: 26eeb4d22418f34649513e0b7e9e0fd0
+[08-Nov-2025 14:55:42 UTC] verify_login.php - OTP code: 49569
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Database connection test
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Query result: 
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Received JSON: {"register_token":"26eeb4d22418f34649513e0b7e9e0fd0","otp_code":"495692"}
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Decoded data: stdClass Object
+(
+    [register_token] => 26eeb4d22418f34649513e0b7e9e0fd0
+    [otp_code] => 495692
+)
+
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Register token: 26eeb4d22418f34649513e0b7e9e0fd0
+[08-Nov-2025 14:55:42 UTC] verify_login.php - OTP code: 495692
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Database connection test
+[08-Nov-2025 14:55:42 UTC] verify_login.php - Query result: Array
+(
+    [id] => 151
+    [name] => محمد باشتنی
+    [mobile] => 09024579606
+    [otp_code] => 495692
+    [otp_expires_at] => 2025-11-08 15:00:26
+    [register_token] => 26eeb4d22418f34649513e0b7e9e0fd0
+    [created_at] => 2025-11-08 18:25:26
+    [guest_token] => 
+)
+
+[08-Nov-2025 14:55:42 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:42 UTC] Extracted userId: 22
+[08-Nov-2025 14:55:42 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:55:42 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:55:42 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:55:42 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:55:42 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:42 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:55:42 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:55:42 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:55:42 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:55:42 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:42 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:55:42 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:55:42 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:42 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:42 UTC] Extracted userId: 22
+[08-Nov-2025 14:55:42 UTC] Extracted userId: 22
+[08-Nov-2025 14:55:42 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:55:42 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:55:42 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:55:42 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:55:43 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:55:43 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:55:43 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:43 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:55:43 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:55:43 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:55:43 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:55:43 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:43 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:55:43 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:55:43 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:43 UTC] Extracted userId: 22
+[08-Nov-2025 14:55:43 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:43 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:55:43 UTC] Extracted userId: 22
+[08-Nov-2025 14:55:43 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:55:43 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:55:43 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:55:51 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:55:51 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:55:51 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:51 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:55:51 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:55:51 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:55:51 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:55:51 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:51 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:55:51 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:55:51 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:51 UTC] Extracted userId: 22
+[08-Nov-2025 14:55:51 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:55:51 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:55:51 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:55:51 UTC] Extracted userId: 22
+[08-Nov-2025 14:55:51 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:55:51 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:56:44 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:56:44 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:56:44 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:44 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:56:44 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:56:44 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:56:44 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:56:44 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:44 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:56:44 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:56:44 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:44 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:44 UTC] Extracted userId: 22
+[08-Nov-2025 14:56:44 UTC] Extracted userId: 22
+[08-Nov-2025 14:56:44 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:56:44 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:56:44 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:56:44 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:56:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:56:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:56:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:45 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:56:45 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:56:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:56:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:56:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:45 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:56:45 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:56:45 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:45 UTC] Extracted userId: 22
+[08-Nov-2025 14:56:45 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:56:45 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:56:45 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:56:45 UTC] Extracted userId: 22
+[08-Nov-2025 14:56:45 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:56:45 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:57:09 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:57:09 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:57:09 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:57:09 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:57:09 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:57:09 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:57:09 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:57:09 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:57:09 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:57:09 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:57:09 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:57:09 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:57:09 UTC] Extracted userId: 22
+[08-Nov-2025 14:57:09 UTC] Extracted userId: 22
+[08-Nov-2025 14:57:09 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:57:09 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:57:09 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:57:09 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:58:17 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:58:17 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:58:17 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:17 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:58:17 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:58:17 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:58:17 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:58:17 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:17 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:58:17 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:58:17 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:17 UTC] Extracted userId: 22
+[08-Nov-2025 14:58:17 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:58:17 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:58:17 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:17 UTC] Extracted userId: 22
+[08-Nov-2025 14:58:17 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:58:17 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:58:34 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:58:34 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:58:34 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:34 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:58:34 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:58:34 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s'
+[08-Nov-2025 14:58:34 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTM3NDIsImV4cCI6MTc2MzkwOTc0MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.hpoQx8fTXkBRP3oPoB16Eb4rJXYQ92jK0YvOgKVQ08s
+[08-Nov-2025 14:58:34 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:34 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 14:58:34 UTC] Auth check - is_admin: false
+[08-Nov-2025 14:58:34 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:34 UTC] Extracted userId: 22
+[08-Nov-2025 14:58:34 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:58:34 UTC] User role from database: admin for user: 22
+[08-Nov-2025 14:58:34 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762613742,"exp":1763909742,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 14:58:34 UTC] Extracted userId: 22
+[08-Nov-2025 14:58:34 UTC] Extracted adminId: NULL
+[08-Nov-2025 14:58:34 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Received JSON: {"register_token":"2dabea27147c40762241a2e28baca56a","otp_code":"60615"}
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Decoded data: stdClass Object
+(
+    [register_token] => 2dabea27147c40762241a2e28baca56a
+    [otp_code] => 60615
+)
+
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Register token: 2dabea27147c40762241a2e28baca56a
+[08-Nov-2025 15:01:31 UTC] verify_login.php - OTP code: 60615
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Database connection test
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Query result: 
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Received JSON: {"register_token":"2dabea27147c40762241a2e28baca56a","otp_code":"606153"}
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Decoded data: stdClass Object
+(
+    [register_token] => 2dabea27147c40762241a2e28baca56a
+    [otp_code] => 606153
+)
+
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Register token: 2dabea27147c40762241a2e28baca56a
+[08-Nov-2025 15:01:31 UTC] verify_login.php - OTP code: 606153
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Database connection test
+[08-Nov-2025 15:01:31 UTC] verify_login.php - Query result: Array
+(
+    [id] => 152
+    [name] => محمد باشتنی
+    [mobile] => 09024579606
+    [otp_code] => 606153
+    [otp_expires_at] => 2025-11-08 15:06:18
+    [register_token] => 2dabea27147c40762241a2e28baca56a
+    [created_at] => 2025-11-08 18:31:18
+    [guest_token] => 
+)
+
+[08-Nov-2025 15:01:31 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:31 UTC] Extracted userId: 22
+[08-Nov-2025 15:01:31 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:01:31 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:01:31 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:01:31 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:01:31 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:31 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:01:31 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:01:31 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:01:31 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:01:31 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:31 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:01:31 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:01:31 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:31 UTC] Extracted userId: 22
+[08-Nov-2025 15:01:31 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:01:31 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:01:31 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:31 UTC] Extracted userId: 22
+[08-Nov-2025 15:01:31 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:01:31 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:01:32 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:01:32 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:01:32 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:32 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:01:32 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:01:32 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:01:32 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:01:32 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:32 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:01:32 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:01:32 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:32 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:32 UTC] Extracted userId: 22
+[08-Nov-2025 15:01:32 UTC] Extracted userId: 22
+[08-Nov-2025 15:01:32 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:01:32 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:01:32 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:01:32 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:01:34 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:01:34 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:01:34 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:34 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:01:34 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:01:34 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:01:34 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:01:34 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:34 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:01:34 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:01:34 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:34 UTC] Extracted userId: 22
+[08-Nov-2025 15:01:34 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:01:34 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:01:34 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:01:34 UTC] Extracted userId: 22
+[08-Nov-2025 15:01:34 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:01:34 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:05:40 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:05:40 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:05:40 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:40 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:05:40 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:05:40 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:05:40 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:05:40 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:40 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:05:40 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:05:40 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:40 UTC] Extracted userId: 22
+[08-Nov-2025 15:05:40 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:05:40 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:40 UTC] Extracted userId: 22
+[08-Nov-2025 15:05:40 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:05:40 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:05:40 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:05:56 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:05:56 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:05:56 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:56 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:05:56 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:05:56 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:05:56 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:05:56 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:56 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:05:56 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:05:56 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:56 UTC] Extracted userId: 22
+[08-Nov-2025 15:05:56 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:05:56 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:05:56 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:56 UTC] Extracted userId: 22
+[08-Nov-2025 15:05:56 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:05:56 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:05:58 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:05:58 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:05:58 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:58 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:05:58 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:05:58 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:05:58 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:05:58 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:58 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:05:58 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:05:58 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:58 UTC] Extracted userId: 22
+[08-Nov-2025 15:05:58 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:05:58 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:05:58 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:05:58 UTC] Extracted userId: 22
+[08-Nov-2025 15:05:58 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:05:58 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:19:09 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:19:09 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:19:09 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:19:09 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:19:09 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:19:09 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:19:09 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:19:09 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:19:09 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:19:09 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:19:09 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:19:09 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:19:09 UTC] Extracted userId: 22
+[08-Nov-2025 15:19:09 UTC] Extracted userId: 22
+[08-Nov-2025 15:19:09 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:19:09 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:19:09 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:19:09 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:27:38 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:27:38 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:27:38 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:27:38 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:27:38 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:27:38 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:27:38 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:27:38 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:27:38 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:27:38 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:27:38 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:27:38 UTC] Extracted userId: 22
+[08-Nov-2025 15:27:38 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:27:38 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:27:38 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:27:38 UTC] Extracted userId: 22
+[08-Nov-2025 15:27:38 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:27:38 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:32:56 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:32:56 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:32:56 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:32:56 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:32:56 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:32:56 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:32:56 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:32:56 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:32:56 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:32:56 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:32:56 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:32:56 UTC] Extracted userId: 22
+[08-Nov-2025 15:32:56 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:32:56 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:32:56 UTC] Extracted userId: 22
+[08-Nov-2025 15:32:56 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:32:56 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:32:56 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:33:18 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:33:18 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:33:18 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:18 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:33:18 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:33:18 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:33:18 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:33:18 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:18 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:33:18 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:33:18 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:18 UTC] Extracted userId: 22
+[08-Nov-2025 15:33:18 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:33:18 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:33:18 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:18 UTC] Extracted userId: 22
+[08-Nov-2025 15:33:18 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:33:18 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:33:25 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:33:25 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:33:25 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:25 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:33:25 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:33:25 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:33:25 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:33:25 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:25 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:33:25 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:33:26 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:26 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:26 UTC] Extracted userId: 22
+[08-Nov-2025 15:33:26 UTC] Extracted userId: 22
+[08-Nov-2025 15:33:26 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:33:26 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:33:26 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:33:26 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:33:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:33:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:33:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:50 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:33:50 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:33:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:33:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:33:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:50 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:33:50 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:33:50 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:50 UTC] Extracted userId: 22
+[08-Nov-2025 15:33:50 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:33:50 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:33:50 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:33:50 UTC] Extracted userId: 22
+[08-Nov-2025 15:33:50 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:33:50 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:34:18 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:34:18 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:34:18 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:34:18 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:34:18 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:34:18 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:34:18 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:34:18 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:34:18 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:34:18 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:34:18 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:34:18 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:34:18 UTC] Extracted userId: 22
+[08-Nov-2025 15:34:18 UTC] Extracted userId: 22
+[08-Nov-2025 15:34:18 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:34:18 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:34:18 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:34:18 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:40:39 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:40:39 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:40:39 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:40:39 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:40:39 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:40:39 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938'
+[08-Nov-2025 15:40:39 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI2MTQwOTEsImV4cCI6MTc2MzkxMDA5MSwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.kbtroBPcKuKdUMcwCcOts_bUmCZFUd7Gm_vKVTRq938
+[08-Nov-2025 15:40:39 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:40:39 UTC] Auth check - Extracted user_id: 22
+[08-Nov-2025 15:40:39 UTC] Auth check - is_admin: false
+[08-Nov-2025 15:40:39 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:40:39 UTC] Extracted userId: 22
+[08-Nov-2025 15:40:39 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:40:39 UTC] User role from database: admin for user: 22
+[08-Nov-2025 15:40:39 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1762614091,"exp":1763910091,"uid":22,"mobile":"09024579606","role":"user"}
+[08-Nov-2025 15:40:39 UTC] Extracted userId: 22
+[08-Nov-2025 15:40:39 UTC] Extracted adminId: NULL
+[08-Nov-2025 15:40:39 UTC] User role from database: admin for user: 22

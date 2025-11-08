@@ -1,0 +1,12 @@
+[08-Nov-2025 14:58:27 UTC] PHP Warning:  Undefined array key "coupon_id" in C:\wamp64\www\ds_amin\api\admin\coupons.php on line 140
+[08-Nov-2025 14:58:27 UTC] PHP Stack trace:
+[08-Nov-2025 14:58:27 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\admin\coupons.php:0
+[08-Nov-2025 14:58:27 UTC] PHP   2. deleteCoupon($pdo = class PDO {  }) C:\wamp64\www\ds_amin\api\admin\coupons.php:36
+[08-Nov-2025 14:58:32 UTC] PHP Warning:  Undefined array key "coupon_id" in C:\wamp64\www\ds_amin\api\admin\coupons.php on line 140
+[08-Nov-2025 14:58:32 UTC] PHP Stack trace:
+[08-Nov-2025 14:58:32 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\admin\coupons.php:0
+[08-Nov-2025 14:58:32 UTC] PHP   2. deleteCoupon($pdo = class PDO {  }) C:\wamp64\www\ds_amin\api\admin\coupons.php:36
+[08-Nov-2025 14:58:39 UTC] PHP Warning:  Undefined array key "coupon_id" in C:\wamp64\www\ds_amin\api\admin\coupons.php on line 140
+[08-Nov-2025 14:58:39 UTC] PHP Stack trace:
+[08-Nov-2025 14:58:39 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\admin\coupons.php:0
+[08-Nov-2025 14:58:39 UTC] PHP   2. deleteCoupon($pdo = class PDO {  }) C:\wamp64\www\ds_amin\api\admin\coupons.php:36
