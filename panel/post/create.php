@@ -40,6 +40,12 @@ $dimensions_text = htmlspecialchars(trim($data['dimensions'] ?? ''));
 $grade = htmlspecialchars(trim($data['grade'] ?? ''));
 $half_finished = $data['half_finished'] ?? 0;
 $views = $data['views'] ?? 0;
+// فیلدهای اضافی مطابق ستون‌های دیتابیس
+$color = htmlspecialchars(trim($data['color'] ?? ''));
+$material = htmlspecialchars(trim($data['material'] ?? ''));
+$slot_count = $data['slot_count'] ?? null;
+$general_description = htmlspecialchars(trim($data['general_description'] ?? ''));
+$weight = htmlspecialchars(trim($data['weight'] ?? ''));
 
 // دریافت آرایه‌های قطر و طول (اگر موجود نبودند آرایه خالی در نظر گرفته میشن)
 $diameters = isset($data['diameters']) && is_array($data['diameters']) ? $data['diameters'] : [];
@@ -56,15 +62,7 @@ if (isset($data['length']) && !empty($data['length'])) {
 // دریافت قوانین تخفیف تعدادی (اگر موجود نبود آرایه خالی)
 $discount_rules = isset($data['discount_rules']) && is_array($data['discount_rules']) ? $data['discount_rules'] : [];
 
-// پردازش مشخصات سفارشی
-$custom_specifications = [];
-if (isset($data['custom_specifications'])) {
-    if (is_string($data['custom_specifications'])) {
-        $custom_specifications = json_decode($data['custom_specifications'], true) ?? [];
-    } elseif (is_array($data['custom_specifications'])) {
-        $custom_specifications = $data['custom_specifications'];
-    }
-}
+// حذف پشتیبانی از مشخصات سفارشی - از فیلدهای اختصاصی استفاده می‌شود
 
 // پردازش تصاویر آپلود شده
 $uploaded_images = [];
@@ -179,11 +177,34 @@ try {
 
     // درج محصول با تمام فیلدها
     $stmt = $conn->prepare("INSERT INTO products 
-        (title, description, slug, cat_id, width, status, image, stock, price, discount_price, discount_percent, dimensions, size, type, brand, line_count, grade, half_finished, views, custom_specifications) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        (title, description, slug, cat_id, width, status, image, stock, price, discount_price, discount_percent, dimensions, size, type, brand, line_count, grade, half_finished, views, color, material, slot_count, general_description, weight) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $result = $stmt->execute([
-        $title, $description, $slug, $cat_id, $width, $status, $image, $stock, $price, $discount_price, $discount_percent, $dimensions, $size, $type, $brand, $line_count, $grade, $half_finished, $views, json_encode($custom_specifications, JSON_UNESCAPED_UNICODE)
+        $title,
+        $description,
+        $slug,
+        $cat_id,
+        $width,
+        $status,
+        $image,
+        $stock,
+        $price,
+        $discount_price,
+        $discount_percent,
+        $dimensions,
+        $size,
+        $type,
+        $brand,
+        $line_count,
+        $grade,
+        $half_finished,
+        $views,
+        $color,
+        $material,
+        $slot_count,
+        $general_description,
+        $weight
     ]);
 
     if ($result) {

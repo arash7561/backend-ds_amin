@@ -33,6 +33,7 @@ SELECT
     products.image,
     products.price,
     products.discount_price,
+    products.discount_percent,
     products.stock,
     products.cat_id,
     products.views,
@@ -42,6 +43,13 @@ SELECT
     products.grade,
     products.half_finished,
     products.dimensions,
+    products.width,
+    products.size,
+    products.color,
+    products.material,
+    products.slot_count,
+    products.general_description,
+    products.weight,
     products.status,
     categories.name AS category_name
 FROM 

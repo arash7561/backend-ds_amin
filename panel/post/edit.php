@@ -59,6 +59,14 @@ $dimensions_text = trim($data->dimensions ?? '');
 $grade = trim($data->grade ?? '');
 $half_finished = $data->half_finished ?? 0;
 $views = $data->views ?? 0;
+$width = trim($data->width ?? '');
+$discount_percent = $data->discount_percent ?? null;
+// فیلدهای اضافی
+$color = trim($data->color ?? '');
+$material = trim($data->material ?? '');
+$slot_count = $data->slot_count ?? null;
+$general_description = trim($data->general_description ?? '');
+$weight = trim($data->weight ?? '');
 
 // پردازش dimensions - اگر خالی است، JSON خالی بده
 $dimensions = '';
@@ -162,8 +170,59 @@ try {
     }
 
     // آپدیت محصول
-    $stmt = $conn->prepare("UPDATE products SET title = ?, description = ?, slug = ?, cat_id = ?, status = ?, image = ?, stock = ?, price = ?, discount_price = ?, size = ?, type = ?, brand = ?, line_count = ?, dimensions = ?, grade = ?, half_finished = ?, views = ? WHERE id = ?");
-    $result = $stmt->execute([$title, $description, $slug, $cat_id, $status, $image, $stock, $price, $discount_price, $size, $type, $brand, $line_count, $dimensions, $grade, $half_finished, $views, $id]);
+    $stmt = $conn->prepare("UPDATE products SET 
+        title = ?,
+        description = ?,
+        slug = ?,
+        cat_id = ?,
+        status = ?,
+        image = ?,
+        stock = ?,
+        price = ?,
+        discount_price = ?,
+        discount_percent = ?,
+        size = ?,
+        type = ?,
+        brand = ?,
+        line_count = ?,
+        dimensions = ?,
+        grade = ?,
+        half_finished = ?,
+        views = ?,
+        width = ?,
+        color = ?,
+        material = ?,
+        slot_count = ?,
+        general_description = ?,
+        weight = ?
+      WHERE id = ?");
+    $result = $stmt->execute([
+        $title,
+        $description,
+        $slug,
+        $cat_id,
+        $status,
+        $image,
+        $stock,
+        $price,
+        $discount_price,
+        $discount_percent,
+        $size,
+        $type,
+        $brand,
+        $line_count,
+        $dimensions,
+        $grade,
+        $half_finished,
+        $views,
+        $width,
+        $color,
+        $material,
+        $slot_count,
+        $general_description,
+        $weight,
+        $id
+    ]);
 
     if ($result) {
         // اگر تصاویر جدیدی آپلود شده، آن‌ها را به جدول product_images اضافه کن
