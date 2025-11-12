@@ -1474,3 +1474,781 @@
 [08-Nov-2025 15:35:42 UTC] View cart for userId: 22
 [08-Nov-2025 15:35:42 UTC] Found cart with ID: 54
 [08-Nov-2025 15:35:42 UTC] Found 2 items in cart
+[08-Nov-2025 15:47:27 UTC] View cart - userId from auth: 22
+[08-Nov-2025 15:47:27 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[08-Nov-2025 15:47:27 UTC] View cart for userId: 22
+[08-Nov-2025 15:47:27 UTC] Found cart with ID: 54
+[08-Nov-2025 15:47:27 UTC] Found 2 items in cart
+[08-Nov-2025 15:47:27 UTC] View cart - userId from auth: 22
+[08-Nov-2025 15:47:27 UTC] View cart - guestToken from body: NULL
+[08-Nov-2025 15:47:27 UTC] View cart for userId: 22
+[08-Nov-2025 15:47:27 UTC] Found cart with ID: 54
+[08-Nov-2025 15:47:27 UTC] Found 2 items in cart
+[08-Nov-2025 16:02:46 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:02:46 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[08-Nov-2025 16:02:46 UTC] View cart for userId: 22
+[08-Nov-2025 16:02:46 UTC] Found cart with ID: 54
+[08-Nov-2025 16:02:46 UTC] Found 2 items in cart
+[08-Nov-2025 16:02:46 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:02:46 UTC] View cart - guestToken from body: NULL
+[08-Nov-2025 16:02:46 UTC] View cart for userId: 22
+[08-Nov-2025 16:02:46 UTC] Found cart with ID: 54
+[08-Nov-2025 16:02:46 UTC] Found 2 items in cart
+[08-Nov-2025 16:22:57 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:22:57 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[08-Nov-2025 16:22:57 UTC] View cart for userId: 22
+[08-Nov-2025 16:22:57 UTC] Found cart with ID: 54
+[08-Nov-2025 16:22:57 UTC] Found 2 items in cart
+[08-Nov-2025 16:22:57 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:22:57 UTC] View cart - guestToken from body: NULL
+[08-Nov-2025 16:22:57 UTC] View cart for userId: 22
+[08-Nov-2025 16:22:57 UTC] Found cart with ID: 54
+[08-Nov-2025 16:22:57 UTC] Found 2 items in cart
+[08-Nov-2025 16:23:34 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:23:34 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[08-Nov-2025 16:23:34 UTC] View cart for userId: 22
+[08-Nov-2025 16:23:34 UTC] Found cart with ID: 54
+[08-Nov-2025 16:23:34 UTC] Found 2 items in cart
+[08-Nov-2025 16:23:34 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:23:34 UTC] View cart - guestToken from body: NULL
+[08-Nov-2025 16:23:34 UTC] View cart for userId: 22
+[08-Nov-2025 16:23:34 UTC] Found cart with ID: 54
+[08-Nov-2025 16:23:34 UTC] Found 2 items in cart
+[08-Nov-2025 16:26:33 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:26:33 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[08-Nov-2025 16:26:33 UTC] View cart for userId: 22
+[08-Nov-2025 16:26:33 UTC] Found cart with ID: 54
+[08-Nov-2025 16:26:33 UTC] Found 2 items in cart
+[08-Nov-2025 16:26:34 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:26:34 UTC] View cart - guestToken from body: NULL
+[08-Nov-2025 16:26:34 UTC] View cart for userId: 22
+[08-Nov-2025 16:26:34 UTC] Found cart with ID: 54
+[08-Nov-2025 16:26:34 UTC] Found 2 items in cart
+[08-Nov-2025 16:32:00 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:32:00 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[08-Nov-2025 16:32:00 UTC] View cart for userId: 22
+[08-Nov-2025 16:32:00 UTC] Found cart with ID: 54
+[08-Nov-2025 16:32:00 UTC] Found 2 items in cart
+[08-Nov-2025 16:32:00 UTC] View cart - userId from auth: 22
+[08-Nov-2025 16:32:00 UTC] View cart - guestToken from body: NULL
+[08-Nov-2025 16:32:00 UTC] View cart for userId: 22
+[08-Nov-2025 16:32:00 UTC] Found cart with ID: 54
+[08-Nov-2025 16:32:00 UTC] Found 2 items in cart
+[09-Nov-2025 10:43:00 UTC] View cart - userId from auth: 22
+[09-Nov-2025 10:43:00 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[09-Nov-2025 10:43:00 UTC] View cart for userId: 22
+[09-Nov-2025 10:43:00 UTC] Found cart with ID: 54
+[09-Nov-2025 10:43:00 UTC] Found 2 items in cart
+[09-Nov-2025 10:43:00 UTC] View cart - userId from auth: 22
+[09-Nov-2025 10:43:00 UTC] View cart - guestToken from body: NULL
+[09-Nov-2025 10:43:00 UTC] View cart for userId: 22
+[09-Nov-2025 10:43:00 UTC] Found cart with ID: 54
+[09-Nov-2025 10:43:00 UTC] Found 2 items in cart
+[09-Nov-2025 10:46:25 UTC] View cart - userId from auth: 22
+[09-Nov-2025 10:46:25 UTC] View cart - guestToken from body: NULL
+[09-Nov-2025 10:46:25 UTC] View cart for userId: 22
+[09-Nov-2025 10:46:25 UTC] Found cart with ID: 54
+[09-Nov-2025 10:46:25 UTC] Found 2 items in cart
+[09-Nov-2025 10:48:53 UTC] View cart - userId from auth: 22
+[09-Nov-2025 10:48:53 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[09-Nov-2025 10:48:53 UTC] View cart for userId: 22
+[09-Nov-2025 10:48:53 UTC] Found cart with ID: 54
+[09-Nov-2025 10:48:53 UTC] Found 2 items in cart
+[09-Nov-2025 10:48:54 UTC] View cart - userId from auth: 22
+[09-Nov-2025 10:48:54 UTC] View cart - guestToken from body: NULL
+[09-Nov-2025 10:48:54 UTC] View cart for userId: 22
+[09-Nov-2025 10:48:54 UTC] Found cart with ID: 54
+[09-Nov-2025 10:48:54 UTC] Found 2 items in cart
+[09-Nov-2025 13:54:20 UTC] View cart - userId from auth: 22
+[09-Nov-2025 13:54:20 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[09-Nov-2025 13:54:20 UTC] View cart for userId: 22
+[09-Nov-2025 13:54:20 UTC] Found cart with ID: 54
+[09-Nov-2025 13:54:20 UTC] Found 2 items in cart
+[09-Nov-2025 13:54:21 UTC] View cart - userId from auth: 22
+[09-Nov-2025 13:54:21 UTC] View cart - guestToken from body: NULL
+[09-Nov-2025 13:54:21 UTC] View cart for userId: 22
+[09-Nov-2025 13:54:21 UTC] Found cart with ID: 54
+[09-Nov-2025 13:54:21 UTC] Found 2 items in cart
+[09-Nov-2025 14:01:21 UTC] View cart - userId from auth: 22
+[09-Nov-2025 14:01:21 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[09-Nov-2025 14:01:21 UTC] View cart for userId: 22
+[09-Nov-2025 14:01:21 UTC] Found cart with ID: 54
+[09-Nov-2025 14:01:21 UTC] Found 2 items in cart
+[09-Nov-2025 14:01:21 UTC] View cart - userId from auth: 22
+[09-Nov-2025 14:01:21 UTC] View cart - guestToken from body: NULL
+[09-Nov-2025 14:01:21 UTC] View cart for userId: 22
+[09-Nov-2025 14:01:21 UTC] Found cart with ID: 54
+[09-Nov-2025 14:01:21 UTC] Found 2 items in cart
+[09-Nov-2025 14:33:24 UTC] View cart - userId from auth: 22
+[09-Nov-2025 14:33:24 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[09-Nov-2025 14:33:24 UTC] View cart for userId: 22
+[09-Nov-2025 14:33:24 UTC] Found cart with ID: 54
+[09-Nov-2025 14:33:24 UTC] View cart - userId from auth: 22
+[09-Nov-2025 14:33:24 UTC] View cart - guestToken from body: NULL
+[09-Nov-2025 14:33:24 UTC] Found 2 items in cart
+[09-Nov-2025 14:33:24 UTC] View cart for userId: 22
+[09-Nov-2025 14:33:24 UTC] Found cart with ID: 54
+[09-Nov-2025 14:33:24 UTC] Found 2 items in cart
+[10-Nov-2025 13:01:52 UTC] View cart - userId from auth: NULL
+[10-Nov-2025 13:01:52 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[10-Nov-2025 13:01:52 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[10-Nov-2025 13:01:52 UTC] Found cart with ID: 49
+[10-Nov-2025 13:01:52 UTC] Found 0 items in cart
+[10-Nov-2025 13:10:05 UTC] View cart - userId from auth: NULL
+[10-Nov-2025 13:10:05 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[10-Nov-2025 13:10:05 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[10-Nov-2025 13:10:05 UTC] Found cart with ID: 49
+[10-Nov-2025 13:10:05 UTC] Found 0 items in cart
+[10-Nov-2025 13:10:53 UTC] View cart - userId from auth: NULL
+[10-Nov-2025 13:10:53 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[10-Nov-2025 13:10:53 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[10-Nov-2025 13:10:53 UTC] Found cart with ID: 49
+[10-Nov-2025 13:10:53 UTC] Found 0 items in cart
+[10-Nov-2025 13:12:00 UTC] View cart - userId from auth: 22
+[10-Nov-2025 13:12:00 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[10-Nov-2025 13:12:00 UTC] View cart for userId: 22
+[10-Nov-2025 13:12:00 UTC] Found cart with ID: 54
+[10-Nov-2025 13:12:00 UTC] Found 2 items in cart
+[10-Nov-2025 13:12:01 UTC] View cart - userId from auth: 22
+[10-Nov-2025 13:12:01 UTC] View cart - guestToken from body: NULL
+[10-Nov-2025 13:12:01 UTC] View cart for userId: 22
+[10-Nov-2025 13:12:01 UTC] Found cart with ID: 54
+[10-Nov-2025 13:12:01 UTC] Found 2 items in cart
+[10-Nov-2025 13:30:27 UTC] View cart - userId from auth: 22
+[10-Nov-2025 13:30:27 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[10-Nov-2025 13:30:27 UTC] View cart for userId: 22
+[10-Nov-2025 13:30:27 UTC] Found cart with ID: 54
+[10-Nov-2025 13:30:27 UTC] Found 2 items in cart
+[10-Nov-2025 13:30:27 UTC] View cart - userId from auth: 22
+[10-Nov-2025 13:30:27 UTC] View cart - guestToken from body: NULL
+[10-Nov-2025 13:30:27 UTC] View cart for userId: 22
+[10-Nov-2025 13:30:27 UTC] Found cart with ID: 54
+[10-Nov-2025 13:30:27 UTC] Found 2 items in cart
+[10-Nov-2025 13:31:17 UTC] View cart - userId from auth: 22
+[10-Nov-2025 13:31:17 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[10-Nov-2025 13:31:17 UTC] View cart for userId: 22
+[10-Nov-2025 13:31:17 UTC] Found cart with ID: 54
+[10-Nov-2025 13:31:17 UTC] Found 2 items in cart
+[10-Nov-2025 13:31:17 UTC] View cart - userId from auth: 22
+[10-Nov-2025 13:31:17 UTC] View cart - guestToken from body: NULL
+[10-Nov-2025 13:31:17 UTC] View cart for userId: 22
+[10-Nov-2025 13:31:17 UTC] Found cart with ID: 54
+[10-Nov-2025 13:31:17 UTC] Found 2 items in cart
+[11-Nov-2025 13:42:38 UTC] View cart - userId from auth: 22
+[11-Nov-2025 13:42:38 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 13:42:38 UTC] View cart for userId: 22
+[11-Nov-2025 13:42:38 UTC] Found cart with ID: 54
+[11-Nov-2025 13:42:38 UTC] Found 2 items in cart
+[11-Nov-2025 13:42:38 UTC] View cart - userId from auth: 22
+[11-Nov-2025 13:42:38 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 13:42:38 UTC] View cart for userId: 22
+[11-Nov-2025 13:42:38 UTC] Found cart with ID: 54
+[11-Nov-2025 13:42:38 UTC] Found 2 items in cart
+[11-Nov-2025 13:52:37 UTC] View cart - userId from auth: 22
+[11-Nov-2025 13:52:37 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 13:52:37 UTC] View cart for userId: 22
+[11-Nov-2025 13:52:37 UTC] Found cart with ID: 54
+[11-Nov-2025 13:52:37 UTC] Found 2 items in cart
+[11-Nov-2025 13:52:37 UTC] View cart - userId from auth: 22
+[11-Nov-2025 13:52:37 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 13:52:37 UTC] View cart for userId: 22
+[11-Nov-2025 13:52:37 UTC] Found cart with ID: 54
+[11-Nov-2025 13:52:37 UTC] Found 2 items in cart
+[11-Nov-2025 13:56:58 UTC] View cart - userId from auth: 22
+[11-Nov-2025 13:56:58 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 13:56:58 UTC] View cart for userId: 22
+[11-Nov-2025 13:56:58 UTC] Found cart with ID: 54
+[11-Nov-2025 13:56:58 UTC] Found 2 items in cart
+[11-Nov-2025 13:56:58 UTC] View cart - userId from auth: 22
+[11-Nov-2025 13:56:58 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 13:56:58 UTC] View cart for userId: 22
+[11-Nov-2025 13:56:58 UTC] Found cart with ID: 54
+[11-Nov-2025 13:56:58 UTC] Found 2 items in cart
+[11-Nov-2025 14:17:56 UTC] View cart - userId from auth: NULL
+[11-Nov-2025 14:17:56 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 14:17:56 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[11-Nov-2025 14:17:56 UTC] Found cart with ID: 49
+[11-Nov-2025 14:17:56 UTC] Found 0 items in cart
+[11-Nov-2025 14:20:00 UTC] View cart - userId from auth: NULL
+[11-Nov-2025 14:20:00 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 14:20:00 UTC] View cart for guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[11-Nov-2025 14:20:00 UTC] Found cart with ID: 49
+[11-Nov-2025 14:20:00 UTC] Found 0 items in cart
+[11-Nov-2025 14:20:23 UTC] View cart - userId from auth: 22
+[11-Nov-2025 14:20:23 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 14:20:23 UTC] View cart for userId: 22
+[11-Nov-2025 14:20:23 UTC] Found cart with ID: 54
+[11-Nov-2025 14:20:23 UTC] Found 2 items in cart
+[11-Nov-2025 14:20:23 UTC] View cart - userId from auth: 22
+[11-Nov-2025 14:20:23 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 14:20:23 UTC] View cart for userId: 22
+[11-Nov-2025 14:20:23 UTC] Found cart with ID: 54
+[11-Nov-2025 14:20:23 UTC] Found 2 items in cart
+[11-Nov-2025 14:51:11 UTC] View cart - userId from auth: 22
+[11-Nov-2025 14:51:11 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 14:51:11 UTC] View cart for userId: 22
+[11-Nov-2025 14:51:11 UTC] Found cart with ID: 54
+[11-Nov-2025 14:51:11 UTC] Found 2 items in cart
+[11-Nov-2025 14:51:11 UTC] View cart - userId from auth: 22
+[11-Nov-2025 14:51:11 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 14:51:11 UTC] View cart for userId: 22
+[11-Nov-2025 14:51:11 UTC] Found cart with ID: 54
+[11-Nov-2025 14:51:11 UTC] Found 2 items in cart
+[11-Nov-2025 14:58:59 UTC] View cart - userId from auth: 22
+[11-Nov-2025 14:58:59 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 14:58:59 UTC] View cart for userId: 22
+[11-Nov-2025 14:58:59 UTC] Found cart with ID: 54
+[11-Nov-2025 14:58:59 UTC] Found 2 items in cart
+[11-Nov-2025 14:58:59 UTC] View cart - userId from auth: 22
+[11-Nov-2025 14:58:59 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 14:58:59 UTC] View cart for userId: 22
+[11-Nov-2025 14:58:59 UTC] Found cart with ID: 54
+[11-Nov-2025 14:58:59 UTC] Found 2 items in cart
+[11-Nov-2025 15:10:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:10:46 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 15:10:46 UTC] View cart for userId: 22
+[11-Nov-2025 15:10:46 UTC] Found cart with ID: 54
+[11-Nov-2025 15:10:46 UTC] Found 2 items in cart
+[11-Nov-2025 15:10:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:10:46 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 15:10:46 UTC] View cart for userId: 22
+[11-Nov-2025 15:10:46 UTC] Found cart with ID: 54
+[11-Nov-2025 15:10:46 UTC] Found 2 items in cart
+[11-Nov-2025 15:12:17 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:12:17 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 15:12:17 UTC] View cart for userId: 22
+[11-Nov-2025 15:12:17 UTC] Found cart with ID: 54
+[11-Nov-2025 15:12:17 UTC] Found 2 items in cart
+[11-Nov-2025 15:12:17 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:12:17 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 15:12:17 UTC] View cart for userId: 22
+[11-Nov-2025 15:12:17 UTC] Found cart with ID: 54
+[11-Nov-2025 15:12:17 UTC] Found 2 items in cart
+[11-Nov-2025 15:15:27 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:15:27 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 15:15:27 UTC] View cart for userId: 22
+[11-Nov-2025 15:15:27 UTC] Found cart with ID: 54
+[11-Nov-2025 15:15:27 UTC] Found 2 items in cart
+[11-Nov-2025 15:15:27 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:15:27 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 15:15:27 UTC] View cart for userId: 22
+[11-Nov-2025 15:15:27 UTC] Found cart with ID: 54
+[11-Nov-2025 15:15:27 UTC] Found 2 items in cart
+[11-Nov-2025 15:20:02 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:20:02 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 15:20:02 UTC] View cart for userId: 22
+[11-Nov-2025 15:20:02 UTC] Found cart with ID: 54
+[11-Nov-2025 15:20:02 UTC] Found 2 items in cart
+[11-Nov-2025 15:20:02 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:20:02 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 15:20:02 UTC] View cart for userId: 22
+[11-Nov-2025 15:20:02 UTC] Found cart with ID: 54
+[11-Nov-2025 15:20:02 UTC] Found 2 items in cart
+[11-Nov-2025 15:53:13 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:53:13 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 15:53:13 UTC] View cart for userId: 22
+[11-Nov-2025 15:53:13 UTC] Found cart with ID: 54
+[11-Nov-2025 15:53:13 UTC] Found 2 items in cart
+[11-Nov-2025 15:53:13 UTC] View cart - userId from auth: 22
+[11-Nov-2025 15:53:13 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 15:53:13 UTC] View cart for userId: 22
+[11-Nov-2025 15:53:13 UTC] Found cart with ID: 54
+[11-Nov-2025 15:53:13 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:44 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:44 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:44 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:44 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:44 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:44 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:44 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:44 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:44 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:44 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:45 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:45 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:45 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:45 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:45 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:45 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:45 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:45 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:45 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:45 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:45 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:45 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:45 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:45 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:45 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:45 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:45 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:45 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:45 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:45 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:45 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:45 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:45 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:45 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:45 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:45 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:45 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:45 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:45 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:45 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:46 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:46 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:46 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:46 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:46 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:46 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:46 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:46 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:46 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:46 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:46 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:46 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:46 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:46 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:46 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:46 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:46 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:46 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:46 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:46 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:46 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:46 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:46 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:46 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:46 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:46 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:46 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:46 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:46 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:46 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:46 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:46 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:46 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:46 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:46 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:46 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:46 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:46 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:46 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:46 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:46 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:46 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:46 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:46 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:46 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:46 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:46 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:46 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:46 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:46 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:46 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:46 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:46 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:46 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:46 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:47 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:47 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:47 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:47 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:47 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:47 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:47 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:47 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:47 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:47 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:47 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:47 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:47 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:47 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:47 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:47 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:47 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:47 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:47 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:47 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:47 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:47 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:47 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:47 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:47 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:47 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:47 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:47 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:47 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:47 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:47 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:47 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:47 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:47 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:47 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:47 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:47 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:47 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:47 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:47 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:47 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:47 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:47 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:47 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:47 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:47 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:47 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:47 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:47 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:47 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:47 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:47 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:47 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:47 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:47 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:48 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:48 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:48 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:48 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:48 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:48 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:48 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:48 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:48 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:48 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:48 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:48 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:48 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:48 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:48 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:48 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:48 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:48 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:48 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:48 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:48 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:48 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:48 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:48 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:48 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:48 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:48 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:48 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:48 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:48 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:48 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:48 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:48 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:48 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:48 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:48 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:48 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:48 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:48 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:48 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:48 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:48 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:48 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:48 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:48 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:48 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:48 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:48 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:48 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:48 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:48 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:48 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:48 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:48 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:48 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:49 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:49 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:49 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:49 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:49 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:49 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:49 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:49 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:49 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:49 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:49 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:49 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:49 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:49 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:49 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:49 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:49 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:49 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:49 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:49 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:49 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:49 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:49 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:49 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:49 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:49 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:49 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:49 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:49 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:49 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:49 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:49 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:49 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:49 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:49 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:49 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:49 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:49 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:49 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:49 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:49 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:49 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:49 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:49 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:49 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:49 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:49 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:49 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:49 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:49 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:50 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:50 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:50 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:50 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:50 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:50 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:50 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:50 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:50 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:50 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:50 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:50 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:50 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:50 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:50 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:50 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:50 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:50 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:50 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:50 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:50 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:50 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:50 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:50 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:50 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:50 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:50 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:50 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:50 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:50 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:50 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:50 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:50 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:50 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:50 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:50 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:50 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:50 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:50 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:50 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:50 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:50 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:50 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:50 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:50 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:51 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:51 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:51 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:51 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:51 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:51 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:51 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:51 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:51 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:51 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:51 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:51 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:51 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:51 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:51 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:51 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:51 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:51 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:51 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:51 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:51 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:51 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:51 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:51 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:51 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:51 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:51 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:51 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:51 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:51 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:51 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:51 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:51 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:51 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:51 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:51 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:51 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:51 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:51 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:51 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:51 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:51 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:51 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:51 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:51 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:51 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:51 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:51 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:51 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:51 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:51 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:51 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:51 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:51 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:51 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:52 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:52 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:52 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:52 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:52 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:52 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:52 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:52 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:52 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:52 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:52 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:52 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:52 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:52 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:52 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:52 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:52 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:52 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:52 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:52 UTC] Found 2 items in cart
+[11-Nov-2025 16:06:52 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[11-Nov-2025 16:06:52 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[11-Nov-2025 16:06:52 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[11-Nov-2025 16:06:52 UTC] Auth check - Extracted user_id: 22
+[11-Nov-2025 16:06:52 UTC] Auth check - is_admin: false
+[11-Nov-2025 16:06:53 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:06:53 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:06:53 UTC] View cart for userId: 22
+[11-Nov-2025 16:06:53 UTC] Found cart with ID: 54
+[11-Nov-2025 16:06:53 UTC] Found 2 items in cart
+[11-Nov-2025 16:16:06 UTC] UserID: 22
+[11-Nov-2025 16:16:06 UTC] Existing cart found for userId=22, cartId=54
+[11-Nov-2025 16:16:06 UTC] Inserted new cart_item for cartId=54, productId=234
+[11-Nov-2025 16:16:06 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:16:06 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:16:06 UTC] View cart for userId: 22
+[11-Nov-2025 16:16:06 UTC] Found cart with ID: 54
+[11-Nov-2025 16:16:06 UTC] Found 3 items in cart
+[11-Nov-2025 16:37:48 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:37:48 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:37:48 UTC] View cart for userId: 22
+[11-Nov-2025 16:37:48 UTC] Found cart with ID: 54
+[11-Nov-2025 16:37:48 UTC] Found 3 items in cart
+[11-Nov-2025 16:41:49 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:41:49 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[11-Nov-2025 16:41:49 UTC] View cart for userId: 22
+[11-Nov-2025 16:41:49 UTC] Found cart with ID: 54
+[11-Nov-2025 16:41:49 UTC] Found 3 items in cart
+[11-Nov-2025 16:41:49 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:41:49 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:41:49 UTC] View cart for userId: 22
+[11-Nov-2025 16:41:49 UTC] Found cart with ID: 54
+[11-Nov-2025 16:41:49 UTC] Found 3 items in cart
+[11-Nov-2025 16:41:51 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:41:51 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:41:51 UTC] View cart for userId: 22
+[11-Nov-2025 16:41:51 UTC] Found cart with ID: 54
+[11-Nov-2025 16:41:51 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:26 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:26 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:26 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:26 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:26 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:27 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:27 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:27 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:27 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:27 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:28 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:28 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:28 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:28 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:28 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:28 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:28 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:28 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:28 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:28 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:29 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:29 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:29 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:29 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:29 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:31 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:31 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:31 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:31 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:31 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:31 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:31 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:31 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:31 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:31 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:32 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:32 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:32 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:32 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:32 UTC] Found 3 items in cart
+[11-Nov-2025 16:43:33 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:43:33 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:43:33 UTC] View cart for userId: 22
+[11-Nov-2025 16:43:33 UTC] Found cart with ID: 54
+[11-Nov-2025 16:43:33 UTC] Found 3 items in cart
+[11-Nov-2025 16:48:20 UTC] View cart - userId from auth: 22
+[11-Nov-2025 16:48:20 UTC] View cart - guestToken from body: NULL
+[11-Nov-2025 16:48:20 UTC] View cart for userId: 22
+[11-Nov-2025 16:48:20 UTC] Found cart with ID: 54
+[11-Nov-2025 16:48:20 UTC] Found 3 items in cart
