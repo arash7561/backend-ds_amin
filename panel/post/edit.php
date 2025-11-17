@@ -225,21 +225,26 @@ try {
     ]);
 
     if ($result) {
-        // اگر تصاویر جدیدی آپلود شده، آن‌ها را به جدول product_images اضافه کن
+        // اگر تصاویر جدیدی آپلود شده، آن‌ها را به جدول product_images اضافه کن (اگر جدول وجود داشته باشد)
         if (!empty($uploaded_images)) {
-            // حذف تصاویر قدیمی محصول (اختیاری - ممکن است بخواهید آن‌ها را نگه دارید)
-            // $stmt = $conn->prepare("DELETE FROM product_images WHERE product_id = ?");
-            // $stmt->execute([$id]);
-            
-            // اضافه کردن تصاویر جدید
-            $stmtImage = $conn->prepare("INSERT INTO product_images (product_id, image_path, is_primary) VALUES (?, ?, ?)");
-            foreach ($uploaded_images as $index => $imagePath) {
-                $isPrimary = ($index === 0) ? 1 : 0; // اولین تصویر به عنوان تصویر اصلی
-                $stmtImage->execute([
-                    $id,
-                    $imagePath,
-                    $isPrimary
-                ]);
+            try {
+                // حذف تصاویر قدیمی محصول (اختیاری - ممکن است بخواهید آن‌ها را نگه دارید)
+                // $stmt = $conn->prepare("DELETE FROM product_images WHERE product_id = ?");
+                // $stmt->execute([$id]);
+                
+                // اضافه کردن تصاویر جدید
+                $stmtImage = $conn->prepare("INSERT INTO product_images (product_id, image_path, is_primary) VALUES (?, ?, ?)");
+                foreach ($uploaded_images as $index => $imagePath) {
+                    $isPrimary = ($index === 0) ? 1 : 0; // اولین تصویر به عنوان تصویر اصلی
+                    $stmtImage->execute([
+                        $id,
+                        $imagePath,
+                        $isPrimary
+                    ]);
+                }
+            } catch (PDOException $e) {
+                // اگر جدول product_images وجود نداشت، خطا را نادیده بگیر
+                // تصویر اصلی قبلاً در جدول products به‌روزرسانی شده است
             }
         }
         

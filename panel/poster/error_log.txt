@@ -1,0 +1,97 @@
+[13-Nov-2025 13:20:32 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:20:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:20:34 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:20:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:20:38 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:20:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:20:40 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:20:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:21:35 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:21:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:21:40 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:21:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:21:42 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:21:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:22:22 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:22:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 13:23:01 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[13-Nov-2025 13:23:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\panel\poster\show_posters.php(3): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9
+[13-Nov-2025 14:26:18 UTC] === POSTER EDIT DEBUG ===
+[13-Nov-2025 14:26:18 UTC] POST data: Array
+(
+    [title] => داروخانه صنعتی امین
+    [description] => لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+    [button_text] => 
+    [button_link] => 
+    [is_active] => 1
+    [id] => 1
+)
+
+[13-Nov-2025 14:26:18 UTC] FILES data: Array
+(
+)
+
+[13-Nov-2025 14:26:18 UTC] ID: 1
+[13-Nov-2025 14:26:18 UTC] Title: داروخانه صنعتی امین
+[13-Nov-2025 14:26:18 UTC] Description: لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+[13-Nov-2025 14:26:18 UTC] Current Image from POST: NOT SET
+[13-Nov-2025 14:26:18 UTC] Final Image value: 
+[13-Nov-2025 14:26:18 UTC] === END DEBUG ===
+[13-Nov-2025 14:26:18 UTC] Using existing image from database: uploads/posters/poster_6904c52a2e1ef.png
+[13-Nov-2025 14:26:18 UTC] Update SQL: UPDATE posters SET title = ?, description = ?, button_text = ?, button_link = ?, is_active = ?, image = ? WHERE id = ?
+[13-Nov-2025 14:26:18 UTC] Update values: Array
+(
+    [0] => داروخانه صنعتی امین
+    [1] => لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+    [2] => 
+    [3] => 
+    [4] => 1
+    [5] => uploads/posters/poster_6904c52a2e1ef.png
+    [6] => 1
+)
+

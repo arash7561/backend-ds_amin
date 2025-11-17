@@ -1,0 +1,828 @@
+[16-Nov-2025 15:19:17 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:17 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:17 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:17 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:20 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:20 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:20 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:20 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:20 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:20 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:20 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:20 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:20 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:20 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:20 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:20 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:21 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:21 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:21 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:21 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:21 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:21 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:19:21 UTC] PHP Stack trace:
+[16-Nov-2025 15:19:21 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:19:21 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:19:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:26:01 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:26:01 UTC] PHP Stack trace:
+[16-Nov-2025 15:26:01 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:26:01 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:26:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:26:03 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:26:03 UTC] PHP Stack trace:
+[16-Nov-2025 15:26:03 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:26:03 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:26:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:30:48 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:30:48 UTC] PHP Stack trace:
+[16-Nov-2025 15:30:48 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:30:48 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:30:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:21 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:21 UTC] PHP Stack trace:
+[16-Nov-2025 15:40:21 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:40:21 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:40:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:24 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:24 UTC] PHP Stack trace:
+[16-Nov-2025 15:40:24 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:40:24 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:40:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:24 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:24 UTC] PHP Stack trace:
+[16-Nov-2025 15:40:24 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:40:24 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:40:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Stack trace:
+[16-Nov-2025 15:40:25 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:40:25 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:40:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Stack trace:
+[16-Nov-2025 15:40:25 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:40:25 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:40:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Stack trace:
+[16-Nov-2025 15:40:25 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:40:25 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:40:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:40:25 UTC] PHP Stack trace:
+[16-Nov-2025 15:40:25 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:40:25 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:40:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:23 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:23 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:23 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:23 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:27 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:27 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:27 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:27 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:29 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:29 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:29 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:29 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:31 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:31 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:31 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:31 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:33 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:33 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:33 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:33 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:34 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:34 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:34 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:34 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:36 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:36 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:36 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:36 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:38 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:38 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:38 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:38 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:40 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:44:40 UTC] PHP Stack trace:
+[16-Nov-2025 15:44:40 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:44:40 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:44:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:45:02 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:45:02 UTC] PHP Stack trace:
+[16-Nov-2025 15:45:02 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:45:02 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:45:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:51:05 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:51:05 UTC] PHP Stack trace:
+[16-Nov-2025 15:51:05 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:51:05 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:51:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:51:09 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:51:09 UTC] PHP Stack trace:
+[16-Nov-2025 15:51:09 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:51:09 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:51:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:51:20 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:51:20 UTC] PHP Stack trace:
+[16-Nov-2025 15:51:20 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:51:20 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:51:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:53:27 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:53:27 UTC] PHP Stack trace:
+[16-Nov-2025 15:53:27 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:53:27 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:53:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:53:43 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:53:43 UTC] PHP Stack trace:
+[16-Nov-2025 15:53:43 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:53:43 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:53:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:55:12 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:55:12 UTC] PHP Stack trace:
+[16-Nov-2025 15:55:12 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:55:12 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:55:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:55:17 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:55:17 UTC] PHP Stack trace:
+[16-Nov-2025 15:55:17 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:55:17 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:55:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:56:02 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:56:02 UTC] PHP Stack trace:
+[16-Nov-2025 15:56:02 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:56:02 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:56:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:56:06 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:56:06 UTC] PHP Stack trace:
+[16-Nov-2025 15:56:06 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:56:06 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:56:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:57:23 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:57:23 UTC] PHP Stack trace:
+[16-Nov-2025 15:57:23 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:57:23 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:57:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:58:16 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 15:58:16 UTC] PHP Stack trace:
+[16-Nov-2025 15:58:16 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 15:58:16 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 15:58:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:00:48 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:00:48 UTC] PHP Stack trace:
+[16-Nov-2025 16:00:48 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:00:48 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:00:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:03:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:03:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:03:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:03:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:03:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:15 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:15 UTC] PHP Stack trace:
+[16-Nov-2025 16:21:15 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:21:15 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:21:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:18 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:18 UTC] PHP Stack trace:
+[16-Nov-2025 16:21:18 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:21:18 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:21:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:18 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:18 UTC] PHP Stack trace:
+[16-Nov-2025 16:21:18 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:21:18 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:21:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:19 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:19 UTC] PHP Stack trace:
+[16-Nov-2025 16:21:19 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:21:19 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:21:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:19 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:19 UTC] PHP Stack trace:
+[16-Nov-2025 16:21:19 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:21:19 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:21:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:19 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:19 UTC] PHP Stack trace:
+[16-Nov-2025 16:21:19 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:21:19 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:21:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:22 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:21:22 UTC] PHP Stack trace:
+[16-Nov-2025 16:21:22 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:21:22 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:21:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:43 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:43 UTC] PHP Stack trace:
+[16-Nov-2025 16:22:43 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:22:43 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:22:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:49 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:49 UTC] PHP Stack trace:
+[16-Nov-2025 16:22:49 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:22:49 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:22:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:22:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:22:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:22:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:22:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:22:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:22:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:54 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:54 UTC] PHP Stack trace:
+[16-Nov-2025 16:22:54 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:22:54 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:22:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:56 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:56 UTC] PHP Stack trace:
+[16-Nov-2025 16:22:56 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:22:56 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:22:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:58 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:22:58 UTC] PHP Stack trace:
+[16-Nov-2025 16:22:58 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:22:58 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:22:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:32 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:32 UTC] PHP Stack trace:
+[16-Nov-2025 16:26:32 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:26:32 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:26:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:57 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:57 UTC] PHP Stack trace:
+[16-Nov-2025 16:26:57 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:26:57 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:26:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:57 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:57 UTC] PHP Stack trace:
+[16-Nov-2025 16:26:57 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:26:57 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:26:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:57 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:26:57 UTC] PHP Stack trace:
+[16-Nov-2025 16:26:57 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:26:57 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:26:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:08 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:08 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:08 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:08 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:35:14 UTC] PHP Stack trace:
+[16-Nov-2025 16:35:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:35:14 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:35:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:42 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:42 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:42 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:42 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:45 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:45 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:45 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:45 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[16-Nov-2025 16:37:51 UTC] PHP Stack trace:
+[16-Nov-2025 16:37:51 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[16-Nov-2025 16:37:51 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[16-Nov-2025 16:37:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:49 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:49 UTC] PHP Stack trace:
+[17-Nov-2025 11:33:49 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:33:49 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[17-Nov-2025 11:33:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Stack trace:
+[17-Nov-2025 11:33:55 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:33:55 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[17-Nov-2025 11:33:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Stack trace:
+[17-Nov-2025 11:33:55 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:33:55 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[17-Nov-2025 11:33:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Stack trace:
+[17-Nov-2025 11:33:55 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:33:55 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[17-Nov-2025 11:33:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Stack trace:
+[17-Nov-2025 11:33:55 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:33:55 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[17-Nov-2025 11:33:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Stack trace:
+[17-Nov-2025 11:33:55 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:33:55 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[17-Nov-2025 11:33:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:33:55 UTC] PHP Stack trace:
+[17-Nov-2025 11:33:55 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:33:55 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:3
+[17-Nov-2025 11:33:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(3): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:37:13 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:37:13 UTC] PHP Stack trace:
+[17-Nov-2025 11:37:13 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:37:13 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:18
+[17-Nov-2025 11:37:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(18): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:37:23 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:37:23 UTC] PHP Stack trace:
+[17-Nov-2025 11:37:23 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:37:23 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:18
+[17-Nov-2025 11:37:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(18): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:39:49 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:39:49 UTC] PHP Stack trace:
+[17-Nov-2025 11:39:49 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:39:49 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:24
+[17-Nov-2025 11:39:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(24): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:42:01 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:42:01 UTC] PHP Stack trace:
+[17-Nov-2025 11:42:01 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:42:01 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:24
+[17-Nov-2025 11:42:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(24): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:58:30 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:58:30 UTC] PHP Stack trace:
+[17-Nov-2025 11:58:30 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:58:30 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:24
+[17-Nov-2025 11:58:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(24): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:58:34 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 11:58:34 UTC] PHP Stack trace:
+[17-Nov-2025 11:58:34 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 11:58:34 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:24
+[17-Nov-2025 11:58:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(24): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 12:01:26 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 12:01:26 UTC] PHP Stack trace:
+[17-Nov-2025 12:01:26 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 12:01:26 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:24
+[17-Nov-2025 12:01:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(24): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 12:03:45 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 12:03:45 UTC] PHP Stack trace:
+[17-Nov-2025 12:03:45 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 12:03:45 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:24
+[17-Nov-2025 12:03:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(24): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 12:04:30 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2
+[17-Nov-2025 12:04:30 UTC] PHP Stack trace:
+[17-Nov-2025 12:04:30 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:0
+[17-Nov-2025 12:04:30 UTC] PHP   2. require_once() C:\wamp64\www\ds_amin\api\panel\announcement\save.php:24
+[17-Nov-2025 12:04:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\api\panel\admin/../../../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php:2
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\panel\announcement\save.php(24): require_once()
+#1 {main}
+  thrown in C:\wamp64\www\ds_amin\api\panel\admin\middleware.php on line 2

@@ -21,7 +21,7 @@
 
 return [
     'host' => 'localhost', // یا آدرس دیتابیس هاست
-    'dbname' => 'ds_amin', // نام دیتابیس هاست
+    'dbname' => 'aminin_ds_amini', // نام دیتابیس هاست
     'username' => 'root', // نام کاربری دیتابیس هاست
     'password' => '', // رمز عبور دیتابیس هاست
     'charset' => 'utf8mb4',

@@ -222,16 +222,21 @@ try {
             }
         }
 
-        // درج تصاویر اضافی محصول
+        // درج تصاویر اضافی محصول (اگر جدول product_images وجود داشته باشد)
         if (!empty($uploaded_images)) {
-            $stmtImage = $conn->prepare("INSERT INTO product_images (product_id, image_path, is_primary) VALUES (?, ?, ?)");
-            foreach ($uploaded_images as $index => $imagePath) {
-                $isPrimary = ($index === 0) ? 1 : 0; // اولین تصویر به عنوان تصویر اصلی
-                $stmtImage->execute([
-                    $productId,
-                    $imagePath, // path کامل با uploads/products/
-                    $isPrimary
-                ]);
+            try {
+                $stmtImage = $conn->prepare("INSERT INTO product_images (product_id, image_path, is_primary) VALUES (?, ?, ?)");
+                foreach ($uploaded_images as $index => $imagePath) {
+                    $isPrimary = ($index === 0) ? 1 : 0; // اولین تصویر به عنوان تصویر اصلی
+                    $stmtImage->execute([
+                        $productId,
+                        $imagePath, // path کامل با uploads/products/
+                        $isPrimary
+                    ]);
+                }
+            } catch (PDOException $e) {
+                // اگر جدول product_images وجود نداشت، خطا را نادیده بگیر
+                // تصویر اصلی قبلاً در جدول products ذخیره شده است
             }
         }
 

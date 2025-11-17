@@ -74,3 +74,27 @@
 [11-Nov-2025 16:43:34 UTC] Auth check - Extracted user_id: 22
 [11-Nov-2025 16:43:34 UTC] Auth check - is_admin: false
 [11-Nov-2025 16:43:34 UTC] Favorites - UserID: 22
+[12-Nov-2025 13:41:41 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI'
+[12-Nov-2025 13:41:41 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjI4NzA4MjAsImV4cCI6MTc2NDE2NjgyMCwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.vRtgpU7kHKbsgcPYRvoLr3zl5DPiXHRvULNUtVPMqkI
+[12-Nov-2025 13:41:41 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1762870820,"exp":1764166820,"uid":22,"mobile":"09024579606","role":"user"}
+[12-Nov-2025 13:41:41 UTC] Auth check - Extracted user_id: 22
+[12-Nov-2025 13:41:41 UTC] Auth check - is_admin: false
+[12-Nov-2025 13:41:41 UTC] Favorites - UserID: 22
+[17-Nov-2025 14:01:36 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjMzODA2ODIsImV4cCI6MTc2NDY3NjY4MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.jJqVK5hfKm5ySwDHaPoHC_iF0QhQFKXVSUPvbjPiCmk'
+[17-Nov-2025 14:01:36 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjMzODA2ODIsImV4cCI6MTc2NDY3NjY4MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.jJqVK5hfKm5ySwDHaPoHC_iF0QhQFKXVSUPvbjPiCmk
+[17-Nov-2025 14:01:36 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1763380682,"exp":1764676682,"uid":22,"mobile":"09024579606","role":"user"}
+[17-Nov-2025 14:01:36 UTC] Auth check - Extracted user_id: 22
+[17-Nov-2025 14:01:36 UTC] Auth check - is_admin: false
+[17-Nov-2025 14:01:36 UTC] Favorites - UserID: 22
+[17-Nov-2025 14:01:43 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjMzODA2ODIsImV4cCI6MTc2NDY3NjY4MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.jJqVK5hfKm5ySwDHaPoHC_iF0QhQFKXVSUPvbjPiCmk'
+[17-Nov-2025 14:01:43 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjMzODA2ODIsImV4cCI6MTc2NDY3NjY4MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.jJqVK5hfKm5ySwDHaPoHC_iF0QhQFKXVSUPvbjPiCmk
+[17-Nov-2025 14:01:43 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1763380682,"exp":1764676682,"uid":22,"mobile":"09024579606","role":"user"}
+[17-Nov-2025 14:01:43 UTC] Auth check - Extracted user_id: 22
+[17-Nov-2025 14:01:43 UTC] Auth check - is_admin: false
+[17-Nov-2025 14:01:43 UTC] Add Favorite - UserID: 22
+[17-Nov-2025 14:01:44 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjMzODA2ODIsImV4cCI6MTc2NDY3NjY4MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.jJqVK5hfKm5ySwDHaPoHC_iF0QhQFKXVSUPvbjPiCmk'
+[17-Nov-2025 14:01:44 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NjMzODA2ODIsImV4cCI6MTc2NDY3NjY4MiwidWlkIjoyMiwibW9iaWxlIjoiMDkwMjQ1Nzk2MDYiLCJyb2xlIjoidXNlciJ9.jJqVK5hfKm5ySwDHaPoHC_iF0QhQFKXVSUPvbjPiCmk
+[17-Nov-2025 14:01:44 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1763380682,"exp":1764676682,"uid":22,"mobile":"09024579606","role":"user"}
+[17-Nov-2025 14:01:44 UTC] Auth check - Extracted user_id: 22
+[17-Nov-2025 14:01:44 UTC] Auth check - is_admin: false
+[17-Nov-2025 14:01:44 UTC] Remove Favorite - UserID: 22
