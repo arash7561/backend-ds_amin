@@ -27,6 +27,7 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'OPTIONS
 try {
     require_once __DIR__ . '/../db_connection.php';
     require_once __DIR__ . '/../auth/jwt_utils.php';
+    require_once __DIR__ . '/bulk_pricing_helper.php';
     
     $conn = getPDO();
     
@@ -106,6 +107,7 @@ try {
             p.id AS product_id,
             p.title,
             p.price,
+            p.discount_price,
             p.image
         FROM cart_items ci
         JOIN products p ON ci.product_id = p.id
@@ -119,7 +121,38 @@ try {
     // محاسبه مجموع قیمت
     $totalPrice = 0;
     foreach ($items as &$item) {
-        $itemTotal = $item['price'] * $item['quantity'];
+        // تعیین قیمت اصلی و قیمت بعد تخفیف
+        $originalPrice = (float)($item['price'] ?? 0); // قیمت اصلی محصول
+        $quantity = (int)($item['quantity'] ?? 1);
+        
+        // بررسی تخفیف معمولی محصول
+        $discountPriceValue = !empty($item['discount_price']) && (float)$item['discount_price'] > 0 && (float)$item['discount_price'] < $originalPrice 
+            ? (float)$item['discount_price'] 
+            : null;
+        
+        // اعمال قیمت‌گذاری حجمی
+        $bulkPricingInfo = getBulkPricingInfo($conn, $item['product_id'], $quantity, $originalPrice);
+        
+        // اگر قیمت‌گذاری حجمی اعمال شده، از آن استفاده کن
+        // در غیر این صورت از تخفیف معمولی محصول استفاده کن
+        if ($bulkPricingInfo['discount_applied']) {
+            $finalPrice = $bulkPricingInfo['final_price'];
+            $item['bulk_pricing_applied'] = true;
+            $item['bulk_discount_percent'] = $bulkPricingInfo['discount_percent'];
+            $item['bulk_discount_amount'] = $bulkPricingInfo['discount_amount'];
+        } else {
+            // قیمت نهایی برای محاسبه مجموع: اگر تخفیف داریم از تخفیف استفاده می‌کنیم، وگرنه قیمت اصلی
+            $finalPrice = $discountPriceValue ? $discountPriceValue : $originalPrice;
+            $item['bulk_pricing_applied'] = false;
+        }
+        
+        // ذخیره قیمت‌ها در response
+        $item['original_price'] = $originalPrice; // قیمت اصلی (قبل تخفیف)
+        $item['discount_price'] = $discountPriceValue; // قیمت تخفیف خورده معمولی (null اگر تخفیف نداشته باشد)
+        $item['price'] = $originalPrice; // price را همان قیمت اصلی نگه می‌داریم
+        $item['final_price'] = $finalPrice; // قیمت نهایی بعد از اعمال تمام تخفیف‌ها
+        
+        $itemTotal = $finalPrice * $quantity;
         $item['total'] = $itemTotal;
         $totalPrice += $itemTotal;
     }

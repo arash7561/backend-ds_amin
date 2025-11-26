@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 require_once __DIR__ . '/../db_connection.php';
 $conn = getPDO();
 require_once __DIR__ . '/../auth/jwt_utils.php';
+require_once __DIR__ . '/bulk_pricing_helper.php';
 
 // دریافت توکن از هدر Authorization
 $headers = getallheaders();
@@ -60,8 +61,6 @@ if (!isset($conn) || !$conn) {
 
 $data = json_decode(file_get_contents("php://input"), true);
 $guestToken = $data['guest_token'] ?? null;
-
-$userId = $auth['user_id'] ?? null;
 
 if (!$userId && !$guestToken) {
     http_response_code(401);
@@ -126,8 +125,49 @@ if ($userId) {
 $orderId = $conn->lastInsertId();
 
 foreach ($items as $item) {
-    $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity) VALUES (?, ?, ?)");
-    $stmt->execute([$orderId, $item['product_id'], $item['quantity']]);
+    // دریافت اطلاعات محصول برای محاسبه قیمت
+    $stmt = $conn->prepare("SELECT price, discount_price FROM products WHERE id = ?");
+    $stmt->execute([$item['product_id']]);
+    $product = $stmt->fetch();
+    
+    if ($product) {
+        $originalPrice = (float)$product['price'];
+        $quantity = (int)$item['quantity'];
+        
+        // بررسی تخفیف معمولی محصول
+        $discountPriceValue = !empty($product['discount_price']) && (float)$product['discount_price'] > 0 && (float)$product['discount_price'] < $originalPrice 
+            ? (float)$product['discount_price'] 
+            : null;
+        
+        // اعمال قیمت‌گذاری حجمی
+        $bulkPricingInfo = getBulkPricingInfo($conn, $item['product_id'], $quantity, $originalPrice);
+        
+        // تعیین قیمت نهایی
+        if ($bulkPricingInfo['discount_applied']) {
+            $finalPrice = $bulkPricingInfo['final_price'];
+        } else {
+            $finalPrice = $discountPriceValue ? $discountPriceValue : $originalPrice;
+        }
+        
+        // ذخیره در order_items با قیمت نهایی
+        // بررسی وجود فیلد unit_price در جدول order_items
+        $stmt = $conn->prepare("SHOW COLUMNS FROM order_items LIKE 'unit_price'");
+        $stmt->execute();
+        $hasUnitPrice = $stmt->fetch();
+        
+        if ($hasUnitPrice) {
+            $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES (?, ?, ?, ?)");
+            $stmt->execute([$orderId, $item['product_id'], $quantity, $finalPrice]);
+        } else {
+            // اگر فیلد unit_price وجود ندارد، فقط product_id و quantity را ذخیره کن
+            $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity) VALUES (?, ?, ?)");
+            $stmt->execute([$orderId, $item['product_id'], $quantity]);
+        }
+    } else {
+        // اگر محصول پیدا نشد، بدون قیمت ذخیره کن
+        $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity) VALUES (?, ?, ?)");
+        $stmt->execute([$orderId, $item['product_id'], $item['quantity']]);
+    }
 }
 
 $stmt = $conn->prepare("DELETE FROM cart_items WHERE cart_id = ?");
