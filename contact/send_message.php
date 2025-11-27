@@ -45,6 +45,18 @@ if (empty($message)) {
 try {
 
     // ============================
+    //   ذخیره پیام در دیتابیس
+    // ============================
+    $insert = $conn->prepare("
+        INSERT INTO messages (mobile, message, created_at)
+        VALUES (:mobile, :message, NOW())
+    ");
+    $insert->execute([
+        ':mobile'  => $user_mobile,
+        ':message' => $message
+    ]);
+
+    // ============================
     //   دریافت شماره ادمین از DB
     // ============================
     $stmt = $conn->prepare("SELECT mobile FROM admin_users WHERE role_id = '1' LIMIT 1");
@@ -61,7 +73,7 @@ try {
     // ============================
     //   ارسال پیامک با ملی‌پیامک
     // ============================
-    $username = '9128375080';   // از کد خودت برداشتم
+    $username = '9128375080';
     $password = '8T05B';
     $from     = '50002710065080';
 
@@ -79,7 +91,7 @@ try {
 
     echo json_encode([
         'status' => true,
-        'message' => 'پیام شما با موفقیت ارسال شد.'
+        'message' => 'پیام شما با موفقیت ارسال و ذخیره شد.'
     ], JSON_UNESCAPED_UNICODE);
 
 } catch (PDOException $e) {
