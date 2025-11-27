@@ -37,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 require_once __DIR__ . '/../db_connection.php';
 require_once __DIR__ . '/../auth/jwt_utils.php';
+require_once __DIR__ . '/bulk_pricing_helper.php';
 
 // دریافت توکن از هدر Authorization
 $headers = getallheaders();
@@ -53,15 +54,6 @@ if ($authHeader && preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
 
 error_log("UserID: " . var_export($userId, true));
 $conn = getPDO();
-function getDiscountPercentByQuantity($quantity, $rules) {
-    $applicable_discount = 0;
-    foreach ($rules as $rule) {
-        if ($quantity >= $rule['min_quantity'] && $rule['discount_percent'] > $applicable_discount) {
-            $applicable_discount = $rule['discount_percent'];
-        }
-    }
-    return $applicable_discount;
-}
 
 try {
     if (!$conn) {
@@ -207,13 +199,23 @@ try {
         error_log("Inserted new cart_item for cartId={$cartId}, productId={$productId}");
     }
 
-    // دریافت قوانین تخفیف
-    $stmt = $conn->prepare("SELECT min_quantity, discount_percent FROM product_discount_rules WHERE product_id = ? ORDER BY min_quantity ASC");
-    $stmt->execute([$productId]);
-    $discountRules = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    $discountPercent = getDiscountPercentByQuantity($newQuantity, $discountRules);
-    $priceAfterDiscount = $product['price'] - ($product['price'] * $discountPercent / 100);
+    // اعمال قیمت‌گذاری حجمی
+    $originalPrice = (float)$product['price'];
+    $bulkPricingInfo = getBulkPricingInfo($conn, $productId, $newQuantity, $originalPrice);
+    
+    // بررسی تخفیف معمولی محصول
+    $discountPriceValue = !empty($product['discount_price']) && (float)$product['discount_price'] > 0 && (float)$product['discount_price'] < $originalPrice 
+        ? (float)$product['discount_price'] 
+        : null;
+    
+    // تعیین قیمت نهایی
+    if ($bulkPricingInfo['discount_applied']) {
+        $finalPrice = $bulkPricingInfo['final_price'];
+        $discountPercent = $bulkPricingInfo['discount_percent'];
+    } else {
+        $finalPrice = $discountPriceValue ? $discountPriceValue : $originalPrice;
+        $discountPercent = $discountPriceValue ? ((($originalPrice - $discountPriceValue) / $originalPrice) * 100) : 0;
+    }
 
     $response = [
         'success' => true,
@@ -225,9 +227,10 @@ try {
             'quantity' => $newQuantity,
             'selected_diameter' => $selectedDiameter,
             'selected_length' => $selectedLength,
-            'original_price' => $product['price'],
-            'discount_percent' => $discountPercent,
-            'price_after_discount' => round($priceAfterDiscount, 2),
+            'original_price' => $originalPrice,
+            'discount_percent' => round($discountPercent, 2),
+            'price_after_discount' => round($finalPrice, 2),
+            'bulk_pricing_applied' => $bulkPricingInfo['discount_applied'],
         ]
     ];
 
