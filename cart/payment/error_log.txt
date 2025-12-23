@@ -1,0 +1,42 @@
+[22-Dec-2025 13:03:05 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:03:05 UTC] PHP Stack trace:
+[22-Dec-2025 13:03:05 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
+[22-Dec-2025 13:03:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:03:19 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:03:19 UTC] PHP Stack trace:
+[22-Dec-2025 13:03:19 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
+[22-Dec-2025 13:03:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:05:17 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:05:17 UTC] PHP Stack trace:
+[22-Dec-2025 13:05:17 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
+[22-Dec-2025 13:05:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:06:34 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:06:34 UTC] PHP Stack trace:
+[22-Dec-2025 13:06:34 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
+[22-Dec-2025 13:06:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
+[22-Dec-2025 13:16:14 UTC] PHP Warning:  require(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
+[22-Dec-2025 13:16:14 UTC] PHP Stack trace:
+[22-Dec-2025 13:16:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
+[22-Dec-2025 13:16:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:7
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
+[22-Dec-2025 13:28:03 UTC] PHP Warning:  require(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
+[22-Dec-2025 13:28:03 UTC] PHP Stack trace:
+[22-Dec-2025 13:28:03 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
+[22-Dec-2025 13:28:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:7
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
