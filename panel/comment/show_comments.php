@@ -2,8 +2,11 @@
 require_once '../../db_connection.php';
 $pdo = getPDO();
 
-header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Methods: GET");
+// CORS headers
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
+header('Content-Type: application/json; charset=UTF-8');
 
 try {
     $stmt = $pdo->query("SELECT id, content, created_at FROM comments ORDER BY id DESC");
