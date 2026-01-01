@@ -61,6 +61,7 @@ if (!isset($conn) || !$conn) {
 
 $data = json_decode(file_get_contents("php://input"), true);
 $guestToken = $data['guest_token'] ?? null;
+$address = $data['address'] ?? null;
 
 if (!$userId && !$guestToken) {
     http_response_code(401);
@@ -114,12 +115,35 @@ if (empty($items)) {
     exit;
 }
 
-if ($userId) {
-    $stmt = $conn->prepare("INSERT INTO orders (user_id, created_at, status) VALUES (?, NOW(), 'pending')");
-    $stmt->execute([$userId]);
+// بررسی وجود فیلدهای آدرس در جدول orders
+$stmt = $conn->prepare("SHOW COLUMNS FROM orders LIKE 'address'");
+$stmt->execute();
+$hasAddressField = $stmt->fetch();
+
+if ($hasAddressField && $address) {
+    // اگر فیلدهای آدرس وجود دارند، آنها را ذخیره کن
+    $addressText = $address['address'] ?? '';
+    $province = $address['province'] ?? '';
+    $city = $address['city'] ?? '';
+    $postalCode = $address['postal_code'] ?? '';
+    $email = $address['email'] ?? null;
+    
+    if ($userId) {
+        $stmt = $conn->prepare("INSERT INTO orders (user_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+        $stmt->execute([$userId, $addressText, $province, $city, $postalCode, $email]);
+    } else {
+        $stmt = $conn->prepare("INSERT INTO orders (guest_token, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+        $stmt->execute([$guestToken, $addressText, $province, $city, $postalCode, $email]);
+    }
 } else {
-    $stmt = $conn->prepare("INSERT INTO orders (guest_token, created_at, status) VALUES (?, NOW(), 'pending')");
-    $stmt->execute([$guestToken]);
+    // اگر فیلدهای آدرس وجود ندارند، فقط user_id یا guest_token را ذخیره کن
+    if ($userId) {
+        $stmt = $conn->prepare("INSERT INTO orders (user_id, created_at, status) VALUES (?, NOW(), 'pending')");
+        $stmt->execute([$userId]);
+    } else {
+        $stmt = $conn->prepare("INSERT INTO orders (guest_token, created_at, status) VALUES (?, NOW(), 'pending')");
+        $stmt->execute([$guestToken]);
+    }
 }
 
 $orderId = $conn->lastInsertId();
@@ -170,8 +194,9 @@ foreach ($items as $item) {
     }
 }
 
-$stmt = $conn->prepare("DELETE FROM cart_items WHERE cart_id = ?");
-$stmt->execute([$cartId]);
+// نکته: سبد خرید را در اینجا پاک نمی‌کنیم
+// سبد خرید فقط بعد از پرداخت موفق در verify-payment.php پاک می‌شود
+// این کار باعث می‌شود که اگر پرداخت ناموفق باشد، کاربر بتواند دوباره تلاش کند
 
 echo json_encode([
     'success' => true,

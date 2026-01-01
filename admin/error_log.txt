@@ -1,0 +1,16 @@
+[20-Dec-2025 15:42:30 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:30 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9
+[20-Dec-2025 15:42:30 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:30 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9
+[20-Dec-2025 15:42:30 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:30 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9
+[20-Dec-2025 15:42:30 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:30 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9
+[20-Dec-2025 15:42:44 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:44 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9
+[20-Dec-2025 15:42:44 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:44 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:44 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9
+[20-Dec-2025 15:42:44 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9
+[20-Dec-2025 15:42:44 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:44 UTC] Bulk pricing PDO error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' | File: C:\wamp64\www\ds_amin\api\db_connection.php | Line: 9

@@ -170,15 +170,42 @@ try {
         exit();
     }
     
+    // Prepare base response data
+    $responseData = [
+        'id' => (int)($userId ?? $adminId),
+        'name' => $user['name'],
+        'mobile' => $user['mobile'],
+        'role' => $userRole,
+        'created_at' => $user['created_at'] ?? null,
+        'email' => null,
+        'address' => null,
+        'province' => null,
+        'city' => null,
+        'postal_code' => null
+    ];
+
+    // If we have a user id (regular user or admin mapped to users), try to fetch address
+    $currentId = $userId ?? $adminId;
+    if ($currentId) {
+        try {
+            $addrStmt = $conn->prepare("SELECT email, address, province, city, postal_code FROM addresses WHERE user_id = ? LIMIT 1");
+            $addrStmt->execute([$currentId]);
+            $addr = $addrStmt->fetch(PDO::FETCH_ASSOC);
+            if ($addr) {
+                $responseData['email'] = $addr['email'];
+                $responseData['address'] = $addr['address'];
+                $responseData['province'] = $addr['province'];
+                $responseData['city'] = $addr['city'];
+                $responseData['postal_code'] = $addr['postal_code'];
+            }
+        } catch (Exception $e) {
+            error_log('Error fetching address for user '.$currentId.': '.$e->getMessage());
+        }
+    }
+
     echo json_encode([
         'status' => true,
-        'data' => [
-            'id' => (int)($userId ?? $adminId),
-            'name' => $user['name'],
-            'mobile' => $user['mobile'],
-            'role' => $userRole,
-            'created_at' => $user['created_at'] ?? null
-        ]
+        'data' => $responseData
     ], JSON_UNESCAPED_UNICODE);
     
 } catch (Exception $e) {

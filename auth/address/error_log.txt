@@ -1,0 +1,7 @@
+[20-Dec-2025 15:42:10 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'ds_amin' in C:\wamp64\www\ds_amin\api\db_connection.php:9
+Stack trace:
+#0 C:\wamp64\www\ds_amin\api\db_connection.php(9): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\wamp64\www\ds_amin\api\auth\address\add_address.php(8): getPDO()
+#2 {main}
+  thrown in C:\wamp64\www\ds_amin\api\db_connection.php on line 9

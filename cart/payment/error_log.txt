@@ -1,42 +1,158 @@
-[22-Dec-2025 13:03:05 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:03:05 UTC] PHP Stack trace:
-[22-Dec-2025 13:03:05 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
-[22-Dec-2025 13:03:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
-Stack trace:
-#0 {main}
-  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:03:19 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:03:19 UTC] PHP Stack trace:
-[22-Dec-2025 13:03:19 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
-[22-Dec-2025 13:03:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
-Stack trace:
-#0 {main}
-  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:05:17 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:05:17 UTC] PHP Stack trace:
-[22-Dec-2025 13:05:17 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
-[22-Dec-2025 13:05:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
-Stack trace:
-#0 {main}
-  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:06:34 UTC] PHP Warning:  require_once(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:06:34 UTC] PHP Stack trace:
-[22-Dec-2025 13:06:34 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
-[22-Dec-2025 13:06:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:3
-Stack trace:
-#0 {main}
-  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 3
-[22-Dec-2025 13:16:14 UTC] PHP Warning:  require(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
-[22-Dec-2025 13:16:14 UTC] PHP Stack trace:
-[22-Dec-2025 13:16:14 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
-[22-Dec-2025 13:16:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:7
-Stack trace:
-#0 {main}
-  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
-[22-Dec-2025 13:28:03 UTC] PHP Warning:  require(C:\wamp64\www\ds_amin\cart\payment/auth_check.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
-[22-Dec-2025 13:28:03 UTC] PHP Stack trace:
-[22-Dec-2025 13:28:03 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\cart\payment\create-payment.php:0
-[22-Dec-2025 13:28:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\wamp64\www\ds_amin\cart\payment/auth_check.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\cart\payment\create-payment.php:7
-Stack trace:
-#0 {main}
-  thrown in C:\wamp64\www\ds_amin\cart\payment\create-payment.php on line 7
+[01-Jan-2026 08:49:23 UTC] User authenticated via JWT - User ID: 22
+[01-Jan-2026 08:49:23 UTC] Checking order for logged-in user - Order ID: 102, User ID: 22
+[01-Jan-2026 08:49:23 UTC] Order found successfully - Order ID: 102, Status: pending
+[01-Jan-2026 08:49:23 UTC] === ZARINPAL API RESPONSE ===
+[01-Jan-2026 08:49:23 UTC] HTTP Status: 200
+[01-Jan-2026 08:49:23 UTC] Response: {"data":{"authority":"S0000000000000000000000000000005el8w","fee":132463,"fee_type":"Merchant","code":100,"message":"Success"},"errors":[]}
+[01-Jan-2026 08:49:23 UTC] =================================
+[01-Jan-2026 08:49:23 UTC] === AUTHORITY RECEIVED FROM ZARINPAL ===
+[01-Jan-2026 08:49:23 UTC] Authority: S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] Authority type: string
+[01-Jan-2026 08:49:23 UTC] Authority length: 36
+[01-Jan-2026 08:49:23 UTC] Authority trimmed: S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] Full resultData['data']: {"authority":"S0000000000000000000000000000005el8w","fee":132463,"fee_type":"Merchant","code":100,"message":"Success"}
+[01-Jan-2026 08:49:23 UTC] =========================================
+[01-Jan-2026 08:49:23 UTC] === AUTHORITY NORMALIZATION ===
+[01-Jan-2026 08:49:23 UTC] Original authority (raw): 'S0000000000000000000000000000005el8w'
+[01-Jan-2026 08:49:23 UTC] Original authority length: 36
+[01-Jan-2026 08:49:23 UTC] Original authority hex: 5330303030303030303030303030303030303030303030303030303030303035656c3877
+[01-Jan-2026 08:49:23 UTC] After whitespace removal: 'S0000000000000000000000000000005el8w' (length: 36)
+[01-Jan-2026 08:49:23 UTC] After non-printable removal: 'S0000000000000000000000000000005el8w' (length: 36)
+[01-Jan-2026 08:49:23 UTC] After alphanumeric filter: 'S0000000000000000000000000000005el8w' (length: 36)
+[01-Jan-2026 08:49:23 UTC] ✅ Authority from sandbox (full, for DB): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:23 UTC] ✅ Authority for URL (first 36 chars): S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] ✅ Original authority from sandbox: 'S0000000000000000000000000000005el8w'
+[01-Jan-2026 08:49:23 UTC] =========================================
+[01-Jan-2026 08:49:23 UTC] === SAVING AUTHORITY TO DATABASE ===
+[01-Jan-2026 08:49:23 UTC] Authority to save: S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] Authority length: 36
+[01-Jan-2026 08:49:23 UTC] === INSERTING/UPDATING PAYMENT RECORD ===
+[01-Jan-2026 08:49:23 UTC] Order ID: 102
+[01-Jan-2026 08:49:23 UTC] Authority (from sandbox): S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] Authority length: 36
+[01-Jan-2026 08:49:23 UTC] Amount: 441546
+[01-Jan-2026 08:49:23 UTC] User ID: 22
+[01-Jan-2026 08:49:23 UTC] SQL Query: INSERT INTO payments (order_id, user_id, amount, authority, status, created_at) 
+            VALUES (?, ?, ?, ?, 'pending', NOW())
+            ON DUPLICATE KEY UPDATE 
+                order_id = IF(order_id != VALUES(order_id), VALUES(order_id), order_id),
+                user_id = IF(user_id = 0 AND VALUES(user_id) != 0, VALUES(user_id), user_id),
+                amount = IF(amount != VALUES(amount), VALUES(amount), amount),
+                authority = VALUES(authority)
+[01-Jan-2026 08:49:23 UTC] SQL Params: order_id=102, user_id=22, amount=441546, authority=S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] Executing INSERT with params: order_id=102, user_id=22, amount=441546, authority=S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] ✅ New payment record inserted - Payment ID: 46
+[01-Jan-2026 08:49:23 UTC] ✅ Payment verified in database:
+[01-Jan-2026 08:49:23 UTC]   - ID: 46
+[01-Jan-2026 08:49:23 UTC]   - Order ID: 102
+[01-Jan-2026 08:49:23 UTC]   - Authority in DB: S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC]   - Authority original: S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC]   - Match: YES ✅
+[01-Jan-2026 08:49:23 UTC]   - Amount: 441546
+[01-Jan-2026 08:49:23 UTC]   - Status: pending
+[01-Jan-2026 08:49:23 UTC] === FINAL VERIFICATION ===
+[01-Jan-2026 08:49:23 UTC] ✅ FINAL CHECK: Authority found in database!
+[01-Jan-2026 08:49:23 UTC]   - Payment ID: 46
+[01-Jan-2026 08:49:23 UTC]   - Authority: S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC]   - Order ID: 102
+[01-Jan-2026 08:49:23 UTC]   - Status: pending
+[01-Jan-2026 08:49:23 UTC] ==========================
+[01-Jan-2026 08:49:23 UTC] Payment URL created: https://sandbox.zarinpal.com/pg/StartPay/S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] Authority in URL (first 36 chars): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:23 UTC] Authority full (saved in DB): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:23 UTC] === FINAL RESPONSE ===
+[01-Jan-2026 08:49:23 UTC] Payment URL: https://sandbox.zarinpal.com/pg/StartPay/S0000000000000000000000000000005el8w
+[01-Jan-2026 08:49:23 UTC] Authority for URL (first 36 chars): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:23 UTC] Authority full (saved in DB): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:23 UTC] Amount: 441546
+[01-Jan-2026 08:49:27 UTC] Payment callback received - Authority (raw): S0000000000000000000000000000005el8w, Status: OK
+[01-Jan-2026 08:49:27 UTC] All GET params: {"Authority":"S0000000000000000000000000000005el8w","Status":"OK"}
+[01-Jan-2026 08:49:27 UTC] Authority from callback (full): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:27 UTC] Authority from database (full): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:27 UTC] Authority from callback (full): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:27 UTC] ✅ Authority for verify (first 36 chars): S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:27 UTC] ✅ Authority full in DB: S0000000000000000000000000000005el8w (length: 36)
+[01-Jan-2026 08:49:27 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":441546,"authority":"S0000000000000000000000000000005el8w","currency":"IRT"}
+[01-Jan-2026 08:49:27 UTC] Zarinpal verify response - HTTP: 200, Response: {"data":{"wages":null,"code":100,"message":"Paid","card_hash":"0866A6EAEA5CB085E4CF6EF19296BF19647552DD5F96F1E530DB3AE61837EFE7","card_pan":"999999******9999","ref_id":17844401,"fee_type":"Merchant","fee":132463,"shaparak_fee":1200,"order_id":null},"errors":[]}
+[01-Jan-2026 08:49:27 UTC] Zarinpal verify request - Amount: 441546, Currency: IRT, Authority: S0000000000000000000000000000005el8w, Merchant: 586a9cbf-3f4c-4e1f-847f-17ac2ddb8374
+[01-Jan-2026 08:49:27 UTC] PHP Warning:  Undefined variable $authority in C:\wamp64\www\ds_amin\api\cart\payment\verify-payment.php on line 51
+[01-Jan-2026 08:49:27 UTC] PHP Stack trace:
+[01-Jan-2026 08:49:27 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\cart\payment\verify-payment.php:0
+[01-Jan-2026 08:49:27 UTC] PHP   2. redirectToResult($success = TRUE, $orderId = 102, $message = 'پرداخت با موفقیت انجام شد. کد پیگیری: 17844401', 'S0000000000000000000000000000005el8w') C:\wamp64\www\ds_amin\api\cart\payment\verify-payment.php:341
+[01-Jan-2026 08:56:28 UTC] User authenticated via JWT - User ID: 22
+[01-Jan-2026 08:56:28 UTC] Checking order for logged-in user - Order ID: 103, User ID: 22
+[01-Jan-2026 08:56:28 UTC] Order found successfully - Order ID: 103, Status: pending
+[01-Jan-2026 08:56:29 UTC] === ZARINPAL API RESPONSE ===
+[01-Jan-2026 08:56:29 UTC] HTTP Status: 200
+[01-Jan-2026 08:56:29 UTC] Response: {"data":{"authority":"S000000000000000000000000000000vplex","fee":132463,"fee_type":"Merchant","code":100,"message":"Success"},"errors":[]}
+[01-Jan-2026 08:56:29 UTC] =================================
+[01-Jan-2026 08:56:29 UTC] === AUTHORITY RECEIVED FROM ZARINPAL ===
+[01-Jan-2026 08:56:29 UTC] Authority: S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] Authority type: string
+[01-Jan-2026 08:56:29 UTC] Authority length: 36
+[01-Jan-2026 08:56:29 UTC] Authority trimmed: S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] Full resultData['data']: {"authority":"S000000000000000000000000000000vplex","fee":132463,"fee_type":"Merchant","code":100,"message":"Success"}
+[01-Jan-2026 08:56:29 UTC] =========================================
+[01-Jan-2026 08:56:29 UTC] === AUTHORITY NORMALIZATION ===
+[01-Jan-2026 08:56:29 UTC] Original authority (raw): 'S000000000000000000000000000000vplex'
+[01-Jan-2026 08:56:29 UTC] Original authority length: 36
+[01-Jan-2026 08:56:29 UTC] Original authority hex: 5330303030303030303030303030303030303030303030303030303030303076706c6578
+[01-Jan-2026 08:56:29 UTC] After whitespace removal: 'S000000000000000000000000000000vplex' (length: 36)
+[01-Jan-2026 08:56:29 UTC] After non-printable removal: 'S000000000000000000000000000000vplex' (length: 36)
+[01-Jan-2026 08:56:29 UTC] After alphanumeric filter: 'S000000000000000000000000000000vplex' (length: 36)
+[01-Jan-2026 08:56:29 UTC] ✅ Authority from sandbox (full, for DB): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:29 UTC] ✅ Authority for URL (first 36 chars): S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] ✅ Original authority from sandbox: 'S000000000000000000000000000000vplex'
+[01-Jan-2026 08:56:29 UTC] =========================================
+[01-Jan-2026 08:56:29 UTC] === SAVING AUTHORITY TO DATABASE ===
+[01-Jan-2026 08:56:29 UTC] Authority to save: S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] Authority length: 36
+[01-Jan-2026 08:56:29 UTC] === INSERTING/UPDATING PAYMENT RECORD ===
+[01-Jan-2026 08:56:29 UTC] Order ID: 103
+[01-Jan-2026 08:56:29 UTC] Authority (from sandbox): S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] Authority length: 36
+[01-Jan-2026 08:56:29 UTC] Amount: 441546
+[01-Jan-2026 08:56:29 UTC] User ID: 22
+[01-Jan-2026 08:56:29 UTC] SQL Query: INSERT INTO payments (order_id, user_id, amount, authority, status, created_at) 
+            VALUES (?, ?, ?, ?, 'pending', NOW())
+            ON DUPLICATE KEY UPDATE 
+                order_id = IF(order_id != VALUES(order_id), VALUES(order_id), order_id),
+                user_id = IF(user_id = 0 AND VALUES(user_id) != 0, VALUES(user_id), user_id),
+                amount = IF(amount != VALUES(amount), VALUES(amount), amount),
+                authority = VALUES(authority)
+[01-Jan-2026 08:56:29 UTC] SQL Params: order_id=103, user_id=22, amount=441546, authority=S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] Executing INSERT with params: order_id=103, user_id=22, amount=441546, authority=S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] ✅ New payment record inserted - Payment ID: 47
+[01-Jan-2026 08:56:29 UTC] ✅ Payment verified in database:
+[01-Jan-2026 08:56:29 UTC]   - ID: 47
+[01-Jan-2026 08:56:29 UTC]   - Order ID: 103
+[01-Jan-2026 08:56:29 UTC]   - Authority in DB: S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC]   - Authority original: S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC]   - Match: YES ✅
+[01-Jan-2026 08:56:29 UTC]   - Amount: 441546
+[01-Jan-2026 08:56:29 UTC]   - Status: pending
+[01-Jan-2026 08:56:29 UTC] === FINAL VERIFICATION ===
+[01-Jan-2026 08:56:29 UTC] ✅ FINAL CHECK: Authority found in database!
+[01-Jan-2026 08:56:29 UTC]   - Payment ID: 47
+[01-Jan-2026 08:56:29 UTC]   - Authority: S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC]   - Order ID: 103
+[01-Jan-2026 08:56:29 UTC]   - Status: pending
+[01-Jan-2026 08:56:29 UTC] ==========================
+[01-Jan-2026 08:56:29 UTC] Payment URL created: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] Authority in URL (first 36 chars): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:29 UTC] Authority full (saved in DB): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:29 UTC] === FINAL RESPONSE ===
+[01-Jan-2026 08:56:29 UTC] Payment URL: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000vplex
+[01-Jan-2026 08:56:29 UTC] Authority for URL (first 36 chars): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:29 UTC] Authority full (saved in DB): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:29 UTC] Amount: 441546
+[01-Jan-2026 08:56:33 UTC] Payment callback received - Authority (raw): S000000000000000000000000000000vplex, Status: OK
+[01-Jan-2026 08:56:33 UTC] All GET params: {"Authority":"S000000000000000000000000000000vplex","Status":"OK"}
+[01-Jan-2026 08:56:33 UTC] Authority from callback (full): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:33 UTC] Authority from database (full): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:33 UTC] Authority from callback (full): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:33 UTC] ✅ Authority for verify (first 36 chars): S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:33 UTC] ✅ Authority full in DB: S000000000000000000000000000000vplex (length: 36)
+[01-Jan-2026 08:56:33 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":441546,"authority":"S000000000000000000000000000000vplex","currency":"IRT"}
+[01-Jan-2026 08:56:33 UTC] Zarinpal verify response - HTTP: 200, Response: {"data":{"wages":null,"code":100,"message":"Paid","card_hash":"0866A6EAEA5CB085E4CF6EF19296BF19647552DD5F96F1E530DB3AE61837EFE7","card_pan":"999999******9999","ref_id":17845201,"fee_type":"Merchant","fee":132463,"shaparak_fee":1200,"order_id":null},"errors":[]}
+[01-Jan-2026 08:56:33 UTC] Zarinpal verify request - Amount: 441546, Currency: IRT, Authority: S000000000000000000000000000000vplex, Merchant: 586a9cbf-3f4c-4e1f-847f-17ac2ddb8374

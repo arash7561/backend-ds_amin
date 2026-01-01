@@ -1,0 +1,3 @@
+[20-Dec-2025 15:42:29 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:34 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
+[20-Dec-2025 15:42:44 UTC] Database connection error: SQLSTATE[HY000] [1049] Unknown database 'ds_amin'
