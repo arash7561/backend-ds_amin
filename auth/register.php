@@ -24,6 +24,7 @@ $data = json_decode($json);
 $name   = trim($data->username ?? '');
 $mobile = trim($data->mobile ?? '');
 $guest_token = trim($data->guest_token ?? '');
+$invite_code = trim($data->invite_code ?? ''); // دریافت کد دعوت
 $response = [];
 
 // بررسی اولیه
@@ -46,6 +47,21 @@ try {
         exit;
     }
 
+    // بررسی کد دعوت (اگر ارسال شده باشد)
+    $inviter_id = null;
+    if (!empty($invite_code)) {
+        $stmt = $conn->prepare("SELECT id FROM users WHERE invite_code = ?");
+        $stmt->execute([strtoupper($invite_code)]);
+        $inviter = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if (!$inviter) {
+            echo json_encode(['status' => false, 'message' => 'کد دعوت نامعتبر است.'], JSON_UNESCAPED_UNICODE);
+            exit;
+        }
+        
+        $inviter_id = $inviter['id'];
+    }
+
     // حذف OTP قبلی برای این شماره (اگر وجود دارد)
     $conn->prepare("DELETE FROM otp_requests WHERE mobile = ?")->execute([$mobile]);
 
@@ -54,9 +70,31 @@ try {
     $otp_expires_at = date('Y-m-d H:i:s', strtotime('+5 minutes'));
     $register_token = bin2hex(random_bytes(32));
 
-    // درج اطلاعات در جدول موقت otp_requests
+    // درج اطلاعات در جدول موقت otp_requests (بدون invite_code چون ستون وجود ندارد)
     $stmt = $conn->prepare("INSERT INTO otp_requests (name, mobile, otp_code, otp_expires_at, register_token, guest_token) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->execute([$name, $mobile, $otp_code, $otp_expires_at, $register_token, $guest_token]);
+    
+    // ذخیره کد دعوت در یک جدول جداگانه (اگر کد دعوت وجود دارد)
+    if (!empty($invite_code) && $inviter_id) {
+        try {
+            // تلاش برای ایجاد جدول اگر وجود ندارد
+            $conn->exec("CREATE TABLE IF NOT EXISTS invite_registrations (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                register_token VARCHAR(64) NOT NULL UNIQUE,
+                invite_code VARCHAR(10) NOT NULL,
+                inviter_id INT NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                INDEX idx_register_token (register_token)
+            )");
+            
+            // ذخیره کد دعوت
+            $stmt = $conn->prepare("INSERT INTO invite_registrations (register_token, invite_code, inviter_id) VALUES (?, ?, ?)");
+            $stmt->execute([$register_token, strtoupper($invite_code), $inviter_id]);
+        } catch (PDOException $e) {
+            // اگر خطا رخ داد، فقط لاگ می‌کنیم و ادامه می‌دهیم
+            error_log("Error storing invite code: " . $e->getMessage());
+        }
+    }
 
     // ✅ ارسال پیامک با ملی پیامک
     $username = '9128375080'; // نام کاربری پنل ملی پیامک

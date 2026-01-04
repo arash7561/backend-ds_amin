@@ -11,16 +11,17 @@ $allowed_origins = [
     'http://aminindpharm.ir'
 ];
 
-$origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (!$origin && isset($_SERVER['HTTP_REFERER'])) {
     $origin = preg_replace('#^([^/]+://[^/]+).*$#', '$1', $_SERVER['HTTP_REFERER']);
 }
 
-if (in_array($origin, $allowed_origins) || 
-    (strpos($origin, 'http://localhost') !== false || 
-     strpos($origin, 'http://127.0.0.1') !== false ||
-     strpos($origin, 'https://aminindpharm.ir') !== false ||
-     strpos($origin, 'http://aminindpharm.ir') !== false)) {
+if (
+    in_array($origin, $allowed_origins) ||
+    strpos($origin, 'localhost') !== false ||
+    strpos($origin, '127.0.0.1') !== false ||
+    strpos($origin, 'aminindpharm.ir') !== false
+) {
     header('Access-Control-Allow-Origin: ' . $origin);
 }
 
@@ -29,18 +30,18 @@ header('Access-Control-Allow-Headers: Content-Type, Authorization');
 header('Access-Control-Allow-Credentials: true');
 header('Content-Type: application/json; charset=UTF-8');
 
-// Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
-    exit();
+    exit;
 }
 
 require_once __DIR__ . '/../db_connection.php';
-$conn = getPDO();
 require_once __DIR__ . '/../auth/jwt_utils.php';
 require_once __DIR__ . '/bulk_pricing_helper.php';
 
-// دریافت توکن از هدر Authorization
+$conn = getPDO();
+
+// ================= JWT =================
 $headers = getallheaders();
 $authHeader = $headers['Authorization'] ?? '';
 $userId = null;
@@ -53,22 +54,37 @@ if ($authHeader && preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
     }
 }
 
-if (!isset($conn) || !$conn) {
-    http_response_code(500);
-    echo json_encode(['error' => 'خطای اتصال به پایگاه داده']);
-    exit;
-}
-
 $data = json_decode(file_get_contents("php://input"), true);
 $guestToken = $data['guest_token'] ?? null;
+
 $address = $data['address'] ?? null;
 
+$shippingId = isset($data['shipping_id']) ? (int)$data['shipping_id'] : null;
+
+
+// ================= VALIDATION =================
 if (!$userId && !$guestToken) {
     http_response_code(401);
-    echo json_encode(['error' => 'برای ثبت سفارش باید وارد شوید یا guest_token داشته باشید.']);
+    echo json_encode(['error' => 'برای ثبت سفارش باید وارد شوید یا guest_token داشته باشید.'], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
+if (!$shippingId) {
+    http_response_code(400);
+    echo json_encode(['error' => 'نحوه ارسال انتخاب نشده است'], JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+// بررسی صحت روش ارسال
+$stmt = $conn->prepare("SELECT id FROM shippings WHERE id = ?");
+$stmt->execute([$shippingId]);
+if (!$stmt->fetch()) {
+    http_response_code(400);
+    echo json_encode(['error' => 'نحوه ارسال نامعتبر است'], JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+// ================= CART =================
 if ($userId) {
     $stmt = $conn->prepare("SELECT id FROM carts WHERE user_id = ?");
     $stmt->execute([$userId]);
@@ -88,20 +104,14 @@ if (empty($cart) && $guestToken) {
         $cartId = $guestCart['id'];
     } else {
         http_response_code(404);
-        echo json_encode(['error' => 'سبد خرید یافت نشد']);
+        echo json_encode(['error' => 'سبد خرید یافت نشد'], JSON_UNESCAPED_UNICODE);
         exit;
     }
 } elseif (!empty($cart)) {
     $cartId = $cart['id'];
 } else {
     http_response_code(404);
-    echo json_encode(['error' => 'سبد خرید یافت نشد']);
-    exit;
-}
-
-if (empty($cartId)) {
-    http_response_code(404);
-    echo json_encode(['error' => 'سبد خرید یافت نشد']);
+    echo json_encode(['error' => 'سبد خرید یافت نشد'], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
@@ -111,17 +121,19 @@ $items = $stmt->fetchAll();
 
 if (empty($items)) {
     http_response_code(400);
-    echo json_encode(['error' => 'سبد خرید خالی است']);
+    echo json_encode(['error' => 'سبد خرید خالی است'], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
+
+// ================= CREATE ORDER =================
 // بررسی وجود فیلدهای آدرس در جدول orders
 $stmt = $conn->prepare("SHOW COLUMNS FROM orders LIKE 'address'");
 $stmt->execute();
 $hasAddressField = $stmt->fetch();
 
 if ($hasAddressField && $address) {
-    // اگر فیلدهای آدرس وجود دارند، آنها را ذخیره کن
+    // اگر فیلدهای آدرس وجود دارند، آنها را همراه با shipping_id ذخیره کن
     $addressText = $address['address'] ?? '';
     $province = $address['province'] ?? '';
     $city = $address['city'] ?? '';
@@ -129,69 +141,48 @@ if ($hasAddressField && $address) {
     $email = $address['email'] ?? null;
     
     if ($userId) {
-        $stmt = $conn->prepare("INSERT INTO orders (user_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, NOW(), 'pending')");
-        $stmt->execute([$userId, $addressText, $province, $city, $postalCode, $email]);
+        $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+        $stmt->execute([$userId, $shippingId, $addressText, $province, $city, $postalCode, $email]);
     } else {
-        $stmt = $conn->prepare("INSERT INTO orders (guest_token, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, NOW(), 'pending')");
-        $stmt->execute([$guestToken, $addressText, $province, $city, $postalCode, $email]);
+        $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+        $stmt->execute([$guestToken, $shippingId, $addressText, $province, $city, $postalCode, $email]);
     }
 } else {
-    // اگر فیلدهای آدرس وجود ندارند، فقط user_id یا guest_token را ذخیره کن
+    // اگر فیلدهای آدرس وجود ندارند، فقط shipping_id را ذخیره کن
     if ($userId) {
-        $stmt = $conn->prepare("INSERT INTO orders (user_id, created_at, status) VALUES (?, NOW(), 'pending')");
-        $stmt->execute([$userId]);
+        $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
+        $stmt->execute([$userId, $shippingId]);
     } else {
-        $stmt = $conn->prepare("INSERT INTO orders (guest_token, created_at, status) VALUES (?, NOW(), 'pending')");
-        $stmt->execute([$guestToken]);
+        $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
+        $stmt->execute([$guestToken, $shippingId]);
     }
 }
 
 $orderId = $conn->lastInsertId();
 
+// ================= ORDER ITEMS =================
 foreach ($items as $item) {
-    // دریافت اطلاعات محصول برای محاسبه قیمت
     $stmt = $conn->prepare("SELECT price, discount_price FROM products WHERE id = ?");
     $stmt->execute([$item['product_id']]);
     $product = $stmt->fetch();
-    
+
+    $quantity = (int)$item['quantity'];
+    $finalPrice = 0;
+
     if ($product) {
         $originalPrice = (float)$product['price'];
-        $quantity = (int)$item['quantity'];
-        
-        // بررسی تخفیف معمولی محصول
-        $discountPriceValue = !empty($product['discount_price']) && (float)$product['discount_price'] > 0 && (float)$product['discount_price'] < $originalPrice 
-            ? (float)$product['discount_price'] 
+        $discountPrice = (!empty($product['discount_price']) && $product['discount_price'] < $originalPrice)
+            ? (float)$product['discount_price']
             : null;
-        
-        // اعمال قیمت‌گذاری حجمی
-        $bulkPricingInfo = getBulkPricingInfo($conn, $item['product_id'], $quantity, $originalPrice);
-        
-        // تعیین قیمت نهایی
-        if ($bulkPricingInfo['discount_applied']) {
-            $finalPrice = $bulkPricingInfo['final_price'];
-        } else {
-            $finalPrice = $discountPriceValue ? $discountPriceValue : $originalPrice;
-        }
-        
-        // ذخیره در order_items با قیمت نهایی
-        // بررسی وجود فیلد unit_price در جدول order_items
-        $stmt = $conn->prepare("SHOW COLUMNS FROM order_items LIKE 'unit_price'");
-        $stmt->execute();
-        $hasUnitPrice = $stmt->fetch();
-        
-        if ($hasUnitPrice) {
-            $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES (?, ?, ?, ?)");
-            $stmt->execute([$orderId, $item['product_id'], $quantity, $finalPrice]);
-        } else {
-            // اگر فیلد unit_price وجود ندارد، فقط product_id و quantity را ذخیره کن
-            $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity) VALUES (?, ?, ?)");
-            $stmt->execute([$orderId, $item['product_id'], $quantity]);
-        }
-    } else {
-        // اگر محصول پیدا نشد، بدون قیمت ذخیره کن
-        $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity) VALUES (?, ?, ?)");
-        $stmt->execute([$orderId, $item['product_id'], $item['quantity']]);
+
+        $bulkPricing = getBulkPricingInfo($conn, $item['product_id'], $quantity, $originalPrice);
+        $finalPrice = $bulkPricing['discount_applied']
+            ? $bulkPricing['final_price']
+            : ($discountPrice ?? $originalPrice);
     }
+
+    $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES (?, ?, ?, ?)");
+    $stmt->execute([$orderId, $item['product_id'], $quantity, $finalPrice]);
 }
 
 // نکته: سبد خرید را در اینجا پاک نمی‌کنیم

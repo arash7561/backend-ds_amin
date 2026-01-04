@@ -100,6 +100,7 @@ try {
     $mobile = $request['mobile'];
     $name = $request['name'];
     $guestToken = $request['guest_token'] ?? null;
+    $register_token = $request['register_token'];
 
     // چک کردن وجود کاربر با همین شماره
     $stmt = $conn->prepare("SELECT id FROM users WHERE mobile = ?");
@@ -111,13 +112,52 @@ try {
         exit;
     }
 
-    // ثبت نهایی کاربر جدید
-    $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, created_at) VALUES (?, ?, 1, NOW())");
-    $stmt->execute([$name, $mobile]);
+    // بررسی و اعتبارسنجی کد دعوت از جدول invite_registrations (اگر وجود دارد)
+    $invited_by = null;
+    try {
+        $stmt = $conn->prepare("SELECT invite_code, inviter_id FROM invite_registrations WHERE register_token = ?");
+        $stmt->execute([$register_token]);
+        $invite_registration = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if ($invite_registration) {
+            // بررسی مجدد اعتبار کد دعوت
+            $stmt = $conn->prepare("SELECT id FROM users WHERE invite_code = ? AND id = ?");
+            $stmt->execute([$invite_registration['invite_code'], $invite_registration['inviter_id']]);
+            $inviter = $stmt->fetch(PDO::FETCH_ASSOC);
+            
+            if ($inviter) {
+                $invited_by = $inviter['id'];
+            } else {
+                // اگر کد دعوت نامعتبر بود، خطا برمی‌گردانیم
+                echo json_encode(['status' => false, 'message' => 'کد دعوت نامعتبر است.'], JSON_UNESCAPED_UNICODE);
+                exit;
+            }
+        }
+    } catch (PDOException $e) {
+        // اگر جدول invite_registrations وجود ندارد، بدون کد دعوت ادامه می‌دهیم
+        error_log("Error checking invite registration: " . $e->getMessage());
+    }
+
+    // ثبت نهایی کاربر جدید (با یا بدون کد دعوت)
+    // اگر فیلد invited_by در جدول users وجود دارد، از آن استفاده می‌کنیم
+    // در غیر این صورت، می‌توانیم از یک فیلد JSON یا جداول مرتبط استفاده کنیم
+    if ($invited_by) {
+        // اگر ستون invited_by وجود دارد
+        $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, invited_by, created_at) VALUES (?, ?, 1, ?, NOW())");
+        $stmt->execute([$name, $mobile, $invited_by]);
+    } else {
+        // ثبت بدون کد دعوت
+        $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, created_at) VALUES (?, ?, 1, NOW())");
+        $stmt->execute([$name, $mobile]);
+    }
     $message = 'ثبت نام با موفقیت انجام شد.';
 
     // گرفتن user_id جدید
     $userId = $conn->lastInsertId();
+
+    // پاکسازی رکورد دعوت موقت
+    $stmt = $conn->prepare("DELETE FROM invite_registrations WHERE register_token = ?");
+    $stmt->execute([$register_token]);
 
     // ✅ انتقال سبد مهمان (اگر وجود دارد)
     if (!empty($guestToken)) {

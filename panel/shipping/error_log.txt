@@ -1,0 +1,21 @@
+[31-Dec-2025 20:32:50 UTC] PHP Warning:  require_once(../db_connection.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\panel\shipping\add.php on line 2
+[31-Dec-2025 20:32:50 UTC] PHP Stack trace:
+[31-Dec-2025 20:32:50 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\panel\shipping\add.php:0
+[31-Dec-2025 20:32:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../db_connection.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\panel\shipping\add.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\panel\shipping\add.php on line 2
+[31-Dec-2025 20:33:07 UTC] PHP Warning:  require_once(../db_connection.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\panel\shipping\add.php on line 2
+[31-Dec-2025 20:33:07 UTC] PHP Stack trace:
+[31-Dec-2025 20:33:07 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\panel\shipping\add.php:0
+[31-Dec-2025 20:33:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../db_connection.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\panel\shipping\add.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\panel\shipping\add.php on line 2
+[31-Dec-2025 20:38:03 UTC] PHP Warning:  require_once(../db_connection.php): Failed to open stream: No such file or directory in C:\wamp64\www\ds_amin\panel\shipping\add.php on line 2
+[31-Dec-2025 20:38:03 UTC] PHP Stack trace:
+[31-Dec-2025 20:38:03 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\panel\shipping\add.php:0
+[31-Dec-2025 20:38:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../db_connection.php' (include_path='.;C:\php\pear') in C:\wamp64\www\ds_amin\panel\shipping\add.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\ds_amin\panel\shipping\add.php on line 2
