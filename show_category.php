@@ -1,4 +1,13 @@
 <?php
+// CORS headers - باید قبل از هر خروجی باشند
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, Cache-Control');
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
+    exit;
+}
+
 require_once 'db_connection.php';
 $conn = getPDO();
 

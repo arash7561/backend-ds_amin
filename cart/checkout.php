@@ -1,4 +1,9 @@
 <?php
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+
 // CORS headers - Allow from localhost and production domain
 $allowed_origins = [
     'http://localhost:3000',
@@ -26,7 +31,7 @@ if (
 }
 
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type, Authorization');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, Cache-Control, X-CSRF-Token, X-Requested-With');
 header('Access-Control-Allow-Credentials: true');
 header('Content-Type: application/json; charset=UTF-8');
 
@@ -35,11 +40,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
-require_once __DIR__ . '/../db_connection.php';
-require_once __DIR__ . '/../auth/jwt_utils.php';
-require_once __DIR__ . '/bulk_pricing_helper.php';
+try {
+    require_once __DIR__ . '/../db_connection.php';
+    require_once __DIR__ . '/../auth/jwt_utils.php';
+    require_once __DIR__ . '/bulk_pricing_helper.php';
 
-$conn = getPDO();
+    $conn = getPDO();
+    if (!$conn) {
+        throw new Exception('خطا در اتصال به پایگاه داده');
+    }
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode([
+        'error' => 'خطا در بارگذاری فایل‌های مورد نیاز: ' . $e->getMessage()
+    ], JSON_UNESCAPED_UNICODE);
+    error_log('Checkout error: ' . $e->getMessage());
+    exit;
+}
 
 // ================= JWT =================
 $headers = getallheaders();
@@ -127,70 +144,97 @@ if (empty($items)) {
 
 
 // ================= CREATE ORDER =================
-// بررسی وجود فیلدهای آدرس در جدول orders
-$stmt = $conn->prepare("SHOW COLUMNS FROM orders LIKE 'address'");
-$stmt->execute();
-$hasAddressField = $stmt->fetch();
+try {
+    // بررسی وجود فیلدهای آدرس در جدول orders
+    $stmt = $conn->prepare("SHOW COLUMNS FROM orders LIKE 'address'");
+    $stmt->execute();
+    $hasAddressField = $stmt->fetch();
 
-if ($hasAddressField && $address) {
-    // اگر فیلدهای آدرس وجود دارند، آنها را همراه با shipping_id ذخیره کن
-    $addressText = $address['address'] ?? '';
-    $province = $address['province'] ?? '';
-    $city = $address['city'] ?? '';
-    $postalCode = $address['postal_code'] ?? '';
-    $email = $address['email'] ?? null;
+    if ($hasAddressField && $address) {
+        // اگر فیلدهای آدرس وجود دارند، آنها را همراه با shipping_id ذخیره کن
+        $addressText = $address['address'] ?? '';
+        $province = $address['province'] ?? '';
+        $city = $address['city'] ?? '';
+        $postalCode = $address['postal_code'] ?? '';
+        $email = $address['email'] ?? null;
+        
+        if ($userId) {
+            $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+            $stmt->execute([$userId, $shippingId, $addressText, $province, $city, $postalCode, $email]);
+        } else {
+            $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+            $stmt->execute([$guestToken, $shippingId, $addressText, $province, $city, $postalCode, $email]);
+        }
+    } else {
+        // اگر فیلدهای آدرس وجود ندارند، فقط shipping_id را ذخیره کن
+        if ($userId) {
+            $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
+            $stmt->execute([$userId, $shippingId]);
+        } else {
+            $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
+            $stmt->execute([$guestToken, $shippingId]);
+        }
+    }
+
+    $orderId = $conn->lastInsertId();
     
-    if ($userId) {
-        $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
-        $stmt->execute([$userId, $shippingId, $addressText, $province, $city, $postalCode, $email]);
-    } else {
-        $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
-        $stmt->execute([$guestToken, $shippingId, $addressText, $province, $city, $postalCode, $email]);
+    if (!$orderId) {
+        throw new Exception('خطا در ایجاد سفارش - order_id دریافت نشد');
     }
-} else {
-    // اگر فیلدهای آدرس وجود ندارند، فقط shipping_id را ذخیره کن
-    if ($userId) {
-        $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
-        $stmt->execute([$userId, $shippingId]);
-    } else {
-        $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
-        $stmt->execute([$guestToken, $shippingId]);
+} catch (PDOException $e) {
+    http_response_code(500);
+    $errorMsg = 'خطا در ایجاد سفارش: ' . $e->getMessage();
+    error_log('Checkout PDO error: ' . $e->getMessage());
+    error_log('Checkout PDO error code: ' . $e->getCode());
+    error_log('Checkout PDO error info: ' . json_encode($e->errorInfo ?? []));
+    
+    // بررسی خطای خاص: اگر فیلد shipping_id وجود ندارد
+    if (strpos($e->getMessage(), 'shipping_id') !== false || strpos($e->getMessage(), "Unknown column 'shipping_id'") !== false) {
+        $errorMsg = 'خطا: فیلد shipping_id در جدول orders وجود ندارد. لطفاً جدول را به‌روزرسانی کنید.';
     }
+    
+    echo json_encode(['error' => $errorMsg], JSON_UNESCAPED_UNICODE);
+    exit;
+} catch (Exception $e) {
+    http_response_code(500);
+    error_log('Checkout error: ' . $e->getMessage());
+    echo json_encode(['error' => 'خطا در ایجاد سفارش: ' . $e->getMessage()], JSON_UNESCAPED_UNICODE);
+    exit;
 }
-
-$orderId = $conn->lastInsertId();
 
 // ================= ORDER ITEMS =================
-foreach ($items as $item) {
-    $stmt = $conn->prepare("SELECT price, discount_price FROM products WHERE id = ?");
-    $stmt->execute([$item['product_id']]);
-    $product = $stmt->fetch();
-
-    $quantity = (int)$item['quantity'];
-    $finalPrice = 0;
-
-    if ($product) {
-        $originalPrice = (float)$product['price'];
-        $discountPrice = (!empty($product['discount_price']) && $product['discount_price'] < $originalPrice)
-            ? (float)$product['discount_price']
-            : null;
-
-        $bulkPricing = getBulkPricingInfo($conn, $item['product_id'], $quantity, $originalPrice);
-        $finalPrice = $bulkPricing['discount_applied']
-            ? $bulkPricing['final_price']
-            : ($discountPrice ?? $originalPrice);
+try {
+    foreach ($items as $item) {
+        $quantity = (int)$item['quantity'];
+        
+        // فقط order_id, product_id و quantity را ذخیره می‌کنیم
+        // قیمت از جدول products در زمان نیاز خوانده می‌شود
+        $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity) VALUES (?, ?, ?)");
+        $stmt->execute([$orderId, $item['product_id'], $quantity]);
     }
 
-    $stmt = $conn->prepare("INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$orderId, $item['product_id'], $quantity, $finalPrice]);
+    // نکته: سبد خرید را در اینجا پاک نمی‌کنیم
+    // سبد خرید فقط بعد از پرداخت موفق در verify-payment.php پاک می‌شود
+    // این کار باعث می‌شود که اگر پرداخت ناموفق باشد، کاربر بتواند دوباره تلاش کند
+
+    echo json_encode([
+        'success' => true,
+        'message' => 'سفارش با موفقیت ثبت شد',
+        'order_id' => $orderId
+    ], JSON_UNESCAPED_UNICODE);
+} catch (PDOException $e) {
+    http_response_code(500);
+    error_log('Checkout order_items error: ' . $e->getMessage());
+    error_log('Checkout order_items error code: ' . $e->getCode());
+    echo json_encode([
+        'error' => 'خطا در ثبت آیتم‌های سفارش: ' . $e->getMessage()
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+} catch (Exception $e) {
+    http_response_code(500);
+    error_log('Checkout order_items error: ' . $e->getMessage());
+    echo json_encode([
+        'error' => 'خطا در ثبت آیتم‌های سفارش: ' . $e->getMessage()
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
 }
-
-// نکته: سبد خرید را در اینجا پاک نمی‌کنیم
-// سبد خرید فقط بعد از پرداخت موفق در verify-payment.php پاک می‌شود
-// این کار باعث می‌شود که اگر پرداخت ناموفق باشد، کاربر بتواند دوباره تلاش کند
-
-echo json_encode([
-    'success' => true,
-    'message' => 'سفارش با موفقیت ثبت شد',
-    'order_id' => $orderId
-], JSON_UNESCAPED_UNICODE);

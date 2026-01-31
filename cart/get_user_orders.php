@@ -1,10 +1,14 @@
 <?php
 /**
- * پنل مدیریت سفارش‌ها
- * لیست و جزئیات سفارش‌ها برای پنل ادمین
+ * دریافت لیست سفارش‌های کاربر
+ * این API فقط سفارش‌های کاربر لاگین شده را برمی‌گرداند
  */
 
-require_once __DIR__ . '/../../db_connection.php';
+require_once __DIR__ . '/../db_connection.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
 // CORS headers
 header('Access-Control-Allow-Origin: *');
@@ -18,16 +22,73 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
-/**
- * دریافت جزئیات کامل یک سفارش
- */
-function getOrderDetailsForAdmin($orderId, $conn = null) {
-    if ($conn === null) {
-        $conn = getPDO();
-    }
+if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
+    http_response_code(405);
+    echo json_encode([
+        'status' => false,
+        'message' => 'فقط درخواست GET مجاز است'
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+}
 
+try {
+    $conn = getPDO();
+    
+    // دریافت توکن از header
+    if (function_exists('getallheaders')) {
+        $headers = getallheaders();
+    } else {
+        // Fallback for servers that don't support getallheaders()
+        $headers = [];
+        foreach ($_SERVER as $key => $value) {
+            if (strpos($key, 'HTTP_') === 0) {
+                $header = str_replace(' ', '-', ucwords(str_replace('_', ' ', strtolower(substr($key, 5)))));
+                $headers[$header] = $value;
+            }
+        }
+    }
+    $authHeader = $headers['Authorization'] ?? '';
+    
+    if (!$authHeader || !preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
+        http_response_code(401);
+        echo json_encode([
+            'status' => false,
+            'message' => 'توکن احراز هویت الزامی است'
+        ], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+    
+    $token = $matches[1];
+    $secret_key = 'your-secret-key';
+    
+    // اعتبارسنجی توکن
     try {
-        // دریافت اطلاعات اصلی سفارش
+        $decoded = JWT::decode($token, new Key($secret_key, 'HS256'));
+        $decoded_array = (array)$decoded;
+        $userId = $decoded_array['uid'] ?? null;
+        
+        if (!$userId) {
+            http_response_code(401);
+            echo json_encode([
+                'status' => false,
+                'message' => 'شناسه کاربر یافت نشد'
+            ], JSON_UNESCAPED_UNICODE);
+            exit;
+        }
+    } catch (Exception $e) {
+        http_response_code(401);
+        echo json_encode([
+            'status' => false,
+            'message' => 'توکن نامعتبر است: ' . $e->getMessage()
+        ], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+    
+    // بررسی اینکه آیا درخواست برای یک سفارش خاص است یا لیست همه
+    $orderId = isset($_GET['id']) ? (int)$_GET['id'] : null;
+    
+    if ($orderId) {
+        // دریافت جزئیات یک سفارش خاص
         $stmt = $conn->prepare("
             SELECT 
                 o.id AS order_id,
@@ -35,8 +96,6 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
                 o.status,
                 o.user_id,
                 o.guest_token,
-                u.name AS user_name,
-                u.mobile AS user_mobile,
                 a.address,
                 a.province,
                 a.city,
@@ -44,20 +103,24 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
                 s.title AS shipping_method,
                 s.id AS shipping_id
             FROM orders o
-            LEFT JOIN users u ON u.id = o.user_id
             LEFT JOIN addresses a ON a.user_id = o.user_id
             LEFT JOIN shippings s ON s.id = o.shipping_id
-            WHERE o.id = ?
+            WHERE o.id = ? AND o.user_id = ?
             ORDER BY a.id DESC
             LIMIT 1
         ");
-        $stmt->execute([$orderId]);
+        $stmt->execute([$orderId, $userId]);
         $order = $stmt->fetch(PDO::FETCH_ASSOC);
-
+        
         if (!$order) {
-            return null;
+            http_response_code(404);
+            echo json_encode([
+                'status' => false,
+                'message' => 'سفارش یافت نشد'
+            ], JSON_UNESCAPED_UNICODE);
+            exit;
         }
-
+        
         // دریافت مبلغ کل از payments (اولویت اول)
         $totalPrice = 0;
         $stmt = $conn->prepare("SELECT amount, status AS payment_status, ref_id FROM payments WHERE order_id = ? ORDER BY id DESC LIMIT 1");
@@ -94,7 +157,7 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
         }
         
         $order['total_price'] = $totalPrice;
-
+        
         // دریافت محصولات سفارش با مشخصات کامل
         $stmt = $conn->prepare("
             SELECT 
@@ -119,7 +182,7 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
                 p.width,
                 p.half_finished,
                 c.name AS category_name,
-                COALESCE( p.discount_price, p.price) AS unit_price
+                COALESCE(p.discount_price, p.price) AS unit_price
             FROM order_items oi
             LEFT JOIN products p ON p.id = oi.product_id
             LEFT JOIN categories c ON c.id = p.cat_id
@@ -128,7 +191,7 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
         ");
         $stmt->execute([$orderId]);
         $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+        
         // محاسبه قیمت نهایی هر آیتم
         foreach ($items as &$item) {
             $item['item_total'] = (float)$item['unit_price'] * (int)$item['quantity'];
@@ -139,61 +202,55 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
             $item['unit_price'] = (float)$item['unit_price'];
         }
         unset($item);
-
+        
         $order['items'] = $items;
         $order['items_count'] = count($items);
-
-        return $order;
-    } catch (PDOException $e) {
-        error_log("خطا در دریافت جزئیات سفارش #$orderId: " . $e->getMessage());
-        return null;
-    }
-}
-
-/**
- * دریافت لیست همه سفارش‌ها
- */
-function getAllOrdersForAdmin($conn = null, $limit = 100, $offset = 0) {
-    if ($conn === null) {
-        $conn = getPDO();
-    }
-
-    try {
-        // دریافت لیست سفارش‌ها
+        $order['order_id'] = (int)$order['order_id'];
+        
+        echo json_encode([
+            'status' => true,
+            'data' => $order
+        ], JSON_UNESCAPED_UNICODE);
+        
+    } else {
+        // دریافت لیست همه سفارش‌های کاربر
+        $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 100;
+        $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+        
         $stmt = $conn->prepare("
             SELECT DISTINCT
                 o.id AS order_id,
                 o.created_at,
                 o.status,
                 o.user_id,
-                u.name AS user_name,
-                u.mobile AS user_mobile,
                 a.province,
                 a.city,
                 s.title AS shipping_method
             FROM orders o
-            LEFT JOIN users u ON u.id = o.user_id
             LEFT JOIN addresses a ON a.user_id = o.user_id
             LEFT JOIN shippings s ON s.id = o.shipping_id
+            WHERE o.user_id = ?
             ORDER BY o.id DESC
             LIMIT ? OFFSET ?
         ");
-        $stmt->execute([$limit, $offset]);
+        $stmt->execute([$userId, $limit, $offset]);
         $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+        
         // برای هر سفارش، مبلغ کل و تعداد آیتم‌ها را اضافه می‌کنیم
         foreach ($orders as &$order) {
             $orderId = $order['order_id'];
             
-            // دریافت مبلغ از payments
-            $stmt = $conn->prepare("SELECT amount FROM payments WHERE order_id = ? ORDER BY id DESC LIMIT 1");
+            // دریافت مبلغ و وضعیت پرداخت از payments
+            $stmt = $conn->prepare("SELECT amount, status AS payment_status FROM payments WHERE order_id = ? ORDER BY id DESC LIMIT 1");
             $stmt->execute([$orderId]);
             $payment = $stmt->fetch(PDO::FETCH_ASSOC);
             
             if ($payment && !empty($payment['amount'])) {
                 $order['total_price'] = (float)$payment['amount'];
+                $order['payment_status'] = $payment['payment_status'];
             } else {
-                $order['total_price'] = 0; // اگر payment نبود، مبلغ را 0 می‌گذاریم
+                $order['total_price'] = 0;
+                $order['payment_status'] = null;
             }
             
             // شمارش آیتم‌ها
@@ -203,59 +260,12 @@ function getAllOrdersForAdmin($conn = null, $limit = 100, $offset = 0) {
             $order['items_count'] = (int)$count['items_count'];
             
             $order['order_id'] = (int)$order['order_id'];
-            $order['user_id'] = $order['user_id'] ? (int)$order['user_id'] : null;
         }
         unset($order);
-
-        return $orders;
-    } catch (PDOException $e) {
-        error_log("خطا در دریافت لیست سفارش‌ها: " . $e->getMessage());
-        return [];
-    }
-}
-
-// ==================== ENDPOINT HANDLING ====================
-
-if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
-    http_response_code(405);
-    echo json_encode([
-        'status' => false,
-        'message' => 'فقط درخواست GET مجاز است'
-    ], JSON_UNESCAPED_UNICODE);
-    exit;
-}
-
-try {
-    $conn = getPDO();
-    
-    // بررسی اینکه آیا درخواست برای یک سفارش خاص است یا لیست همه
-    $orderId = isset($_GET['id']) ? (int)$_GET['id'] : null;
-    
-    if ($orderId) {
-        // دریافت جزئیات یک سفارش خاص
-        $order = getOrderDetailsForAdmin($orderId, $conn);
         
-        if ($order) {
-            echo json_encode([
-                'status' => true,
-                'data' => $order
-            ], JSON_UNESCAPED_UNICODE);
-        } else {
-            http_response_code(404);
-            echo json_encode([
-                'status' => false,
-                'message' => 'سفارش یافت نشد'
-            ], JSON_UNESCAPED_UNICODE);
-        }
-    } else {
-        // دریافت لیست همه سفارش‌ها
-        $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 100;
-        $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
-        
-        $orders = getAllOrdersForAdmin($conn, $limit, $offset);
-        
-        // تعداد کل سفارش‌ها برای pagination
-        $stmt = $conn->query("SELECT COUNT(*) as total FROM orders");
+        // تعداد کل سفارش‌های کاربر برای pagination
+        $stmt = $conn->prepare("SELECT COUNT(*) as total FROM orders WHERE user_id = ?");
+        $stmt->execute([$userId]);
         $totalCount = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
         
         echo json_encode([
@@ -266,7 +276,7 @@ try {
             'offset' => $offset
         ], JSON_UNESCAPED_UNICODE);
     }
-
+    
 } catch (PDOException $e) {
     http_response_code(500);
     echo json_encode([
@@ -280,3 +290,5 @@ try {
         'message' => 'خطای سرور: ' . $e->getMessage()
     ], JSON_UNESCAPED_UNICODE);
 }
+?>
+
