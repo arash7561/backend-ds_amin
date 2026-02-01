@@ -173,3 +173,414 @@
 [31-Jan-2026 14:47:41 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":45546,"authority":"S000000000000000000000000000000yx2xm","currency":"IRT"}
 [31-Jan-2026 14:47:42 UTC] Zarinpal verify response - HTTP: 200, Response: {"data":{"wages":null,"code":100,"message":"Paid","card_hash":"0866A6EAEA5CB085E4CF6EF19296BF19647552DD5F96F1E530DB3AE61837EFE7","card_pan":"999999******9999","ref_id":20139701,"fee_type":"Merchant","fee":13663,"shaparak_fee":1200,"order_id":null},"errors":[]}
 [31-Jan-2026 14:47:42 UTC] Zarinpal verify request - Amount: 45546, Currency: IRT, Authority: S000000000000000000000000000000yx2xm, Merchant: 586a9cbf-3f4c-4e1f-847f-17ac2ddb8374
+[31-Jan-2026 16:10:24 UTC] User authenticated via JWT - User ID: 3
+[31-Jan-2026 16:10:24 UTC] Checking order for logged-in user - Order ID: 22, User ID: 3
+[31-Jan-2026 16:10:24 UTC] Order found successfully - Order ID: 22, Status: pending
+[31-Jan-2026 16:11:16 UTC] User authenticated via JWT - User ID: 3
+[31-Jan-2026 16:11:16 UTC] Checking order for logged-in user - Order ID: 23, User ID: 3
+[31-Jan-2026 16:11:16 UTC] Order found successfully - Order ID: 23, Status: pending
+[31-Jan-2026 16:11:32 UTC] === ZARINPAL API RESPONSE ===
+[31-Jan-2026 16:11:32 UTC] HTTP Status: 504
+[31-Jan-2026 16:11:32 UTC] Response: null
+[31-Jan-2026 16:11:32 UTC] =================================
+[31-Jan-2026 16:11:34 UTC] User authenticated via JWT - User ID: 3
+[31-Jan-2026 16:11:34 UTC] Checking order for logged-in user - Order ID: 24, User ID: 3
+[31-Jan-2026 16:11:34 UTC] Order found successfully - Order ID: 24, Status: pending
+[31-Jan-2026 16:11:51 UTC] === ZARINPAL API RESPONSE ===
+[31-Jan-2026 16:11:51 UTC] HTTP Status: 504
+[31-Jan-2026 16:11:51 UTC] Response: null
+[31-Jan-2026 16:11:51 UTC] =================================
+[31-Jan-2026 16:11:55 UTC] User authenticated via JWT - User ID: 3
+[31-Jan-2026 16:11:55 UTC] Checking order for logged-in user - Order ID: 25, User ID: 3
+[31-Jan-2026 16:11:55 UTC] Order found successfully - Order ID: 25, Status: pending
+[31-Jan-2026 16:11:56 UTC] === ZARINPAL API RESPONSE ===
+[31-Jan-2026 16:11:56 UTC] HTTP Status: 200
+[31-Jan-2026 16:11:56 UTC] Response: {"data":{"authority":"S0000000000000000000000000000001o12n","fee":13663,"fee_type":"Merchant","code":100,"message":"Success"},"errors":[]}
+[31-Jan-2026 16:11:56 UTC] =================================
+[31-Jan-2026 16:11:56 UTC] === AUTHORITY RECEIVED FROM ZARINPAL ===
+[31-Jan-2026 16:11:56 UTC] Authority: S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] Authority type: string
+[31-Jan-2026 16:11:56 UTC] Authority length: 36
+[31-Jan-2026 16:11:56 UTC] Authority trimmed: S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] Full resultData['data']: {"authority":"S0000000000000000000000000000001o12n","fee":13663,"fee_type":"Merchant","code":100,"message":"Success"}
+[31-Jan-2026 16:11:56 UTC] =========================================
+[31-Jan-2026 16:11:56 UTC] === AUTHORITY NORMALIZATION ===
+[31-Jan-2026 16:11:56 UTC] Original authority (raw): 'S0000000000000000000000000000001o12n'
+[31-Jan-2026 16:11:56 UTC] Original authority length: 36
+[31-Jan-2026 16:11:56 UTC] Original authority hex: 53303030303030303030303030303030303030303030303030303030303030316f31326e
+[31-Jan-2026 16:11:56 UTC] After whitespace removal: 'S0000000000000000000000000000001o12n' (length: 36)
+[31-Jan-2026 16:11:56 UTC] After non-printable removal: 'S0000000000000000000000000000001o12n' (length: 36)
+[31-Jan-2026 16:11:56 UTC] After alphanumeric filter: 'S0000000000000000000000000000001o12n' (length: 36)
+[31-Jan-2026 16:11:56 UTC] ✅ Authority from sandbox (full, for DB): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:11:56 UTC] ✅ Authority for URL (first 36 chars): S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] ✅ Original authority from sandbox: 'S0000000000000000000000000000001o12n'
+[31-Jan-2026 16:11:56 UTC] =========================================
+[31-Jan-2026 16:11:56 UTC] === SAVING AUTHORITY TO DATABASE ===
+[31-Jan-2026 16:11:56 UTC] Authority to save: S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] Authority length: 36
+[31-Jan-2026 16:11:56 UTC] === INSERTING/UPDATING PAYMENT RECORD ===
+[31-Jan-2026 16:11:56 UTC] Order ID: 25
+[31-Jan-2026 16:11:56 UTC] Authority (from sandbox): S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] Authority length: 36
+[31-Jan-2026 16:11:56 UTC] Amount: 45546
+[31-Jan-2026 16:11:56 UTC] User ID: 3
+[31-Jan-2026 16:11:56 UTC] SQL Query: INSERT INTO payments (order_id, user_id, amount, authority, status, created_at) 
+            VALUES (?, ?, ?, ?, 'pending', NOW())
+            ON DUPLICATE KEY UPDATE 
+                order_id = IF(order_id != VALUES(order_id), VALUES(order_id), order_id),
+                user_id = IF(user_id = 0 AND VALUES(user_id) != 0, VALUES(user_id), user_id),
+                amount = IF(amount != VALUES(amount), VALUES(amount), amount),
+                authority = VALUES(authority)
+[31-Jan-2026 16:11:56 UTC] SQL Params: order_id=25, user_id=3, amount=45546, authority=S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] Executing INSERT with params: order_id=25, user_id=3, amount=45546, authority=S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] ✅ New payment record inserted - Payment ID: 50
+[31-Jan-2026 16:11:56 UTC] ✅ Payment verified in database:
+[31-Jan-2026 16:11:56 UTC]   - ID: 50
+[31-Jan-2026 16:11:56 UTC]   - Order ID: 25
+[31-Jan-2026 16:11:56 UTC]   - Authority in DB: S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC]   - Authority original: S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC]   - Match: YES ✅
+[31-Jan-2026 16:11:56 UTC]   - Amount: 45546
+[31-Jan-2026 16:11:56 UTC]   - Status: pending
+[31-Jan-2026 16:11:56 UTC] === FINAL VERIFICATION ===
+[31-Jan-2026 16:11:56 UTC] ✅ FINAL CHECK: Authority found in database!
+[31-Jan-2026 16:11:56 UTC]   - Payment ID: 50
+[31-Jan-2026 16:11:56 UTC]   - Authority: S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC]   - Order ID: 25
+[31-Jan-2026 16:11:56 UTC]   - Status: pending
+[31-Jan-2026 16:11:56 UTC] ==========================
+[31-Jan-2026 16:11:56 UTC] Payment URL created: https://sandbox.zarinpal.com/pg/StartPay/S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] Authority in URL (first 36 chars): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:11:56 UTC] Authority full (saved in DB): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:11:56 UTC] === FINAL RESPONSE ===
+[31-Jan-2026 16:11:56 UTC] Payment URL: https://sandbox.zarinpal.com/pg/StartPay/S0000000000000000000000000000001o12n
+[31-Jan-2026 16:11:56 UTC] Authority for URL (first 36 chars): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:11:56 UTC] Authority full (saved in DB): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:11:56 UTC] Amount: 45546
+[31-Jan-2026 16:13:04 UTC] Payment callback received - Authority (raw): S0000000000000000000000000000001o12n, Status: OK
+[31-Jan-2026 16:13:04 UTC] All GET params: {"Authority":"S0000000000000000000000000000001o12n","Status":"OK"}
+[31-Jan-2026 16:13:04 UTC] Authority from callback (full): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:13:04 UTC] Authority from database (full): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:13:04 UTC] Authority from callback (full): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:13:04 UTC] ✅ Authority for verify (first 36 chars): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:13:04 UTC] ✅ Authority full in DB: S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:13:04 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":45546,"authority":"S0000000000000000000000000000001o12n","currency":"IRT"}
+[31-Jan-2026 16:13:59 UTC] Payment callback received - Authority (raw): S0000000000000000000000000000001o12n, Status: NOK
+[31-Jan-2026 16:13:59 UTC] All GET params: {"Authority":"S0000000000000000000000000000001o12n","Status":"NOK"}
+[31-Jan-2026 16:13:59 UTC] Authority from callback (full): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:17:04 UTC] Payment callback received - Authority (raw): S0000000000000000000000000000001o12n, Status: NOK
+[31-Jan-2026 16:17:04 UTC] All GET params: {"Authority":"S0000000000000000000000000000001o12n","Status":"NOK"}
+[31-Jan-2026 16:17:04 UTC] Authority from callback (full): S0000000000000000000000000000001o12n (length: 36)
+[31-Jan-2026 16:17:12 UTC] User authenticated via JWT - User ID: 3
+[31-Jan-2026 16:17:12 UTC] Checking order for logged-in user - Order ID: 26, User ID: 3
+[31-Jan-2026 16:17:12 UTC] Order found successfully - Order ID: 26, Status: pending
+[31-Jan-2026 16:17:48 UTC] === ZARINPAL API RESPONSE ===
+[31-Jan-2026 16:17:48 UTC] HTTP Status: 200
+[31-Jan-2026 16:17:48 UTC] Response: {"data":{"authority":"S0000000000000000000000000000006l51l","fee":13663,"fee_type":"Merchant","code":100,"message":"Success"},"errors":[]}
+[31-Jan-2026 16:17:48 UTC] =================================
+[31-Jan-2026 16:17:48 UTC] === AUTHORITY RECEIVED FROM ZARINPAL ===
+[31-Jan-2026 16:17:48 UTC] Authority: S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] Authority type: string
+[31-Jan-2026 16:17:48 UTC] Authority length: 36
+[31-Jan-2026 16:17:48 UTC] Authority trimmed: S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] Full resultData['data']: {"authority":"S0000000000000000000000000000006l51l","fee":13663,"fee_type":"Merchant","code":100,"message":"Success"}
+[31-Jan-2026 16:17:48 UTC] =========================================
+[31-Jan-2026 16:17:48 UTC] === AUTHORITY NORMALIZATION ===
+[31-Jan-2026 16:17:48 UTC] Original authority (raw): 'S0000000000000000000000000000006l51l'
+[31-Jan-2026 16:17:48 UTC] Original authority length: 36
+[31-Jan-2026 16:17:48 UTC] Original authority hex: 53303030303030303030303030303030303030303030303030303030303030366c35316c
+[31-Jan-2026 16:17:48 UTC] After whitespace removal: 'S0000000000000000000000000000006l51l' (length: 36)
+[31-Jan-2026 16:17:48 UTC] After non-printable removal: 'S0000000000000000000000000000006l51l' (length: 36)
+[31-Jan-2026 16:17:48 UTC] After alphanumeric filter: 'S0000000000000000000000000000006l51l' (length: 36)
+[31-Jan-2026 16:17:48 UTC] ✅ Authority from sandbox (full, for DB): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:17:48 UTC] ✅ Authority for URL (first 36 chars): S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] ✅ Original authority from sandbox: 'S0000000000000000000000000000006l51l'
+[31-Jan-2026 16:17:48 UTC] =========================================
+[31-Jan-2026 16:17:48 UTC] === SAVING AUTHORITY TO DATABASE ===
+[31-Jan-2026 16:17:48 UTC] Authority to save: S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] Authority length: 36
+[31-Jan-2026 16:17:48 UTC] === INSERTING/UPDATING PAYMENT RECORD ===
+[31-Jan-2026 16:17:48 UTC] Order ID: 26
+[31-Jan-2026 16:17:48 UTC] Authority (from sandbox): S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] Authority length: 36
+[31-Jan-2026 16:17:48 UTC] Amount: 45546
+[31-Jan-2026 16:17:48 UTC] User ID: 3
+[31-Jan-2026 16:17:48 UTC] SQL Query: INSERT INTO payments (order_id, user_id, amount, authority, status, created_at) 
+            VALUES (?, ?, ?, ?, 'pending', NOW())
+            ON DUPLICATE KEY UPDATE 
+                order_id = IF(order_id != VALUES(order_id), VALUES(order_id), order_id),
+                user_id = IF(user_id = 0 AND VALUES(user_id) != 0, VALUES(user_id), user_id),
+                amount = IF(amount != VALUES(amount), VALUES(amount), amount),
+                authority = VALUES(authority)
+[31-Jan-2026 16:17:48 UTC] SQL Params: order_id=26, user_id=3, amount=45546, authority=S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] Executing INSERT with params: order_id=26, user_id=3, amount=45546, authority=S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] ✅ New payment record inserted - Payment ID: 51
+[31-Jan-2026 16:17:48 UTC] ✅ Payment verified in database:
+[31-Jan-2026 16:17:48 UTC]   - ID: 51
+[31-Jan-2026 16:17:48 UTC]   - Order ID: 26
+[31-Jan-2026 16:17:48 UTC]   - Authority in DB: S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC]   - Authority original: S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC]   - Match: YES ✅
+[31-Jan-2026 16:17:48 UTC]   - Amount: 45546
+[31-Jan-2026 16:17:48 UTC]   - Status: pending
+[31-Jan-2026 16:17:48 UTC] === FINAL VERIFICATION ===
+[31-Jan-2026 16:17:48 UTC] ✅ FINAL CHECK: Authority found in database!
+[31-Jan-2026 16:17:48 UTC]   - Payment ID: 51
+[31-Jan-2026 16:17:48 UTC]   - Authority: S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC]   - Order ID: 26
+[31-Jan-2026 16:17:48 UTC]   - Status: pending
+[31-Jan-2026 16:17:48 UTC] ==========================
+[31-Jan-2026 16:17:48 UTC] Payment URL created: https://sandbox.zarinpal.com/pg/StartPay/S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] Authority in URL (first 36 chars): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:17:48 UTC] Authority full (saved in DB): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:17:48 UTC] === FINAL RESPONSE ===
+[31-Jan-2026 16:17:48 UTC] Payment URL: https://sandbox.zarinpal.com/pg/StartPay/S0000000000000000000000000000006l51l
+[31-Jan-2026 16:17:48 UTC] Authority for URL (first 36 chars): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:17:48 UTC] Authority full (saved in DB): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:17:48 UTC] Amount: 45546
+[31-Jan-2026 16:18:34 UTC] Payment callback received - Authority (raw): S0000000000000000000000000000006l51l, Status: OK
+[31-Jan-2026 16:18:34 UTC] All GET params: {"Authority":"S0000000000000000000000000000006l51l","Status":"OK"}
+[31-Jan-2026 16:18:34 UTC] Authority from callback (full): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:18:34 UTC] Authority from database (full): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:18:34 UTC] Authority from callback (full): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:18:34 UTC] ✅ Authority for verify (first 36 chars): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:18:34 UTC] ✅ Authority full in DB: S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:18:34 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":45546,"authority":"S0000000000000000000000000000006l51l","currency":"IRT"}
+[31-Jan-2026 16:19:31 UTC] Payment callback received - Authority (raw): S0000000000000000000000000000006l51l, Status: NOK
+[31-Jan-2026 16:19:31 UTC] All GET params: {"Authority":"S0000000000000000000000000000006l51l","Status":"NOK"}
+[31-Jan-2026 16:19:31 UTC] Authority from callback (full): S0000000000000000000000000000006l51l (length: 36)
+[31-Jan-2026 16:19:47 UTC] Zarinpal verify response - HTTP: 200, Response: {"data":{"wages":null,"code":100,"message":"Paid","card_hash":"0866A6EAEA5CB085E4CF6EF19296BF19647552DD5F96F1E530DB3AE61837EFE7","card_pan":"999999******9999","ref_id":20147301,"fee_type":"Merchant","fee":13663,"shaparak_fee":1200,"order_id":null},"errors":[]}
+[31-Jan-2026 16:19:47 UTC] Zarinpal verify request - Amount: 45546, Currency: IRT, Authority: S0000000000000000000000000000006l51l, Merchant: 586a9cbf-3f4c-4e1f-847f-17ac2ddb8374
+[01-Feb-2026 08:16:09 UTC] User authenticated via JWT - User ID: 3
+[01-Feb-2026 08:16:09 UTC] Checking order for logged-in user - Order ID: 27, User ID: 3
+[01-Feb-2026 08:16:09 UTC] Order found successfully - Order ID: 27, Status: pending
+[01-Feb-2026 08:16:11 UTC] === ZARINPAL API RESPONSE ===
+[01-Feb-2026 08:16:11 UTC] HTTP Status: 200
+[01-Feb-2026 08:16:11 UTC] Response: {"data":{"authority":"S000000000000000000000000000000gr58r","fee":1674,"fee_type":"Merchant","code":100,"message":"Success"},"errors":[]}
+[01-Feb-2026 08:16:11 UTC] =================================
+[01-Feb-2026 08:16:11 UTC] === AUTHORITY RECEIVED FROM ZARINPAL ===
+[01-Feb-2026 08:16:11 UTC] Authority: S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] Authority type: string
+[01-Feb-2026 08:16:11 UTC] Authority length: 36
+[01-Feb-2026 08:16:11 UTC] Authority trimmed: S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] Full resultData['data']: {"authority":"S000000000000000000000000000000gr58r","fee":1674,"fee_type":"Merchant","code":100,"message":"Success"}
+[01-Feb-2026 08:16:11 UTC] =========================================
+[01-Feb-2026 08:16:11 UTC] === AUTHORITY NORMALIZATION ===
+[01-Feb-2026 08:16:11 UTC] Original authority (raw): 'S000000000000000000000000000000gr58r'
+[01-Feb-2026 08:16:11 UTC] Original authority length: 36
+[01-Feb-2026 08:16:11 UTC] Original authority hex: 533030303030303030303030303030303030303030303030303030303030306772353872
+[01-Feb-2026 08:16:11 UTC] After whitespace removal: 'S000000000000000000000000000000gr58r' (length: 36)
+[01-Feb-2026 08:16:11 UTC] After non-printable removal: 'S000000000000000000000000000000gr58r' (length: 36)
+[01-Feb-2026 08:16:11 UTC] After alphanumeric filter: 'S000000000000000000000000000000gr58r' (length: 36)
+[01-Feb-2026 08:16:11 UTC] ✅ Authority from sandbox (full, for DB): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:11 UTC] ✅ Authority for URL (first 36 chars): S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] ✅ Original authority from sandbox: 'S000000000000000000000000000000gr58r'
+[01-Feb-2026 08:16:11 UTC] =========================================
+[01-Feb-2026 08:16:11 UTC] === SAVING AUTHORITY TO DATABASE ===
+[01-Feb-2026 08:16:11 UTC] Authority to save: S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] Authority length: 36
+[01-Feb-2026 08:16:11 UTC] === INSERTING/UPDATING PAYMENT RECORD ===
+[01-Feb-2026 08:16:11 UTC] Order ID: 27
+[01-Feb-2026 08:16:11 UTC] Authority (from sandbox): S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] Authority length: 36
+[01-Feb-2026 08:16:11 UTC] Amount: 5580
+[01-Feb-2026 08:16:11 UTC] User ID: 3
+[01-Feb-2026 08:16:11 UTC] SQL Query: INSERT INTO payments (order_id, user_id, amount, authority, status, created_at) 
+            VALUES (?, ?, ?, ?, 'pending', NOW())
+            ON DUPLICATE KEY UPDATE 
+                order_id = IF(order_id != VALUES(order_id), VALUES(order_id), order_id),
+                user_id = IF(user_id = 0 AND VALUES(user_id) != 0, VALUES(user_id), user_id),
+                amount = IF(amount != VALUES(amount), VALUES(amount), amount),
+                authority = VALUES(authority)
+[01-Feb-2026 08:16:11 UTC] SQL Params: order_id=27, user_id=3, amount=5580, authority=S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] Executing INSERT with params: order_id=27, user_id=3, amount=5580, authority=S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] ✅ New payment record inserted - Payment ID: 52
+[01-Feb-2026 08:16:11 UTC] ✅ Payment verified in database:
+[01-Feb-2026 08:16:11 UTC]   - ID: 52
+[01-Feb-2026 08:16:11 UTC]   - Order ID: 27
+[01-Feb-2026 08:16:11 UTC]   - Authority in DB: S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC]   - Authority original: S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC]   - Match: YES ✅
+[01-Feb-2026 08:16:11 UTC]   - Amount: 5580
+[01-Feb-2026 08:16:11 UTC]   - Status: pending
+[01-Feb-2026 08:16:11 UTC] === FINAL VERIFICATION ===
+[01-Feb-2026 08:16:11 UTC] ✅ FINAL CHECK: Authority found in database!
+[01-Feb-2026 08:16:11 UTC]   - Payment ID: 52
+[01-Feb-2026 08:16:11 UTC]   - Authority: S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC]   - Order ID: 27
+[01-Feb-2026 08:16:11 UTC]   - Status: pending
+[01-Feb-2026 08:16:11 UTC] ==========================
+[01-Feb-2026 08:16:11 UTC] Payment URL created: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] Authority in URL (first 36 chars): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:11 UTC] Authority full (saved in DB): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:11 UTC] === FINAL RESPONSE ===
+[01-Feb-2026 08:16:11 UTC] Payment URL: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000gr58r
+[01-Feb-2026 08:16:11 UTC] Authority for URL (first 36 chars): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:11 UTC] Authority full (saved in DB): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:11 UTC] Amount: 5580
+[01-Feb-2026 08:16:15 UTC] Payment callback received - Authority (raw): S000000000000000000000000000000gr58r, Status: OK
+[01-Feb-2026 08:16:15 UTC] All GET params: {"Authority":"S000000000000000000000000000000gr58r","Status":"OK"}
+[01-Feb-2026 08:16:15 UTC] Authority from callback (full): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:15 UTC] Authority from database (full): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:15 UTC] Authority from callback (full): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:15 UTC] ✅ Authority for verify (first 36 chars): S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:15 UTC] ✅ Authority full in DB: S000000000000000000000000000000gr58r (length: 36)
+[01-Feb-2026 08:16:15 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":5580,"authority":"S000000000000000000000000000000gr58r","currency":"IRT"}
+[01-Feb-2026 08:16:16 UTC] Zarinpal verify response - HTTP: 200, Response: {"data":{"wages":null,"code":100,"message":"Paid","card_hash":"0866A6EAEA5CB085E4CF6EF19296BF19647552DD5F96F1E530DB3AE61837EFE7","card_pan":"999999******9999","ref_id":20202501,"fee_type":"Merchant","fee":1674,"shaparak_fee":1200,"order_id":null},"errors":[]}
+[01-Feb-2026 08:16:16 UTC] Zarinpal verify request - Amount: 5580, Currency: IRT, Authority: S000000000000000000000000000000gr58r, Merchant: 586a9cbf-3f4c-4e1f-847f-17ac2ddb8374
+[01-Feb-2026 08:27:30 UTC] User authenticated via JWT - User ID: 3
+[01-Feb-2026 08:27:30 UTC] Checking order for logged-in user - Order ID: 28, User ID: 3
+[01-Feb-2026 08:27:30 UTC] Order found successfully - Order ID: 28, Status: pending
+[01-Feb-2026 08:27:31 UTC] === ZARINPAL API RESPONSE ===
+[01-Feb-2026 08:27:31 UTC] HTTP Status: 200
+[01-Feb-2026 08:27:31 UTC] Response: {"data":{"authority":"S000000000000000000000000000000xgznx","fee":132300,"fee_type":"Merchant","code":100,"message":"Success"},"errors":[]}
+[01-Feb-2026 08:27:31 UTC] =================================
+[01-Feb-2026 08:27:31 UTC] === AUTHORITY RECEIVED FROM ZARINPAL ===
+[01-Feb-2026 08:27:31 UTC] Authority: S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] Authority type: string
+[01-Feb-2026 08:27:31 UTC] Authority length: 36
+[01-Feb-2026 08:27:31 UTC] Authority trimmed: S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] Full resultData['data']: {"authority":"S000000000000000000000000000000xgznx","fee":132300,"fee_type":"Merchant","code":100,"message":"Success"}
+[01-Feb-2026 08:27:31 UTC] =========================================
+[01-Feb-2026 08:27:31 UTC] === AUTHORITY NORMALIZATION ===
+[01-Feb-2026 08:27:31 UTC] Original authority (raw): 'S000000000000000000000000000000xgznx'
+[01-Feb-2026 08:27:31 UTC] Original authority length: 36
+[01-Feb-2026 08:27:31 UTC] Original authority hex: 5330303030303030303030303030303030303030303030303030303030303078677a6e78
+[01-Feb-2026 08:27:31 UTC] After whitespace removal: 'S000000000000000000000000000000xgznx' (length: 36)
+[01-Feb-2026 08:27:31 UTC] After non-printable removal: 'S000000000000000000000000000000xgznx' (length: 36)
+[01-Feb-2026 08:27:31 UTC] After alphanumeric filter: 'S000000000000000000000000000000xgznx' (length: 36)
+[01-Feb-2026 08:27:31 UTC] ✅ Authority from sandbox (full, for DB): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:31 UTC] ✅ Authority for URL (first 36 chars): S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] ✅ Original authority from sandbox: 'S000000000000000000000000000000xgznx'
+[01-Feb-2026 08:27:31 UTC] =========================================
+[01-Feb-2026 08:27:31 UTC] === SAVING AUTHORITY TO DATABASE ===
+[01-Feb-2026 08:27:31 UTC] Authority to save: S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] Authority length: 36
+[01-Feb-2026 08:27:31 UTC] === INSERTING/UPDATING PAYMENT RECORD ===
+[01-Feb-2026 08:27:31 UTC] Order ID: 28
+[01-Feb-2026 08:27:31 UTC] Authority (from sandbox): S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] Authority length: 36
+[01-Feb-2026 08:27:31 UTC] Amount: 441000
+[01-Feb-2026 08:27:31 UTC] User ID: 3
+[01-Feb-2026 08:27:31 UTC] SQL Query: INSERT INTO payments (order_id, user_id, amount, authority, status, created_at) 
+            VALUES (?, ?, ?, ?, 'pending', NOW())
+            ON DUPLICATE KEY UPDATE 
+                order_id = IF(order_id != VALUES(order_id), VALUES(order_id), order_id),
+                user_id = IF(user_id = 0 AND VALUES(user_id) != 0, VALUES(user_id), user_id),
+                amount = IF(amount != VALUES(amount), VALUES(amount), amount),
+                authority = VALUES(authority)
+[01-Feb-2026 08:27:31 UTC] SQL Params: order_id=28, user_id=3, amount=441000, authority=S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] Executing INSERT with params: order_id=28, user_id=3, amount=441000, authority=S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] ✅ New payment record inserted - Payment ID: 53
+[01-Feb-2026 08:27:31 UTC] ✅ Payment verified in database:
+[01-Feb-2026 08:27:31 UTC]   - ID: 53
+[01-Feb-2026 08:27:31 UTC]   - Order ID: 28
+[01-Feb-2026 08:27:31 UTC]   - Authority in DB: S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC]   - Authority original: S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC]   - Match: YES ✅
+[01-Feb-2026 08:27:31 UTC]   - Amount: 441000
+[01-Feb-2026 08:27:31 UTC]   - Status: pending
+[01-Feb-2026 08:27:31 UTC] === FINAL VERIFICATION ===
+[01-Feb-2026 08:27:31 UTC] ✅ FINAL CHECK: Authority found in database!
+[01-Feb-2026 08:27:31 UTC]   - Payment ID: 53
+[01-Feb-2026 08:27:31 UTC]   - Authority: S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC]   - Order ID: 28
+[01-Feb-2026 08:27:31 UTC]   - Status: pending
+[01-Feb-2026 08:27:31 UTC] ==========================
+[01-Feb-2026 08:27:31 UTC] Payment URL created: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] Authority in URL (first 36 chars): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:31 UTC] Authority full (saved in DB): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:31 UTC] === FINAL RESPONSE ===
+[01-Feb-2026 08:27:31 UTC] Payment URL: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000xgznx
+[01-Feb-2026 08:27:31 UTC] Authority for URL (first 36 chars): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:31 UTC] Authority full (saved in DB): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:31 UTC] Amount: 441000
+[01-Feb-2026 08:27:35 UTC] Payment callback received - Authority (raw): S000000000000000000000000000000xgznx, Status: OK
+[01-Feb-2026 08:27:35 UTC] All GET params: {"Authority":"S000000000000000000000000000000xgznx","Status":"OK"}
+[01-Feb-2026 08:27:35 UTC] Authority from callback (full): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:35 UTC] Authority from database (full): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:35 UTC] Authority from callback (full): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:35 UTC] ✅ Authority for verify (first 36 chars): S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:35 UTC] ✅ Authority full in DB: S000000000000000000000000000000xgznx (length: 36)
+[01-Feb-2026 08:27:35 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":441000,"authority":"S000000000000000000000000000000xgznx","currency":"IRT"}
+[01-Feb-2026 08:27:36 UTC] Zarinpal verify response - HTTP: 401, Response: {"data":[],"errors":{"message":"To many attempts, please try again later.","code":-12,"validations":[]}}
+[01-Feb-2026 08:27:36 UTC] Zarinpal verify request - Amount: 441000, Currency: IRT, Authority: S000000000000000000000000000000xgznx, Merchant: 586a9cbf-3f4c-4e1f-847f-17ac2ddb8374
+[01-Feb-2026 08:27:36 UTC] Zarinpal verify error: {"message":"To many attempts, please try again later.","code":-12,"validations":[]}
+[01-Feb-2026 08:28:11 UTC] User authenticated via JWT - User ID: 3
+[01-Feb-2026 08:28:11 UTC] Checking order for logged-in user - Order ID: 29, User ID: 3
+[01-Feb-2026 08:28:11 UTC] Order found successfully - Order ID: 29, Status: pending
+[01-Feb-2026 08:28:12 UTC] === ZARINPAL API RESPONSE ===
+[01-Feb-2026 08:28:12 UTC] HTTP Status: 200
+[01-Feb-2026 08:28:12 UTC] Response: {"data":{"authority":"S000000000000000000000000000000yxzqj","fee":132300,"fee_type":"Merchant","code":100,"message":"Success"},"errors":[]}
+[01-Feb-2026 08:28:12 UTC] =================================
+[01-Feb-2026 08:28:12 UTC] === AUTHORITY RECEIVED FROM ZARINPAL ===
+[01-Feb-2026 08:28:12 UTC] Authority: S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] Authority type: string
+[01-Feb-2026 08:28:12 UTC] Authority length: 36
+[01-Feb-2026 08:28:12 UTC] Authority trimmed: S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] Full resultData['data']: {"authority":"S000000000000000000000000000000yxzqj","fee":132300,"fee_type":"Merchant","code":100,"message":"Success"}
+[01-Feb-2026 08:28:12 UTC] =========================================
+[01-Feb-2026 08:28:12 UTC] === AUTHORITY NORMALIZATION ===
+[01-Feb-2026 08:28:12 UTC] Original authority (raw): 'S000000000000000000000000000000yxzqj'
+[01-Feb-2026 08:28:12 UTC] Original authority length: 36
+[01-Feb-2026 08:28:12 UTC] Original authority hex: 5330303030303030303030303030303030303030303030303030303030303079787a716a
+[01-Feb-2026 08:28:12 UTC] After whitespace removal: 'S000000000000000000000000000000yxzqj' (length: 36)
+[01-Feb-2026 08:28:12 UTC] After non-printable removal: 'S000000000000000000000000000000yxzqj' (length: 36)
+[01-Feb-2026 08:28:12 UTC] After alphanumeric filter: 'S000000000000000000000000000000yxzqj' (length: 36)
+[01-Feb-2026 08:28:12 UTC] ✅ Authority from sandbox (full, for DB): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:12 UTC] ✅ Authority for URL (first 36 chars): S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] ✅ Original authority from sandbox: 'S000000000000000000000000000000yxzqj'
+[01-Feb-2026 08:28:12 UTC] =========================================
+[01-Feb-2026 08:28:12 UTC] === SAVING AUTHORITY TO DATABASE ===
+[01-Feb-2026 08:28:12 UTC] Authority to save: S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] Authority length: 36
+[01-Feb-2026 08:28:12 UTC] === INSERTING/UPDATING PAYMENT RECORD ===
+[01-Feb-2026 08:28:12 UTC] Order ID: 29
+[01-Feb-2026 08:28:12 UTC] Authority (from sandbox): S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] Authority length: 36
+[01-Feb-2026 08:28:12 UTC] Amount: 441000
+[01-Feb-2026 08:28:12 UTC] User ID: 3
+[01-Feb-2026 08:28:12 UTC] SQL Query: INSERT INTO payments (order_id, user_id, amount, authority, status, created_at) 
+            VALUES (?, ?, ?, ?, 'pending', NOW())
+            ON DUPLICATE KEY UPDATE 
+                order_id = IF(order_id != VALUES(order_id), VALUES(order_id), order_id),
+                user_id = IF(user_id = 0 AND VALUES(user_id) != 0, VALUES(user_id), user_id),
+                amount = IF(amount != VALUES(amount), VALUES(amount), amount),
+                authority = VALUES(authority)
+[01-Feb-2026 08:28:12 UTC] SQL Params: order_id=29, user_id=3, amount=441000, authority=S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] Executing INSERT with params: order_id=29, user_id=3, amount=441000, authority=S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] ✅ New payment record inserted - Payment ID: 54
+[01-Feb-2026 08:28:12 UTC] ✅ Payment verified in database:
+[01-Feb-2026 08:28:12 UTC]   - ID: 54
+[01-Feb-2026 08:28:12 UTC]   - Order ID: 29
+[01-Feb-2026 08:28:12 UTC]   - Authority in DB: S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC]   - Authority original: S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC]   - Match: YES ✅
+[01-Feb-2026 08:28:12 UTC]   - Amount: 441000
+[01-Feb-2026 08:28:12 UTC]   - Status: pending
+[01-Feb-2026 08:28:12 UTC] === FINAL VERIFICATION ===
+[01-Feb-2026 08:28:12 UTC] ✅ FINAL CHECK: Authority found in database!
+[01-Feb-2026 08:28:12 UTC]   - Payment ID: 54
+[01-Feb-2026 08:28:12 UTC]   - Authority: S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC]   - Order ID: 29
+[01-Feb-2026 08:28:12 UTC]   - Status: pending
+[01-Feb-2026 08:28:12 UTC] ==========================
+[01-Feb-2026 08:28:12 UTC] Payment URL created: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] Authority in URL (first 36 chars): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:12 UTC] Authority full (saved in DB): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:12 UTC] === FINAL RESPONSE ===
+[01-Feb-2026 08:28:12 UTC] Payment URL: https://sandbox.zarinpal.com/pg/StartPay/S000000000000000000000000000000yxzqj
+[01-Feb-2026 08:28:12 UTC] Authority for URL (first 36 chars): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:12 UTC] Authority full (saved in DB): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:12 UTC] Amount: 441000
+[01-Feb-2026 08:28:14 UTC] Payment callback received - Authority (raw): S000000000000000000000000000000yxzqj, Status: OK
+[01-Feb-2026 08:28:14 UTC] All GET params: {"Authority":"S000000000000000000000000000000yxzqj","Status":"OK"}
+[01-Feb-2026 08:28:14 UTC] Authority from callback (full): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:14 UTC] Authority from database (full): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:14 UTC] Authority from callback (full): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:14 UTC] ✅ Authority for verify (first 36 chars): S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:14 UTC] ✅ Authority full in DB: S000000000000000000000000000000yxzqj (length: 36)
+[01-Feb-2026 08:28:14 UTC] Verify request data: {"merchant_id":"586a9cbf-3f4c-4e1f-847f-17ac2ddb8374","amount":441000,"authority":"S000000000000000000000000000000yxzqj","currency":"IRT"}
+[01-Feb-2026 08:28:15 UTC] Zarinpal verify response - HTTP: 200, Response: {"data":{"wages":null,"code":100,"message":"Paid","card_hash":"0866A6EAEA5CB085E4CF6EF19296BF19647552DD5F96F1E530DB3AE61837EFE7","card_pan":"999999******9999","ref_id":20205101,"fee_type":"Merchant","fee":132300,"shaparak_fee":1200,"order_id":null},"errors":[]}
+[01-Feb-2026 08:28:15 UTC] Zarinpal verify request - Amount: 441000, Currency: IRT, Authority: S000000000000000000000000000000yxzqj, Merchant: 586a9cbf-3f4c-4e1f-847f-17ac2ddb8374
+[01-Feb-2026 08:28:16 UTC] پیامک سفارش #29 با موفقیت به ادمین ارسال شد

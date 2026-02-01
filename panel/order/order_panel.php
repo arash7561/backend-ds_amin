@@ -151,6 +151,35 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
 }
 
 /**
+ * حذف سفارش‌های خالی (تعداد آیتم = 0 و مبلغ = 0) از دیتابیس
+ */
+function deleteEmptyOrders($conn = null) {
+    if ($conn === null) {
+        $conn = getPDO();
+    }
+    try {
+        // سفارش‌هایی که هیچ آیتمی ندارند
+        $stmt = $conn->query("
+            SELECT o.id FROM orders o
+            LEFT JOIN (SELECT order_id, COUNT(*) AS cnt FROM order_items GROUP BY order_id) oi ON o.id = oi.order_id
+            WHERE COALESCE(oi.cnt, 0) = 0
+        ");
+        $emptyIds = $stmt->fetchAll(PDO::FETCH_COLUMN);
+        if (empty($emptyIds)) {
+            return 0;
+        }
+        $placeholders = implode(',', array_fill(0, count($emptyIds), '?'));
+        $conn->prepare("DELETE FROM payments WHERE order_id IN ($placeholders)")->execute($emptyIds);
+        $stmt = $conn->prepare("DELETE FROM orders WHERE id IN ($placeholders)");
+        $stmt->execute($emptyIds);
+        return $stmt->rowCount();
+    } catch (PDOException $e) {
+        error_log("خطا در حذف سفارش‌های خالی: " . $e->getMessage());
+        return 0;
+    }
+}
+
+/**
  * دریافت لیست همه سفارش‌ها
  */
 function getAllOrdersForAdmin($conn = null, $limit = 100, $offset = 0) {
@@ -248,6 +277,9 @@ try {
             ], JSON_UNESCAPED_UNICODE);
         }
     } else {
+        // حذف سفارش‌های خالی (۰ آیتم و ۰ مبلغ) قبل از برگرداندن لیست
+        deleteEmptyOrders($conn);
+
         // دریافت لیست همه سفارش‌ها
         $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 100;
         $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;

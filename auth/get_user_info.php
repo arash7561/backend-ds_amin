@@ -124,7 +124,7 @@ try {
     }
     // اگر کاربر معمولی است
     elseif ($userId) {
-        $stmt = $conn->prepare("SELECT name, mobile, created_at, role FROM users WHERE id = ?");
+        $stmt = $conn->prepare("SELECT name, mobile, created_at, role, invite_code FROM users WHERE id = ?");
         $stmt->execute([$userId]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
         
@@ -181,8 +181,22 @@ try {
         'address' => null,
         'province' => null,
         'city' => null,
-        'postal_code' => null
+        'postal_code' => null,
+        'invite_code' => $user['invite_code'] ?? null,
+        'invited_count' => 0
     ];
+
+    // تعداد دعوت‌شدگان (فقط برای کاربران معمولی)
+    if ($userId) {
+        try {
+            $countStmt = $conn->prepare("SELECT COUNT(*) AS cnt FROM users WHERE invited_by = ?");
+            $countStmt->execute([$userId]);
+            $row = $countStmt->fetch(PDO::FETCH_ASSOC);
+            $responseData['invited_count'] = (int)($row['cnt'] ?? 0);
+        } catch (Exception $e) {
+            error_log('Error fetching invited_count: ' . $e->getMessage());
+        }
+    }
 
     // If we have a user id (regular user or admin mapped to users), try to fetch address
     $currentId = $userId ?? $adminId;

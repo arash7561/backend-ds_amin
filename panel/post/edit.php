@@ -1,8 +1,16 @@
 <?php
+// CORS headers - باید قبل از هر خروجی باشند
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, Cache-Control, X-CSRF-Token, X-Requested-With');
+header('Content-Type: application/json; charset=UTF-8');
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
+    exit;
+}
 
 require_once '../../db_connection.php';
 $conn = getPDO();
-header('Content-Type: application/json');
 
 // بررسی نوع درخواست و استخراج داده‌ها
 $data = [];

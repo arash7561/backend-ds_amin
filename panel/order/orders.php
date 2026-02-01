@@ -99,33 +99,10 @@ function sendOrderNotificationToAdmin($orderId, $conn = null) {
         $order['total_price'] = $totalPrice;
 
         // ساخت متن پیامک
-        $message = "فاکتور جدید ثبت شد:\n";
+        $message = "سفارش جدید دارید.\n";
         $message .= "شماره سفارش: " . $order['order_id'] . "\n";
-        $message .= "مبلغ کل: " . number_format((float)$order['total_price']) . " تومان\n";
-        
-        if (!empty($order['shipping_method'])) {
-            $message .= "روش ارسال: " . $order['shipping_method'] . "\n";
-        }
-        
-        if (!empty($order['user_name'])) {
-            $message .= "گیرنده: " . $order['user_name'] . "\n";
-        }
-        
-        if (!empty($order['user_mobile'])) {
-            $message .= "تلفن: " . $order['user_mobile'] . "\n";
-        }
-        
-        if (!empty($order['province']) || !empty($order['city']) || !empty($order['address'])) {
-            $addressParts = array_filter([
-                $order['province'],
-                $order['city'],
-                $order['address']
-            ]);
-            if (!empty($addressParts)) {
-                $message .= "آدرس: " . implode("، ", $addressParts);
-            }
-        }
-
+   
+      
         // دریافت شماره ادمین از دیتابیس
         $stmt = $conn->prepare("SELECT mobile FROM admin_users WHERE role_id = '1' LIMIT 1");
         $stmt->execute();

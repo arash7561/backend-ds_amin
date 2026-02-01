@@ -301,6 +301,14 @@ if ($paymentStatus === 'success') {
     $stmt = $conn->prepare("UPDATE orders SET status = 'paid' WHERE id = ?");
     $stmt->execute([$orderId]);
 
+    // ارسال پیامک به ادمین: سفارش جدید دارید
+    try {
+        require_once __DIR__ . '/../../panel/order/orders.php';
+        sendOrderNotificationToAdmin($orderId, $conn);
+    } catch (Exception $e) {
+        error_log("خطا در ارسال پیامک به ادمین برای سفارش #$orderId: " . $e->getMessage());
+    }
+
     // کاهش موجودی محصولات
     $stmt = $conn->prepare("SELECT product_id, quantity FROM order_items WHERE order_id = ?");
     $stmt->execute([$orderId]);
