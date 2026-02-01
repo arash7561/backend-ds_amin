@@ -7268,3 +7268,11 @@ Stack trace:
 [01-Feb-2026 16:03:11 UTC] View cart - guestToken from body: NULL
 [01-Feb-2026 16:03:11 UTC] View cart for userId: 2
 [01-Feb-2026 16:03:11 UTC] No cart found for userId: 2 or guestToken: 
+[01-Feb-2026 16:20:00 UTC] View cart - userId from auth: 2
+[01-Feb-2026 16:20:00 UTC] View cart - guestToken from body: '371b86e891e613c3ef0e05b1ea9df40e'
+[01-Feb-2026 16:20:00 UTC] View cart for userId: 2
+[01-Feb-2026 16:20:00 UTC] No cart found for userId: 2 or guestToken: 371b86e891e613c3ef0e05b1ea9df40e
+[01-Feb-2026 16:20:00 UTC] View cart - userId from auth: 2
+[01-Feb-2026 16:20:00 UTC] View cart - guestToken from body: NULL
+[01-Feb-2026 16:20:00 UTC] View cart for userId: 2
+[01-Feb-2026 16:20:00 UTC] No cart found for userId: 2 or guestToken: 

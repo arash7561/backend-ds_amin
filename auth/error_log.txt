@@ -13325,3 +13325,21 @@ Stack trace:
 [01-Feb-2026 16:03:11 UTC] Extracted userId: 2
 [01-Feb-2026 16:03:11 UTC] Extracted adminId: NULL
 [01-Feb-2026 16:03:11 UTC] User role from database: admin for user: 2
+[01-Feb-2026 16:20:00 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3Njk5NTk1NjcsImV4cCI6MTc3MTI1NTU2NywidWlkIjoyLCJtb2JpbGUiOiIwOTAyNDU3OTYwNiIsInJvbGUiOiJ1c2VyIn0.aC69ggw7wBa21JgRpObi8dbls_XqgWaYy4I6ARe5rN4'
+[01-Feb-2026 16:20:00 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3Njk5NTk1NjcsImV4cCI6MTc3MTI1NTU2NywidWlkIjoyLCJtb2JpbGUiOiIwOTAyNDU3OTYwNiIsInJvbGUiOiJ1c2VyIn0.aC69ggw7wBa21JgRpObi8dbls_XqgWaYy4I6ARe5rN4
+[01-Feb-2026 16:20:00 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1769959567,"exp":1771255567,"uid":2,"mobile":"09024579606","role":"user"}
+[01-Feb-2026 16:20:00 UTC] Auth check - Extracted user_id: 2
+[01-Feb-2026 16:20:00 UTC] Auth check - is_admin: false
+[01-Feb-2026 16:20:00 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3Njk5NTk1NjcsImV4cCI6MTc3MTI1NTU2NywidWlkIjoyLCJtb2JpbGUiOiIwOTAyNDU3OTYwNiIsInJvbGUiOiJ1c2VyIn0.aC69ggw7wBa21JgRpObi8dbls_XqgWaYy4I6ARe5rN4'
+[01-Feb-2026 16:20:00 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3Njk5NTk1NjcsImV4cCI6MTc3MTI1NTU2NywidWlkIjoyLCJtb2JpbGUiOiIwOTAyNDU3OTYwNiIsInJvbGUiOiJ1c2VyIn0.aC69ggw7wBa21JgRpObi8dbls_XqgWaYy4I6ARe5rN4
+[01-Feb-2026 16:20:00 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1769959567,"exp":1771255567,"uid":2,"mobile":"09024579606","role":"user"}
+[01-Feb-2026 16:20:00 UTC] Auth check - Extracted user_id: 2
+[01-Feb-2026 16:20:00 UTC] Auth check - is_admin: false
+[01-Feb-2026 16:20:00 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1769959567,"exp":1771255567,"uid":2,"mobile":"09024579606","role":"user"}
+[01-Feb-2026 16:20:00 UTC] Extracted userId: 2
+[01-Feb-2026 16:20:00 UTC] Extracted adminId: NULL
+[01-Feb-2026 16:20:00 UTC] User role from database: admin for user: 2
+[01-Feb-2026 16:20:00 UTC] JWT decoded payload: {"iss":"http:\/\/localhost","iat":1769959567,"exp":1771255567,"uid":2,"mobile":"09024579606","role":"user"}
+[01-Feb-2026 16:20:00 UTC] Extracted userId: 2
+[01-Feb-2026 16:20:00 UTC] Extracted adminId: NULL
+[01-Feb-2026 16:20:00 UTC] User role from database: admin for user: 2
