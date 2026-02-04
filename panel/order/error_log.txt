@@ -1,0 +1,534 @@
+[03-Feb-2026 17:30:42 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:30:42 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:31:02 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:31:02 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:31:05 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:31:05 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:33:23 UTC] Delete Order - HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:33:23 UTC] Delete Order - REDIRECT_HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:33:23 UTC] Delete Order - Final authHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3...
+[03-Feb-2026 17:33:23 UTC] Delete Order - JWT token (first 50 chars): eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod...
+[03-Feb-2026 17:33:23 UTC] Delete Order - Secret key: SET
+[03-Feb-2026 17:33:23 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:33:23 UTC] Delete Order - HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:33:23 UTC] Delete Order - REDIRECT_HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:33:23 UTC] Delete Order - Final authHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3...
+[03-Feb-2026 17:33:23 UTC] Delete Order - JWT token (first 50 chars): eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod...
+[03-Feb-2026 17:33:23 UTC] Delete Order - Secret key: SET
+[03-Feb-2026 17:33:23 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:33:30 UTC] Delete Order - HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:33:30 UTC] Delete Order - REDIRECT_HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:33:30 UTC] Delete Order - Final authHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3...
+[03-Feb-2026 17:33:30 UTC] Delete Order - JWT token (first 50 chars): eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod...
+[03-Feb-2026 17:33:30 UTC] Delete Order - Secret key: SET
+[03-Feb-2026 17:33:30 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:34:26 UTC] Delete Order - HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:34:26 UTC] Delete Order - REDIRECT_HTTP_AUTHORIZATION: NOT SET
+[03-Feb-2026 17:34:26 UTC] Delete Order - Final authHeader: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3...
+[03-Feb-2026 17:34:26 UTC] Delete Order - JWT token (first 50 chars): eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod...
+[03-Feb-2026 17:34:26 UTC] Delete Order - Secret key: SET
+[03-Feb-2026 17:34:26 UTC] Delete Order - JWT decode error: Signature verification failed
+[03-Feb-2026 17:37:47 UTC] Delete Order - Authorization header found: Bearer token present
+[03-Feb-2026 17:37:47 UTC] Delete Order - JWT signature invalid
+[04-Feb-2026 16:05:54 UTC] Delete Order - Auth header: Bearer eyJ0eXAiOiJKV1QiLCJhbGc...
+[04-Feb-2026 16:05:54 UTC] Delete Order - HTTP_AUTHORIZATION: NOT SET
+[04-Feb-2026 16:05:54 UTC] Delete Order - REDIRECT_HTTP_AUTHORIZATION: NOT SET
+[04-Feb-2026 16:05:54 UTC] Delete Order - Token received: eyJ0eXAiOiJKV1QiLCJh...
+[04-Feb-2026 16:05:54 UTC] Delete Order - Secret key exists: NO
+[04-Feb-2026 16:05:54 UTC] Delete Order - JWT decode error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:05:54 UTC] Delete Order - Exception class: InvalidArgumentException
+[04-Feb-2026 16:05:54 UTC] Delete Order - Stack trace: #0 C:\wamp64\www\ds_amin\api\panel\order\delete_order.php(125): Firebase\JWT\Key->__construct(false, 'HS256')
+#1 {main}
+[04-Feb-2026 16:16:32 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:16:32 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:16:38 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:16:38 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:16:38 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:16:48 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:21:40 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:21:40 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:21:40 UTC] checkJWT - Using secret key: EMPTY
+[04-Feb-2026 16:21:40 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:21:40 UTC] checkJWT - Auth header present: YES
+[04-Feb-2026 16:21:40 UTC] checkJWT - JWT token: eyJ0eXAiOiJKV1QiLCJh...
+[04-Feb-2026 16:27:01 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:27:01 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:27:01 UTC] checkJWT - Using secret key: EMPTY
+[04-Feb-2026 16:27:01 UTC] checkJWT error: Type error: $keyMaterial must be a string, resource, or OpenSSLAsymmetricKey
+[04-Feb-2026 16:27:01 UTC] checkJWT - Auth header present: YES
+[04-Feb-2026 16:27:01 UTC] checkJWT - JWT token: eyJ0eXAiOiJKV1QiLCJh...
+[04-Feb-2026 16:29:39 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:29:39 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:29:39 UTC] checkJWT - Secret key type: string, length: 10
+[04-Feb-2026 16:29:39 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:29:39 UTC] checkJWT - Invalid signature: Signature verification failed
+[04-Feb-2026 16:32:42 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:32:42 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:32:42 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:32:42 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:32:42 UTC] checkJWT - Secret key type: string, length: 10
+[04-Feb-2026 16:32:42 UTC] checkJWT - Secret key type: string, length: 10
+[04-Feb-2026 16:32:42 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:32:42 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:32:42 UTC] checkJWT - Creating Key object with secret key length: 10
+[04-Feb-2026 16:32:42 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:32:42 UTC] checkJWT - Key object created successfully
+[04-Feb-2026 16:32:42 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:32:42 UTC] checkJWT - Attempting to decode JWT...
+[04-Feb-2026 16:32:42 UTC] checkJWT - Creating Key object with secret key length: 10
+[04-Feb-2026 16:32:42 UTC] checkJWT - Invalid signature: Signature verification failed
+[04-Feb-2026 16:32:42 UTC] checkJWT - Key object created successfully
+[04-Feb-2026 16:32:42 UTC] checkJWT - Attempting to decode JWT...
+[04-Feb-2026 16:32:42 UTC] checkJWT - Invalid signature: Signature verification failed
+[04-Feb-2026 16:33:21 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:33:21 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:33:21 UTC] checkJWT - Secret key type: string, length: 10
+[04-Feb-2026 16:33:21 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:33:21 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:33:21 UTC] checkJWT - Creating Key object with secret key length: 10
+[04-Feb-2026 16:33:21 UTC] checkJWT - Key object created successfully
+[04-Feb-2026 16:33:21 UTC] checkJWT - Attempting to decode JWT...
+[04-Feb-2026 16:33:21 UTC] checkJWT - Invalid signature: Signature verification failed
+[04-Feb-2026 16:38:27 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:27 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:27 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:27 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:27 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:27 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:27 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:27 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:27 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:27 UTC] Order #45 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] Order #39 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Order #40 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Order #41 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Order #38 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Order #35 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Order #34 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Order #37 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Order #36 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Order #33 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Order #32 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Order #29 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Order #31 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Order #30 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Order #27 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Order #26 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Order #28 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Order #24 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Order #23 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Order #25 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Order #21 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Order #22 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Order #20 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] Order #18 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Order #17 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] Order #19 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:38:53 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:38:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:38:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:38:53 UTC] Order #44 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] Order #11 deleted by admin user ID: 2
+[04-Feb-2026 16:38:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:38:53 UTC] Order #46 deleted by admin user ID: 2
+[04-Feb-2026 16:39:15 UTC] Delete Order - Auth header present: NO
+[04-Feb-2026 16:39:15 UTC] Delete Order - Auth header value: NULL
+[04-Feb-2026 16:39:15 UTC] checkJWT - Secret key type: string, length: 15
+[04-Feb-2026 16:39:15 UTC] checkJWT - JWT token length: 225
+[04-Feb-2026 16:39:15 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[04-Feb-2026 16:39:15 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[04-Feb-2026 16:39:15 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[04-Feb-2026 16:39:15 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:39:15 UTC] Delete Order - User decoded: {"iss":"http:\/\/localhost","iat":1770217639,"exp":1770304039,"aid":2,"mobile":"09339347561","role":"admin"}
+[04-Feb-2026 16:39:15 UTC] Order #42 deleted by admin user ID: 2
+[04-Feb-2026 16:51:41 UTC] Field tracking_code added to orders table
+[04-Feb-2026 16:51:59 UTC] SMS Tracking - Order #43 - User logged in, mobile from users: 09904968841
+[04-Feb-2026 16:51:59 UTC] SMS Tracking - Order #43 - تنظیمات پیامک یافت نشد
+[04-Feb-2026 16:53:20 UTC] SMS Tracking - Order #48 - User logged in, mobile from users: 09333733836
+[04-Feb-2026 16:53:20 UTC] SMS Tracking - Order #48 - تنظیمات پیامک یافت نشد
+[04-Feb-2026 16:54:01 UTC] SMS Tracking - Order #43 - User logged in, mobile from users: 09904968841
+[04-Feb-2026 16:54:01 UTC] SMS Tracking - Order #43 - تنظیمات پیامک یافت نشد
+[04-Feb-2026 16:57:21 UTC] Update Order Status - Skipping SMS: status=paid, trackingCode=NULL
+[04-Feb-2026 16:57:29 UTC] Update Order Status - Attempting to send tracking SMS for order #48 with tracking code: 1212
+[04-Feb-2026 16:57:29 UTC] Update Order Status - Function sendShippingTrackingSMS exists, calling it...
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - Order data: user_id=27, user_mobile=09333733836, guest_token=196dd61ee5819ef721b96b7b66f4f959
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - User logged in, mobile from users: 09333733836
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - Using hardcoded SMS credentials
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - Preparing to send SMS to: 09333733836
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - SMS username: 912...
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - SMS from: 50002710065080
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - SMS message: سفارش شما #48 با موفقیت ارسال...
+[04-Feb-2026 16:57:29 UTC] SMS Tracking - Order #48 - MelipayamakApi object created, calling send()...
+[04-Feb-2026 16:57:31 UTC] SMS Tracking - Order #48 - SMS send() returned: "{\"Value\":\"5324841937291651555\",\"RetStatus\":1,\"StrRetStatus\":\"Ok\"}"
+[04-Feb-2026 16:57:31 UTC] پیامک کد رهگیری سفارش #48 با موفقیت به کاربر ارسال شد (شماره: 09333733836, کد رهگیری: 1212)
+[04-Feb-2026 16:57:31 UTC] Update Order Status - SMS send result: SUCCESS
+[04-Feb-2026 16:57:40 UTC] Update Order Status - Skipping SMS: status=pending, trackingCode=NULL
+[04-Feb-2026 16:57:48 UTC] Update Order Status - Attempting to send tracking SMS for order #43 with tracking code: 123123
+[04-Feb-2026 16:57:48 UTC] Update Order Status - Function sendShippingTrackingSMS exists, calling it...
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - Order data: user_id=24, user_mobile=09904968841, guest_token=196dd61ee5819ef721b96b7b66f4f959
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - User logged in, mobile from users: 09904968841
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - Using hardcoded SMS credentials
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - Preparing to send SMS to: 09904968841
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - SMS username: 912...
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - SMS from: 50002710065080
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - SMS message: سفارش شما #43 با موفقیت ارسال...
+[04-Feb-2026 16:57:48 UTC] SMS Tracking - Order #43 - MelipayamakApi object created, calling send()...
+[04-Feb-2026 16:57:49 UTC] SMS Tracking - Order #43 - SMS send() returned: "{\"Value\":\"5421324558620753898\",\"RetStatus\":1,\"StrRetStatus\":\"Ok\"}"
+[04-Feb-2026 16:57:49 UTC] پیامک کد رهگیری سفارش #43 با موفقیت به کاربر ارسال شد (شماره: 09904968841, کد رهگیری: 123123)
+[04-Feb-2026 16:57:49 UTC] Update Order Status - SMS send result: SUCCESS

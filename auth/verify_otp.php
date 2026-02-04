@@ -114,23 +114,40 @@ try {
 
     // بررسی و اعتبارسنجی کد دعوت از جدول invite_registrations (اگر وجود دارد)
     $invited_by = null;
+    $affiliate_id = null;
     try {
-        $stmt = $conn->prepare("SELECT invite_code, inviter_id FROM invite_registrations WHERE register_token = ?");
+        $stmt = $conn->prepare("SELECT invite_code, inviter_id, affiliate_id FROM invite_registrations WHERE register_token = ?");
         $stmt->execute([$register_token]);
         $invite_registration = $stmt->fetch(PDO::FETCH_ASSOC);
         
         if ($invite_registration) {
-            // بررسی مجدد اعتبار کد دعوت
-            $stmt = $conn->prepare("SELECT id FROM users WHERE invite_code = ? AND id = ?");
-            $stmt->execute([$invite_registration['invite_code'], $invite_registration['inviter_id']]);
-            $inviter = $stmt->fetch(PDO::FETCH_ASSOC);
+            // بررسی کد دعوت (invite_code)
+            if (!empty($invite_registration['invite_code']) && !empty($invite_registration['inviter_id'])) {
+                // بررسی مجدد اعتبار کد دعوت
+                $stmt = $conn->prepare("SELECT id FROM users WHERE invite_code = ? AND id = ?");
+                $stmt->execute([$invite_registration['invite_code'], $invite_registration['inviter_id']]);
+                $inviter = $stmt->fetch(PDO::FETCH_ASSOC);
+                
+                if ($inviter) {
+                    $invited_by = $inviter['id'];
+                } else {
+                    // اگر کد دعوت نامعتبر بود، خطا برمی‌گردانیم
+                    echo json_encode(['status' => false, 'message' => 'کد دعوت نامعتبر است.'], JSON_UNESCAPED_UNICODE);
+                    exit;
+                }
+            }
             
-            if ($inviter) {
-                $invited_by = $inviter['id'];
-            } else {
-                // اگر کد دعوت نامعتبر بود، خطا برمی‌گردانیم
-                echo json_encode(['status' => false, 'message' => 'کد دعوت نامعتبر است.'], JSON_UNESCAPED_UNICODE);
-                exit;
+            // بررسی کد بازاریاب (affiliate_id)
+            if (!empty($invite_registration['affiliate_id'])) {
+                // بررسی اینکه آیا این affiliate_id معتبر است
+                $stmt = $conn->prepare("SELECT id, user_id FROM affiliates WHERE user_id = ?");
+                $stmt->execute([$invite_registration['affiliate_id']]);
+                $affiliate = $stmt->fetch(PDO::FETCH_ASSOC);
+                
+                if ($affiliate) {
+                    $affiliate_id = $affiliate['user_id'];
+                    error_log("Affiliate ID found: " . $affiliate_id . " for new user registration");
+                }
             }
         }
     } catch (PDOException $e) {
@@ -138,15 +155,47 @@ try {
         error_log("Error checking invite registration: " . $e->getMessage());
     }
 
-    // ثبت نهایی کاربر جدید (با یا بدون کد دعوت)
-    // اگر فیلد invited_by در جدول users وجود دارد، از آن استفاده می‌کنیم
-    // در غیر این صورت، می‌توانیم از یک فیلد JSON یا جداول مرتبط استفاده کنیم
-    if ($invited_by) {
-        // اگر ستون invited_by وجود دارد
+    // ثبت نهایی کاربر جدید (با یا بدون کد دعوت و کد بازاریاب)
+    // بررسی وجود ستون‌های affiliate_id یا parent_affiliate_id در جدول users
+    $stmt = $conn->query("SHOW COLUMNS FROM users LIKE 'affiliate_id'");
+    $hasAffiliateIdColumn = $stmt->fetch();
+    
+    $stmt = $conn->query("SHOW COLUMNS FROM users LIKE 'parent_affiliate_id'");
+    $hasParentAffiliateIdColumn = $stmt->fetch();
+    
+    // ساخت query بر اساس ستون‌های موجود
+    if ($invited_by && $affiliate_id) {
+        // اگر هم کد دعوت و هم کد بازاریاب وجود دارد
+        if ($hasParentAffiliateIdColumn) {
+            $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, invited_by, parent_affiliate_id, created_at) VALUES (?, ?, 1, ?, ?, NOW())");
+            $stmt->execute([$name, $mobile, $invited_by, $affiliate_id]);
+        } elseif ($hasAffiliateIdColumn) {
+            $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, invited_by, affiliate_id, created_at) VALUES (?, ?, 1, ?, ?, NOW())");
+            $stmt->execute([$name, $mobile, $invited_by, $affiliate_id]);
+        } else {
+            // اگر ستون affiliate وجود ندارد، فقط invited_by را ذخیره می‌کنیم
+            $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, invited_by, created_at) VALUES (?, ?, 1, ?, NOW())");
+            $stmt->execute([$name, $mobile, $invited_by]);
+        }
+    } elseif ($invited_by) {
+        // فقط کد دعوت وجود دارد
         $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, invited_by, created_at) VALUES (?, ?, 1, ?, NOW())");
         $stmt->execute([$name, $mobile, $invited_by]);
+    } elseif ($affiliate_id) {
+        // فقط کد بازاریاب وجود دارد
+        if ($hasParentAffiliateIdColumn) {
+            $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, parent_affiliate_id, created_at) VALUES (?, ?, 1, ?, NOW())");
+            $stmt->execute([$name, $mobile, $affiliate_id]);
+        } elseif ($hasAffiliateIdColumn) {
+            $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, affiliate_id, created_at) VALUES (?, ?, 1, ?, NOW())");
+            $stmt->execute([$name, $mobile, $affiliate_id]);
+        } else {
+            // اگر ستون affiliate وجود ندارد، فقط کاربر را ثبت می‌کنیم
+            $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, created_at) VALUES (?, ?, 1, NOW())");
+            $stmt->execute([$name, $mobile]);
+        }
     } else {
-        // ثبت بدون کد دعوت
+        // ثبت بدون کد دعوت و کد بازاریاب
         $stmt = $conn->prepare("INSERT INTO users (name, mobile, is_verified, created_at) VALUES (?, ?, 1, NOW())");
         $stmt->execute([$name, $mobile]);
     }

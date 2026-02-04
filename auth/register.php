@@ -25,6 +25,7 @@ $name   = trim($data->username ?? '');
 $mobile = trim($data->mobile ?? '');
 $guest_token = trim($data->guest_token ?? '');
 $invite_code = trim($data->invite_code ?? ''); // دریافت کد دعوت
+$affiliate_code = trim($data->affiliate_code ?? ''); // دریافت کد بازاریاب
 $response = [];
 
 // بررسی اولیه
@@ -74,25 +75,84 @@ try {
     $stmt = $conn->prepare("INSERT INTO otp_requests (name, mobile, otp_code, otp_expires_at, register_token, guest_token) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->execute([$name, $mobile, $otp_code, $otp_expires_at, $register_token, $guest_token]);
     
-    // ذخیره کد دعوت در یک جدول جداگانه (اگر کد دعوت وجود دارد)
-    if (!empty($invite_code) && $inviter_id) {
+    // بررسی کد بازاریاب (اگر ارسال شده باشد)
+    $affiliate_id = null;
+    if (!empty($affiliate_code)) {
+        $stmt = $conn->prepare("SELECT a.id, a.user_id FROM affiliates a WHERE a.code = ?");
+        $stmt->execute([strtoupper($affiliate_code)]);
+        $affiliate = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if ($affiliate) {
+            $affiliate_id = $affiliate['user_id'];
+            error_log("Affiliate code found: " . $affiliate_code . " for user_id: " . $affiliate_id);
+        } else {
+            error_log("Invalid affiliate code: " . $affiliate_code);
+            // کد بازاریاب نامعتبر است اما ثبت نام را متوقف نمی‌کنیم
+        }
+    }
+
+    // ذخیره کد دعوت و کد بازاریاب در یک جدول جداگانه
+    // ابتدا جدول را ایجاد می‌کنیم (اگر وجود ندارد)
+    try {
+        $conn->exec("CREATE TABLE IF NOT EXISTS invite_registrations (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            register_token VARCHAR(64) NOT NULL UNIQUE,
+            invite_code VARCHAR(10) NULL,
+            inviter_id INT NULL,
+            affiliate_id INT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            INDEX idx_register_token (register_token)
+        )");
+        
+        // بررسی وجود ستون affiliate_id (اگر جدول از قبل وجود داشت)
+        $stmt = $conn->query("SHOW COLUMNS FROM invite_registrations LIKE 'affiliate_id'");
+        $hasAffiliateColumn = $stmt->fetch();
+        
+        if (!$hasAffiliateColumn) {
+            // اضافه کردن ستون affiliate_id به جدول invite_registrations
+            $conn->exec("ALTER TABLE invite_registrations ADD COLUMN affiliate_id INT NULL AFTER inviter_id");
+        }
+    } catch (PDOException $e) {
+        error_log("Error creating/updating invite_registrations table: " . $e->getMessage());
+    }
+
+    // ذخیره کد دعوت و کد بازاریاب (اگر وجود دارند)
+    if ((!empty($invite_code) && $inviter_id) || (!empty($affiliate_code) && $affiliate_id)) {
         try {
-            // تلاش برای ایجاد جدول اگر وجود ندارد
-            $conn->exec("CREATE TABLE IF NOT EXISTS invite_registrations (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                register_token VARCHAR(64) NOT NULL UNIQUE,
-                invite_code VARCHAR(10) NOT NULL,
-                inviter_id INT NOT NULL,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                INDEX idx_register_token (register_token)
-            )");
+            // بررسی اینکه آیا رکوردی با این register_token وجود دارد
+            $stmt = $conn->prepare("SELECT id FROM invite_registrations WHERE register_token = ?");
+            $stmt->execute([$register_token]);
+            $existingRecord = $stmt->fetch();
             
-            // ذخیره کد دعوت
-            $stmt = $conn->prepare("INSERT INTO invite_registrations (register_token, invite_code, inviter_id) VALUES (?, ?, ?)");
-            $stmt->execute([$register_token, strtoupper($invite_code), $inviter_id]);
+            if ($existingRecord) {
+                // به‌روزرسانی رکورد موجود
+                if (!empty($invite_code) && $inviter_id) {
+                    $stmt = $conn->prepare("UPDATE invite_registrations SET invite_code = ?, inviter_id = ? WHERE register_token = ?");
+                    $stmt->execute([strtoupper($invite_code), $inviter_id, $register_token]);
+                }
+                if (!empty($affiliate_code) && $affiliate_id) {
+                    $stmt = $conn->prepare("UPDATE invite_registrations SET affiliate_id = ? WHERE register_token = ?");
+                    $stmt->execute([$affiliate_id, $register_token]);
+                }
+            } else {
+                // ایجاد رکورد جدید با هر دو کد (اگر وجود دارند)
+                if (!empty($invite_code) && $inviter_id && !empty($affiliate_code) && $affiliate_id) {
+                    // هر دو کد وجود دارند
+                    $stmt = $conn->prepare("INSERT INTO invite_registrations (register_token, invite_code, inviter_id, affiliate_id, created_at) VALUES (?, ?, ?, ?, NOW())");
+                    $stmt->execute([$register_token, strtoupper($invite_code), $inviter_id, $affiliate_id]);
+                } elseif (!empty($invite_code) && $inviter_id) {
+                    // فقط کد دعوت وجود دارد
+                    $stmt = $conn->prepare("INSERT INTO invite_registrations (register_token, invite_code, inviter_id, created_at) VALUES (?, ?, ?, NOW())");
+                    $stmt->execute([$register_token, strtoupper($invite_code), $inviter_id]);
+                } elseif (!empty($affiliate_code) && $affiliate_id) {
+                    // فقط کد بازاریاب وجود دارد
+                    $stmt = $conn->prepare("INSERT INTO invite_registrations (register_token, affiliate_id, created_at) VALUES (?, ?, NOW())");
+                    $stmt->execute([$register_token, $affiliate_id]);
+                }
+            }
         } catch (PDOException $e) {
             // اگر خطا رخ داد، فقط لاگ می‌کنیم و ادامه می‌دهیم
-            error_log("Error storing invite code: " . $e->getMessage());
+            error_log("Error storing invite/affiliate code: " . $e->getMessage());
         }
     }
 

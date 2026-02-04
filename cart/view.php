@@ -48,6 +48,25 @@ try {
 }
 
 // دریافت توکن از هدر Authorization
+// Fallback برای getallheaders() در WAMP
+if (!function_exists('getallheaders')) {
+    function getallheaders() {
+        $headers = [];
+        foreach ($_SERVER as $name => $value) {
+            if (substr($name, 0, 5) == 'HTTP_') {
+                $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+            }
+        }
+        // همچنین Authorization را مستقیماً چک کن
+        if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['HTTP_AUTHORIZATION'];
+        } elseif (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+        }
+        return $headers;
+    }
+}
+
 $headers = getallheaders();
 $authHeader = $headers['Authorization'] ?? '';
 $userId = null;
@@ -106,12 +125,28 @@ try {
             ci.selected_length,
             p.id AS product_id,
             p.title,
+            p.description,
             p.price,
             p.discount_price,
             p.image,
-            p.stock
+            p.stock,
+            p.dimensions,
+            p.custom_specifications,
+            p.width,
+            p.size,
+            p.type,
+            p.line_count,
+            p.grade,
+            p.half_finished,
+            p.brand,
+            p.weight,
+            p.color,
+            p.material,
+            p.slot_count,
+            c.name AS category_name
         FROM cart_items ci
         JOIN products p ON ci.product_id = p.id
+        LEFT JOIN categories c ON p.cat_id = c.id
         WHERE ci.cart_id = ?
     ");
     $stmt->execute([$cartId]);

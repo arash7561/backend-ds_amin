@@ -27,6 +27,12 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
     }
 
     try {
+        // بررسی وجود فیلد tracking_code
+        $stmt = $conn->query("SHOW COLUMNS FROM orders LIKE 'tracking_code'");
+        $hasTrackingCodeField = $stmt->fetch();
+        
+        $trackingCodeField = $hasTrackingCodeField ? "o.tracking_code," : "";
+        
         // دریافت اطلاعات اصلی سفارش
         $stmt = $conn->prepare("
             SELECT 
@@ -35,6 +41,7 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
                 o.status,
                 o.user_id,
                 o.guest_token,
+                $trackingCodeField
                 u.name AS user_name,
                 u.mobile AS user_mobile,
                 a.address,

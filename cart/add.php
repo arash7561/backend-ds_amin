@@ -39,6 +39,25 @@ require_once __DIR__ . '/../db_connection.php';
 require_once __DIR__ . '/../auth/jwt_utils.php';
 require_once __DIR__ . '/bulk_pricing_helper.php';
 
+// Fallback برای getallheaders() در WAMP
+if (!function_exists('getallheaders')) {
+    function getallheaders() {
+        $headers = [];
+        foreach ($_SERVER as $name => $value) {
+            if (substr($name, 0, 5) == 'HTTP_') {
+                $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+            }
+        }
+        // همچنین Authorization را مستقیماً چک کن
+        if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['HTTP_AUTHORIZATION'];
+        } elseif (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+        }
+        return $headers;
+    }
+}
+
 // دریافت توکن از هدر Authorization
 $headers = getallheaders();
 $authHeader = $headers['Authorization'] ?? '';
@@ -83,7 +102,7 @@ try {
     // بررسی وجود کالا
     $stmt = $conn->prepare("SELECT * FROM products WHERE id = ?");
     $stmt->execute([$productId]);
-    $product = $stmt->fetch();
+    $product = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$product) {
         http_response_code(404);
@@ -129,11 +148,56 @@ try {
     }
 
     // بررسی موجودی
-    if (isset($product['stock']) && $quantity > $product['stock']) {
-        http_response_code(400);
-        echo json_encode(['error' => 'موجودی کافی نیست.']);
-        exit;
+    // اگر stock برابر null یا خالی باشد، یعنی موجودی نامحدود است (همیشه موجود)
+    // فقط اگر stock یک عدد معتبر باشد و quantity بیشتر از آن باشد، خطا بده
+    $stock = isset($product['stock']) ? $product['stock'] : null;
+    
+    // لاگ برای دیباگ
+    error_log("Product ID: {$productId}, Stock value: " . var_export($stock, true) . ", Stock type: " . gettype($stock) . ", Quantity: {$quantity}, is_null: " . (is_null($stock) ? 'true' : 'false'));
+    
+    // چک کردن اینکه آیا موجودی محدود است یا نامحدود
+    // null, '', 0, یا مقادیر غیر عددی = نامحدود
+    // فقط اعداد مثبت = موجودی محدود
+    $isUnlimited = false;
+    
+    if ($stock === null) {
+        // null = نامحدود
+        $isUnlimited = true;
+        error_log("Product ID: {$productId} - Stock is NULL, treating as unlimited");
+    } elseif ($stock === '' || $stock === false) {
+        // رشته خالی یا false = نامحدود
+        $isUnlimited = true;
+        error_log("Product ID: {$productId} - Stock is empty/false, treating as unlimited");
+    } elseif ($stock === 0 || $stock === '0') {
+        // 0 = نامحدود (برای محصولات قدیمی که stock = 0 دارند)
+        $isUnlimited = true;
+        error_log("Product ID: {$productId} - Stock is 0, treating as unlimited");
+    } elseif (!is_numeric($stock)) {
+        // غیر عددی = نامحدود
+        $isUnlimited = true;
+        error_log("Product ID: {$productId} - Stock is not numeric, treating as unlimited");
     }
+    
+    if (!$isUnlimited) {
+        $stockValue = (int)$stock;
+        error_log("Product ID: {$productId} - Stock is limited: {$stockValue}, Quantity requested: {$quantity}");
+        if ($stockValue < 0) {
+            // موجودی منفی = ناموجود
+            error_log("Product ID: {$productId} - Stock is negative, rejecting");
+            http_response_code(400);
+            echo json_encode(['error' => 'محصول موجود نیست.']);
+            exit;
+        } elseif ($quantity > $stockValue) {
+            // موجودی محدود و کافی نیست
+            error_log("Product ID: {$productId} - Insufficient stock: requested {$quantity}, available {$stockValue}");
+            http_response_code(400);
+            echo json_encode(['error' => 'موجودی کافی نیست.']);
+            exit;
+        }
+    } else {
+        error_log("Product ID: {$productId} - Stock is unlimited, allowing add to cart");
+    }
+    // اگر نامحدود باشد، هیچ چکی نمی‌کنیم و اجازه می‌دهیم
 
     // پیدا یا ساختن سبد خرید
     if ($userId) {

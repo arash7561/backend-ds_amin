@@ -5,10 +5,7 @@
  */
 
 require_once __DIR__ . '/../db_connection.php';
-require_once __DIR__ . '/../vendor/autoload.php';
-
-use Firebase\JWT\JWT;
-use Firebase\JWT\Key;
+require_once __DIR__ . '/../auth/jwt_utils.php';
 
 // CORS headers
 header('Access-Control-Allow-Origin: *');
@@ -34,52 +31,56 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
 try {
     $conn = getPDO();
     
-    // دریافت توکن از header
-    if (function_exists('getallheaders')) {
-        $headers = getallheaders();
-    } else {
-        // Fallback for servers that don't support getallheaders()
-        $headers = [];
-        foreach ($_SERVER as $key => $value) {
-            if (strpos($key, 'HTTP_') === 0) {
-                $header = str_replace(' ', '-', ucwords(str_replace('_', ' ', strtolower(substr($key, 5)))));
-                $headers[$header] = $value;
+    // Fallback برای getallheaders() در WAMP
+    if (!function_exists('getallheaders')) {
+        function getallheaders() {
+            $headers = [];
+            foreach ($_SERVER as $name => $value) {
+                if (substr($name, 0, 5) == 'HTTP_') {
+                    $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+                }
             }
+            // همچنین Authorization را مستقیماً چک کن
+            if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
+                $headers['Authorization'] = $_SERVER['HTTP_AUTHORIZATION'];
+            } elseif (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+                $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+            }
+            return $headers;
         }
     }
-    $authHeader = $headers['Authorization'] ?? '';
     
-    if (!$authHeader || !preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
+    // دریافت توکن از header - فقط چک می‌کنیم که JWT token معتبر است یا نه
+    $headers = getallheaders();
+    $authHeader = $headers['Authorization'] ?? '';
+    $userId = null;
+    $hasValidToken = false;
+    
+    if ($authHeader && preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
+        $jwt = $matches[1];
+        $authResult = verify_jwt_token($jwt);
+        if ($authResult['valid']) {
+            $hasValidToken = true;
+            $userId = $authResult['uid'];
+        }
+    }
+    
+    // اگر token معتبر نیست، خطا می‌دهیم
+    if (!$hasValidToken) {
         http_response_code(401);
         echo json_encode([
             'status' => false,
-            'message' => 'توکن احراز هویت الزامی است'
+            'message' => 'توکن معتبر نیست. لطفاً دوباره وارد شوید.'
         ], JSON_UNESCAPED_UNICODE);
         exit;
     }
     
-    $token = $matches[1];
-    $secret_key = 'your-secret-key';
-    
-    // اعتبارسنجی توکن
-    try {
-        $decoded = JWT::decode($token, new Key($secret_key, 'HS256'));
-        $decoded_array = (array)$decoded;
-        $userId = $decoded_array['uid'] ?? null;
-        
-        if (!$userId) {
-            http_response_code(401);
-            echo json_encode([
-                'status' => false,
-                'message' => 'شناسه کاربر یافت نشد'
-            ], JSON_UNESCAPED_UNICODE);
-            exit;
-        }
-    } catch (Exception $e) {
+    // اگر userId وجود ندارد، خطا می‌دهیم (این API فقط برای کاربران لاگین شده است)
+    if (!$userId) {
         http_response_code(401);
         echo json_encode([
             'status' => false,
-            'message' => 'توکن نامعتبر است: ' . $e->getMessage()
+            'message' => 'شناسه کاربر یافت نشد'
         ], JSON_UNESCAPED_UNICODE);
         exit;
     }

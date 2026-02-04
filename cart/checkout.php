@@ -40,6 +40,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+// Fallback برای getallheaders() در WAMP
+if (!function_exists('getallheaders')) {
+    function getallheaders() {
+        $headers = [];
+        foreach ($_SERVER as $name => $value) {
+            if (substr($name, 0, 5) == 'HTTP_') {
+                $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+            }
+        }
+        // همچنین Authorization را مستقیماً چک کن
+        if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['HTTP_AUTHORIZATION'];
+        } elseif (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+        }
+        return $headers;
+    }
+}
+
 try {
     require_once __DIR__ . '/../db_connection.php';
     require_once __DIR__ . '/../auth/jwt_utils.php';
@@ -59,30 +78,36 @@ try {
 }
 
 // ================= JWT =================
+// فقط چک می‌کنیم که JWT token معتبر است یا نه (نه اینکه کاربر حتماً لاگین کرده باشد)
 $headers = getallheaders();
 $authHeader = $headers['Authorization'] ?? '';
 $userId = null;
+$hasValidToken = false;
 
 if ($authHeader && preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
     $jwt = $matches[1];
     $authResult = verify_jwt_token($jwt);
     if ($authResult['valid']) {
+        $hasValidToken = true;
         $userId = $authResult['uid'];
     }
 }
 
 $data = json_decode(file_get_contents("php://input"), true);
-$guestToken = $data['guest_token'] ?? null;
-
 $address = $data['address'] ?? null;
+$guestToken = $data['guest_token'] ?? null;
 
 $shippingId = isset($data['shipping_id']) ? (int)$data['shipping_id'] : null;
 
-
 // ================= VALIDATION =================
-if (!$userId && !$guestToken) {
+// فقط چک می‌کنیم که JWT token معتبر است یا نه
+// اگر token معتبر نیست، خطا می‌دهیم
+if (!$hasValidToken) {
     http_response_code(401);
-    echo json_encode(['error' => 'برای ثبت سفارش باید وارد شوید یا guest_token داشته باشید.'], JSON_UNESCAPED_UNICODE);
+    echo json_encode([
+        'error' => 'توکن معتبر نیست. لطفاً دوباره وارد شوید.',
+        'requires_login' => true
+    ], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
@@ -102,35 +127,30 @@ if (!$stmt->fetch()) {
 }
 
 // ================= CART =================
+// پیدا کردن سبد خرید کاربر
+// اگر userId وجود دارد، از user_id استفاده می‌کنیم
+// اگر userId وجود ندارد اما token معتبر است، از guest_token استفاده می‌کنیم
+$cart = null;
+$cartId = null;
+
 if ($userId) {
+    // کاربر لاگین شده است
     $stmt = $conn->prepare("SELECT id FROM carts WHERE user_id = ?");
     $stmt->execute([$userId]);
     $cart = $stmt->fetch();
-}
-
-if (empty($cart) && $guestToken) {
+} elseif ($guestToken) {
+    // کاربر مهمان است اما token معتبر دارد
     $stmt = $conn->prepare("SELECT id FROM carts WHERE guest_token = ?");
     $stmt->execute([$guestToken]);
-    $guestCart = $stmt->fetch();
+    $cart = $stmt->fetch();
+}
 
-    if ($guestCart) {
-        if ($userId) {
-            $stmt = $conn->prepare("UPDATE carts SET user_id = ?, guest_token = NULL WHERE id = ?");
-            $stmt->execute([$userId, $guestCart['id']]);
-        }
-        $cartId = $guestCart['id'];
-    } else {
-        http_response_code(404);
-        echo json_encode(['error' => 'سبد خرید یافت نشد'], JSON_UNESCAPED_UNICODE);
-        exit;
-    }
-} elseif (!empty($cart)) {
-    $cartId = $cart['id'];
-} else {
+if (!$cart) {
     http_response_code(404);
     echo json_encode(['error' => 'سبد خرید یافت نشد'], JSON_UNESCAPED_UNICODE);
     exit;
 }
+$cartId = $cart['id'];
 
 $stmt = $conn->prepare("SELECT product_id, quantity FROM cart_items WHERE cart_id = ?");
 $stmt->execute([$cartId]);
@@ -150,6 +170,9 @@ try {
     $stmt->execute();
     $hasAddressField = $stmt->fetch();
 
+    // برای کاربر مهمان، user_id را 0 می‌کنیم (چون فیلد NOT NULL است)
+    $insertUserId = $userId ?: 0;
+    
     if ($hasAddressField && $address) {
         // اگر فیلدهای آدرس وجود دارند، آنها را همراه با shipping_id ذخیره کن
         $addressText = $address['address'] ?? '';
@@ -158,21 +181,35 @@ try {
         $postalCode = $address['postal_code'] ?? '';
         $email = $address['email'] ?? null;
         
-        if ($userId) {
-            $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
-            $stmt->execute([$userId, $shippingId, $addressText, $province, $city, $postalCode, $email]);
+        // بررسی وجود فیلد guest_token در جدول orders
+        $stmt = $conn->prepare("SHOW COLUMNS FROM orders LIKE 'guest_token'");
+        $stmt->execute();
+        $hasGuestTokenField = $stmt->fetch();
+        
+        if ($hasGuestTokenField && $guestToken) {
+            // اگر فیلد guest_token وجود دارد و کاربر مهمان است
+            $stmt = $conn->prepare("INSERT INTO orders (user_id, guest_token, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+            $stmt->execute([$insertUserId, $guestToken, $shippingId, $addressText, $province, $city, $postalCode, $email]);
         } else {
-            $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
-            $stmt->execute([$guestToken, $shippingId, $addressText, $province, $city, $postalCode, $email]);
+            // اگر فیلد guest_token وجود ندارد
+            $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, address, province, city, postal_code, email, created_at, status) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), 'pending')");
+            $stmt->execute([$insertUserId, $shippingId, $addressText, $province, $city, $postalCode, $email]);
         }
     } else {
         // اگر فیلدهای آدرس وجود ندارند، فقط shipping_id را ذخیره کن
-        if ($userId) {
-            $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
-            $stmt->execute([$userId, $shippingId]);
+        // بررسی وجود فیلد guest_token در جدول orders
+        $stmt = $conn->prepare("SHOW COLUMNS FROM orders LIKE 'guest_token'");
+        $stmt->execute();
+        $hasGuestTokenField = $stmt->fetch();
+        
+        if ($hasGuestTokenField && $guestToken) {
+            // اگر فیلد guest_token وجود دارد و کاربر مهمان است
+            $stmt = $conn->prepare("INSERT INTO orders (user_id, guest_token, shipping_id, created_at, status) VALUES (?, ?, ?, NOW(), 'pending')");
+            $stmt->execute([$insertUserId, $guestToken, $shippingId]);
         } else {
-            $stmt = $conn->prepare("INSERT INTO orders (guest_token, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
-            $stmt->execute([$guestToken, $shippingId]);
+            // اگر فیلد guest_token وجود ندارد
+            $stmt = $conn->prepare("INSERT INTO orders (user_id, shipping_id, created_at, status) VALUES (?, ?, NOW(), 'pending')");
+            $stmt->execute([$insertUserId, $shippingId]);
         }
     }
 

@@ -309,6 +309,14 @@ if ($paymentStatus === 'success') {
         error_log("خطا در ارسال پیامک به ادمین برای سفارش #$orderId: " . $e->getMessage());
     }
 
+    // ارسال پیامک تایید پرداخت به کاربر
+    try {
+        require_once __DIR__ . '/../../panel/order/orders.php';
+        sendPaymentConfirmationToUser($orderId, $refId, $conn);
+    } catch (Exception $e) {
+        error_log("خطا در ارسال پیامک تایید پرداخت به کاربر برای سفارش #$orderId: " . $e->getMessage());
+    }
+
     // کاهش موجودی محصولات
     $stmt = $conn->prepare("SELECT product_id, quantity FROM order_items WHERE order_id = ?");
     $stmt->execute([$orderId]);

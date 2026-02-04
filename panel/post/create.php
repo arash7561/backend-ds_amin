@@ -1,6 +1,21 @@
 <?php
 require_once '../../db_connection.php';
 $conn = getPDO();
+
+// Handle CORS preflight requests
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type, Authorization, Cache-Control, X-CSRF-Token, X-Requested-With');
+    header('Access-Control-Max-Age: 86400');
+    http_response_code(200);
+    exit;
+}
+
+// Set CORS headers for actual requests
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, Cache-Control, X-CSRF-Token, X-Requested-With');
 header('Content-Type: application/json');
 
 // بررسی نوع درخواست و استخراج داده‌ها
@@ -28,7 +43,8 @@ $slug = htmlspecialchars(trim($data['slug'] ?? ''));
 $cat_id = $data['cat_id'] ?? $data['category'] ?? null; // پشتیبانی از هر دو نام فیلد
 $status = $data['status'] ?? null;
 $image = htmlspecialchars(trim($data['image'] ?? ''));
-$stock = $data['stock'] ?? null;
+// موجودی: اگر خالی یا null باشد، null در نظر گرفته می‌شود (نامحدود)
+$stock = isset($data['stock']) && $data['stock'] !== '' && $data['stock'] !== null ? $data['stock'] : null;
 $price = $data['price'] ?? null;
 $discount_percent = $data['discount_percent'] ?? 0;
 $size = htmlspecialchars(trim($data['size'] ?? ''));
@@ -68,6 +84,12 @@ $discount_rules = isset($data['discount_rules']) && is_array($data['discount_rul
 $uploaded_images = [];
 $upload_dir = '../../uploads/products/';
 
+// Debug: Log received files
+error_log("create.php: Received " . count($_FILES) . " files");
+foreach ($_FILES as $key => $file) {
+    error_log("create.php: File key: $key, error: " . ($file['error'] ?? 'N/A'));
+}
+
 // ایجاد پوشه اگر وجود ندارد
 if (!is_dir($upload_dir)) {
     mkdir($upload_dir, 0777, true);
@@ -78,6 +100,7 @@ if (!empty($_FILES)) {
     foreach ($_FILES as $key => $file) {
         // بررسی اینکه کلید شامل image_ باشد (فایل‌های تصویری)
         if (strpos($key, 'image_') === 0 && $file['error'] === UPLOAD_ERR_OK) {
+            error_log("create.php: Processing file: $key");
             $fileTmpPath = $file['tmp_name'];
             $fileName = basename($file['name']);
             $fileExt = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
@@ -90,10 +113,14 @@ if (!empty($_FILES)) {
                 
                 if (move_uploaded_file($fileTmpPath, $destPath)) {
                     $uploaded_images[] = 'uploads/products/' . $newFileName;
+                    error_log("create.php: Successfully uploaded: $newFileName");
                 } else {
                     // Fallback: try copy for testing scenarios
                     if (copy($fileTmpPath, $destPath)) {
                         $uploaded_images[] = 'uploads/products/' . $newFileName;
+                        error_log("create.php: Successfully copied: $newFileName");
+                    } else {
+                        error_log("create.php: Failed to upload: $newFileName");
                     }
                 }
             }
@@ -101,7 +128,34 @@ if (!empty($_FILES)) {
     }
 }
 
-// اگر تصاویری آپلود شده، اولین تصویر را به عنوان تصویر اصلی انتخاب کن
+// پردازش تصاویر انتخاب شده از دسته‌بندی
+$category_image_urls = [];
+if (isset($data['category_image_urls'])) {
+    $category_image_urls_json = $data['category_image_urls'];
+    if (is_string($category_image_urls_json)) {
+        $category_image_urls = json_decode($category_image_urls_json, true) ?? [];
+    } elseif (is_array($category_image_urls_json)) {
+        $category_image_urls = $category_image_urls_json;
+    }
+    
+    // اضافه کردن تصاویر دسته‌بندی به لیست تصاویر
+    foreach ($category_image_urls as $imgUrl) {
+        if (!empty($imgUrl) && is_string($imgUrl)) {
+            // اگر URL کامل است، مسیر نسبی را استخراج کن
+            $relativePath = $imgUrl;
+            if (strpos($imgUrl, 'uploads/') !== false) {
+                // استخراج مسیر نسبی از URL کامل
+                $parts = explode('uploads/', $imgUrl);
+                if (count($parts) > 1) {
+                    $relativePath = 'uploads/' . $parts[1];
+                }
+            }
+            $uploaded_images[] = $relativePath;
+        }
+    }
+}
+
+// اگر تصاویری آپلود شده یا از دسته‌بندی انتخاب شده، اولین تصویر را به عنوان تصویر اصلی انتخاب کن
 if (!empty($uploaded_images)) {
     $image = $uploaded_images[0];
 }
@@ -113,7 +167,8 @@ if ($title === '') $errors[] = 'عنوان خالی است';
 if ($description === '') $errors[] = 'توضیحات خالی است';
 if (!isset($cat_id) || $cat_id === null || $cat_id === '') $errors[] = 'دسته‌بندی خالی است';
 if (!in_array($status, [0, 1, '0', '1'], true)) $errors[] = 'وضعیت نامعتبر است';
-if (!is_numeric($stock) || $stock === '') $errors[] = 'موجودی نامعتبر است';
+// موجودی می‌تواند null باشد (نامحدود) یا یک عدد معتبر
+if ($stock !== null && $stock !== '' && (!is_numeric($stock) || $stock < 0)) $errors[] = 'موجودی نامعتبر است';
 if (!is_numeric($price) || $price === '') $errors[] = 'قیمت نامعتبر است';
 if (!is_numeric($discount_percent) || $discount_percent < 0 || $discount_percent > 100)
     $errors[] = 'درصد تخفیف باید بین ۰ تا ۱۰۰ باشد';
@@ -161,8 +216,26 @@ if (empty($slug)) {
 // محاسبه قیمت تخفیف‌خورده
 $discount_price = $price - ($price * $discount_percent / 100);
 
-// تبدیل قطر و طول‌ها به JSON برای ذخیره در دیتابیس
-$dimensions = json_encode(['diameters' => $diameters, 'lengths' => $lengths], JSON_UNESCAPED_UNICODE);
+// دریافت واحدهای اندازه‌گیری
+$length_unit = htmlspecialchars(trim($data['length_unit'] ?? 'cm'));
+$diameter_unit = htmlspecialchars(trim($data['diameter_unit'] ?? 'cm'));
+$width_unit = htmlspecialchars(trim($data['width_unit'] ?? 'cm'));
+
+// دریافت مقادیر تک طول و قطر (اگر به صورت تک مقدار ارسال شده باشند)
+$length = htmlspecialchars(trim($data['length'] ?? ''));
+$diameter = htmlspecialchars(trim($data['diameter'] ?? ''));
+
+// تبدیل قطر و طول‌ها به JSON برای ذخیره در دیتابیس (شامل واحدها)
+$dimensions = json_encode([
+    'diameters' => $diameters,
+    'lengths' => $lengths,
+    'length' => $length,
+    'length_unit' => $length_unit,
+    'diameter' => $diameter,
+    'diameter_unit' => $diameter_unit,
+    'width' => $width,
+    'width_unit' => $width_unit
+], JSON_UNESCAPED_UNICODE);
 
 try {
     // بررسی یکتا بودن slug

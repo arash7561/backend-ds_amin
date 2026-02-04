@@ -56,7 +56,8 @@ if (is_numeric($status)) {
 }
 
 $image = trim($data->image ?? '');
-$stock = $data->stock ?? null;
+// موجودی: اگر خالی یا null باشد، null در نظر گرفته می‌شود (نامحدود)
+$stock = isset($data->stock) && $data->stock !== '' && $data->stock !== null ? $data->stock : null;
 $price = $data->price ?? null;
 $discount_price = $data->discount_price ?? null;
 $size = trim($data->size ?? '');
@@ -151,7 +152,8 @@ if (!$id || !is_numeric($id)) $errors[] = 'آیدی محصول معتبر نیس
 if ($title === '') $errors[] = 'عنوان خالی است';
 if ($description === '') $errors[] = 'توضیحات خالی است';
 if (!isset($cat_id)) $errors[] = 'دسته بندی خالی است';
-if (!is_numeric($stock)) $errors[] = 'موجودی نامعتبر است';
+// موجودی می‌تواند null باشد (نامحدود) یا یک عدد معتبر
+if ($stock !== null && $stock !== '' && (!is_numeric($stock) || $stock < 0)) $errors[] = 'موجودی نامعتبر است';
 if (!is_numeric($price)) $errors[] = 'قیمت نامعتبر است';
 
 if (!empty($errors)) {

@@ -22,6 +22,9 @@ if (in_array($origin, $allowed_origins) ||
      strpos($origin, 'https://aminindpharm.ir') !== false ||
      strpos($origin, 'http://aminindpharm.ir') !== false)) {
     header('Access-Control-Allow-Origin: ' . $origin);
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+    header('Access-Control-Allow-Credentials: true');
 }
 
 // Handle preflight OPTIONS request
@@ -96,10 +99,43 @@ try {
     $stmt->execute([$cartItem['product_id']]);
     $product = $stmt->fetch();
 
-    if ($product && isset($product['stock']) && $newQuantity > $product['stock']) {
-        http_response_code(400);
-        echo json_encode(['success' => false, 'error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
-        exit;
+    // بررسی موجودی
+    // اگر stock برابر null یا خالی باشد، یعنی موجودی نامحدود است (همیشه موجود)
+    // فقط اگر stock یک عدد معتبر باشد و newQuantity بیشتر از آن باشد، خطا بده
+    if ($product) {
+        $stock = $product['stock'];
+        
+        // چک کردن اینکه آیا موجودی محدود است یا نامحدود
+        // null, '', 0, یا مقادیر غیر عددی = نامحدود
+        // فقط اعداد مثبت = موجودی محدود
+        $isUnlimited = false;
+        
+        if ($stock === null) {
+            $isUnlimited = true;
+        } elseif ($stock === '' || $stock === false) {
+            $isUnlimited = true;
+        } elseif ($stock === 0 || $stock === '0') {
+            // 0 = نامحدود (برای محصولات قدیمی که stock = 0 دارند)
+            $isUnlimited = true;
+        } elseif (!is_numeric($stock)) {
+            $isUnlimited = true;
+        }
+        
+        if (!$isUnlimited) {
+            $stockValue = (int)$stock;
+            if ($stockValue < 0) {
+                // موجودی منفی = ناموجود
+                http_response_code(400);
+                echo json_encode(['success' => false, 'error' => 'محصول موجود نیست.'], JSON_UNESCAPED_UNICODE);
+                exit;
+            } elseif ($newQuantity > $stockValue) {
+                // موجودی محدود و کافی نیست
+                http_response_code(400);
+                echo json_encode(['success' => false, 'error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
+                exit;
+            }
+        }
+        // اگر نامحدود باشد، هیچ چکی نمی‌کنیم و اجازه می‌دهیم
     }
 
     // بروزرسانی تعداد

@@ -35,6 +35,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+// Fallback برای getallheaders() در WAMP
+if (!function_exists('getallheaders')) {
+    function getallheaders() {
+        $headers = [];
+        foreach ($_SERVER as $name => $value) {
+            if (substr($name, 0, 5) == 'HTTP_') {
+                $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+            }
+        }
+        // همچنین Authorization را مستقیماً چک کن
+        if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['HTTP_AUTHORIZATION'];
+        } elseif (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+            $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+        }
+        return $headers;
+    }
+}
+
 try {
     require_once __DIR__ . '/../../db_connection.php';
     require_once __DIR__ . '/../../auth/jwt_utils.php';
@@ -61,33 +80,49 @@ function sendJson($status, $type, $message, $extra = []) {
     exit;
 }
 
-// 1️⃣ بررسی کاربر با JWT
+// 1️⃣ بررسی JWT token (نه اینکه کاربر حتماً لاگین کرده باشد)
+// فقط چک می‌کنیم که JWT token معتبر است یا نه
 $headers = getallheaders();
 $authHeader = $headers['Authorization'] ?? '';
 $userId = null;
+$hasValidToken = false;
 
 if ($authHeader && preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
     $jwt = $matches[1];
     $authResult = verify_jwt_token($jwt);
     if ($authResult['valid']) {
+        $hasValidToken = true;
         $userId = $authResult['uid'];
-        error_log("User authenticated via JWT - User ID: $userId");
+        error_log("JWT token is valid - User ID: " . ($userId ?? 'NULL'));
     } else {
         error_log("JWT token invalid or expired: " . ($authResult['error'] ?? 'Unknown error'));
     }
 } else {
-    error_log("No Authorization header found - user is guest");
+    error_log("No Authorization header found");
 }
 
 // 2️⃣ دریافت داده‌ها
 $data = json_decode(file_get_contents("php://input"), true);
 $orderId = (int)($data['order_id'] ?? 0);
+$guestToken = $data['guest_token'] ?? null;
+
+// لاگ کردن برای دیباگ
+error_log("Create Payment - Order ID: $orderId");
+error_log("Create Payment - Guest Token: " . ($guestToken ?? 'NULL'));
+error_log("Create Payment - Has Valid Token: " . ($hasValidToken ? 'YES' : 'NO'));
+error_log("Create Payment - User ID: " . ($userId ?? 'NULL'));
+error_log("Create Payment - Full data: " . json_encode($data, JSON_UNESCAPED_UNICODE));
 
 if (!$orderId) {
     sendJson(400, 'error', 'شناسه سفارش معتبر نیست');
 }
 
-// 3️⃣ بررسی سفارش
+// 3️⃣ بررسی اینکه یا JWT token معتبر است یا guest_token وجود دارد
+if (!$hasValidToken && !$guestToken) {
+    sendJson(401, 'error', 'برای پرداخت باید وارد شوید یا guest_token داشته باشید');
+}
+
+// 4️⃣ بررسی سفارش
 if ($userId) {
     // کاربر لاگین است - فقط با user_id بررسی می‌کنیم
     error_log("Checking order for logged-in user - Order ID: $orderId, User ID: $userId");
@@ -95,7 +130,6 @@ if ($userId) {
     $stmt->execute([$orderId, $userId]);
 } else {
     // کاربر مهمان است - باید guest_token داشته باشد
-    $guestToken = $data['guest_token'] ?? null;
     error_log("Checking order for guest - Order ID: $orderId, Guest Token: " . ($guestToken ?? 'NULL'));
     
     if (!$guestToken) {
