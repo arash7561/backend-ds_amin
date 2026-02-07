@@ -263,27 +263,64 @@ try {
             $totalPrice = (float)$payment['amount'];
             $order['payment_ref_id'] = $payment['ref_id'] ?? null;
         } else {
-            // Fallback: محاسبه از order_items
-            $itemStmt = $conn->prepare("
-                SELECT oi.quantity, p.price, p.discount_price 
-                FROM order_items oi 
-                JOIN products p ON oi.product_id = p.id 
-                WHERE oi.order_id = ?
-            ");
-            $itemStmt->execute([$orderId]);
-            $items = $itemStmt->fetchAll(PDO::FETCH_ASSOC);
-            
-            foreach ($items as $item) {
-                $price = !empty($item['discount_price']) && $item['discount_price'] > 0 
-                         ? (float)$item['discount_price'] 
-                         : (float)$item['price'];
-                $totalPrice += $price * (int)$item['quantity'];
+            // Fallback 1: جمع total_price از order_items (برای فاکتورهای اعتباری و سفارش‌های بدون پرداخت)
+            $sumStmt = $conn->prepare("SELECT COALESCE(SUM(total_price), 0) AS total FROM order_items WHERE order_id = ?");
+            $sumStmt->execute([$orderId]);
+            $sumRow = $sumStmt->fetch(PDO::FETCH_ASSOC);
+            $totalPrice = (float)($sumRow['total'] ?? 0);
+            if ($totalPrice <= 0) {
+                // Fallback 2: محاسبه از products (در صورت وجود)
+                $itemStmt = $conn->prepare("
+                    SELECT oi.quantity, COALESCE(p.discount_price, p.price, oi.price) AS unit_price
+                    FROM order_items oi 
+                    LEFT JOIN products p ON p.id = oi.product_id 
+                    WHERE oi.order_id = ?
+                ");
+                $itemStmt->execute([$orderId]);
+                $items = $itemStmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($items as $item) {
+                    $totalPrice += (float)($item['unit_price'] ?? 0) * (int)($item['quantity'] ?? 1);
+                }
+            }
+            if ($totalPrice <= 0) {
+                // Fallback 3: برای فاکتور اعتباری، مبلغ از marketer_credit_invoices
+                try {
+                    $mciStmt = $conn->prepare("SELECT total_amount FROM marketer_credit_invoices WHERE order_id = ?");
+                    $mciStmt->execute([$orderId]);
+                    $mci = $mciStmt->fetch(PDO::FETCH_ASSOC);
+                    if ($mci && !empty($mci['total_amount'])) {
+                        $totalPrice = (float)$mci['total_amount'];
+                    }
+                } catch (PDOException $e) { /* ignore */ }
             }
             $order['payment_ref_id'] = null;
         }
         
         $order['total_price'] = $totalPrice;
         $totalAmount += $totalPrice;
+
+        // بررسی فاکتور اعتباری
+        $order['is_credit_invoice'] = false;
+        $order['settlement_date'] = null;
+        $order['check_images'] = [];
+        try {
+            $creditStmt = $conn->prepare("
+                SELECT mci.id AS credit_invoice_id, mci.settlement_date
+                FROM marketer_credit_invoices mci
+                WHERE mci.order_id = ?
+            ");
+            $creditStmt->execute([$orderId]);
+            $creditInfo = $creditStmt->fetch(PDO::FETCH_ASSOC);
+            if ($creditInfo) {
+                $order['is_credit_invoice'] = true;
+                $order['settlement_date'] = $creditInfo['settlement_date'] ?? null;
+                $checkStmt = $conn->prepare("SELECT id, image_path FROM marketer_credit_check_images WHERE invoice_id = ? ORDER BY id ASC");
+                $checkStmt->execute([$creditInfo['credit_invoice_id']]);
+                $order['check_images'] = $checkStmt->fetchAll(PDO::FETCH_ASSOC);
+            }
+        } catch (PDOException $e) {
+            // جدول ممکن است وجود نداشته باشد
+        }
     }
     unset($order);
 

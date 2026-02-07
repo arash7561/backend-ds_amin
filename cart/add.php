@@ -147,59 +147,8 @@ try {
         }
     }
 
-    // بررسی موجودی
-    // اگر stock برابر null یا خالی باشد، یعنی موجودی نامحدود است (همیشه موجود)
-    // فقط اگر stock یک عدد معتبر باشد و quantity بیشتر از آن باشد، خطا بده
-    $stock = isset($product['stock']) ? $product['stock'] : null;
-    
-    // لاگ برای دیباگ
-    error_log("Product ID: {$productId}, Stock value: " . var_export($stock, true) . ", Stock type: " . gettype($stock) . ", Quantity: {$quantity}, is_null: " . (is_null($stock) ? 'true' : 'false'));
-    
-    // چک کردن اینکه آیا موجودی محدود است یا نامحدود
-    // null, '', 0, یا مقادیر غیر عددی = نامحدود
-    // فقط اعداد مثبت = موجودی محدود
-    $isUnlimited = false;
-    
-    if ($stock === null) {
-        // null = نامحدود
-        $isUnlimited = true;
-        error_log("Product ID: {$productId} - Stock is NULL, treating as unlimited");
-    } elseif ($stock === '' || $stock === false) {
-        // رشته خالی یا false = نامحدود
-        $isUnlimited = true;
-        error_log("Product ID: {$productId} - Stock is empty/false, treating as unlimited");
-    } elseif ($stock === 0 || $stock === '0') {
-        // 0 = نامحدود (برای محصولات قدیمی که stock = 0 دارند)
-        $isUnlimited = true;
-        error_log("Product ID: {$productId} - Stock is 0, treating as unlimited");
-    } elseif (!is_numeric($stock)) {
-        // غیر عددی = نامحدود
-        $isUnlimited = true;
-        error_log("Product ID: {$productId} - Stock is not numeric, treating as unlimited");
-    }
-    
-    if (!$isUnlimited) {
-        $stockValue = (int)$stock;
-        error_log("Product ID: {$productId} - Stock is limited: {$stockValue}, Quantity requested: {$quantity}");
-        if ($stockValue < 0) {
-            // موجودی منفی = ناموجود
-            error_log("Product ID: {$productId} - Stock is negative, rejecting");
-            http_response_code(400);
-            echo json_encode(['error' => 'محصول موجود نیست.']);
-            exit;
-        } elseif ($quantity > $stockValue) {
-            // موجودی محدود و کافی نیست
-            error_log("Product ID: {$productId} - Insufficient stock: requested {$quantity}, available {$stockValue}");
-            http_response_code(400);
-            echo json_encode(['error' => 'موجودی کافی نیست.']);
-            exit;
-        }
-    } else {
-        error_log("Product ID: {$productId} - Stock is unlimited, allowing add to cart");
-    }
-    // اگر نامحدود باشد، هیچ چکی نمی‌کنیم و اجازه می‌دهیم
-
-    // پیدا یا ساختن سبد خرید
+    // پیدا یا ساختن سبد خرید (قبل از چک موجودی برای محاسبه موجودی باقیمانده)
+    $cartId = null;
     if ($userId) {
         // کاربر وارد شده
         $stmt = $conn->prepare("SELECT id FROM carts WHERE user_id = ?");
@@ -246,6 +195,65 @@ try {
         }
     }
 
+    // بررسی موجودی (بعد از پیدا کردن cart برای محاسبه موجودی باقیمانده)
+    // موجودی باید یک عدد مثبت باشد، در غیر این صورت موجودی کافی نیست
+    $stock = isset($product['stock']) ? $product['stock'] : null;
+    
+    // لاگ برای دیباگ
+    error_log("Product ID: {$productId}, Stock value: " . var_export($stock, true) . ", Stock type: " . gettype($stock) . ", Quantity: {$quantity}, is_null: " . (is_null($stock) ? 'true' : 'false'));
+    
+    // تبدیل به عدد برای مقایسه دقیق‌تر
+    $stockInt = is_numeric($stock) ? (int)$stock : null;
+    
+    // اگر موجودی null، undefined، خالی، یا غیر عددی است، به عنوان 0 در نظر بگیر
+    if ($stock === null || $stock === '' || $stock === false || !is_numeric($stock)) {
+        $productStock = 0;
+        error_log("Product ID: {$productId} - Stock is NULL/empty/false/non-numeric, treating as 0 (out of stock)");
+    } else {
+        $productStock = (int)$stock;
+        error_log("Product ID: {$productId} - Product stock value: {$productStock}, Quantity requested: {$quantity}");
+    }
+    
+    // بررسی موجودی: باید موجودی مثبت باشد
+    if ($productStock <= 0) {
+        // موجودی صفر یا منفی = موجودی کافی نیست
+        error_log("Product ID: {$productId} - Stock is 0 or negative, rejecting");
+        http_response_code(400);
+        echo json_encode(['error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+    
+    // محاسبه تعداد موجود در سبد خرید (برای همین محصول با همین قطر و طول)
+    $quantityInCart = 0;
+    if ($cartId) {
+        $stmt = $conn->prepare("SELECT SUM(quantity) as total FROM cart_items WHERE cart_id = ? AND product_id = ? AND selected_diameter = ? AND selected_length = ?");
+        $stmt->execute([$cartId, $productId, $selectedDiameter, $selectedLength]);
+        $result = $stmt->fetch();
+        $quantityInCart = $result ? (int)$result['total'] : 0;
+    }
+    
+    // موجودی باقیمانده = موجودی کل - تعداد موجود در سبد
+    $availableStock = $productStock - $quantityInCart;
+    
+    error_log("Product ID: {$productId} - Product stock: {$productStock}, Quantity in cart: {$quantityInCart}, Available stock: {$availableStock}, Requested quantity: {$quantity}");
+    
+    // بررسی موجودی باقیمانده
+    if ($availableStock <= 0) {
+        // موجودی باقیمانده صفر یا منفی = موجودی کافی نیست
+        error_log("Product ID: {$productId} - Available stock is 0 or negative, rejecting");
+        http_response_code(400);
+        echo json_encode(['error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
+        exit;
+    } elseif ($quantity > $availableStock) {
+        // موجودی باقیمانده کافی نیست
+        error_log("Product ID: {$productId} - Insufficient available stock: requested {$quantity}, available {$availableStock}");
+        http_response_code(400);
+        echo json_encode(['error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
+        exit;
+    }
+    
+    error_log("Product ID: {$productId} - Stock check passed: available {$availableStock}, requested {$quantity}");
+
     // بررسی وجود آیتم با محصول و قطر و طول مشابه در سبد
     $stmt = $conn->prepare("SELECT id, quantity FROM cart_items WHERE cart_id = ? AND product_id = ? AND selected_diameter = ? AND selected_length = ?");
     $stmt->execute([$cartId, $productId, $selectedDiameter, $selectedLength]);
@@ -263,9 +271,9 @@ try {
         error_log("Inserted new cart_item for cartId={$cartId}, productId={$productId}");
     }
 
-    // اعمال قیمت‌گذاری حجمی
+    // اعمال قیمت‌گذاری حجمی (محصول و دسته‌بندی)
     $originalPrice = (float)$product['price'];
-    $bulkPricingInfo = getBulkPricingInfo($conn, $productId, $newQuantity, $originalPrice);
+    $bulkPricingInfo = getBulkPricingInfo($conn, $productId, $newQuantity, $originalPrice, $product['cat_id'] ?? null);
     
     // بررسی تخفیف معمولی محصول
     $discountPriceValue = !empty($product['discount_price']) && (float)$product['discount_price'] > 0 && (float)$product['discount_price'] < $originalPrice 

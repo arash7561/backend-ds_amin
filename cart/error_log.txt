@@ -13583,3 +13583,2151 @@ Stack trace:
 [04-Feb-2026 18:58:33 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
 [04-Feb-2026 18:58:33 UTC] Found cart with ID: 94
 [04-Feb-2026 18:58:33 UTC] Found 0 items in cart
+[05-Feb-2026 07:03:46 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:03:46 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:03:46 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:03:46 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:03:47 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:03:47 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:03:47 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:03:47 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:03:49 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:03:49 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:03:49 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:03:49 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:04:25 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:04:25 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:04:25 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 07:04:25 UTC] Found cart with ID: 94
+[05-Feb-2026 07:04:25 UTC] Found 0 items in cart
+[05-Feb-2026 07:04:26 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:04:26 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:04:26 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 07:04:26 UTC] Found cart with ID: 94
+[05-Feb-2026 07:04:26 UTC] Found 0 items in cart
+[05-Feb-2026 07:04:35 UTC] UserID: NULL
+[05-Feb-2026 07:04:35 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:04:35 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:04:35 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:04:35 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:04:40 UTC] UserID: NULL
+[05-Feb-2026 07:04:40 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:04:40 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:04:40 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:04:40 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:05:16 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:05:16 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:05:16 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 07:05:16 UTC] Found cart with ID: 94
+[05-Feb-2026 07:05:16 UTC] Found 0 items in cart
+[05-Feb-2026 07:05:16 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:05:16 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:05:16 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:05:16 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:05:17 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:05:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:05:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 07:05:17 UTC] Found cart with ID: 94
+[05-Feb-2026 07:05:17 UTC] Found 0 items in cart
+[05-Feb-2026 07:05:32 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:05:32 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:05:32 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 07:05:32 UTC] Found cart with ID: 94
+[05-Feb-2026 07:05:32 UTC] Found 0 items in cart
+[05-Feb-2026 07:06:28 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:06:28 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:06:28 UTC] View cart for userId: 24
+[05-Feb-2026 07:06:28 UTC] Found cart with ID: 106
+[05-Feb-2026 07:06:28 UTC] Found 0 items in cart
+[05-Feb-2026 07:06:28 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:06:28 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:06:28 UTC] View cart for userId: 24
+[05-Feb-2026 07:06:28 UTC] Found cart with ID: 106
+[05-Feb-2026 07:06:28 UTC] Found 0 items in cart
+[05-Feb-2026 07:06:45 UTC] UserID: 24
+[05-Feb-2026 07:06:45 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:06:45 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:06:45 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:06:45 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:07:01 UTC] UserID: 24
+[05-Feb-2026 07:07:01 UTC] Product ID: 238, Stock value: 7, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:07:01 UTC] Product ID: 238 - Stock is limited: 7, Quantity requested: 1
+[05-Feb-2026 07:07:01 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:07:01 UTC] Inserted new cart_item for cartId=106, productId=238
+[05-Feb-2026 07:07:01 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:07:01 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:07:01 UTC] View cart for userId: 24
+[05-Feb-2026 07:07:01 UTC] Found cart with ID: 106
+[05-Feb-2026 07:07:01 UTC] Found 1 items in cart
+[05-Feb-2026 07:08:13 UTC] UserID: 24
+[05-Feb-2026 07:08:13 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:08:13 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:08:13 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:08:13 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:11:15 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA'
+[05-Feb-2026 07:11:15 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA
+[05-Feb-2026 07:11:15 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770275186,"exp":1771571186,"uid":24,"mobile":"09904968841","role":"user"}
+[05-Feb-2026 07:11:15 UTC] Auth check - Extracted user_id: 24
+[05-Feb-2026 07:11:15 UTC] Auth check - is_admin: false
+[05-Feb-2026 07:11:15 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:11:15 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:11:15 UTC] View cart for userId: 24
+[05-Feb-2026 07:11:15 UTC] Found cart with ID: 106
+[05-Feb-2026 07:11:15 UTC] Found 1 items in cart
+[05-Feb-2026 07:22:57 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:22:57 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:22:57 UTC] View cart for userId: 24
+[05-Feb-2026 07:22:57 UTC] Found cart with ID: 106
+[05-Feb-2026 07:22:57 UTC] Found 1 items in cart
+[05-Feb-2026 07:22:57 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:22:57 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:22:57 UTC] View cart for userId: 24
+[05-Feb-2026 07:22:57 UTC] Found cart with ID: 106
+[05-Feb-2026 07:22:57 UTC] Found 1 items in cart
+[05-Feb-2026 07:23:03 UTC] UserID: 24
+[05-Feb-2026 07:23:03 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:23:03 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:23:03 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:23:03 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:23:36 UTC] UserID: 24
+[05-Feb-2026 07:23:36 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:23:36 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:23:36 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:23:36 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:23:46 UTC] UserID: 24
+[05-Feb-2026 07:23:46 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:23:46 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:23:46 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:23:46 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:23:53 UTC] UserID: 24
+[05-Feb-2026 07:23:53 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:23:53 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:23:53 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:23:53 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:26:10 UTC] UserID: 24
+[05-Feb-2026 07:26:10 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:26:10 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:26:10 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:26:10 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:26:21 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:26:21 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:26:21 UTC] View cart for userId: 24
+[05-Feb-2026 07:26:21 UTC] Found cart with ID: 106
+[05-Feb-2026 07:26:21 UTC] Found 1 items in cart
+[05-Feb-2026 07:26:22 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:26:22 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:26:22 UTC] View cart for userId: 24
+[05-Feb-2026 07:26:22 UTC] Found cart with ID: 106
+[05-Feb-2026 07:26:22 UTC] Found 1 items in cart
+[05-Feb-2026 07:26:40 UTC] UserID: 24
+[05-Feb-2026 07:26:40 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:26:40 UTC] Product ID: 286, Stock value: -25, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:26:40 UTC] Product ID: 286 - Stock is limited: -25, Quantity requested: 1
+[05-Feb-2026 07:26:40 UTC] Product ID: 286 - Stock is negative, rejecting
+[05-Feb-2026 07:30:56 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:30:56 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:30:56 UTC] View cart for userId: 24
+[05-Feb-2026 07:30:56 UTC] Found cart with ID: 106
+[05-Feb-2026 07:30:56 UTC] Found 1 items in cart
+[05-Feb-2026 07:30:57 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:30:57 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:30:57 UTC] View cart for userId: 24
+[05-Feb-2026 07:30:57 UTC] Found cart with ID: 106
+[05-Feb-2026 07:30:57 UTC] Found 1 items in cart
+[05-Feb-2026 07:31:09 UTC] UserID: 24
+[05-Feb-2026 07:31:09 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 07:31:09 UTC] Product ID: 286, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:31:09 UTC] Product ID: 286 - Stock is 0, treating as unlimited
+[05-Feb-2026 07:31:09 UTC] Product ID: 286 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 07:31:09 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:31:09 UTC] Inserted new cart_item for cartId=106, productId=286
+[05-Feb-2026 07:31:09 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:31:09 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:31:09 UTC] View cart for userId: 24
+[05-Feb-2026 07:31:09 UTC] Found cart with ID: 106
+[05-Feb-2026 07:31:09 UTC] Found 2 items in cart
+[05-Feb-2026 07:31:18 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA'
+[05-Feb-2026 07:31:18 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA
+[05-Feb-2026 07:31:18 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770275186,"exp":1771571186,"uid":24,"mobile":"09904968841","role":"user"}
+[05-Feb-2026 07:31:18 UTC] Auth check - Extracted user_id: 24
+[05-Feb-2026 07:31:18 UTC] Auth check - is_admin: false
+[05-Feb-2026 07:31:18 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:31:18 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:31:18 UTC] View cart for userId: 24
+[05-Feb-2026 07:31:18 UTC] Found cart with ID: 106
+[05-Feb-2026 07:31:18 UTC] Found 2 items in cart
+[05-Feb-2026 07:31:28 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA'
+[05-Feb-2026 07:31:28 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA
+[05-Feb-2026 07:31:28 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770275186,"exp":1771571186,"uid":24,"mobile":"09904968841","role":"user"}
+[05-Feb-2026 07:31:28 UTC] Auth check - Extracted user_id: 24
+[05-Feb-2026 07:31:28 UTC] Auth check - is_admin: false
+[05-Feb-2026 07:31:28 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:31:28 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:31:28 UTC] View cart for userId: 24
+[05-Feb-2026 07:31:28 UTC] Found cart with ID: 106
+[05-Feb-2026 07:31:28 UTC] Found 2 items in cart
+[05-Feb-2026 07:31:30 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA'
+[05-Feb-2026 07:31:30 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA
+[05-Feb-2026 07:31:30 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770275186,"exp":1771571186,"uid":24,"mobile":"09904968841","role":"user"}
+[05-Feb-2026 07:31:30 UTC] Auth check - Extracted user_id: 24
+[05-Feb-2026 07:31:30 UTC] Auth check - is_admin: false
+[05-Feb-2026 07:31:30 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:31:30 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:31:30 UTC] View cart for userId: 24
+[05-Feb-2026 07:31:30 UTC] Found cart with ID: 106
+[05-Feb-2026 07:31:30 UTC] Found 2 items in cart
+[05-Feb-2026 07:31:39 UTC] UserID: 24
+[05-Feb-2026 07:31:39 UTC] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\wamp64\www\ds_amin\api\cart\add.php on line 114
+[05-Feb-2026 07:31:39 UTC] PHP Stack trace:
+[05-Feb-2026 07:31:39 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\cart\add.php:0
+[05-Feb-2026 07:31:39 UTC] PHP   2. json_decode($json = NULL, $associative = TRUE) C:\wamp64\www\ds_amin\api\cart\add.php:114
+[05-Feb-2026 07:31:39 UTC] Product 287 has empty dimensions, skipping validation
+[05-Feb-2026 07:31:39 UTC] Product ID: 287, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:31:39 UTC] Product ID: 287 - Stock is 0, treating as unlimited
+[05-Feb-2026 07:31:39 UTC] Product ID: 287 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 07:31:39 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:31:39 UTC] Inserted new cart_item for cartId=106, productId=287
+[05-Feb-2026 07:31:39 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:31:39 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:31:39 UTC] View cart for userId: 24
+[05-Feb-2026 07:31:39 UTC] Found cart with ID: 106
+[05-Feb-2026 07:31:39 UTC] Found 3 items in cart
+[05-Feb-2026 07:32:06 UTC] UserID: 24
+[05-Feb-2026 07:32:06 UTC] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\wamp64\www\ds_amin\api\cart\add.php on line 114
+[05-Feb-2026 07:32:06 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:06 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\cart\add.php:0
+[05-Feb-2026 07:32:06 UTC] PHP   2. json_decode($json = NULL, $associative = TRUE) C:\wamp64\www\ds_amin\api\cart\add.php:114
+[05-Feb-2026 07:32:06 UTC] Product 287 has empty dimensions, skipping validation
+[05-Feb-2026 07:32:06 UTC] Product ID: 287, Stock value: 0, Stock type: integer, Quantity: 38, is_null: false
+[05-Feb-2026 07:32:06 UTC] Product ID: 287 - Stock is 0, treating as unlimited
+[05-Feb-2026 07:32:06 UTC] Product ID: 287 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 07:32:06 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:32:06 UTC] Inserted new cart_item for cartId=106, productId=287
+[05-Feb-2026 07:32:06 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:32:06 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:32:06 UTC] View cart for userId: 24
+[05-Feb-2026 07:32:06 UTC] Found cart with ID: 106
+[05-Feb-2026 07:32:06 UTC] Found 4 items in cart
+[05-Feb-2026 07:32:15 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA'
+[05-Feb-2026 07:32:15 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA
+[05-Feb-2026 07:32:15 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770275186,"exp":1771571186,"uid":24,"mobile":"09904968841","role":"user"}
+[05-Feb-2026 07:32:15 UTC] Auth check - Extracted user_id: 24
+[05-Feb-2026 07:32:15 UTC] Auth check - is_admin: false
+[05-Feb-2026 07:32:15 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:32:15 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:32:15 UTC] View cart for userId: 24
+[05-Feb-2026 07:32:15 UTC] Found cart with ID: 106
+[05-Feb-2026 07:32:15 UTC] Found 4 items in cart
+[05-Feb-2026 07:32:25 UTC] UserID: 24
+[05-Feb-2026 07:32:25 UTC] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\wamp64\www\ds_amin\api\cart\add.php on line 114
+[05-Feb-2026 07:32:25 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:25 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\cart\add.php:0
+[05-Feb-2026 07:32:25 UTC] PHP   2. json_decode($json = NULL, $associative = TRUE) C:\wamp64\www\ds_amin\api\cart\add.php:114
+[05-Feb-2026 07:32:25 UTC] Product 287 has empty dimensions, skipping validation
+[05-Feb-2026 07:32:25 UTC] Product ID: 287, Stock value: 0, Stock type: integer, Quantity: 39, is_null: false
+[05-Feb-2026 07:32:25 UTC] Product ID: 287 - Stock is 0, treating as unlimited
+[05-Feb-2026 07:32:25 UTC] Product ID: 287 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 07:32:25 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:32:25 UTC] Inserted new cart_item for cartId=106, productId=287
+[05-Feb-2026 07:32:25 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:32:25 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:32:25 UTC] View cart for userId: 24
+[05-Feb-2026 07:32:25 UTC] Found cart with ID: 106
+[05-Feb-2026 07:32:25 UTC] Found 5 items in cart
+[05-Feb-2026 07:32:41 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA'
+[05-Feb-2026 07:32:41 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzUxODYsImV4cCI6MTc3MTU3MTE4NiwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.YEr3m_gCjt9GyzHkPg9pcBXQ8JelTi4_RPJyeoHQcUA
+[05-Feb-2026 07:32:41 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770275186,"exp":1771571186,"uid":24,"mobile":"09904968841","role":"user"}
+[05-Feb-2026 07:32:41 UTC] Auth check - Extracted user_id: 24
+[05-Feb-2026 07:32:41 UTC] Auth check - is_admin: false
+[05-Feb-2026 07:32:41 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:32:41 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:32:41 UTC] View cart for userId: 24
+[05-Feb-2026 07:32:41 UTC] Found cart with ID: 106
+[05-Feb-2026 07:32:41 UTC] Found 5 items in cart
+[05-Feb-2026 07:32:52 UTC] UserID: 24
+[05-Feb-2026 07:32:52 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:32:52 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 1
+[05-Feb-2026 07:32:52 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:32:52 UTC] Inserted new cart_item for cartId=106, productId=241
+[05-Feb-2026 07:32:52 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:32:52 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:32:52 UTC] View cart for userId: 24
+[05-Feb-2026 07:32:52 UTC] Found cart with ID: 106
+[05-Feb-2026 07:32:52 UTC] Found 6 items in cart
+[05-Feb-2026 07:32:55 UTC] UserID: 24
+[05-Feb-2026 07:32:55 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:32:55 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 1
+[05-Feb-2026 07:32:55 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:32:55 UTC] Updated cart_item id=263 quantity=2
+[05-Feb-2026 07:32:55 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:32:55 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:32:55 UTC] View cart for userId: 24
+[05-Feb-2026 07:32:55 UTC] Found cart with ID: 106
+[05-Feb-2026 07:32:55 UTC] Found 6 items in cart
+[05-Feb-2026 07:33:18 UTC] UserID: 24
+[05-Feb-2026 07:33:18 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:33:18 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 1
+[05-Feb-2026 07:33:18 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:33:18 UTC] Updated cart_item id=263 quantity=3
+[05-Feb-2026 07:33:18 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:33:18 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:33:18 UTC] View cart for userId: 24
+[05-Feb-2026 07:33:18 UTC] Found cart with ID: 106
+[05-Feb-2026 07:33:18 UTC] Found 6 items in cart
+[05-Feb-2026 07:33:22 UTC] UserID: 24
+[05-Feb-2026 07:33:22 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:33:22 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 1
+[05-Feb-2026 07:33:22 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:33:22 UTC] Updated cart_item id=263 quantity=4
+[05-Feb-2026 07:33:22 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:33:22 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:33:22 UTC] View cart for userId: 24
+[05-Feb-2026 07:33:22 UTC] Found cart with ID: 106
+[05-Feb-2026 07:33:22 UTC] Found 6 items in cart
+[05-Feb-2026 07:33:49 UTC] UserID: 24
+[05-Feb-2026 07:33:49 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:33:49 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 1
+[05-Feb-2026 07:33:49 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:33:49 UTC] Updated cart_item id=263 quantity=5
+[05-Feb-2026 07:33:49 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:33:49 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:33:49 UTC] View cart for userId: 24
+[05-Feb-2026 07:33:49 UTC] Found cart with ID: 106
+[05-Feb-2026 07:33:49 UTC] Found 6 items in cart
+[05-Feb-2026 07:33:56 UTC] UserID: 24
+[05-Feb-2026 07:33:56 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 5, is_null: false
+[05-Feb-2026 07:33:56 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 5
+[05-Feb-2026 07:33:56 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:33:56 UTC] Updated cart_item id=263 quantity=10
+[05-Feb-2026 07:33:56 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:33:56 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:33:56 UTC] View cart for userId: 24
+[05-Feb-2026 07:33:56 UTC] Found cart with ID: 106
+[05-Feb-2026 07:33:56 UTC] Found 6 items in cart
+[05-Feb-2026 07:34:05 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:34:05 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:34:05 UTC] View cart for userId: 24
+[05-Feb-2026 07:34:05 UTC] Found cart with ID: 106
+[05-Feb-2026 07:34:05 UTC] Found 6 items in cart
+[05-Feb-2026 07:34:05 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:34:05 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:34:05 UTC] View cart for userId: 24
+[05-Feb-2026 07:34:05 UTC] Found cart with ID: 106
+[05-Feb-2026 07:34:05 UTC] Found 6 items in cart
+[05-Feb-2026 07:36:15 UTC] UserID: 24
+[05-Feb-2026 07:36:15 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:36:15 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 1
+[05-Feb-2026 07:36:15 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:36:15 UTC] Updated cart_item id=263 quantity=11
+[05-Feb-2026 07:36:15 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:36:15 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:36:15 UTC] View cart for userId: 24
+[05-Feb-2026 07:36:15 UTC] Found cart with ID: 106
+[05-Feb-2026 07:36:15 UTC] Found 6 items in cart
+[05-Feb-2026 07:36:20 UTC] UserID: 24
+[05-Feb-2026 07:36:20 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 07:36:20 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 1
+[05-Feb-2026 07:36:20 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:36:20 UTC] Updated cart_item id=263 quantity=12
+[05-Feb-2026 07:36:20 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:36:20 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:36:20 UTC] View cart for userId: 24
+[05-Feb-2026 07:36:20 UTC] Found cart with ID: 106
+[05-Feb-2026 07:36:20 UTC] Found 6 items in cart
+[05-Feb-2026 07:38:16 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:38:16 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:38:16 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:38:16 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:38:17 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:38:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:38:17 UTC] View cart for userId: 24
+[05-Feb-2026 07:38:17 UTC] Found cart with ID: 106
+[05-Feb-2026 07:38:17 UTC] Found 6 items in cart
+[05-Feb-2026 07:38:17 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:38:17 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:38:17 UTC] View cart for userId: 24
+[05-Feb-2026 07:38:17 UTC] Found cart with ID: 106
+[05-Feb-2026 07:38:17 UTC] Found 6 items in cart
+[05-Feb-2026 07:38:43 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:38:43 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:38:43 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:38:43 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:38:45 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:38:45 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:38:45 UTC] View cart for userId: 24
+[05-Feb-2026 07:38:45 UTC] Found cart with ID: 106
+[05-Feb-2026 07:38:45 UTC] Found 6 items in cart
+[05-Feb-2026 07:38:45 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:38:45 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:38:45 UTC] View cart for userId: 24
+[05-Feb-2026 07:38:45 UTC] Found cart with ID: 106
+[05-Feb-2026 07:38:45 UTC] Found 6 items in cart
+[05-Feb-2026 07:39:01 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:39:01 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:39:01 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:39:01 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:39:02 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:02 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:39:02 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:02 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:02 UTC] Found 6 items in cart
+[05-Feb-2026 07:39:03 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:03 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:39:03 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:03 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:03 UTC] Found 6 items in cart
+[05-Feb-2026 07:39:22 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:22 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:39:22 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:22 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:22 UTC] Found 6 items in cart
+[05-Feb-2026 07:39:22 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:22 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:39:22 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:22 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:22 UTC] Found 6 items in cart
+[05-Feb-2026 07:39:26 UTC] UserID: 24
+[05-Feb-2026 07:39:26 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 2, is_null: false
+[05-Feb-2026 07:39:26 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 2
+[05-Feb-2026 07:39:26 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:39:26 UTC] Updated cart_item id=263 quantity=14
+[05-Feb-2026 07:39:26 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:26 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:39:26 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:26 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:26 UTC] Found 6 items in cart
+[05-Feb-2026 07:39:34 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:34 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:39:34 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:34 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:34 UTC] Found 5 items in cart
+[05-Feb-2026 07:39:35 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:35 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:39:35 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:35 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:35 UTC] Found 4 items in cart
+[05-Feb-2026 07:39:36 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:36 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:39:36 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:36 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:36 UTC] Found 1 items in cart
+[05-Feb-2026 07:39:58 UTC] UserID: 24
+[05-Feb-2026 07:39:58 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 2, is_null: false
+[05-Feb-2026 07:39:58 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 2
+[05-Feb-2026 07:39:58 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:39:58 UTC] Updated cart_item id=263 quantity=16
+[05-Feb-2026 07:39:58 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:39:58 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:39:58 UTC] View cart for userId: 24
+[05-Feb-2026 07:39:58 UTC] Found cart with ID: 106
+[05-Feb-2026 07:39:58 UTC] Found 1 items in cart
+[05-Feb-2026 07:40:41 UTC] UserID: 24
+[05-Feb-2026 07:40:41 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 8, is_null: false
+[05-Feb-2026 07:40:41 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 8
+[05-Feb-2026 07:40:41 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:40:41 UTC] Updated cart_item id=263 quantity=24
+[05-Feb-2026 07:40:41 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:40:41 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:40:41 UTC] View cart for userId: 24
+[05-Feb-2026 07:40:41 UTC] Found cart with ID: 106
+[05-Feb-2026 07:40:41 UTC] Found 1 items in cart
+[05-Feb-2026 07:41:00 UTC] UserID: 24
+[05-Feb-2026 07:41:00 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 8, is_null: false
+[05-Feb-2026 07:41:00 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 8
+[05-Feb-2026 07:41:00 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 07:41:00 UTC] Updated cart_item id=263 quantity=32
+[05-Feb-2026 07:41:00 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:41:00 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:41:00 UTC] View cart for userId: 24
+[05-Feb-2026 07:41:00 UTC] Found cart with ID: 106
+[05-Feb-2026 07:41:00 UTC] Found 1 items in cart
+[05-Feb-2026 07:48:08 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:48:08 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:48:08 UTC] View cart for userId: 24
+[05-Feb-2026 07:48:08 UTC] Found cart with ID: 106
+[05-Feb-2026 07:48:08 UTC] Found 1 items in cart
+[05-Feb-2026 07:48:09 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:48:09 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:48:09 UTC] View cart for userId: 24
+[05-Feb-2026 07:48:09 UTC] Found cart with ID: 106
+[05-Feb-2026 07:48:09 UTC] Found 1 items in cart
+[05-Feb-2026 07:48:24 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:48:24 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:48:24 UTC] View cart for userId: 24
+[05-Feb-2026 07:48:24 UTC] Found cart with ID: 106
+[05-Feb-2026 07:48:24 UTC] Found 1 items in cart
+[05-Feb-2026 07:48:24 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:48:24 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:48:24 UTC] View cart for userId: 24
+[05-Feb-2026 07:48:24 UTC] Found cart with ID: 106
+[05-Feb-2026 07:48:24 UTC] Found 1 items in cart
+[05-Feb-2026 07:48:52 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:48:52 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 07:48:52 UTC] View cart for userId: 24
+[05-Feb-2026 07:48:52 UTC] Found cart with ID: 106
+[05-Feb-2026 07:48:52 UTC] Found 1 items in cart
+[05-Feb-2026 07:48:53 UTC] View cart - userId from auth: 24
+[05-Feb-2026 07:48:53 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 07:48:53 UTC] View cart for userId: 24
+[05-Feb-2026 07:48:53 UTC] Found cart with ID: 106
+[05-Feb-2026 07:48:53 UTC] Found 1 items in cart
+[05-Feb-2026 07:49:59 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 07:49:59 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 07:49:59 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 07:49:59 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 08:02:58 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:02:58 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:02:58 UTC] View cart for userId: 24
+[05-Feb-2026 08:02:58 UTC] Found cart with ID: 106
+[05-Feb-2026 08:02:58 UTC] Found 1 items in cart
+[05-Feb-2026 08:02:59 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:02:59 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:02:59 UTC] View cart for userId: 24
+[05-Feb-2026 08:02:59 UTC] Found cart with ID: 106
+[05-Feb-2026 08:02:59 UTC] Found 1 items in cart
+[05-Feb-2026 08:03:12 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:03:12 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:03:12 UTC] View cart for userId: 24
+[05-Feb-2026 08:03:12 UTC] Found cart with ID: 106
+[05-Feb-2026 08:03:12 UTC] Found 0 items in cart
+[05-Feb-2026 08:04:57 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:04:57 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:04:57 UTC] View cart for userId: 24
+[05-Feb-2026 08:04:57 UTC] Found cart with ID: 106
+[05-Feb-2026 08:04:57 UTC] Found 0 items in cart
+[05-Feb-2026 08:04:57 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:04:57 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:04:58 UTC] View cart for userId: 24
+[05-Feb-2026 08:04:58 UTC] Found cart with ID: 106
+[05-Feb-2026 08:04:58 UTC] Found 0 items in cart
+[05-Feb-2026 08:05:01 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:05:01 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:05:01 UTC] View cart for userId: 24
+[05-Feb-2026 08:05:01 UTC] Found cart with ID: 106
+[05-Feb-2026 08:05:01 UTC] Found 0 items in cart
+[05-Feb-2026 08:05:01 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:05:01 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:05:01 UTC] View cart for userId: 24
+[05-Feb-2026 08:05:01 UTC] Found cart with ID: 106
+[05-Feb-2026 08:05:01 UTC] Found 0 items in cart
+[05-Feb-2026 08:05:41 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:05:41 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:05:41 UTC] View cart for userId: 24
+[05-Feb-2026 08:05:41 UTC] Found cart with ID: 106
+[05-Feb-2026 08:05:41 UTC] Found 0 items in cart
+[05-Feb-2026 08:05:42 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:05:42 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:05:42 UTC] View cart for userId: 24
+[05-Feb-2026 08:05:42 UTC] Found cart with ID: 106
+[05-Feb-2026 08:05:42 UTC] Found 0 items in cart
+[05-Feb-2026 08:05:49 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:05:49 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:05:49 UTC] View cart for userId: 24
+[05-Feb-2026 08:05:49 UTC] Found cart with ID: 106
+[05-Feb-2026 08:05:49 UTC] Found 0 items in cart
+[05-Feb-2026 08:05:49 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:05:49 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:05:49 UTC] View cart for userId: 24
+[05-Feb-2026 08:05:49 UTC] Found cart with ID: 106
+[05-Feb-2026 08:05:49 UTC] Found 0 items in cart
+[05-Feb-2026 08:06:21 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:06:21 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:06:21 UTC] View cart for userId: 24
+[05-Feb-2026 08:06:21 UTC] Found cart with ID: 106
+[05-Feb-2026 08:06:21 UTC] Found 0 items in cart
+[05-Feb-2026 08:06:21 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:06:21 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:06:21 UTC] View cart for userId: 24
+[05-Feb-2026 08:06:21 UTC] Found cart with ID: 106
+[05-Feb-2026 08:06:21 UTC] Found 0 items in cart
+[05-Feb-2026 08:06:26 UTC] UserID: 24
+[05-Feb-2026 08:06:26 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 8, is_null: false
+[05-Feb-2026 08:06:26 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 8
+[05-Feb-2026 08:06:26 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 08:06:26 UTC] Inserted new cart_item for cartId=106, productId=241
+[05-Feb-2026 08:06:26 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:06:26 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:06:26 UTC] View cart for userId: 24
+[05-Feb-2026 08:06:26 UTC] Found cart with ID: 106
+[05-Feb-2026 08:06:26 UTC] Found 1 items in cart
+[05-Feb-2026 08:06:33 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:06:33 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:06:33 UTC] View cart for userId: 24
+[05-Feb-2026 08:06:33 UTC] Found cart with ID: 106
+[05-Feb-2026 08:06:33 UTC] Found 1 items in cart
+[05-Feb-2026 08:06:33 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:06:33 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:06:33 UTC] View cart for userId: 24
+[05-Feb-2026 08:06:33 UTC] Found cart with ID: 106
+[05-Feb-2026 08:06:33 UTC] Found 1 items in cart
+[05-Feb-2026 08:06:46 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:06:46 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:06:46 UTC] View cart for userId: 24
+[05-Feb-2026 08:06:46 UTC] Found cart with ID: 106
+[05-Feb-2026 08:06:46 UTC] Found 0 items in cart
+[05-Feb-2026 08:06:54 UTC] UserID: 24
+[05-Feb-2026 08:06:54 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 2, is_null: false
+[05-Feb-2026 08:06:54 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 2
+[05-Feb-2026 08:06:54 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 08:06:54 UTC] Inserted new cart_item for cartId=106, productId=241
+[05-Feb-2026 08:06:54 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:06:54 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:06:54 UTC] View cart for userId: 24
+[05-Feb-2026 08:06:54 UTC] Found cart with ID: 106
+[05-Feb-2026 08:06:54 UTC] Found 1 items in cart
+[05-Feb-2026 08:07:00 UTC] UserID: 24
+[05-Feb-2026 08:07:00 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 6, is_null: false
+[05-Feb-2026 08:07:00 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 6
+[05-Feb-2026 08:07:00 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 08:07:00 UTC] Updated cart_item id=265 quantity=8
+[05-Feb-2026 08:07:00 UTC] View cart - userId from auth: 24
+[05-Feb-2026 08:07:00 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:07:00 UTC] View cart for userId: 24
+[05-Feb-2026 08:07:00 UTC] Found cart with ID: 106
+[05-Feb-2026 08:07:00 UTC] Found 1 items in cart
+[05-Feb-2026 08:07:37 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:07:37 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:07:37 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:07:37 UTC] Found cart with ID: 94
+[05-Feb-2026 08:07:37 UTC] Found 0 items in cart
+[05-Feb-2026 08:08:02 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:08:02 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:08:02 UTC] View cart for userId: 27
+[05-Feb-2026 08:08:02 UTC] Found cart with ID: 108
+[05-Feb-2026 08:08:02 UTC] Found 0 items in cart
+[05-Feb-2026 08:08:02 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:08:02 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:08:02 UTC] View cart for userId: 27
+[05-Feb-2026 08:08:02 UTC] Found cart with ID: 108
+[05-Feb-2026 08:08:02 UTC] Found 0 items in cart
+[05-Feb-2026 08:08:20 UTC] UserID: 27
+[05-Feb-2026 08:08:20 UTC] Product ID: 241, Stock value: 8, Stock type: integer, Quantity: 8, is_null: false
+[05-Feb-2026 08:08:20 UTC] Product ID: 241 - Stock is limited: 8, Quantity requested: 8
+[05-Feb-2026 08:08:20 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:08:20 UTC] Inserted new cart_item for cartId=108, productId=241
+[05-Feb-2026 08:08:21 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:08:21 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:08:21 UTC] View cart for userId: 27
+[05-Feb-2026 08:08:21 UTC] Found cart with ID: 108
+[05-Feb-2026 08:08:21 UTC] Found 1 items in cart
+[05-Feb-2026 08:08:44 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:08:44 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:08:44 UTC] View cart for userId: 27
+[05-Feb-2026 08:08:44 UTC] Found cart with ID: 108
+[05-Feb-2026 08:08:44 UTC] Found 1 items in cart
+[05-Feb-2026 08:08:44 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:08:44 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:08:44 UTC] View cart for userId: 27
+[05-Feb-2026 08:08:44 UTC] Found cart with ID: 108
+[05-Feb-2026 08:08:44 UTC] Found 1 items in cart
+[05-Feb-2026 08:09:08 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:09:08 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:09:08 UTC] View cart for userId: 27
+[05-Feb-2026 08:09:08 UTC] Found cart with ID: 108
+[05-Feb-2026 08:09:08 UTC] Found 0 items in cart
+[05-Feb-2026 08:09:08 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:09:08 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:09:08 UTC] View cart for userId: 27
+[05-Feb-2026 08:09:08 UTC] Found cart with ID: 108
+[05-Feb-2026 08:09:08 UTC] Found 0 items in cart
+[05-Feb-2026 08:10:26 UTC] UserID: 27
+[05-Feb-2026 08:10:26 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:10:26 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:10:26 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:10:26 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:10:26 UTC] Inserted new cart_item for cartId=108, productId=241
+[05-Feb-2026 08:10:26 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:10:26 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:10:26 UTC] View cart for userId: 27
+[05-Feb-2026 08:10:26 UTC] Found cart with ID: 108
+[05-Feb-2026 08:10:26 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:32 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:32 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:17:32 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:32 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:32 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:32 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:32 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:32 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:32 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:32 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:36 UTC] UserID: 27
+[05-Feb-2026 08:17:36 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:36 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:36 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:36 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:36 UTC] Updated cart_item id=267 quantity=2
+[05-Feb-2026 08:17:36 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:36 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:36 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:36 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:36 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:38 UTC] UserID: 27
+[05-Feb-2026 08:17:38 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:38 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:38 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:38 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:38 UTC] Updated cart_item id=267 quantity=3
+[05-Feb-2026 08:17:38 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:38 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:38 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:38 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:38 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:39 UTC] UserID: 27
+[05-Feb-2026 08:17:39 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:39 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:39 UTC] Updated cart_item id=267 quantity=4
+[05-Feb-2026 08:17:39 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:39 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:39 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:39 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:39 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:39 UTC] UserID: 27
+[05-Feb-2026 08:17:39 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:39 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:39 UTC] Updated cart_item id=267 quantity=5
+[05-Feb-2026 08:17:39 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:39 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:39 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:39 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:39 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:39 UTC] UserID: 27
+[05-Feb-2026 08:17:39 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:39 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:39 UTC] Updated cart_item id=267 quantity=6
+[05-Feb-2026 08:17:39 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:39 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:39 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:39 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:39 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:39 UTC] UserID: 27
+[05-Feb-2026 08:17:39 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:39 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:39 UTC] Updated cart_item id=267 quantity=7
+[05-Feb-2026 08:17:39 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:39 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:39 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:39 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:39 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:39 UTC] UserID: 27
+[05-Feb-2026 08:17:39 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:39 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:39 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:39 UTC] Updated cart_item id=267 quantity=8
+[05-Feb-2026 08:17:39 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:39 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:39 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:39 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:39 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:40 UTC] UserID: 27
+[05-Feb-2026 08:17:40 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:40 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:40 UTC] Updated cart_item id=267 quantity=9
+[05-Feb-2026 08:17:40 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:40 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:40 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:40 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:40 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:40 UTC] UserID: 27
+[05-Feb-2026 08:17:40 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:40 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:40 UTC] Updated cart_item id=267 quantity=10
+[05-Feb-2026 08:17:40 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:40 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:40 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:40 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:40 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:40 UTC] UserID: 27
+[05-Feb-2026 08:17:40 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:40 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:40 UTC] Updated cart_item id=267 quantity=11
+[05-Feb-2026 08:17:40 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:40 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:40 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:40 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:40 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:40 UTC] UserID: 27
+[05-Feb-2026 08:17:40 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:40 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:40 UTC] Updated cart_item id=267 quantity=12
+[05-Feb-2026 08:17:40 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:40 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:40 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:40 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:40 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:40 UTC] UserID: 27
+[05-Feb-2026 08:17:40 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:17:40 UTC] Product ID: 241 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:17:40 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:17:40 UTC] Updated cart_item id=267 quantity=13
+[05-Feb-2026 08:17:40 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:40 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:40 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:40 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:40 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA'
+[05-Feb-2026 08:17:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA
+[05-Feb-2026 08:17:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770278881,"exp":1771574881,"uid":27,"mobile":"09333733836","role":"user"}
+[05-Feb-2026 08:17:45 UTC] Auth check - Extracted user_id: 27
+[05-Feb-2026 08:17:45 UTC] Auth check - is_admin: false
+[05-Feb-2026 08:17:45 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:45 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:45 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:45 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:45 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:47 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA'
+[05-Feb-2026 08:17:47 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA
+[05-Feb-2026 08:17:47 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770278881,"exp":1771574881,"uid":27,"mobile":"09333733836","role":"user"}
+[05-Feb-2026 08:17:47 UTC] Auth check - Extracted user_id: 27
+[05-Feb-2026 08:17:47 UTC] Auth check - is_admin: false
+[05-Feb-2026 08:17:47 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:47 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:47 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:47 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:47 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:49 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA'
+[05-Feb-2026 08:17:49 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA
+[05-Feb-2026 08:17:49 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770278881,"exp":1771574881,"uid":27,"mobile":"09333733836","role":"user"}
+[05-Feb-2026 08:17:49 UTC] Auth check - Extracted user_id: 27
+[05-Feb-2026 08:17:49 UTC] Auth check - is_admin: false
+[05-Feb-2026 08:17:49 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:49 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:49 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:49 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:49 UTC] Found 1 items in cart
+[05-Feb-2026 08:17:56 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA'
+[05-Feb-2026 08:17:56 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA
+[05-Feb-2026 08:17:56 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770278881,"exp":1771574881,"uid":27,"mobile":"09333733836","role":"user"}
+[05-Feb-2026 08:17:56 UTC] Auth check - Extracted user_id: 27
+[05-Feb-2026 08:17:56 UTC] Auth check - is_admin: false
+[05-Feb-2026 08:17:56 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:17:56 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:17:56 UTC] View cart for userId: 27
+[05-Feb-2026 08:17:56 UTC] Found cart with ID: 108
+[05-Feb-2026 08:17:56 UTC] Found 1 items in cart
+[05-Feb-2026 08:18:14 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:18:14 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:18:14 UTC] View cart for userId: 27
+[05-Feb-2026 08:18:14 UTC] Found cart with ID: 108
+[05-Feb-2026 08:18:14 UTC] Found 0 items in cart
+[05-Feb-2026 08:18:14 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:18:14 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:18:14 UTC] View cart for userId: 27
+[05-Feb-2026 08:18:14 UTC] Found cart with ID: 108
+[05-Feb-2026 08:18:14 UTC] Found 0 items in cart
+[05-Feb-2026 08:21:35 UTC] UserID: 27
+[05-Feb-2026 08:21:35 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 08:21:35 UTC] Product ID: 286, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:21:35 UTC] Product ID: 286 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:21:35 UTC] Product ID: 286 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:21:35 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:21:35 UTC] Inserted new cart_item for cartId=108, productId=286
+[05-Feb-2026 08:21:35 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:21:35 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:21:35 UTC] View cart for userId: 27
+[05-Feb-2026 08:21:35 UTC] Found cart with ID: 108
+[05-Feb-2026 08:21:35 UTC] Found 1 items in cart
+[05-Feb-2026 08:21:42 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA'
+[05-Feb-2026 08:21:42 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA
+[05-Feb-2026 08:21:42 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770278881,"exp":1771574881,"uid":27,"mobile":"09333733836","role":"user"}
+[05-Feb-2026 08:21:42 UTC] Auth check - Extracted user_id: 27
+[05-Feb-2026 08:21:42 UTC] Auth check - is_admin: false
+[05-Feb-2026 08:21:42 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:21:42 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:21:42 UTC] View cart for userId: 27
+[05-Feb-2026 08:21:42 UTC] Found cart with ID: 108
+[05-Feb-2026 08:21:42 UTC] Found 1 items in cart
+[05-Feb-2026 08:21:43 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA'
+[05-Feb-2026 08:21:43 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA
+[05-Feb-2026 08:21:43 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770278881,"exp":1771574881,"uid":27,"mobile":"09333733836","role":"user"}
+[05-Feb-2026 08:21:43 UTC] Auth check - Extracted user_id: 27
+[05-Feb-2026 08:21:43 UTC] Auth check - is_admin: false
+[05-Feb-2026 08:21:43 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:21:43 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:21:43 UTC] View cart for userId: 27
+[05-Feb-2026 08:21:43 UTC] Found cart with ID: 108
+[05-Feb-2026 08:21:43 UTC] Found 1 items in cart
+[05-Feb-2026 08:21:45 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA'
+[05-Feb-2026 08:21:45 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzAyNzg4ODEsImV4cCI6MTc3MTU3NDg4MSwidWlkIjoyNywibW9iaWxlIjoiMDkzMzM3MzM4MzYiLCJyb2xlIjoidXNlciJ9.lxPzuy89Y5iGLVPQ5MdtkAodQqCDzwZdVZAblbL6ABA
+[05-Feb-2026 08:21:45 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770278881,"exp":1771574881,"uid":27,"mobile":"09333733836","role":"user"}
+[05-Feb-2026 08:21:45 UTC] Auth check - Extracted user_id: 27
+[05-Feb-2026 08:21:45 UTC] Auth check - is_admin: false
+[05-Feb-2026 08:21:45 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:21:45 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:21:45 UTC] View cart for userId: 27
+[05-Feb-2026 08:21:45 UTC] Found cart with ID: 108
+[05-Feb-2026 08:21:45 UTC] Found 1 items in cart
+[05-Feb-2026 08:21:46 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:21:46 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:21:46 UTC] View cart for userId: 27
+[05-Feb-2026 08:21:46 UTC] Found cart with ID: 108
+[05-Feb-2026 08:21:46 UTC] Found 0 items in cart
+[05-Feb-2026 08:22:47 UTC] UserID: 27
+[05-Feb-2026 08:22:47 UTC] Product ID: 241, Stock value: -41, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:22:47 UTC] Product ID: 241 - Stock is limited: -41, Quantity requested: 1
+[05-Feb-2026 08:22:47 UTC] Product ID: 241 - Stock is negative, rejecting
+[05-Feb-2026 08:23:07 UTC] UserID: 27
+[05-Feb-2026 08:23:07 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 08:23:07 UTC] Product ID: 286, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:23:07 UTC] Product ID: 286 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:23:07 UTC] Product ID: 286 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:23:07 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:23:07 UTC] Inserted new cart_item for cartId=108, productId=286
+[05-Feb-2026 08:23:07 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:23:07 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:23:07 UTC] View cart for userId: 27
+[05-Feb-2026 08:23:07 UTC] Found cart with ID: 108
+[05-Feb-2026 08:23:07 UTC] Found 1 items in cart
+[05-Feb-2026 08:23:21 UTC] UserID: 27
+[05-Feb-2026 08:23:21 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 08:23:21 UTC] Product ID: 286, Stock value: 0, Stock type: integer, Quantity: 20, is_null: false
+[05-Feb-2026 08:23:21 UTC] Product ID: 286 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:23:21 UTC] Product ID: 286 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:23:21 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:23:21 UTC] Inserted new cart_item for cartId=108, productId=286
+[05-Feb-2026 08:23:21 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:23:21 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:23:21 UTC] View cart for userId: 27
+[05-Feb-2026 08:23:21 UTC] Found cart with ID: 108
+[05-Feb-2026 08:23:21 UTC] Found 2 items in cart
+[05-Feb-2026 08:23:28 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:23:28 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:23:28 UTC] View cart for userId: 27
+[05-Feb-2026 08:23:28 UTC] Found cart with ID: 108
+[05-Feb-2026 08:23:28 UTC] Found 0 items in cart
+[05-Feb-2026 08:23:50 UTC] UserID: 27
+[05-Feb-2026 08:23:50 UTC] Product ID: 238, Stock value: 7, Stock type: integer, Quantity: 7, is_null: false
+[05-Feb-2026 08:23:50 UTC] Product ID: 238 - Stock is limited: 7, Quantity requested: 7
+[05-Feb-2026 08:23:50 UTC] Existing cart found for userId=27, cartId=108
+[05-Feb-2026 08:23:50 UTC] Inserted new cart_item for cartId=108, productId=238
+[05-Feb-2026 08:23:50 UTC] View cart - userId from auth: 27
+[05-Feb-2026 08:23:50 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 08:23:50 UTC] View cart for userId: 27
+[05-Feb-2026 08:23:50 UTC] Found cart with ID: 108
+[05-Feb-2026 08:23:50 UTC] Found 1 items in cart
+[05-Feb-2026 08:24:13 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:24:13 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:24:13 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:24:13 UTC] Found cart with ID: 94
+[05-Feb-2026 08:24:13 UTC] Found 0 items in cart
+[05-Feb-2026 08:25:13 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:25:13 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:25:13 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:25:13 UTC] Found cart with ID: 94
+[05-Feb-2026 08:25:13 UTC] Found 0 items in cart
+[05-Feb-2026 08:27:22 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:27:22 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:27:22 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:27:22 UTC] Found cart with ID: 94
+[05-Feb-2026 08:27:22 UTC] Found 0 items in cart
+[05-Feb-2026 08:28:59 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:28:59 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:28:59 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:28:59 UTC] Found cart with ID: 94
+[05-Feb-2026 08:28:59 UTC] Found 0 items in cart
+[05-Feb-2026 08:29:08 UTC] UserID: NULL
+[05-Feb-2026 08:29:08 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 08:29:08 UTC] Product ID: 286, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:29:08 UTC] Product ID: 286 - Stock is 0, treating as unlimited
+[05-Feb-2026 08:29:08 UTC] Product ID: 286 - Stock is unlimited, allowing add to cart
+[05-Feb-2026 08:29:08 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[05-Feb-2026 08:29:08 UTC] Inserted new cart_item for cartId=94, productId=286
+[05-Feb-2026 08:29:08 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:29:08 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:29:08 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:29:08 UTC] Found cart with ID: 94
+[05-Feb-2026 08:29:08 UTC] Found 1 items in cart
+[05-Feb-2026 08:29:20 UTC] Auth check - Authorization header: ''
+[05-Feb-2026 08:29:20 UTC] Auth check - No Authorization header found
+[05-Feb-2026 08:29:20 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:29:20 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:29:20 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:29:20 UTC] Found cart with ID: 94
+[05-Feb-2026 08:29:20 UTC] Found 1 items in cart
+[05-Feb-2026 08:29:23 UTC] Auth check - Authorization header: ''
+[05-Feb-2026 08:29:23 UTC] Auth check - No Authorization header found
+[05-Feb-2026 08:29:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:29:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:29:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:29:23 UTC] Found cart with ID: 94
+[05-Feb-2026 08:29:23 UTC] Found 1 items in cart
+[05-Feb-2026 08:29:28 UTC] Auth check - Authorization header: ''
+[05-Feb-2026 08:29:28 UTC] Auth check - No Authorization header found
+[05-Feb-2026 08:29:28 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:29:28 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:29:28 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:29:28 UTC] Found cart with ID: 94
+[05-Feb-2026 08:29:28 UTC] Found 1 items in cart
+[05-Feb-2026 08:33:29 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:33:29 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:33:29 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:33:29 UTC] Found cart with ID: 94
+[05-Feb-2026 08:33:29 UTC] Found 1 items in cart
+[05-Feb-2026 08:33:36 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:33:36 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:33:36 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:33:36 UTC] Found cart with ID: 94
+[05-Feb-2026 08:33:36 UTC] Found 1 items in cart
+[05-Feb-2026 08:33:40 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:33:40 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:33:40 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:33:40 UTC] Found cart with ID: 94
+[05-Feb-2026 08:33:40 UTC] Found 1 items in cart
+[05-Feb-2026 08:33:50 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:33:50 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:33:50 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:33:50 UTC] Found cart with ID: 94
+[05-Feb-2026 08:33:50 UTC] Found 0 items in cart
+[05-Feb-2026 08:33:59 UTC] UserID: NULL
+[05-Feb-2026 08:33:59 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 08:33:59 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[05-Feb-2026 08:33:59 UTC] Product ID: 286, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:33:59 UTC] Product ID: 286 - Product stock value: 0, Quantity requested: 1
+[05-Feb-2026 08:33:59 UTC] Product ID: 286 - Stock is 0 or negative, rejecting
+[05-Feb-2026 08:34:18 UTC] UserID: NULL
+[05-Feb-2026 08:34:18 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[05-Feb-2026 08:34:18 UTC] Product ID: 247, Stock value: 99, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:34:18 UTC] Product ID: 247 - Product stock value: 99, Quantity requested: 1
+[05-Feb-2026 08:34:18 UTC] Product ID: 247 - Product stock: 99, Quantity in cart: 0, Available stock: 99, Requested quantity: 1
+[05-Feb-2026 08:34:18 UTC] Product ID: 247 - Stock check passed: available 99, requested 1
+[05-Feb-2026 08:34:18 UTC] Inserted new cart_item for cartId=94, productId=247
+[05-Feb-2026 08:34:18 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:34:18 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:34:18 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:34:18 UTC] Found cart with ID: 94
+[05-Feb-2026 08:34:18 UTC] Found 1 items in cart
+[05-Feb-2026 08:41:17 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:41:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:41:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:41:17 UTC] Found cart with ID: 94
+[05-Feb-2026 08:41:17 UTC] Found 1 items in cart
+[05-Feb-2026 08:43:00 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:43:00 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:43:00 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:43:00 UTC] Found cart with ID: 94
+[05-Feb-2026 08:43:00 UTC] Found 1 items in cart
+[05-Feb-2026 08:44:11 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:44:11 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:44:11 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:44:11 UTC] Found cart with ID: 94
+[05-Feb-2026 08:44:11 UTC] Found 1 items in cart
+[05-Feb-2026 08:44:46 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:44:46 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:44:46 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:44:46 UTC] Found cart with ID: 94
+[05-Feb-2026 08:44:46 UTC] Found 1 items in cart
+[05-Feb-2026 08:45:17 UTC] UserID: NULL
+[05-Feb-2026 08:45:17 UTC] Product 286 has empty dimensions, skipping validation
+[05-Feb-2026 08:45:17 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[05-Feb-2026 08:45:17 UTC] Product ID: 286, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:45:17 UTC] Product ID: 286 - Product stock value: 0, Quantity requested: 1
+[05-Feb-2026 08:45:17 UTC] Product ID: 286 - Stock is 0 or negative, rejecting
+[05-Feb-2026 08:45:22 UTC] UserID: NULL
+[05-Feb-2026 08:45:22 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[05-Feb-2026 08:45:22 UTC] Product ID: 241, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:45:22 UTC] Product ID: 241 - Product stock value: 0, Quantity requested: 1
+[05-Feb-2026 08:45:22 UTC] Product ID: 241 - Stock is 0 or negative, rejecting
+[05-Feb-2026 08:45:23 UTC] UserID: NULL
+[05-Feb-2026 08:45:23 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[05-Feb-2026 08:45:23 UTC] Product ID: 238, Stock value: 7, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 08:45:23 UTC] Product ID: 238 - Product stock value: 7, Quantity requested: 1
+[05-Feb-2026 08:45:23 UTC] Product ID: 238 - Product stock: 7, Quantity in cart: 0, Available stock: 7, Requested quantity: 1
+[05-Feb-2026 08:45:23 UTC] Product ID: 238 - Stock check passed: available 7, requested 1
+[05-Feb-2026 08:45:23 UTC] Inserted new cart_item for cartId=94, productId=238
+[05-Feb-2026 08:45:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:45:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:45:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:45:23 UTC] Found cart with ID: 94
+[05-Feb-2026 08:45:23 UTC] Found 2 items in cart
+[05-Feb-2026 08:45:29 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:45:29 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:45:29 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:45:29 UTC] Found cart with ID: 94
+[05-Feb-2026 08:45:29 UTC] Found 1 items in cart
+[05-Feb-2026 08:45:31 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:45:31 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:45:31 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:45:31 UTC] Found cart with ID: 94
+[05-Feb-2026 08:45:31 UTC] Found 0 items in cart
+[05-Feb-2026 08:46:05 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:46:05 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:46:05 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:46:05 UTC] Found cart with ID: 94
+[05-Feb-2026 08:46:05 UTC] Found 0 items in cart
+[05-Feb-2026 08:46:06 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:46:06 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:46:06 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:46:06 UTC] Found cart with ID: 94
+[05-Feb-2026 08:46:06 UTC] Found 0 items in cart
+[05-Feb-2026 08:46:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:46:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:46:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:46:23 UTC] Found cart with ID: 94
+[05-Feb-2026 08:46:23 UTC] Found 0 items in cart
+[05-Feb-2026 08:46:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:46:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:46:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:46:23 UTC] Found cart with ID: 94
+[05-Feb-2026 08:46:23 UTC] Found 0 items in cart
+[05-Feb-2026 08:51:08 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:51:08 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:51:08 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:51:08 UTC] Found cart with ID: 94
+[05-Feb-2026 08:51:08 UTC] Found 0 items in cart
+[05-Feb-2026 08:51:08 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:51:08 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:51:08 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:51:08 UTC] Found cart with ID: 94
+[05-Feb-2026 08:51:08 UTC] Found 0 items in cart
+[05-Feb-2026 08:56:44 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:56:44 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:56:44 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:56:44 UTC] Found cart with ID: 94
+[05-Feb-2026 08:56:44 UTC] Found 0 items in cart
+[05-Feb-2026 08:56:44 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:56:44 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:56:44 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:56:44 UTC] Found cart with ID: 94
+[05-Feb-2026 08:56:44 UTC] Found 0 items in cart
+[05-Feb-2026 08:59:19 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:59:19 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:59:19 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:59:19 UTC] Found cart with ID: 94
+[05-Feb-2026 08:59:19 UTC] Found 0 items in cart
+[05-Feb-2026 08:59:19 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 08:59:19 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 08:59:19 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 08:59:19 UTC] Found cart with ID: 94
+[05-Feb-2026 08:59:19 UTC] Found 0 items in cart
+[05-Feb-2026 09:02:07 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:02:07 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:02:07 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:02:07 UTC] Found cart with ID: 94
+[05-Feb-2026 09:02:07 UTC] Found 0 items in cart
+[05-Feb-2026 09:02:07 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:02:07 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:02:07 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:02:07 UTC] Found cart with ID: 94
+[05-Feb-2026 09:02:07 UTC] Found 0 items in cart
+[05-Feb-2026 09:06:37 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:06:37 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:06:37 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:06:37 UTC] Found cart with ID: 94
+[05-Feb-2026 09:06:37 UTC] Found 0 items in cart
+[05-Feb-2026 09:06:37 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:06:37 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:06:37 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:06:37 UTC] Found cart with ID: 94
+[05-Feb-2026 09:06:37 UTC] Found 0 items in cart
+[05-Feb-2026 09:09:20 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:09:20 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:09:20 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:09:20 UTC] Found cart with ID: 94
+[05-Feb-2026 09:09:20 UTC] Found 0 items in cart
+[05-Feb-2026 09:09:20 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:09:20 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:09:20 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:09:20 UTC] Found cart with ID: 94
+[05-Feb-2026 09:09:20 UTC] Found 0 items in cart
+[05-Feb-2026 09:11:57 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:11:57 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:11:57 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:11:57 UTC] Found cart with ID: 94
+[05-Feb-2026 09:11:57 UTC] Found 0 items in cart
+[05-Feb-2026 09:11:57 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:11:57 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:11:57 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:11:57 UTC] Found cart with ID: 94
+[05-Feb-2026 09:11:57 UTC] Found 0 items in cart
+[05-Feb-2026 09:24:53 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:24:53 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:24:53 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:24:53 UTC] Found cart with ID: 94
+[05-Feb-2026 09:24:54 UTC] Found 0 items in cart
+[05-Feb-2026 09:24:54 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:24:54 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:24:54 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:24:54 UTC] Found cart with ID: 94
+[05-Feb-2026 09:24:54 UTC] Found 0 items in cart
+[05-Feb-2026 09:50:17 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:50:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:50:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:50:17 UTC] Found cart with ID: 94
+[05-Feb-2026 09:50:17 UTC] Found 0 items in cart
+[05-Feb-2026 09:50:17 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:50:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:50:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:50:17 UTC] Found cart with ID: 94
+[05-Feb-2026 09:50:17 UTC] Found 0 items in cart
+[05-Feb-2026 09:52:00 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:52:00 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:52:00 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:52:00 UTC] Found cart with ID: 94
+[05-Feb-2026 09:52:00 UTC] Found 0 items in cart
+[05-Feb-2026 09:52:00 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:52:00 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:52:00 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:52:00 UTC] Found cart with ID: 94
+[05-Feb-2026 09:52:00 UTC] Found 0 items in cart
+[05-Feb-2026 09:52:09 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:52:09 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:52:09 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:52:09 UTC] Found cart with ID: 94
+[05-Feb-2026 09:52:09 UTC] Found 0 items in cart
+[05-Feb-2026 09:52:10 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:52:10 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:52:10 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:52:10 UTC] Found cart with ID: 94
+[05-Feb-2026 09:52:10 UTC] Found 0 items in cart
+[05-Feb-2026 09:53:55 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:53:55 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:53:55 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:53:55 UTC] Found cart with ID: 94
+[05-Feb-2026 09:53:55 UTC] Found 0 items in cart
+[05-Feb-2026 09:53:55 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:53:55 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:53:55 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:53:55 UTC] Found cart with ID: 94
+[05-Feb-2026 09:53:55 UTC] Found 0 items in cart
+[05-Feb-2026 09:57:40 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:57:40 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:57:40 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:57:40 UTC] Found cart with ID: 94
+[05-Feb-2026 09:57:40 UTC] Found 0 items in cart
+[05-Feb-2026 09:57:40 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:57:40 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:57:40 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:57:40 UTC] Found cart with ID: 94
+[05-Feb-2026 09:57:40 UTC] Found 0 items in cart
+[05-Feb-2026 09:58:17 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 09:58:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 09:58:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 09:58:17 UTC] Found cart with ID: 94
+[05-Feb-2026 09:58:17 UTC] Found 0 items in cart
+[05-Feb-2026 09:58:51 UTC] UserID: NULL
+[05-Feb-2026 09:58:51 UTC] Product 741 has empty dimensions, skipping validation
+[05-Feb-2026 09:58:51 UTC] New guest cart created with token=62ea1260de87c1d99f397b15fb6e9623, cartId=111
+[05-Feb-2026 09:58:51 UTC] Product ID: 741, Stock value: 0, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 09:58:51 UTC] Product ID: 741 - Product stock value: 0, Quantity requested: 1
+[05-Feb-2026 09:58:51 UTC] Product ID: 741 - Stock is 0 or negative, rejecting
+[05-Feb-2026 10:00:08 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:00:08 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:00:08 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:00:08 UTC] Found cart with ID: 94
+[05-Feb-2026 10:00:08 UTC] Found 0 items in cart
+[05-Feb-2026 10:00:08 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:00:08 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:00:08 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:00:08 UTC] Found cart with ID: 94
+[05-Feb-2026 10:00:08 UTC] Found 0 items in cart
+[05-Feb-2026 10:05:18 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:05:18 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:05:18 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:05:18 UTC] Found cart with ID: 94
+[05-Feb-2026 10:05:18 UTC] Found 0 items in cart
+[05-Feb-2026 10:05:18 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:05:18 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:05:18 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:05:18 UTC] Found cart with ID: 94
+[05-Feb-2026 10:05:18 UTC] Found 0 items in cart
+[05-Feb-2026 10:11:00 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:11:00 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:11:00 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:11:00 UTC] Found cart with ID: 94
+[05-Feb-2026 10:11:00 UTC] Found 0 items in cart
+[05-Feb-2026 10:12:19 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:12:19 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:12:19 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:12:19 UTC] Found cart with ID: 94
+[05-Feb-2026 10:12:19 UTC] Found 0 items in cart
+[05-Feb-2026 10:12:19 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:12:19 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:12:19 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:12:19 UTC] Found cart with ID: 94
+[05-Feb-2026 10:12:19 UTC] Found 0 items in cart
+[05-Feb-2026 10:16:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:16:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:16:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:16:23 UTC] Found cart with ID: 94
+[05-Feb-2026 10:16:23 UTC] Found 0 items in cart
+[05-Feb-2026 10:16:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:16:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:16:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:16:23 UTC] Found cart with ID: 94
+[05-Feb-2026 10:16:23 UTC] Found 0 items in cart
+[05-Feb-2026 10:19:03 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:19:03 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:19:03 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:19:03 UTC] Found cart with ID: 94
+[05-Feb-2026 10:19:03 UTC] Found 0 items in cart
+[05-Feb-2026 10:19:03 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:19:03 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:19:03 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:19:03 UTC] Found cart with ID: 94
+[05-Feb-2026 10:19:03 UTC] Found 0 items in cart
+[05-Feb-2026 10:19:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:19:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:19:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:19:23 UTC] Found cart with ID: 94
+[05-Feb-2026 10:19:23 UTC] Found 0 items in cart
+[05-Feb-2026 10:19:23 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:19:23 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:19:23 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:19:23 UTC] Found cart with ID: 94
+[05-Feb-2026 10:19:23 UTC] Found 0 items in cart
+[05-Feb-2026 10:20:30 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:20:30 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:20:30 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:20:30 UTC] Found cart with ID: 94
+[05-Feb-2026 10:20:30 UTC] Found 0 items in cart
+[05-Feb-2026 10:20:30 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 10:20:30 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 10:20:30 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 10:20:30 UTC] Found cart with ID: 94
+[05-Feb-2026 10:20:30 UTC] Found 0 items in cart
+[05-Feb-2026 13:02:15 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:02:15 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 13:02:15 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 13:02:15 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 13:03:15 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:03:15 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:03:15 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:03:15 UTC] Found cart with ID: 94
+[05-Feb-2026 13:03:15 UTC] Found 0 items in cart
+[05-Feb-2026 13:03:15 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:03:15 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:03:15 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:03:15 UTC] Found cart with ID: 94
+[05-Feb-2026 13:03:15 UTC] Found 0 items in cart
+[05-Feb-2026 13:05:12 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:05:12 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:05:12 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:05:12 UTC] Found cart with ID: 94
+[05-Feb-2026 13:05:12 UTC] Found 0 items in cart
+[05-Feb-2026 13:05:12 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:05:12 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[05-Feb-2026 13:05:12 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 13:05:12 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[05-Feb-2026 13:05:12 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:05:12 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:05:12 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:05:12 UTC] Found cart with ID: 94
+[05-Feb-2026 13:05:12 UTC] Found 0 items in cart
+[05-Feb-2026 13:05:48 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:05:48 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:05:48 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:05:48 UTC] Found cart with ID: 94
+[05-Feb-2026 13:05:48 UTC] Found 0 items in cart
+[05-Feb-2026 13:05:49 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:05:49 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:05:49 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:05:49 UTC] Found cart with ID: 94
+[05-Feb-2026 13:05:49 UTC] Found 0 items in cart
+[05-Feb-2026 13:11:33 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:11:33 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:11:33 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:11:33 UTC] Found cart with ID: 94
+[05-Feb-2026 13:11:33 UTC] Found 0 items in cart
+[05-Feb-2026 13:11:56 UTC] View cart - userId from auth: 24
+[05-Feb-2026 13:11:56 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:11:56 UTC] View cart for userId: 24
+[05-Feb-2026 13:11:56 UTC] Found cart with ID: 106
+[05-Feb-2026 13:11:56 UTC] Found 1 items in cart
+[05-Feb-2026 13:11:56 UTC] View cart - userId from auth: 24
+[05-Feb-2026 13:11:56 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 13:11:56 UTC] View cart for userId: 24
+[05-Feb-2026 13:11:56 UTC] Found cart with ID: 106
+[05-Feb-2026 13:11:56 UTC] Found 1 items in cart
+[05-Feb-2026 13:23:30 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:23:30 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:23:30 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:23:30 UTC] Found cart with ID: 94
+[05-Feb-2026 13:23:30 UTC] Found 0 items in cart
+[05-Feb-2026 13:23:52 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:23:52 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:23:52 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:23:52 UTC] Found cart with ID: 94
+[05-Feb-2026 13:23:52 UTC] Found 0 items in cart
+[05-Feb-2026 13:23:52 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:23:52 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:23:52 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:23:52 UTC] Found cart with ID: 94
+[05-Feb-2026 13:23:52 UTC] Found 0 items in cart
+[05-Feb-2026 13:27:52 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:27:52 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:27:52 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:27:52 UTC] Found cart with ID: 94
+[05-Feb-2026 13:27:52 UTC] Found 0 items in cart
+[05-Feb-2026 13:29:12 UTC] View cart - userId from auth: 24
+[05-Feb-2026 13:29:12 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:29:12 UTC] View cart for userId: 24
+[05-Feb-2026 13:29:12 UTC] Found cart with ID: 106
+[05-Feb-2026 13:29:12 UTC] Found 1 items in cart
+[05-Feb-2026 13:29:12 UTC] View cart - userId from auth: 24
+[05-Feb-2026 13:29:12 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 13:29:12 UTC] View cart for userId: 24
+[05-Feb-2026 13:29:12 UTC] Found cart with ID: 106
+[05-Feb-2026 13:29:12 UTC] Found 1 items in cart
+[05-Feb-2026 13:29:44 UTC] View cart - userId from auth: 24
+[05-Feb-2026 13:29:44 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:29:44 UTC] View cart for userId: 24
+[05-Feb-2026 13:29:44 UTC] Found cart with ID: 106
+[05-Feb-2026 13:29:44 UTC] Found 1 items in cart
+[05-Feb-2026 13:29:44 UTC] View cart - userId from auth: 24
+[05-Feb-2026 13:29:44 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 13:29:44 UTC] View cart for userId: 24
+[05-Feb-2026 13:29:44 UTC] Found cart with ID: 106
+[05-Feb-2026 13:29:44 UTC] Found 1 items in cart
+[05-Feb-2026 13:31:25 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:31:25 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:31:25 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:31:25 UTC] Found cart with ID: 94
+[05-Feb-2026 13:31:25 UTC] Found 0 items in cart
+[05-Feb-2026 13:32:09 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:32:09 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:32:09 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:32:09 UTC] Found cart with ID: 94
+[05-Feb-2026 13:32:09 UTC] Found 0 items in cart
+[05-Feb-2026 13:32:10 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:32:10 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:32:10 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:32:10 UTC] Found cart with ID: 94
+[05-Feb-2026 13:32:10 UTC] Found 0 items in cart
+[05-Feb-2026 13:44:32 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:44:32 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:44:32 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:44:32 UTC] Found cart with ID: 94
+[05-Feb-2026 13:44:32 UTC] Found 0 items in cart
+[05-Feb-2026 13:44:32 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:44:32 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:44:32 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:44:32 UTC] Found cart with ID: 94
+[05-Feb-2026 13:44:32 UTC] Found 0 items in cart
+[05-Feb-2026 13:48:10 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:48:10 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:48:10 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:48:10 UTC] Found cart with ID: 94
+[05-Feb-2026 13:48:10 UTC] Found 0 items in cart
+[05-Feb-2026 13:48:11 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:48:11 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:48:11 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:48:11 UTC] Found cart with ID: 94
+[05-Feb-2026 13:48:11 UTC] Found 0 items in cart
+[05-Feb-2026 13:49:40 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:49:40 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:49:40 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:49:40 UTC] Found cart with ID: 94
+[05-Feb-2026 13:49:40 UTC] Found 0 items in cart
+[05-Feb-2026 13:49:41 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:49:41 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:49:41 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:49:41 UTC] Found cart with ID: 94
+[05-Feb-2026 13:49:41 UTC] Found 0 items in cart
+[05-Feb-2026 13:50:02 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:50:02 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:50:02 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:50:02 UTC] Found cart with ID: 94
+[05-Feb-2026 13:50:02 UTC] Found 0 items in cart
+[05-Feb-2026 13:50:02 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:50:02 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:50:02 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:50:02 UTC] Found cart with ID: 94
+[05-Feb-2026 13:50:02 UTC] Found 0 items in cart
+[05-Feb-2026 13:52:54 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:52:54 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:52:54 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:52:54 UTC] Found cart with ID: 94
+[05-Feb-2026 13:52:54 UTC] Found 0 items in cart
+[05-Feb-2026 13:52:54 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 13:52:54 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 13:52:54 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 13:52:54 UTC] Found cart with ID: 94
+[05-Feb-2026 13:52:54 UTC] Found 0 items in cart
+[05-Feb-2026 14:01:32 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 14:01:32 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 14:01:32 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 14:01:32 UTC] Found cart with ID: 94
+[05-Feb-2026 14:01:32 UTC] Found 0 items in cart
+[05-Feb-2026 14:01:32 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 14:01:32 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 14:01:32 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 14:01:32 UTC] Found cart with ID: 94
+[05-Feb-2026 14:01:32 UTC] Found 0 items in cart
+[05-Feb-2026 14:32:42 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 14:32:42 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 14:32:42 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 14:32:42 UTC] Found cart with ID: 94
+[05-Feb-2026 14:32:42 UTC] Found 0 items in cart
+[05-Feb-2026 14:32:42 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 14:32:42 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 14:32:42 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 14:32:42 UTC] Found cart with ID: 94
+[05-Feb-2026 14:32:42 UTC] Found 0 items in cart
+[05-Feb-2026 14:37:34 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 14:37:34 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 14:37:34 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 14:37:34 UTC] Found cart with ID: 94
+[05-Feb-2026 14:37:34 UTC] Found 0 items in cart
+[05-Feb-2026 14:37:34 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 14:37:34 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 14:37:34 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 14:37:34 UTC] Found cart with ID: 94
+[05-Feb-2026 14:37:34 UTC] Found 0 items in cart
+[05-Feb-2026 15:03:17 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:03:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:03:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:03:17 UTC] Found cart with ID: 94
+[05-Feb-2026 15:03:17 UTC] Found 0 items in cart
+[05-Feb-2026 15:03:17 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:03:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:03:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:03:17 UTC] Found cart with ID: 94
+[05-Feb-2026 15:03:17 UTC] Found 0 items in cart
+[05-Feb-2026 15:06:33 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:06:33 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:06:33 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:06:33 UTC] Found cart with ID: 94
+[05-Feb-2026 15:06:33 UTC] Found 0 items in cart
+[05-Feb-2026 15:06:33 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:06:33 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:06:33 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:06:33 UTC] Found cart with ID: 94
+[05-Feb-2026 15:06:33 UTC] Found 0 items in cart
+[05-Feb-2026 15:08:09 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:08:09 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:08:09 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:08:09 UTC] Found cart with ID: 94
+[05-Feb-2026 15:08:09 UTC] Found 0 items in cart
+[05-Feb-2026 15:08:09 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:08:09 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:08:09 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:08:09 UTC] Found cart with ID: 94
+[05-Feb-2026 15:08:09 UTC] Found 0 items in cart
+[05-Feb-2026 15:24:19 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:24:19 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:24:19 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:24:19 UTC] Found cart with ID: 94
+[05-Feb-2026 15:24:19 UTC] Found 0 items in cart
+[05-Feb-2026 15:24:19 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:24:19 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:24:19 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:24:19 UTC] Found cart with ID: 94
+[05-Feb-2026 15:24:19 UTC] Found 0 items in cart
+[05-Feb-2026 15:30:50 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:30:50 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:30:50 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:30:50 UTC] Found cart with ID: 94
+[05-Feb-2026 15:30:50 UTC] Found 0 items in cart
+[05-Feb-2026 15:30:50 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:30:50 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:30:50 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:30:50 UTC] Found cart with ID: 94
+[05-Feb-2026 15:30:50 UTC] Found 0 items in cart
+[05-Feb-2026 15:36:18 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:36:18 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:36:18 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:36:18 UTC] Found cart with ID: 94
+[05-Feb-2026 15:36:18 UTC] Found 0 items in cart
+[05-Feb-2026 15:36:18 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:36:18 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:36:18 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:36:18 UTC] Found cart with ID: 94
+[05-Feb-2026 15:36:18 UTC] Found 0 items in cart
+[05-Feb-2026 15:38:44 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:38:44 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:38:44 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:38:44 UTC] Found cart with ID: 94
+[05-Feb-2026 15:38:44 UTC] Found 0 items in cart
+[05-Feb-2026 15:38:44 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:38:44 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:38:44 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:38:44 UTC] Found cart with ID: 94
+[05-Feb-2026 15:38:44 UTC] Found 0 items in cart
+[05-Feb-2026 15:50:06 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 15:50:06 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:50:06 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 15:50:06 UTC] Found cart with ID: 94
+[05-Feb-2026 15:50:06 UTC] Found 0 items in cart
+[05-Feb-2026 15:50:35 UTC] View cart - userId from auth: 24
+[05-Feb-2026 15:50:35 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 15:50:35 UTC] View cart for userId: 24
+[05-Feb-2026 15:50:35 UTC] Found cart with ID: 106
+[05-Feb-2026 15:50:35 UTC] Found 1 items in cart
+[05-Feb-2026 15:50:35 UTC] View cart - userId from auth: 24
+[05-Feb-2026 15:50:35 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 15:50:35 UTC] View cart for userId: 24
+[05-Feb-2026 15:50:35 UTC] Found cart with ID: 106
+[05-Feb-2026 15:50:35 UTC] Found 1 items in cart
+[05-Feb-2026 16:16:56 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:16:56 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:16:56 UTC] View cart for userId: 24
+[05-Feb-2026 16:16:56 UTC] Found cart with ID: 106
+[05-Feb-2026 16:16:56 UTC] Found 1 items in cart
+[05-Feb-2026 16:16:56 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:16:56 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:16:56 UTC] View cart for userId: 24
+[05-Feb-2026 16:16:56 UTC] Found cart with ID: 106
+[05-Feb-2026 16:16:56 UTC] Found 1 items in cart
+[05-Feb-2026 16:19:03 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:19:03 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:19:03 UTC] View cart for userId: 24
+[05-Feb-2026 16:19:03 UTC] Found cart with ID: 106
+[05-Feb-2026 16:19:03 UTC] Found 1 items in cart
+[05-Feb-2026 16:19:03 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:19:03 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:19:03 UTC] View cart for userId: 24
+[05-Feb-2026 16:19:03 UTC] Found cart with ID: 106
+[05-Feb-2026 16:19:03 UTC] Found 1 items in cart
+[05-Feb-2026 16:23:34 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:23:34 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:23:34 UTC] View cart for userId: 24
+[05-Feb-2026 16:23:34 UTC] Found cart with ID: 106
+[05-Feb-2026 16:23:34 UTC] Found 1 items in cart
+[05-Feb-2026 16:23:34 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:23:34 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:23:34 UTC] View cart for userId: 24
+[05-Feb-2026 16:23:34 UTC] Found cart with ID: 106
+[05-Feb-2026 16:23:34 UTC] Found 1 items in cart
+[05-Feb-2026 16:24:14 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:24:14 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:24:14 UTC] View cart for userId: 24
+[05-Feb-2026 16:24:14 UTC] Found cart with ID: 106
+[05-Feb-2026 16:24:14 UTC] Found 1 items in cart
+[05-Feb-2026 16:24:14 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:24:14 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:24:14 UTC] View cart for userId: 24
+[05-Feb-2026 16:24:14 UTC] Found cart with ID: 106
+[05-Feb-2026 16:24:14 UTC] Found 1 items in cart
+[05-Feb-2026 16:31:25 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:31:25 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:31:25 UTC] View cart for userId: 24
+[05-Feb-2026 16:31:25 UTC] Found cart with ID: 106
+[05-Feb-2026 16:31:25 UTC] Found 1 items in cart
+[05-Feb-2026 16:31:25 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:31:25 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:31:25 UTC] View cart for userId: 24
+[05-Feb-2026 16:31:25 UTC] Found cart with ID: 106
+[05-Feb-2026 16:31:25 UTC] Found 1 items in cart
+[05-Feb-2026 16:36:40 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:36:40 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:36:40 UTC] View cart for userId: 24
+[05-Feb-2026 16:36:40 UTC] Found cart with ID: 106
+[05-Feb-2026 16:36:40 UTC] Found 1 items in cart
+[05-Feb-2026 16:36:41 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:36:41 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:36:41 UTC] View cart for userId: 24
+[05-Feb-2026 16:36:41 UTC] Found cart with ID: 106
+[05-Feb-2026 16:36:41 UTC] Found 1 items in cart
+[05-Feb-2026 16:40:29 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:40:29 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:40:29 UTC] View cart for userId: 24
+[05-Feb-2026 16:40:29 UTC] Found cart with ID: 106
+[05-Feb-2026 16:40:29 UTC] Found 0 items in cart
+[05-Feb-2026 16:40:40 UTC] UserID: 24
+[05-Feb-2026 16:40:40 UTC] Existing cart found for userId=24, cartId=106
+[05-Feb-2026 16:40:40 UTC] Product ID: 244, Stock value: 9, Stock type: integer, Quantity: 1, is_null: false
+[05-Feb-2026 16:40:40 UTC] Product ID: 244 - Product stock value: 9, Quantity requested: 1
+[05-Feb-2026 16:40:40 UTC] Product ID: 244 - Product stock: 9, Quantity in cart: 0, Available stock: 9, Requested quantity: 1
+[05-Feb-2026 16:40:40 UTC] Product ID: 244 - Stock check passed: available 9, requested 1
+[05-Feb-2026 16:40:40 UTC] Inserted new cart_item for cartId=106, productId=244
+[05-Feb-2026 16:40:40 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:40:40 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:40:40 UTC] View cart for userId: 24
+[05-Feb-2026 16:40:40 UTC] Found cart with ID: 106
+[05-Feb-2026 16:40:40 UTC] Found 1 items in cart
+[05-Feb-2026 16:42:24 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:42:24 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:42:24 UTC] View cart for userId: 24
+[05-Feb-2026 16:42:24 UTC] Found cart with ID: 106
+[05-Feb-2026 16:42:24 UTC] Found 0 items in cart
+[05-Feb-2026 16:42:24 UTC] View cart - userId from auth: 24
+[05-Feb-2026 16:42:24 UTC] View cart - guestToken from body: NULL
+[05-Feb-2026 16:42:24 UTC] View cart for userId: 24
+[05-Feb-2026 16:42:24 UTC] Found cart with ID: 106
+[05-Feb-2026 16:42:24 UTC] Found 0 items in cart
+[05-Feb-2026 16:48:21 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 16:48:21 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:48:21 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 16:48:21 UTC] Found cart with ID: 94
+[05-Feb-2026 16:48:21 UTC] Found 0 items in cart
+[05-Feb-2026 16:48:55 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 16:48:55 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:48:55 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 16:48:55 UTC] Found cart with ID: 94
+[05-Feb-2026 16:48:55 UTC] Found 0 items in cart
+[05-Feb-2026 16:48:55 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 16:48:55 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:48:55 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 16:48:55 UTC] Found cart with ID: 94
+[05-Feb-2026 16:48:55 UTC] Found 0 items in cart
+[05-Feb-2026 16:49:35 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 16:49:35 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:49:35 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 16:49:35 UTC] Found cart with ID: 94
+[05-Feb-2026 16:49:35 UTC] Found 0 items in cart
+[05-Feb-2026 16:49:35 UTC] View cart - userId from auth: NULL
+[05-Feb-2026 16:49:35 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[05-Feb-2026 16:49:35 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[05-Feb-2026 16:49:35 UTC] Found cart with ID: 94
+[05-Feb-2026 16:49:35 UTC] Found 0 items in cart
+[07-Feb-2026 05:34:58 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:34:58 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:34:58 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:34:58 UTC] Found cart with ID: 94
+[07-Feb-2026 05:34:58 UTC] Found 0 items in cart
+[07-Feb-2026 05:38:13 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:38:13 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:38:13 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:38:13 UTC] Found cart with ID: 94
+[07-Feb-2026 05:38:13 UTC] Found 0 items in cart
+[07-Feb-2026 05:38:13 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:38:13 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[07-Feb-2026 05:38:13 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[07-Feb-2026 05:38:13 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[07-Feb-2026 05:38:46 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:38:46 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:38:46 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:38:46 UTC] Found cart with ID: 94
+[07-Feb-2026 05:38:46 UTC] Found 0 items in cart
+[07-Feb-2026 05:40:24 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:40:24 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:40:24 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:40:24 UTC] Found cart with ID: 94
+[07-Feb-2026 05:40:24 UTC] Found 0 items in cart
+[07-Feb-2026 05:49:09 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:49:09 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:49:09 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:49:09 UTC] Found cart with ID: 94
+[07-Feb-2026 05:49:09 UTC] Found 0 items in cart
+[07-Feb-2026 05:53:04 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:53:04 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:53:04 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:53:04 UTC] Found cart with ID: 94
+[07-Feb-2026 05:53:04 UTC] Found 0 items in cart
+[07-Feb-2026 05:56:07 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:56:07 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:56:07 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:56:07 UTC] Found cart with ID: 94
+[07-Feb-2026 05:56:07 UTC] Found 0 items in cart
+[07-Feb-2026 05:58:22 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:58:22 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:58:22 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:58:22 UTC] Found cart with ID: 94
+[07-Feb-2026 05:58:22 UTC] Found 0 items in cart
+[07-Feb-2026 05:58:36 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:58:36 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:58:36 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:58:36 UTC] Found cart with ID: 94
+[07-Feb-2026 05:58:36 UTC] Found 0 items in cart
+[07-Feb-2026 05:58:54 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 05:58:54 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 05:58:54 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 05:58:54 UTC] Found cart with ID: 94
+[07-Feb-2026 05:58:54 UTC] Found 0 items in cart
+[07-Feb-2026 06:12:18 UTC] UserID: NULL
+[07-Feb-2026 06:12:18 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[07-Feb-2026 06:12:18 UTC] Product ID: 247, Stock value: 99, Stock type: integer, Quantity: 1, is_null: false
+[07-Feb-2026 06:12:18 UTC] Product ID: 247 - Product stock value: 99, Quantity requested: 1
+[07-Feb-2026 06:12:18 UTC] Product ID: 247 - Product stock: 99, Quantity in cart: 0, Available stock: 99, Requested quantity: 1
+[07-Feb-2026 06:12:18 UTC] Product ID: 247 - Stock check passed: available 99, requested 1
+[07-Feb-2026 06:12:18 UTC] Inserted new cart_item for cartId=94, productId=247
+[07-Feb-2026 06:12:18 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:12:18 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:12:18 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:12:18 UTC] Found cart with ID: 94
+[07-Feb-2026 06:12:18 UTC] Found 1 items in cart
+[07-Feb-2026 06:18:37 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:18:37 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:18:37 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:18:37 UTC] Found cart with ID: 94
+[07-Feb-2026 06:18:37 UTC] Found 1 items in cart
+[07-Feb-2026 06:20:06 UTC] Auth check - Authorization header: ''
+[07-Feb-2026 06:20:06 UTC] Auth check - No Authorization header found
+[07-Feb-2026 06:20:06 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:20:06 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:20:06 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:20:06 UTC] Found cart with ID: 94
+[07-Feb-2026 06:20:06 UTC] Found 1 items in cart
+[07-Feb-2026 06:20:07 UTC] Auth check - Authorization header: ''
+[07-Feb-2026 06:20:07 UTC] Auth check - No Authorization header found
+[07-Feb-2026 06:20:07 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:20:07 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:20:07 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:20:07 UTC] Found cart with ID: 94
+[07-Feb-2026 06:20:07 UTC] Found 1 items in cart
+[07-Feb-2026 06:20:10 UTC] Auth check - Authorization header: ''
+[07-Feb-2026 06:20:10 UTC] Auth check - No Authorization header found
+[07-Feb-2026 06:20:10 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:20:10 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:20:10 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:20:10 UTC] Found cart with ID: 94
+[07-Feb-2026 06:20:10 UTC] Found 1 items in cart
+[07-Feb-2026 06:20:17 UTC] Auth check - Authorization header: ''
+[07-Feb-2026 06:20:17 UTC] Auth check - No Authorization header found
+[07-Feb-2026 06:20:17 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:20:17 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:20:17 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:20:17 UTC] Found cart with ID: 94
+[07-Feb-2026 06:20:17 UTC] Found 1 items in cart
+[07-Feb-2026 06:20:35 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:20:35 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:20:35 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:20:35 UTC] Found cart with ID: 94
+[07-Feb-2026 06:20:35 UTC] Found 1 items in cart
+[07-Feb-2026 06:20:53 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:20:53 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:20:53 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:20:53 UTC] Found cart with ID: 94
+[07-Feb-2026 06:20:53 UTC] Found 1 items in cart
+[07-Feb-2026 06:22:15 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:22:15 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:22:15 UTC] View cart for userId: 24
+[07-Feb-2026 06:22:15 UTC] Found cart with ID: 106
+[07-Feb-2026 06:22:15 UTC] Found 0 items in cart
+[07-Feb-2026 06:22:15 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:22:15 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:22:15 UTC] View cart for userId: 24
+[07-Feb-2026 06:22:15 UTC] Found cart with ID: 106
+[07-Feb-2026 06:22:15 UTC] Found 0 items in cart
+[07-Feb-2026 06:22:40 UTC] UserID: 24
+[07-Feb-2026 06:22:40 UTC] Existing cart found for userId=24, cartId=106
+[07-Feb-2026 06:22:40 UTC] Product ID: 245, Stock value: 93, Stock type: integer, Quantity: 1, is_null: false
+[07-Feb-2026 06:22:40 UTC] Product ID: 245 - Product stock value: 93, Quantity requested: 1
+[07-Feb-2026 06:22:40 UTC] Product ID: 245 - Product stock: 93, Quantity in cart: 0, Available stock: 93, Requested quantity: 1
+[07-Feb-2026 06:22:40 UTC] Product ID: 245 - Stock check passed: available 93, requested 1
+[07-Feb-2026 06:22:40 UTC] Inserted new cart_item for cartId=106, productId=245
+[07-Feb-2026 06:22:40 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:22:40 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:22:40 UTC] View cart for userId: 24
+[07-Feb-2026 06:22:40 UTC] Found cart with ID: 106
+[07-Feb-2026 06:22:40 UTC] Found 1 items in cart
+[07-Feb-2026 06:34:09 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NDUzMTcsImV4cCI6MTc3MTc0MTMxNywidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.RCepCkQP_7zJliGWDWnSbfJW3bUycblK72OtnhmmeRI'
+[07-Feb-2026 06:34:09 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NDUzMTcsImV4cCI6MTc3MTc0MTMxNywidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.RCepCkQP_7zJliGWDWnSbfJW3bUycblK72OtnhmmeRI
+[07-Feb-2026 06:34:09 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770445317,"exp":1771741317,"uid":24,"mobile":"09904968841","role":"user"}
+[07-Feb-2026 06:34:09 UTC] Auth check - Extracted user_id: 24
+[07-Feb-2026 06:34:09 UTC] Auth check - is_admin: false
+[07-Feb-2026 06:34:09 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:34:09 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:34:09 UTC] View cart for userId: 24
+[07-Feb-2026 06:34:09 UTC] Found cart with ID: 106
+[07-Feb-2026 06:34:09 UTC] Found 1 items in cart
+[07-Feb-2026 06:34:15 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NDUzMTcsImV4cCI6MTc3MTc0MTMxNywidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.RCepCkQP_7zJliGWDWnSbfJW3bUycblK72OtnhmmeRI'
+[07-Feb-2026 06:34:15 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NDUzMTcsImV4cCI6MTc3MTc0MTMxNywidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.RCepCkQP_7zJliGWDWnSbfJW3bUycblK72OtnhmmeRI
+[07-Feb-2026 06:34:15 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770445317,"exp":1771741317,"uid":24,"mobile":"09904968841","role":"user"}
+[07-Feb-2026 06:34:15 UTC] Auth check - Extracted user_id: 24
+[07-Feb-2026 06:34:15 UTC] Auth check - is_admin: false
+[07-Feb-2026 06:34:15 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:34:15 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:34:15 UTC] View cart for userId: 24
+[07-Feb-2026 06:34:15 UTC] Found cart with ID: 106
+[07-Feb-2026 06:34:15 UTC] Found 1 items in cart
+[07-Feb-2026 06:34:18 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NDUzMTcsImV4cCI6MTc3MTc0MTMxNywidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.RCepCkQP_7zJliGWDWnSbfJW3bUycblK72OtnhmmeRI'
+[07-Feb-2026 06:34:18 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NDUzMTcsImV4cCI6MTc3MTc0MTMxNywidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.RCepCkQP_7zJliGWDWnSbfJW3bUycblK72OtnhmmeRI
+[07-Feb-2026 06:34:18 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770445317,"exp":1771741317,"uid":24,"mobile":"09904968841","role":"user"}
+[07-Feb-2026 06:34:18 UTC] Auth check - Extracted user_id: 24
+[07-Feb-2026 06:34:18 UTC] Auth check - is_admin: false
+[07-Feb-2026 06:34:18 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:34:18 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:34:18 UTC] View cart for userId: 24
+[07-Feb-2026 06:34:18 UTC] Found cart with ID: 106
+[07-Feb-2026 06:34:18 UTC] Found 1 items in cart
+[07-Feb-2026 06:34:21 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:34:21 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:34:21 UTC] View cart for userId: 24
+[07-Feb-2026 06:34:21 UTC] Found cart with ID: 106
+[07-Feb-2026 06:34:21 UTC] Found 0 items in cart
+[07-Feb-2026 06:34:26 UTC] UserID: 24
+[07-Feb-2026 06:34:26 UTC] Existing cart found for userId=24, cartId=106
+[07-Feb-2026 06:34:26 UTC] Product ID: 244, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[07-Feb-2026 06:34:26 UTC] Product ID: 244 - Product stock value: 8, Quantity requested: 1
+[07-Feb-2026 06:34:27 UTC] Product ID: 244 - Product stock: 8, Quantity in cart: 0, Available stock: 8, Requested quantity: 1
+[07-Feb-2026 06:34:27 UTC] Product ID: 244 - Stock check passed: available 8, requested 1
+[07-Feb-2026 06:34:27 UTC] Inserted new cart_item for cartId=106, productId=244
+[07-Feb-2026 06:34:27 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:34:27 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:34:27 UTC] View cart for userId: 24
+[07-Feb-2026 06:34:27 UTC] Found cart with ID: 106
+[07-Feb-2026 06:34:27 UTC] Found 1 items in cart
+[07-Feb-2026 06:38:38 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:38:38 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:38:38 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:38:38 UTC] Found cart with ID: 94
+[07-Feb-2026 06:38:38 UTC] Found 1 items in cart
+[07-Feb-2026 06:38:42 UTC] Auth check - Authorization header: ''
+[07-Feb-2026 06:38:42 UTC] Auth check - No Authorization header found
+[07-Feb-2026 06:38:42 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:38:42 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:38:42 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:38:42 UTC] Found cart with ID: 94
+[07-Feb-2026 06:38:42 UTC] Found 1 items in cart
+[07-Feb-2026 06:38:46 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:38:46 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:38:46 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:38:46 UTC] Found cart with ID: 94
+[07-Feb-2026 06:38:46 UTC] Found 0 items in cart
+[07-Feb-2026 06:38:55 UTC] UserID: NULL
+[07-Feb-2026 06:38:55 UTC] Existing guest cart found token=196dd61ee5819ef721b96b7b66f4f959, cartId=94
+[07-Feb-2026 06:38:55 UTC] Product ID: 244, Stock value: 8, Stock type: integer, Quantity: 1, is_null: false
+[07-Feb-2026 06:38:55 UTC] Product ID: 244 - Product stock value: 8, Quantity requested: 1
+[07-Feb-2026 06:38:55 UTC] Product ID: 244 - Product stock: 8, Quantity in cart: 0, Available stock: 8, Requested quantity: 1
+[07-Feb-2026 06:38:55 UTC] Product ID: 244 - Stock check passed: available 8, requested 1
+[07-Feb-2026 06:38:55 UTC] Inserted new cart_item for cartId=94, productId=244
+[07-Feb-2026 06:38:55 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 06:38:55 UTC] View cart - guestToken from body: '196dd61ee5819ef721b96b7b66f4f959'
+[07-Feb-2026 06:38:55 UTC] View cart for guestToken: 196dd61ee5819ef721b96b7b66f4f959
+[07-Feb-2026 06:38:55 UTC] Found cart with ID: 94
+[07-Feb-2026 06:38:55 UTC] Found 1 items in cart
+[07-Feb-2026 06:39:43 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:39:43 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 06:39:43 UTC] View cart for userId: 24
+[07-Feb-2026 06:39:43 UTC] Found cart with ID: 94
+[07-Feb-2026 06:39:43 UTC] Found 1 items in cart
+[07-Feb-2026 06:39:43 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:39:43 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:39:43 UTC] View cart for userId: 24
+[07-Feb-2026 06:39:43 UTC] Found cart with ID: 94
+[07-Feb-2026 06:39:43 UTC] Found 1 items in cart
+[07-Feb-2026 06:47:08 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:47:08 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 06:47:08 UTC] View cart for userId: 24
+[07-Feb-2026 06:47:08 UTC] Found cart with ID: 94
+[07-Feb-2026 06:47:08 UTC] Found 1 items in cart
+[07-Feb-2026 06:47:08 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:47:08 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:47:08 UTC] View cart for userId: 24
+[07-Feb-2026 06:47:08 UTC] Found cart with ID: 94
+[07-Feb-2026 06:47:08 UTC] Found 1 items in cart
+[07-Feb-2026 06:54:01 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:54:01 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 06:54:01 UTC] View cart for userId: 24
+[07-Feb-2026 06:54:01 UTC] Found cart with ID: 94
+[07-Feb-2026 06:54:01 UTC] Found 1 items in cart
+[07-Feb-2026 06:54:02 UTC] View cart - userId from auth: 24
+[07-Feb-2026 06:54:02 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 06:54:02 UTC] View cart for userId: 24
+[07-Feb-2026 06:54:02 UTC] Found cart with ID: 94
+[07-Feb-2026 06:54:02 UTC] Found 1 items in cart
+[07-Feb-2026 07:01:35 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:01:35 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 07:01:35 UTC] View cart for userId: 24
+[07-Feb-2026 07:01:35 UTC] Found cart with ID: 94
+[07-Feb-2026 07:01:35 UTC] Found 1 items in cart
+[07-Feb-2026 07:01:35 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:01:35 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 07:01:35 UTC] View cart for userId: 24
+[07-Feb-2026 07:01:35 UTC] Found cart with ID: 94
+[07-Feb-2026 07:01:35 UTC] Found 1 items in cart
+[07-Feb-2026 07:01:39 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:01:39 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 07:01:39 UTC] View cart for userId: 24
+[07-Feb-2026 07:01:39 UTC] Found cart with ID: 94
+[07-Feb-2026 07:01:39 UTC] Found 1 items in cart
+[07-Feb-2026 07:01:39 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:01:39 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 07:01:39 UTC] View cart for userId: 24
+[07-Feb-2026 07:01:39 UTC] Found cart with ID: 94
+[07-Feb-2026 07:01:39 UTC] Found 1 items in cart
+[07-Feb-2026 07:05:10 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:05:10 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 07:05:10 UTC] View cart for userId: 24
+[07-Feb-2026 07:05:10 UTC] Found cart with ID: 94
+[07-Feb-2026 07:05:10 UTC] Found 1 items in cart
+[07-Feb-2026 07:05:10 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:05:10 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 07:05:10 UTC] View cart for userId: 24
+[07-Feb-2026 07:05:10 UTC] Found cart with ID: 94
+[07-Feb-2026 07:05:10 UTC] Found 1 items in cart
+[07-Feb-2026 07:48:52 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:48:52 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 07:48:52 UTC] View cart for userId: 24
+[07-Feb-2026 07:48:52 UTC] Found cart with ID: 94
+[07-Feb-2026 07:48:52 UTC] Found 1 items in cart
+[07-Feb-2026 07:48:53 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:48:53 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 07:48:53 UTC] View cart for userId: 24
+[07-Feb-2026 07:48:53 UTC] Found cart with ID: 94
+[07-Feb-2026 07:48:53 UTC] Found 1 items in cart
+[07-Feb-2026 07:56:29 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:56:29 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 07:56:29 UTC] View cart for userId: 24
+[07-Feb-2026 07:56:29 UTC] Found cart with ID: 94
+[07-Feb-2026 07:56:29 UTC] Found 1 items in cart
+[07-Feb-2026 07:56:29 UTC] View cart - userId from auth: 24
+[07-Feb-2026 07:56:29 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 07:56:29 UTC] View cart for userId: 24
+[07-Feb-2026 07:56:29 UTC] Found cart with ID: 94
+[07-Feb-2026 07:56:29 UTC] Found 1 items in cart
+[07-Feb-2026 08:02:20 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:02:20 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[07-Feb-2026 08:02:20 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[07-Feb-2026 08:02:20 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[07-Feb-2026 08:02:28 UTC] View cart - userId from auth: 24
+[07-Feb-2026 08:02:28 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 08:02:28 UTC] View cart for userId: 24
+[07-Feb-2026 08:02:28 UTC] Found cart with ID: 94
+[07-Feb-2026 08:02:28 UTC] Found 1 items in cart
+[07-Feb-2026 08:02:29 UTC] View cart - userId from auth: 24
+[07-Feb-2026 08:02:29 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 08:02:29 UTC] View cart for userId: 24
+[07-Feb-2026 08:02:29 UTC] Found cart with ID: 94
+[07-Feb-2026 08:02:29 UTC] Found 1 items in cart
+[07-Feb-2026 08:09:33 UTC] View cart - userId from auth: 24
+[07-Feb-2026 08:09:33 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 08:09:33 UTC] View cart for userId: 24
+[07-Feb-2026 08:09:33 UTC] Found cart with ID: 94
+[07-Feb-2026 08:09:33 UTC] Found 1 items in cart
+[07-Feb-2026 08:09:33 UTC] View cart - userId from auth: 24
+[07-Feb-2026 08:09:33 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 08:09:33 UTC] View cart for userId: 24
+[07-Feb-2026 08:09:33 UTC] Found cart with ID: 94
+[07-Feb-2026 08:09:33 UTC] Found 1 items in cart
+[07-Feb-2026 08:37:22 UTC] View cart - userId from auth: 24
+[07-Feb-2026 08:37:22 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 08:37:22 UTC] View cart for userId: 24
+[07-Feb-2026 08:37:22 UTC] Found cart with ID: 94
+[07-Feb-2026 08:37:22 UTC] Found 1 items in cart
+[07-Feb-2026 08:37:23 UTC] View cart - userId from auth: 24
+[07-Feb-2026 08:37:23 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 08:37:23 UTC] View cart for userId: 24
+[07-Feb-2026 08:37:23 UTC] Found cart with ID: 94
+[07-Feb-2026 08:37:23 UTC] Found 1 items in cart
+[07-Feb-2026 08:40:59 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:40:59 UTC] View cart - guestToken from body: '2517eb3a3ba0cc8592d880cc0d2347b6'
+[07-Feb-2026 08:40:59 UTC] View cart for guestToken: 2517eb3a3ba0cc8592d880cc0d2347b6
+[07-Feb-2026 08:40:59 UTC] No cart found for userId:  or guestToken: 2517eb3a3ba0cc8592d880cc0d2347b6
+[07-Feb-2026 08:41:20 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:41:20 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:41:20 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:41:20 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:41:20 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:41:20 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:41:20 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:41:20 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:41:31 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:41:31 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:41:31 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:41:31 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:41:31 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:41:31 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:41:31 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:41:31 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:43:10 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:43:10 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:43:10 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:43:10 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:43:10 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:43:10 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:43:10 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:43:10 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:44:08 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:44:08 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:44:08 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:44:08 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:44:08 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:44:08 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:44:08 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:44:08 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:49:39 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:49:39 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:49:39 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:49:39 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:49:39 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 08:49:39 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 08:49:39 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 08:49:39 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:11:00 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 14:11:00 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 14:11:00 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:11:00 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:11:00 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 14:11:00 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 14:11:00 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:11:00 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:12:33 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 14:12:33 UTC] View cart - guestToken from body: '0b43abd7dc28a74929ba28eb49a03a58'
+[07-Feb-2026 14:12:33 UTC] View cart for guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[07-Feb-2026 14:12:33 UTC] No cart found for userId:  or guestToken: 0b43abd7dc28a74929ba28eb49a03a58
+[07-Feb-2026 14:12:33 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 14:12:33 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 14:12:33 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:12:33 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:12:33 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 14:12:33 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 14:12:33 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:12:33 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:18:42 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 14:18:42 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 14:18:42 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:18:42 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:19:45 UTC] View cart - userId from auth: NULL
+[07-Feb-2026 14:19:45 UTC] View cart - guestToken from body: 'd577c44229b686bdd6560d3786f92db3'
+[07-Feb-2026 14:19:45 UTC] View cart for guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:19:45 UTC] No cart found for userId:  or guestToken: d577c44229b686bdd6560d3786f92db3
+[07-Feb-2026 14:22:12 UTC] View cart - userId from auth: 24
+[07-Feb-2026 14:22:12 UTC] View cart - guestToken from body: '4729fa23d576b1d78fb89cf8e6147dfd'
+[07-Feb-2026 14:22:12 UTC] View cart for userId: 24
+[07-Feb-2026 14:22:12 UTC] Found cart with ID: 94
+[07-Feb-2026 14:22:12 UTC] Found 1 items in cart
+[07-Feb-2026 14:22:12 UTC] View cart - userId from auth: 24
+[07-Feb-2026 14:22:12 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 14:22:12 UTC] View cart for userId: 24
+[07-Feb-2026 14:22:12 UTC] Found cart with ID: 94
+[07-Feb-2026 14:22:12 UTC] Found 1 items in cart
+[07-Feb-2026 14:26:04 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw'
+[07-Feb-2026 14:26:04 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw
+[07-Feb-2026 14:26:04 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770474129,"exp":1771770129,"uid":24,"mobile":"09904968841","role":"user"}
+[07-Feb-2026 14:26:04 UTC] Auth check - Extracted user_id: 24
+[07-Feb-2026 14:26:04 UTC] Auth check - is_admin: false
+[07-Feb-2026 14:26:04 UTC] View cart - userId from auth: 24
+[07-Feb-2026 14:26:04 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 14:26:04 UTC] View cart for userId: 24
+[07-Feb-2026 14:26:04 UTC] Found cart with ID: 94
+[07-Feb-2026 14:26:04 UTC] Found 1 items in cart
+[07-Feb-2026 14:26:05 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw'
+[07-Feb-2026 14:26:05 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw
+[07-Feb-2026 14:26:05 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770474129,"exp":1771770129,"uid":24,"mobile":"09904968841","role":"user"}
+[07-Feb-2026 14:26:05 UTC] Auth check - Extracted user_id: 24
+[07-Feb-2026 14:26:05 UTC] Auth check - is_admin: false
+[07-Feb-2026 14:26:05 UTC] View cart - userId from auth: 24
+[07-Feb-2026 14:26:05 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 14:26:05 UTC] View cart for userId: 24
+[07-Feb-2026 14:26:05 UTC] Found cart with ID: 94
+[07-Feb-2026 14:26:05 UTC] Found 1 items in cart
+[07-Feb-2026 14:26:10 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw'
+[07-Feb-2026 14:26:10 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw
+[07-Feb-2026 14:26:10 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770474129,"exp":1771770129,"uid":24,"mobile":"09904968841","role":"user"}
+[07-Feb-2026 14:26:10 UTC] Auth check - Extracted user_id: 24
+[07-Feb-2026 14:26:10 UTC] Auth check - is_admin: false
+[07-Feb-2026 14:26:10 UTC] View cart - userId from auth: 24
+[07-Feb-2026 14:26:10 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 14:26:10 UTC] View cart for userId: 24
+[07-Feb-2026 14:26:10 UTC] Found cart with ID: 94
+[07-Feb-2026 14:26:10 UTC] Found 1 items in cart
+[07-Feb-2026 14:26:27 UTC] Auth check - Authorization header: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw'
+[07-Feb-2026 14:26:27 UTC] Auth check - JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3QiLCJpYXQiOjE3NzA0NzQxMjksImV4cCI6MTc3MTc3MDEyOSwidWlkIjoyNCwibW9iaWxlIjoiMDk5MDQ5Njg4NDEiLCJyb2xlIjoidXNlciJ9.djnB-3xTGSIecsQDplrQxmTkXLt1M1gV-tIwU1zVgbw
+[07-Feb-2026 14:26:27 UTC] Auth check - Decoded payload: {"iss":"http:\/\/localhost","iat":1770474129,"exp":1771770129,"uid":24,"mobile":"09904968841","role":"user"}
+[07-Feb-2026 14:26:27 UTC] Auth check - Extracted user_id: 24
+[07-Feb-2026 14:26:27 UTC] Auth check - is_admin: false
+[07-Feb-2026 14:26:27 UTC] View cart - userId from auth: 24
+[07-Feb-2026 14:26:27 UTC] View cart - guestToken from body: NULL
+[07-Feb-2026 14:26:27 UTC] View cart for userId: 24
+[07-Feb-2026 14:26:27 UTC] Found cart with ID: 94
+[07-Feb-2026 14:26:27 UTC] Found 1 items in cart

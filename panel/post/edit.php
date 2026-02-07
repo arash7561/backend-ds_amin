@@ -36,23 +36,27 @@ $title = trim($data->title ?? '');
 $description = trim($data->description ?? '');
 $slug = trim($data->slug ?? '');
 $cat_id = $data->cat_id ?? $data->category ?? null;
-$status = $data->status ?? 'active';
+// وضعیت: اول از URL بخوان (قابل اطمینان‌ترین)، بعد از body
+$statusRaw = $_GET['status'] ?? $data->status ?? $_POST['status'] ?? null;
 
-// تبدیل وضعیت به فرمت مناسب برای دیتابیس
-// همیشه به رشته تبدیل کن
-if (is_numeric($status)) {
-    $status = ($status == 1) ? 'active' : 'inactive';
-} elseif (is_string($status)) {
-    $status = strtolower(trim($status));
-    if ($status === 'active' || $status === '1' || $status === 'true') {
-        $status = 'active';
-    } elseif ($status === 'inactive' || $status === '0' || $status === 'false') {
-        $status = 'inactive';
+// تبدیل وضعیت به فرمت مناسب برای دیتابیس - هرگز خالی نگذار
+if ($statusRaw !== null && $statusRaw !== '') {
+    if (is_numeric($statusRaw)) {
+        $status = ($statusRaw == 1) ? 'active' : 'inactive';
+    } elseif (is_string($statusRaw)) {
+        $s = strtolower(trim($statusRaw));
+        if ($s === 'active' || $s === '1' || $s === 'true') {
+            $status = 'active';
+        } elseif ($s === 'inactive' || $s === '0' || $s === 'false') {
+            $status = 'inactive';
+        } else {
+            $status = 'active';
+        }
     } else {
         $status = 'active';
     }
 } else {
-    $status = 'active';
+    $status = null; // بعداً از DB خوانده می‌شود
 }
 
 $image = trim($data->image ?? '');
@@ -172,11 +176,25 @@ try {
         exit;
     }
 
+    // اگر وضعیت ارسال نشده، مقدار فعلی را از دیتابیس بگیر
+    if ($status === null) {
+        $stmtStatus = $conn->prepare("SELECT status FROM products WHERE id = ?");
+        $stmtStatus->execute([$id]);
+        $row = $stmtStatus->fetch(PDO::FETCH_ASSOC);
+        $current = $row ? trim($row['status'] ?? '') : '';
+        $status = ($current === 'inactive') ? 'inactive' : 'active'; // هرگز خالی نگذار
+    }
+
     // تولید slug اگر ارسال نشده باشد
     if (empty($slug)) {
         $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $title)));
         $slug = preg_replace('/-+/', '-', $slug);
         $slug = trim($slug, '-');
+    }
+
+    // اطمینان از اینکه status هرگز خالی نباشد
+    if (empty(trim($status ?? ''))) {
+        $status = 'active';
     }
 
     // آپدیت محصول
@@ -258,7 +276,15 @@ try {
             }
         }
         
-        echo json_encode(['status' => true, 'message' => 'محصول با موفقیت ویرایش شد.'], JSON_UNESCAPED_UNICODE);
+        // دیباگ: مقدار دریافتی و ذخیره‌شده را برگردان
+        echo json_encode([
+            'status' => true,
+            'message' => 'محصول با موفقیت ویرایش شد.',
+            'debug_status' => [
+                'received' => $statusRaw,
+                'saved' => $status
+            ]
+        ], JSON_UNESCAPED_UNICODE);
     } else {
         echo json_encode(['status' => false, 'message' => 'خطا در ویرایش محصول.'], JSON_UNESCAPED_UNICODE);
     }

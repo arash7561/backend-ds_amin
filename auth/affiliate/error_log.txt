@@ -452,3 +452,599 @@
 [04-Feb-2026 18:57:33 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
 [04-Feb-2026 18:57:33 UTC] Subsets API - Final result: 2 users found
 [04-Feb-2026 18:57:33 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":24200}
+[05-Feb-2026 07:06:26 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 07:06:26 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 07:06:26 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 07:06:26 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 07:06:26 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 07:06:26 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":24200}
+[05-Feb-2026 07:06:26 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 07:06:26 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 07:06:26 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 07:06:26 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 07:06:26 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 07:06:26 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":24200}
+[05-Feb-2026 08:07:10 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 08:07:10 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 08:07:10 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 08:07:10 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 08:07:10 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 08:07:10 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":24200}
+[05-Feb-2026 08:07:10 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 08:07:10 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 08:07:10 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 08:07:10 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 08:07:10 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 08:07:10 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":24200}
+[05-Feb-2026 08:07:14 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 08:07:14 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 08:07:14 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 08:07:14 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 08:07:14 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 08:07:14 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":24200}
+[05-Feb-2026 08:07:14 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 08:07:14 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 08:07:14 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 08:07:14 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 08:07:14 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 08:07:14 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":24200}
+[05-Feb-2026 13:11:54 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:11:54 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:11:54 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:11:54 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:11:54 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:11:54 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:11:54 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:11:54 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:11:54 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:11:54 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:11:54 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:11:54 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:11:58 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:11:58 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:11:58 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:11:58 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:11:58 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:11:58 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:12:01 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:12:01 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:12:01 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:12:01 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:12:01 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:12:01 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:12:01 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:12:01 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:12:01 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:12:01 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:12:01 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:12:01 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:13:31 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:13:31 UTC] Sub Orders - Filtering by specific sub user: 26
+[05-Feb-2026 13:13:31 UTC] Sub Orders - Found 1 orders with affiliate_id = 24
+[05-Feb-2026 13:13:31 UTC] Sub Orders - Calculating total price for 1 orders
+[05-Feb-2026 13:13:31 UTC] Sub Orders - Returning 1 orders with total amount: 552000
+[05-Feb-2026 13:13:35 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:13:35 UTC] Sub Orders - Filtering by specific sub user: 27
+[05-Feb-2026 13:13:35 UTC] Sub Orders - Found 4 orders with affiliate_id = 24
+[05-Feb-2026 13:13:35 UTC] Sub Orders - Calculating total price for 4 orders
+[05-Feb-2026 13:13:35 UTC] Sub Orders - Returning 4 orders with total amount: 3763400
+[05-Feb-2026 13:23:11 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:23:11 UTC] Sub Orders - Filtering by specific sub user: 26
+[05-Feb-2026 13:23:11 UTC] Sub Orders - Found 1 orders with affiliate_id = 24
+[05-Feb-2026 13:23:11 UTC] Sub Orders - Calculating total price for 1 orders
+[05-Feb-2026 13:23:11 UTC] Sub Orders - Returning 1 orders with total amount: 552000
+[05-Feb-2026 13:23:14 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:23:14 UTC] Sub Orders - Filtering by specific sub user: 27
+[05-Feb-2026 13:23:14 UTC] Sub Orders - Found 4 orders with affiliate_id = 24
+[05-Feb-2026 13:23:14 UTC] Sub Orders - Calculating total price for 4 orders
+[05-Feb-2026 13:23:14 UTC] Sub Orders - Returning 4 orders with total amount: 3763400
+[05-Feb-2026 13:29:11 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:11 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:11 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:11 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:11 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:11 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:11 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:11 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:11 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:11 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:11 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:11 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:15 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:15 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:15 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:15 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:15 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:15 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:16 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:16 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:16 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:16 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:16 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:16 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:16 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:16 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:16 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:16 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:16 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:16 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:33 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:29:33 UTC] Sub Orders - Filtering by specific sub user: 26
+[05-Feb-2026 13:29:33 UTC] Sub Orders - Found 1 orders with affiliate_id = 24
+[05-Feb-2026 13:29:33 UTC] Sub Orders - Calculating total price for 1 orders
+[05-Feb-2026 13:29:33 UTC] Sub Orders - Returning 1 orders with total amount: 552000
+[05-Feb-2026 13:29:35 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:29:35 UTC] Sub Orders - Filtering by specific sub user: 27
+[05-Feb-2026 13:29:35 UTC] Sub Orders - Found 4 orders with affiliate_id = 24
+[05-Feb-2026 13:29:35 UTC] Sub Orders - Calculating total price for 4 orders
+[05-Feb-2026 13:29:35 UTC] Sub Orders - Returning 4 orders with total amount: 3763400
+[05-Feb-2026 13:29:44 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:44 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:44 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:44 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:44 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:44 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:46 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:46 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:46 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:46 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:46 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:46 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:46 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 13:29:46 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 13:29:46 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 13:29:46 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 13:29:46 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 13:29:46 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":4,"total_orders_amount":3763400}
+[05-Feb-2026 13:29:49 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:29:49 UTC] Sub Orders - Filtering by specific sub user: 27
+[05-Feb-2026 13:29:49 UTC] Sub Orders - Found 4 orders with affiliate_id = 24
+[05-Feb-2026 13:29:49 UTC] Sub Orders - Calculating total price for 4 orders
+[05-Feb-2026 13:29:49 UTC] Sub Orders - Returning 4 orders with total amount: 3763400
+[05-Feb-2026 13:31:13 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:31:13 UTC] Sub Orders - Filtering by specific sub user: 27
+[05-Feb-2026 13:31:13 UTC] Sub Orders - Found 4 orders with affiliate_id = 24
+[05-Feb-2026 13:31:13 UTC] Sub Orders - Calculating total price for 4 orders
+[05-Feb-2026 13:31:13 UTC] Sub Orders - Returning 4 orders with total amount: 3763400
+[05-Feb-2026 13:31:15 UTC] Sub Orders - Trying affiliate_id column with affiliateUserId: 24
+[05-Feb-2026 13:31:15 UTC] Sub Orders - Filtering by specific sub user: 26
+[05-Feb-2026 13:31:15 UTC] Sub Orders - Found 1 orders with affiliate_id = 24
+[05-Feb-2026 13:31:15 UTC] Sub Orders - Calculating total price for 1 orders
+[05-Feb-2026 13:31:15 UTC] Sub Orders - Returning 1 orders with total amount: 552000
+[05-Feb-2026 15:09:02 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 15:09:02 UTC] Admin sub orders - Found 1 orders
+[05-Feb-2026 15:12:56 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 15:12:56 UTC] Admin sub orders - Found 1 orders
+[05-Feb-2026 15:12:57 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 27
+[05-Feb-2026 15:12:57 UTC] Admin sub orders - Found 0 orders
+[05-Feb-2026 15:12:59 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 15:12:59 UTC] Admin sub orders - Found 1 orders
+[05-Feb-2026 15:15:46 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 15:15:46 UTC] Admin sub orders - Found 1 orders
+[05-Feb-2026 15:20:11 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 15:20:11 UTC] Admin sub orders - Found 1 orders
+[05-Feb-2026 15:20:44 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 15:20:44 UTC] Admin sub orders - Found 1 orders
+[05-Feb-2026 15:24:47 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 15:24:47 UTC] Admin sub orders - Found 1 orders
+[05-Feb-2026 15:50:34 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 15:50:34 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 15:50:34 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 15:50:34 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 15:50:34 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 15:50:34 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 15:50:34 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 15:50:34 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 15:50:34 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 15:50:34 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 15:50:34 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 15:50:34 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 15:50:51 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 15:50:51 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 15:50:51 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 15:50:51 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 15:50:51 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 15:50:51 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 15:50:51 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 15:50:51 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 15:50:51 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 15:50:51 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 15:50:51 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 15:50:51 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 15:50:53 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 15:50:53 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 15:50:53 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 15:50:53 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 15:50:53 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 15:50:53 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 15:50:53 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 15:50:53 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 15:50:53 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 15:50:53 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 15:50:53 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 15:50:53 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:18:42 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:18:42 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:18:42 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:18:42 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:18:42 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:18:42 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:18:42 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:18:42 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:18:42 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:18:42 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:18:42 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:18:42 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:18:45 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:18:45 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:18:45 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:18:45 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:18:45 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:18:45 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:18:45 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:18:45 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:18:45 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:18:45 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:18:45 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:18:45 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:18:45 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:18:45 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:19:03 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:19:03 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:19:03 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:19:03 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:19:03 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:19:03 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:19:06 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:19:06 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:19:06 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:19:06 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:19:06 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:19:06 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:19:06 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:19:06 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:19:06 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:19:06 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:19:06 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:19:06 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:19:06 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:19:06 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:23:34 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:23:34 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:23:34 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:23:34 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:23:34 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:23:34 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:23:42 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:23:42 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:23:42 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:23:42 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:23:43 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:23:43 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:23:43 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:23:43 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:23:43 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:23:43 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:23:43 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:23:43 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:23:43 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:23:43 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:24:41 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:24:41 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:24:41 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:24:41 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:24:41 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:24:41 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:24:41 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:24:41 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:24:41 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:24:41 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:24:41 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:24:41 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:24:43 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:24:43 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:24:43 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:24:43 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:24:43 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:24:43 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:24:43 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:24:43 UTC] Credit invoice list error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:24:43 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:24:43 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:24:43 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:24:43 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:24:43 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:24:43 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:28:16 UTC] Credit invoice create error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settlement_date' in 'field list'
+[05-Feb-2026 16:31:26 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:31:26 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:31:26 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:31:26 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:31:26 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:31:26 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:31:29 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:31:29 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:31:29 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:31:29 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:31:29 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:31:29 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:31:29 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:31:29 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:31:29 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:31:29 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:31:29 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:31:29 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:36:41 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:36:41 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:36:41 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:36:41 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:36:41 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:36:41 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:36:43 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:36:43 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:36:43 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:36:43 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:36:43 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:36:43 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:36:43 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:36:43 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:36:43 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:36:43 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:36:43 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:36:43 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:44:08 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:44:08 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:44:08 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:44:08 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:44:08 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:44:08 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:44:09 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:44:09 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:44:09 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:44:09 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:44:09 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:44:09 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:45:57 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:45:57 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:45:57 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:45:57 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:45:57 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:45:57 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:45:57 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[05-Feb-2026 16:45:57 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[05-Feb-2026 16:45:57 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[05-Feb-2026 16:45:57 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[05-Feb-2026 16:45:57 UTC] Subsets API - Final result: 2 users found
+[05-Feb-2026 16:45:57 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":0,"total_orders_amount":0}
+[05-Feb-2026 16:52:13 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[05-Feb-2026 16:52:13 UTC] Admin sub orders - Found 1 orders
+[07-Feb-2026 06:38:32 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:38:32 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:38:32 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:38:32 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:38:32 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:38:32 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:38:32 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:38:32 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:38:32 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:38:32 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:38:32 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:38:32 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:39:41 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:39:41 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:39:41 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:39:41 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:39:41 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:39:41 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:48:32 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:48:32 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:48:32 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:48:32 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:48:32 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:48:32 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:48:32 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:48:32 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:48:32 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:48:32 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:48:32 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:48:32 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:48:32 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:48:32 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:48:32 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:48:32 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:48:32 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:48:32 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:52:55 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:52:55 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:52:55 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:52:55 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:52:55 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:52:55 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:52:55 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:52:55 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:52:55 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:52:55 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:52:55 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:52:55 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:52:57 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:52:57 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:52:57 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:52:57 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:52:57 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:52:57 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:52:57 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:52:57 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:52:57 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:52:57 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:52:57 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:52:57 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:54:02 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:54:02 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:54:02 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:54:02 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:54:02 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:54:02 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:54:36 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:54:36 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:54:36 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:54:36 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:54:36 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:54:36 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 06:54:36 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 06:54:36 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 06:54:36 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 06:54:36 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 06:54:36 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 06:54:36 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:01:36 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:01:36 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:01:36 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:01:36 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:01:36 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:01:36 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:01:40 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:01:40 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:01:40 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:01:40 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:01:40 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:01:40 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:03:51 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:03:51 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:03:51 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:03:51 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:03:51 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:03:51 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:03:51 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:03:51 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:03:51 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:03:51 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:03:51 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:03:51 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:05:10 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:05:10 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:05:10 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:05:10 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:05:10 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:05:10 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:05:11 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:05:11 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:05:11 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:05:11 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:05:11 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:05:11 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:05:11 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:05:11 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:05:11 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:05:11 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:05:11 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:05:11 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:48:53 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:48:53 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:48:53 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:48:53 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:48:53 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:48:53 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:48:58 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:48:58 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:48:58 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:48:58 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:48:58 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:48:58 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:48:59 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:48:59 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:48:59 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:48:59 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:48:59 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:48:59 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 07:56:29 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 07:56:29 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 07:56:29 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 07:56:29 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 07:56:29 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 07:56:29 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:02:50 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:02:50 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:02:50 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:02:50 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:02:50 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:02:50 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:02:53 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:02:53 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:02:53 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:02:53 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:02:53 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:02:53 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:02:53 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:02:53 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:02:53 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:02:53 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:02:53 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:02:53 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:09:33 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:09:33 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:09:33 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:09:33 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:09:33 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:09:33 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:09:36 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:09:36 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:09:36 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:09:36 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:09:36 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:09:36 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:09:36 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:09:36 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:09:36 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:09:36 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:09:36 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:09:36 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:37:23 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:37:23 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:37:23 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:37:23 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:37:23 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:37:23 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:37:47 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:37:47 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:37:47 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:37:47 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:37:47 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:37:47 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:37:48 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:37:48 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:37:48 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:37:48 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:37:48 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:37:48 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:40:52 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:40:52 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:40:52 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:40:52 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:40:52 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:40:52 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 08:40:52 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 08:40:52 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 08:40:52 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 08:40:52 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 08:40:52 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 08:40:52 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 14:17:19 UTC] Admin sub orders - affiliateUserId: 24, subUserId: 26
+[07-Feb-2026 14:17:19 UTC] Admin sub orders - Found 1 orders
+[07-Feb-2026 14:22:15 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 14:22:15 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 14:22:15 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 14:22:15 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 14:22:15 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 14:22:15 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 14:22:17 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 14:22:17 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 14:22:17 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 14:22:17 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 14:22:17 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 14:22:17 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}
+[07-Feb-2026 14:22:17 UTC] Subsets - Column check: hasAffiliateIdColumn=YES, hasParentAffiliateIdColumn=NO
+[07-Feb-2026 14:22:17 UTC] Subsets - Affiliate info: affiliateId=1, affiliateUserId=24, userId=24
+[07-Feb-2026 14:22:17 UTC] Subsets - Trying affiliate_id column with userId (which is user_id from affiliates): 24
+[07-Feb-2026 14:22:17 UTC] Subsets - Found 2 users with affiliate_id = 24 (current userId = user_id from affiliates)
+[07-Feb-2026 14:22:17 UTC] Subsets API - Final result: 2 users found
+[07-Feb-2026 14:22:17 UTC] Subsets API - First user sample: {"id":27,"name":"لارهنگ","mobile":"09333733836","created_at":"2026-02-04 06:37:47","order_count":1,"total_orders_amount":44411200}

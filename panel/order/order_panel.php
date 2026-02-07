@@ -76,22 +76,31 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
             $order['payment_status'] = $payment['payment_status'];
             $order['payment_ref_id'] = $payment['ref_id'] ?? null;
         } else {
-            // Fallback: محاسبه از order_items
             try {
-                $stmt = $conn->prepare("
-                    SELECT oi.quantity, p.price, p.discount_price 
-                    FROM order_items oi 
-                    JOIN products p ON oi.product_id = p.id 
-                    WHERE oi.order_id = ?
-                ");
-                $stmt->execute([$orderId]);
-                $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                
-                foreach ($items as $item) {
-                    $price = !empty($item['discount_price']) && $item['discount_price'] > 0 
-                             ? (float)$item['discount_price'] 
-                             : (float)$item['price'];
-                    $totalPrice += $price * (int)$item['quantity'];
+                $sumStmt = $conn->prepare("SELECT COALESCE(SUM(total_price), 0) AS total FROM order_items WHERE order_id = ?");
+                $sumStmt->execute([$orderId]);
+                $sumRow = $sumStmt->fetch(PDO::FETCH_ASSOC);
+                $totalPrice = (float)($sumRow['total'] ?? 0);
+                if ($totalPrice <= 0) {
+                    $stmt = $conn->prepare("
+                        SELECT oi.quantity, COALESCE(p.discount_price, p.price, oi.price) AS unit_price
+                        FROM order_items oi 
+                        LEFT JOIN products p ON p.id = oi.product_id 
+                        WHERE oi.order_id = ?
+                    ");
+                    $stmt->execute([$orderId]);
+                    $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    foreach ($items as $item) {
+                        $totalPrice += (float)($item['unit_price'] ?? 0) * (int)($item['quantity'] ?? 1);
+                    }
+                }
+                if ($totalPrice <= 0) {
+                    $mciStmt = $conn->prepare("SELECT total_amount FROM marketer_credit_invoices WHERE order_id = ?");
+                    $mciStmt->execute([$orderId]);
+                    $mci = $mciStmt->fetch(PDO::FETCH_ASSOC);
+                    if ($mci && !empty($mci['total_amount'])) {
+                        $totalPrice = (float)$mci['total_amount'];
+                    }
                 }
             } catch (PDOException $e) {
                 error_log("خطا در محاسبه مبلغ سفارش #$orderId: " . $e->getMessage());
@@ -108,7 +117,8 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
                 oi.id AS item_id,
                 oi.product_id,
                 oi.quantity,
-                p.title AS product_title,
+                oi.product_name AS oi_product_name,
+                COALESCE(p.title, oi.product_name) AS product_title,
                 p.image AS product_image,
                 p.price,
                 p.discount_price,
@@ -126,7 +136,7 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
                 p.width,
                 p.half_finished,
                 c.name AS category_name,
-                COALESCE( p.discount_price, p.price) AS unit_price
+                COALESCE(p.discount_price, p.price, oi.price) AS unit_price
             FROM order_items oi
             LEFT JOIN products p ON p.id = oi.product_id
             LEFT JOIN categories c ON c.id = p.cat_id
@@ -149,6 +159,38 @@ function getOrderDetailsForAdmin($orderId, $conn = null) {
 
         $order['items'] = $items;
         $order['items_count'] = count($items);
+
+        // بررسی اینکه آیا این سفارش از فاکتور اعتباری ایجاد شده
+        $order['is_credit_invoice'] = false;
+        $order['credit_invoice_id'] = null;
+        $order['marketer_name'] = null;
+        $order['marketer_mobile'] = null;
+        $order['settlement_date'] = null;
+        $order['check_images'] = [];
+        try {
+            $stmtCredit = $conn->prepare("
+                SELECT mci.id AS credit_invoice_id, mci.marketer_id, mci.settlement_date,
+                       u.name AS marketer_name, u.mobile AS marketer_mobile
+                FROM marketer_credit_invoices mci
+                LEFT JOIN users u ON u.id = mci.marketer_id
+                WHERE mci.order_id = ?
+            ");
+            $stmtCredit->execute([$orderId]);
+            $creditInfo = $stmtCredit->fetch(PDO::FETCH_ASSOC);
+            if ($creditInfo) {
+                $order['is_credit_invoice'] = true;
+                $order['credit_invoice_id'] = (int)$creditInfo['credit_invoice_id'];
+                $order['marketer_name'] = $creditInfo['marketer_name'];
+                $order['marketer_mobile'] = $creditInfo['marketer_mobile'];
+                $order['settlement_date'] = $creditInfo['settlement_date'] ?? null;
+                // دریافت تصاویر چک
+                $stmtCheck = $conn->prepare("SELECT id, image_path FROM marketer_credit_check_images WHERE invoice_id = ? ORDER BY id ASC");
+                $stmtCheck->execute([$creditInfo['credit_invoice_id']]);
+                $order['check_images'] = $stmtCheck->fetchAll(PDO::FETCH_ASSOC);
+            }
+        } catch (PDOException $e) {
+            // جدول marketer_credit_invoices ممکن است وجود نداشته باشد
+        }
 
         return $order;
     } catch (PDOException $e) {
@@ -240,6 +282,28 @@ function getAllOrdersForAdmin($conn = null, $limit = 100, $offset = 0) {
             
             $order['order_id'] = (int)$order['order_id'];
             $order['user_id'] = $order['user_id'] ? (int)$order['user_id'] : null;
+
+            // بررسی فاکتور اعتباری
+            $order['is_credit_invoice'] = false;
+            $order['marketer_name'] = null;
+            $order['marketer_mobile'] = null;
+            try {
+                $stmtCredit = $conn->prepare("
+                    SELECT mci.marketer_id, u.name AS marketer_name, u.mobile AS marketer_mobile
+                    FROM marketer_credit_invoices mci
+                    LEFT JOIN users u ON u.id = mci.marketer_id
+                    WHERE mci.order_id = ?
+                ");
+                $stmtCredit->execute([$orderId]);
+                $creditInfo = $stmtCredit->fetch(PDO::FETCH_ASSOC);
+                if ($creditInfo) {
+                    $order['is_credit_invoice'] = true;
+                    $order['marketer_name'] = $creditInfo['marketer_name'];
+                    $order['marketer_mobile'] = $creditInfo['marketer_mobile'];
+                }
+            } catch (PDOException $e) {
+                // جدول marketer_credit_invoices ممکن است وجود نداشته باشد
+            }
         }
         unset($order);
 

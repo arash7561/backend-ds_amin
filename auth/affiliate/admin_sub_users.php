@@ -184,39 +184,68 @@ try {
         $stmt->execute([$affiliateUser]);
         $subUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        // محاسبه total_orders_amount برای هر کاربر
+        // محاسبه total_orders_amount، cash_total، credit_total برای هر کاربر
         foreach ($subUsers as &$user) {
             $totalAmount = 0;
+            $cashTotal = 0;
+            $creditTotal = 0;
             $orderStmt = $conn->prepare("SELECT id FROM orders WHERE user_id = ? AND status != 'cancelled'");
             $orderStmt->execute([$user['id']]);
             $orders = $orderStmt->fetchAll(PDO::FETCH_ASSOC);
             
             foreach ($orders as $order) {
+                $orderAmount = 0;
                 $paymentStmt = $conn->prepare("SELECT amount FROM payments WHERE order_id = ? ORDER BY id DESC LIMIT 1");
                 $paymentStmt->execute([$order['id']]);
                 $payment = $paymentStmt->fetch(PDO::FETCH_ASSOC);
                 
                 if ($payment && !empty($payment['amount'])) {
-                    $totalAmount += (float)$payment['amount'];
+                    $orderAmount = (float)$payment['amount'];
                 } else {
-                    $itemStmt = $conn->prepare("
-                        SELECT oi.quantity, p.price, p.discount_price 
-                        FROM order_items oi 
-                        JOIN products p ON oi.product_id = p.id 
-                        WHERE oi.order_id = ?
-                    ");
-                    $itemStmt->execute([$order['id']]);
-                    $items = $itemStmt->fetchAll(PDO::FETCH_ASSOC);
-                    
-                    foreach ($items as $item) {
-                        $price = !empty($item['discount_price']) && $item['discount_price'] > 0 
-                                 ? (float)$item['discount_price'] 
-                                 : (float)$item['price'];
-                        $totalAmount += $price * (int)$item['quantity'];
+                    $sumStmt = $conn->prepare("SELECT COALESCE(SUM(total_price), 0) AS total FROM order_items WHERE order_id = ?");
+                    $sumStmt->execute([$order['id']]);
+                    $sumRow = $sumStmt->fetch(PDO::FETCH_ASSOC);
+                    $orderAmount = (float)($sumRow['total'] ?? 0);
+                    if ($orderAmount <= 0) {
+                        $itemStmt = $conn->prepare("
+                            SELECT oi.quantity, COALESCE(p.discount_price, p.price, oi.price) AS unit_price
+                            FROM order_items oi 
+                            LEFT JOIN products p ON p.id = oi.product_id 
+                            WHERE oi.order_id = ?
+                        ");
+                        $itemStmt->execute([$order['id']]);
+                        $items = $itemStmt->fetchAll(PDO::FETCH_ASSOC);
+                        foreach ($items as $item) {
+                            $orderAmount += (float)($item['unit_price'] ?? 0) * (int)($item['quantity'] ?? 1);
+                        }
                     }
+                    if ($orderAmount <= 0) {
+                        try {
+                            $mciStmt = $conn->prepare("SELECT total_amount FROM marketer_credit_invoices WHERE order_id = ?");
+                            $mciStmt->execute([$order['id']]);
+                            $mci = $mciStmt->fetch(PDO::FETCH_ASSOC);
+                            if ($mci && !empty($mci['total_amount'])) {
+                                $orderAmount = (float)$mci['total_amount'];
+                            }
+                        } catch (PDOException $e) { /* ignore */ }
+                    }
+                }
+                $totalAmount += $orderAmount;
+                try {
+                    $creditStmt = $conn->prepare("SELECT 1 FROM marketer_credit_invoices WHERE order_id = ?");
+                    $creditStmt->execute([$order['id']]);
+                    if ($creditStmt->fetch()) {
+                        $creditTotal += $orderAmount;
+                    } else {
+                        $cashTotal += $orderAmount;
+                    }
+                } catch (PDOException $e) {
+                    $cashTotal += $orderAmount;
                 }
             }
             $user['total_orders_amount'] = $totalAmount;
+            $user['cash_total'] = $cashTotal;
+            $user['credit_total'] = $creditTotal;
         }
         unset($user);
     } elseif ($hasParentAffiliateIdColumn) {
@@ -236,39 +265,68 @@ try {
         $stmt->execute([$affiliateUser]);
         $subUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-        // محاسبه total_orders_amount برای هر کاربر
+        // محاسبه total_orders_amount، cash_total، credit_total برای هر کاربر
         foreach ($subUsers as &$user) {
             $totalAmount = 0;
+            $cashTotal = 0;
+            $creditTotal = 0;
             $orderStmt = $conn->prepare("SELECT id FROM orders WHERE user_id = ? AND status != 'cancelled'");
             $orderStmt->execute([$user['id']]);
             $orders = $orderStmt->fetchAll(PDO::FETCH_ASSOC);
             
             foreach ($orders as $order) {
+                $orderAmount = 0;
                 $paymentStmt = $conn->prepare("SELECT amount FROM payments WHERE order_id = ? ORDER BY id DESC LIMIT 1");
                 $paymentStmt->execute([$order['id']]);
                 $payment = $paymentStmt->fetch(PDO::FETCH_ASSOC);
                 
                 if ($payment && !empty($payment['amount'])) {
-                    $totalAmount += (float)$payment['amount'];
+                    $orderAmount = (float)$payment['amount'];
                 } else {
-                    $itemStmt = $conn->prepare("
-                        SELECT oi.quantity, p.price, p.discount_price 
-                        FROM order_items oi 
-                        JOIN products p ON oi.product_id = p.id 
-                        WHERE oi.order_id = ?
-                    ");
-                    $itemStmt->execute([$order['id']]);
-                    $items = $itemStmt->fetchAll(PDO::FETCH_ASSOC);
-                    
-                    foreach ($items as $item) {
-                        $price = !empty($item['discount_price']) && $item['discount_price'] > 0 
-                                 ? (float)$item['discount_price'] 
-                                 : (float)$item['price'];
-                        $totalAmount += $price * (int)$item['quantity'];
+                    $sumStmt = $conn->prepare("SELECT COALESCE(SUM(total_price), 0) AS total FROM order_items WHERE order_id = ?");
+                    $sumStmt->execute([$order['id']]);
+                    $sumRow = $sumStmt->fetch(PDO::FETCH_ASSOC);
+                    $orderAmount = (float)($sumRow['total'] ?? 0);
+                    if ($orderAmount <= 0) {
+                        $itemStmt = $conn->prepare("
+                            SELECT oi.quantity, COALESCE(p.discount_price, p.price, oi.price) AS unit_price
+                            FROM order_items oi 
+                            LEFT JOIN products p ON p.id = oi.product_id 
+                            WHERE oi.order_id = ?
+                        ");
+                        $itemStmt->execute([$order['id']]);
+                        $items = $itemStmt->fetchAll(PDO::FETCH_ASSOC);
+                        foreach ($items as $item) {
+                            $orderAmount += (float)($item['unit_price'] ?? 0) * (int)($item['quantity'] ?? 1);
+                        }
                     }
+                    if ($orderAmount <= 0) {
+                        try {
+                            $mciStmt = $conn->prepare("SELECT total_amount FROM marketer_credit_invoices WHERE order_id = ?");
+                            $mciStmt->execute([$order['id']]);
+                            $mci = $mciStmt->fetch(PDO::FETCH_ASSOC);
+                            if ($mci && !empty($mci['total_amount'])) {
+                                $orderAmount = (float)$mci['total_amount'];
+                            }
+                        } catch (PDOException $e) { /* ignore */ }
+                    }
+                }
+                $totalAmount += $orderAmount;
+                try {
+                    $creditStmt = $conn->prepare("SELECT 1 FROM marketer_credit_invoices WHERE order_id = ?");
+                    $creditStmt->execute([$order['id']]);
+                    if ($creditStmt->fetch()) {
+                        $creditTotal += $orderAmount;
+                    } else {
+                        $cashTotal += $orderAmount;
+                    }
+                } catch (PDOException $e) {
+                    $cashTotal += $orderAmount;
                 }
             }
             $user['total_orders_amount'] = $totalAmount;
+            $user['cash_total'] = $cashTotal;
+            $user['credit_total'] = $creditTotal;
         }
         unset($user);
     }

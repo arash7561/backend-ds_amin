@@ -24,7 +24,6 @@ function getApplicableBulkPricingRule($conn, $productId, $quantity) {
         $rule = $stmt->fetch(PDO::FETCH_ASSOC);
         
         if ($rule) {
-            // Convert to proper types
             $rule['id'] = (int)$rule['id'];
             $rule['product_id'] = (int)$rule['product_id'];
             $rule['min_quantity'] = (int)$rule['min_quantity'];
@@ -37,6 +36,44 @@ function getApplicableBulkPricingRule($conn, $productId, $quantity) {
         return $rule ? $rule : null;
     } catch (PDOException $e) {
         error_log("Error getting bulk pricing rule: " . $e->getMessage());
+        return null;
+    }
+}
+
+/**
+ * Get applicable category bulk pricing rule for a category and quantity
+ * @param PDO $conn Database connection
+ * @param int $categoryId Category ID
+ * @param int $quantity Quantity
+ * @return array|null Applicable rule or null
+ */
+function getApplicableCategoryBulkPricingRule($conn, $categoryId, $quantity) {
+    if (!$categoryId) return null;
+    try {
+        $stmt = $conn->prepare("
+            SELECT * FROM bulk_pricing_category_rules 
+            WHERE category_id = ? 
+            AND min_quantity <= ?
+            AND (max_quantity IS NULL OR max_quantity >= ?)
+            ORDER BY min_quantity DESC
+            LIMIT 1
+        ");
+        $stmt->execute([$categoryId, $quantity, $quantity]);
+        $rule = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if ($rule) {
+            $rule['id'] = (int)$rule['id'];
+            $rule['category_id'] = (int)$rule['category_id'];
+            $rule['min_quantity'] = (int)$rule['min_quantity'];
+            $rule['max_quantity'] = $rule['max_quantity'] !== null ? (int)$rule['max_quantity'] : null;
+            $rule['discount_percent'] = $rule['discount_percent'] !== null ? (float)$rule['discount_percent'] : null;
+            $rule['discount_amount'] = $rule['discount_amount'] !== null ? (float)$rule['discount_amount'] : null;
+            $rule['price_per_unit'] = $rule['price_per_unit'] !== null ? (float)$rule['price_per_unit'] : null;
+        }
+        
+        return $rule ? $rule : null;
+    } catch (PDOException $e) {
+        error_log("Error getting category bulk pricing rule: " . $e->getMessage());
         return null;
     }
 }
@@ -94,14 +131,23 @@ function calculateBulkPrice($originalPrice, $rule) {
 
 /**
  * Get bulk pricing info for a product and quantity
+ * First checks product-level rules, then category-level rules
  * @param PDO $conn Database connection
  * @param int $productId Product ID
  * @param int $quantity Quantity
  * @param float $originalPrice Original product price
+ * @param int|null $categoryId Product's category ID (optional - for category rules fallback)
  * @return array Bulk pricing information
  */
-function getBulkPricingInfo($conn, $productId, $quantity, $originalPrice) {
+function getBulkPricingInfo($conn, $productId, $quantity, $originalPrice, $categoryId = null) {
+    // اول قانون محصول را چک کن
     $rule = getApplicableBulkPricingRule($conn, $productId, $quantity);
+    
+    // اگر قانون محصول نبود، قانون دسته‌بندی را چک کن
+    if (!$rule && $categoryId) {
+        $rule = getApplicableCategoryBulkPricingRule($conn, $categoryId, $quantity);
+    }
+    
     return calculateBulkPrice($originalPrice, $rule);
 }
 ?>

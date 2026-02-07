@@ -1,0 +1,87 @@
+[05-Feb-2026 09:53:38 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 09:53:38 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 09:53:38 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 09:53:38 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 09:53:38 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 09:53:38 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 09:55:38 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 09:55:38 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 09:55:38 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 09:55:38 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 09:55:38 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 09:55:38 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 10:00:52 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 10:00:52 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 10:00:52 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 10:00:52 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 10:00:52 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 10:00:52 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 10:02:12 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 10:02:12 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 10:02:12 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 10:02:12 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 10:02:12 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 10:02:12 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 10:05:31 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 10:05:31 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 10:05:31 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 10:05:31 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 10:05:31 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 10:05:31 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 10:05:47 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 10:05:47 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 10:05:47 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 10:05:47 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 10:05:47 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 10:05:47 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 10:06:33 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 10:06:33 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 10:06:33 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 10:06:33 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 10:06:33 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 10:06:33 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 10:21:20 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 10:21:20 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 10:21:20 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 10:21:20 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 10:21:20 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 10:21:20 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 10:21:20 UTC] set_marketer.php - Raw input: {"user_id":8,"marketer_code":"MAMADB"}
+[05-Feb-2026 10:21:20 UTC] set_marketer.php - Decoded input: {"user_id":8,"marketer_code":"MAMADB"}
+[05-Feb-2026 10:21:20 UTC] set_marketer.php - User ID: 8, Marketer Code: MAMADB
+[05-Feb-2026 13:39:25 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:39:25 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:39:25 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:39:25 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:39:25 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:39:25 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:39:25 UTC] set_marketer.php - Raw input: {"user_id":4,"marketer_code":"1234QWER"}
+[05-Feb-2026 13:39:25 UTC] set_marketer.php - Decoded input: {"user_id":4,"marketer_code":"1234QWER"}
+[05-Feb-2026 13:39:25 UTC] set_marketer.php - User ID: 4, Marketer Code: 1234QWER
+[05-Feb-2026 13:40:18 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:40:18 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:40:18 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:40:18 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:40:18 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:40:18 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:40:18 UTC] set_marketer.php - Raw input: {"user_id":6,"marketer_code":"44RR"}
+[05-Feb-2026 13:40:18 UTC] set_marketer.php - Decoded input: {"user_id":6,"marketer_code":"44RR"}
+[05-Feb-2026 13:40:18 UTC] set_marketer.php - User ID: 6, Marketer Code: 44RR
+[05-Feb-2026 13:46:49 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:46:49 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:46:49 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:46:49 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:46:49 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:46:49 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:46:49 UTC] set_marketer.php - Raw input: {"user_id":9,"marketer_code":"8765432"}
+[05-Feb-2026 13:46:49 UTC] set_marketer.php - Decoded input: {"user_id":9,"marketer_code":"8765432"}
+[05-Feb-2026 13:46:49 UTC] set_marketer.php - User ID: 9, Marketer Code: 8765432
+[05-Feb-2026 16:53:41 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:53:41 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:53:41 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:53:41 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:53:41 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:53:41 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:53:41 UTC] set_marketer.php - Raw input: {"user_id":13,"marketer_code":"123"}
+[05-Feb-2026 16:53:41 UTC] set_marketer.php - Decoded input: {"user_id":13,"marketer_code":"123"}
+[05-Feb-2026 16:53:41 UTC] set_marketer.php - User ID: 13, Marketer Code: 123

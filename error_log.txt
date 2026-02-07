@@ -3870,3 +3870,594 @@ Stack trace:
 [04-Feb-2026 18:57:50 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 207
 [04-Feb-2026 18:57:50 UTC] PHP Stack trace:
 [04-Feb-2026 18:57:50 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:07:34 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:07:34 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:07:34 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:07:34 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 07:07:34 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 07:07:34 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:07:34 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 07:07:34 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 07:07:34 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 07:07:35 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:07:35 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:08:17 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:08:17 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 07:08:17 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 07:08:17 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:08:17 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 07:08:17 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 07:08:17 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 07:08:18 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:08:18 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:11:16 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 198
+[05-Feb-2026 07:11:16 UTC] PHP Stack trace:
+[05-Feb-2026 07:11:16 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:11:16 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 207
+[05-Feb-2026 07:11:16 UTC] PHP Stack trace:
+[05-Feb-2026 07:11:16 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:31:22 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 198
+[05-Feb-2026 07:31:22 UTC] PHP Stack trace:
+[05-Feb-2026 07:31:22 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:31:22 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 207
+[05-Feb-2026 07:31:22 UTC] PHP Stack trace:
+[05-Feb-2026 07:31:22 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:31:44 UTC] show_products.php: Received slug (after decode): 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:31:44 UTC] show_products.php: Trying to find product by ID from slug: 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Found 1 products with slug: 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Product ID: 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 07:31:44 UTC] show_products.php: Product slug in DB: item-69838809575ba
+[05-Feb-2026 07:31:44 UTC] show_products.php: Received slug (after decode): 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:31:44 UTC] show_products.php: Trying to find product by ID from slug: 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Found 1 products with slug: 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Product ID: 287
+[05-Feb-2026 07:31:44 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 07:31:44 UTC] show_products.php: Product slug in DB: item-69838809575ba
+[05-Feb-2026 07:31:45 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:31:45 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:32:33 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 198
+[05-Feb-2026 07:32:33 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:33 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:32:33 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 207
+[05-Feb-2026 07:32:33 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:33 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:32:36 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 198
+[05-Feb-2026 07:32:36 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:36 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:32:36 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 207
+[05-Feb-2026 07:32:36 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:36 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:32:37 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 198
+[05-Feb-2026 07:32:37 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:37 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:32:37 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 207
+[05-Feb-2026 07:32:37 UTC] PHP Stack trace:
+[05-Feb-2026 07:32:37 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[05-Feb-2026 07:33:53 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:33:53 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:33:53 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:33:53 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:33:53 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:33:53 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:33:53 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:33:54 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:33:54 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:34:05 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:34:05 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:34:05 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:34:05 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:34:05 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:34:05 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:34:05 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:34:05 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:34:05 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:38:14 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:38:14 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:38:17 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:38:17 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:38:17 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:38:17 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:38:17 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:38:17 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:38:17 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:38:41 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:38:41 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:38:44 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:38:44 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:38:44 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:38:44 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:38:44 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:38:44 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:38:44 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:39:00 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:39:00 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:39:02 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:39:02 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:39:02 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:39:02 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:39:02 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:39:02 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:39:02 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:39:14 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:39:14 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:39:21 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:39:21 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:39:22 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:39:22 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:39:22 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:39:22 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:39:22 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:39:22 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:39:22 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:47:45 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:47:45 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:47:45 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:47:45 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:47:45 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:47:45 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:47:45 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:47:50 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:47:50 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:48:06 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:48:06 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:48:08 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:48:08 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:48:08 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:48:08 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:48:08 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:48:08 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:48:08 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:48:21 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:48:21 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:48:23 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:48:23 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:48:23 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:48:23 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:48:23 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:48:23 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:48:23 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:48:48 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:48:48 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:48:52 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 07:48:52 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 07:48:52 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 07:48:52 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 07:48:52 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 07:48:52 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 07:48:52 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 07:49:02 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:49:02 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:49:14 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:49:14 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:49:31 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:49:31 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:49:46 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:49:46 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 07:49:57 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 07:49:57 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:03:28 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:03:28 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:03:28 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:03:28 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:03:28 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:03:28 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:03:28 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:03:28 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:03:28 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:03:29 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:03:29 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:04:57 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:04:57 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:04:57 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:04:57 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:04:57 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:04:57 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:04:57 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:05:00 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:05:00 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:05:01 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:05:01 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:05:01 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:05:01 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:05:01 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:05:01 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:05:01 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:05:40 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:05:40 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:05:41 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:05:41 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:05:41 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:05:41 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:05:41 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:05:41 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:05:41 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:05:48 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:05:48 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:05:48 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:05:48 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:05:48 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:05:48 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:05:48 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:05:48 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:05:48 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:06:07 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:06:07 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:06:21 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:06:21 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:06:21 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:06:21 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:06:21 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:06:21 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:06:21 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:06:21 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:06:21 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:06:33 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:06:33 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:06:33 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:06:33 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:06:33 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:06:33 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:06:33 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:06:33 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:06:33 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:08:16 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:08:16 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:08:16 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:08:16 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:08:16 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:08:16 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:08:16 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:08:17 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:08:17 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:10:30 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:10:30 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:10:30 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:10:30 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:10:30 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:10:30 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:10:30 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:10:30 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:10:30 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:17:31 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:17:31 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:17:32 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:17:32 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:17:32 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:17:32 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:17:32 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:17:32 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:17:32 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:22:51 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:22:51 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:22:51 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:22:51 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:22:51 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:22:51 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:22:51 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:22:52 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:22:52 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:23:12 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:23:12 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 08:23:12 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 08:23:12 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:23:12 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 08:23:12 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 08:23:12 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 08:23:13 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:23:13 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:23:47 UTC] show_products.php: Received slug (after decode): 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:23:47 UTC] show_products.php: Trying to find product by ID from slug: 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Found 1 products with slug: 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Product ID: 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Product title: مته الماسه
+[05-Feb-2026 08:23:47 UTC] show_products.php: Product slug in DB: مته-الماسه-7160
+[05-Feb-2026 08:23:47 UTC] show_products.php: Received slug (after decode): 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:23:47 UTC] show_products.php: Trying to find product by ID from slug: 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Found 1 products with slug: 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Product ID: 238
+[05-Feb-2026 08:23:47 UTC] show_products.php: Product title: مته الماسه
+[05-Feb-2026 08:23:47 UTC] show_products.php: Product slug in DB: مته-الماسه-7160
+[05-Feb-2026 08:23:48 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:23:48 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:25:24 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:25:24 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:25:24 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:25:24 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:25:24 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:25:24 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:25:24 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:25:25 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:25:25 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:27:13 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:27:13 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:27:21 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:27:21 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:27:21 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:27:21 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:27:21 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:27:21 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:27:21 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:27:22 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:27:22 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:27:30 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:27:30 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:27:37 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:27:37 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:27:44 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:27:44 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:28:07 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:28:07 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:28:58 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:28:58 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:28:59 UTC] show_products.php: Received slug (after decode): 241
+[05-Feb-2026 08:28:59 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:28:59 UTC] show_products.php: Trying to find product by ID from slug: 241
+[05-Feb-2026 08:28:59 UTC] show_products.php: Found 1 products with slug: 241
+[05-Feb-2026 08:28:59 UTC] show_products.php: Product ID: 241
+[05-Feb-2026 08:28:59 UTC] show_products.php: Product title: مته الماسه 8 چيني
+[05-Feb-2026 08:28:59 UTC] show_products.php: Product slug in DB: مته-الماسه-8-چيني-7313
+[05-Feb-2026 08:29:13 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:29:13 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 08:29:13 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 08:29:13 UTC] show_products.php: Received slug (after decode): 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:29:13 UTC] show_products.php: Trying to find product by ID from slug: 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Found 1 products with slug: 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Product ID: 286
+[05-Feb-2026 08:29:13 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 08:29:13 UTC] show_products.php: Product slug in DB: item-698388095730a
+[05-Feb-2026 08:29:14 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:29:14 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:34:08 UTC] show_products.php: Received slug (after decode): 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:34:08 UTC] show_products.php: Trying to find product by ID from slug: 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Found 1 products with slug: 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Product ID: 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 08:34:08 UTC] show_products.php: Product slug in DB: item-69838809575ba
+[05-Feb-2026 08:34:08 UTC] show_products.php: Received slug (after decode): 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:34:08 UTC] show_products.php: Trying to find product by ID from slug: 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Found 1 products with slug: 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Product ID: 287
+[05-Feb-2026 08:34:08 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 08:34:08 UTC] show_products.php: Product slug in DB: item-69838809575ba
+[05-Feb-2026 08:34:09 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:34:09 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:34:23 UTC] show_products.php: Received slug (after decode): 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:34:23 UTC] show_products.php: Trying to find product by ID from slug: 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Found 1 products with slug: 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Product ID: 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Product title: پيچ دو سر ريز و درشت
+[05-Feb-2026 08:34:23 UTC] show_products.php: Product slug in DB: پيچ-دو-سر-ريز-و-درشت-3340
+[05-Feb-2026 08:34:23 UTC] show_products.php: Received slug (after decode): 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 08:34:23 UTC] show_products.php: Trying to find product by ID from slug: 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Found 1 products with slug: 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Product ID: 247
+[05-Feb-2026 08:34:23 UTC] show_products.php: Product title: پيچ دو سر ريز و درشت
+[05-Feb-2026 08:34:23 UTC] show_products.php: Product slug in DB: پيچ-دو-سر-ريز-و-درشت-3340
+[05-Feb-2026 08:34:24 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:34:24 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:36:18 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:36:18 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 08:36:30 UTC] get_all_slugs.php: Found 10 unique slugs
+[05-Feb-2026 08:36:30 UTC] get_all_slugs.php: ✅ Found problematic slug: مته-الماسه-7160
+[05-Feb-2026 09:51:55 UTC] get_all_slugs.php: Found 43 unique slugs
+[05-Feb-2026 09:51:55 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[05-Feb-2026 09:51:55 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[05-Feb-2026 09:51:55 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[05-Feb-2026 09:51:55 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[05-Feb-2026 09:51:55 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[05-Feb-2026 09:58:03 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 09:58:03 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Trying LIKE search for slug: 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Found 0 products with slug: 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Similar slugs found: []
+[05-Feb-2026 09:58:03 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 09:58:03 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Trying LIKE search for slug: 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Found 0 products with slug: 741
+[05-Feb-2026 09:58:03 UTC] show_products.php: Similar slugs found: []
+[05-Feb-2026 09:58:03 UTC] get_all_slugs.php: Found 43 unique slugs
+[05-Feb-2026 09:58:03 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[05-Feb-2026 09:58:03 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[05-Feb-2026 09:58:03 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[05-Feb-2026 09:58:03 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[05-Feb-2026 09:58:03 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[05-Feb-2026 09:58:27 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 09:58:27 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Trying LIKE search for slug: 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Found 0 products with slug: 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Similar slugs found: []
+[05-Feb-2026 09:58:27 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 09:58:27 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Trying LIKE search for slug: 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Found 0 products with slug: 741
+[05-Feb-2026 09:58:27 UTC] show_products.php: Similar slugs found: []
+[05-Feb-2026 09:58:28 UTC] get_all_slugs.php: Found 43 unique slugs
+[05-Feb-2026 09:58:28 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[05-Feb-2026 09:58:28 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[05-Feb-2026 09:58:28 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[05-Feb-2026 09:58:28 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[05-Feb-2026 09:58:28 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[05-Feb-2026 10:07:19 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 10:07:19 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Trying LIKE search for slug: 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Found 0 products with slug: 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Similar slugs found: []
+[05-Feb-2026 10:07:19 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 10:07:19 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Trying LIKE search for slug: 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Found 0 products with slug: 741
+[05-Feb-2026 10:07:19 UTC] show_products.php: Similar slugs found: []
+[05-Feb-2026 10:07:20 UTC] get_all_slugs.php: Found 43 unique slugs
+[05-Feb-2026 10:07:20 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[05-Feb-2026 10:07:20 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[05-Feb-2026 10:07:20 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[05-Feb-2026 10:07:20 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[05-Feb-2026 10:07:20 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[05-Feb-2026 13:04:20 UTC] get_all_slugs.php: Found 78 unique slugs
+[05-Feb-2026 13:04:20 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[05-Feb-2026 13:04:20 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[05-Feb-2026 13:04:20 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[05-Feb-2026 13:04:20 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[05-Feb-2026 13:04:20 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[05-Feb-2026 13:04:21 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 13:04:21 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Found 1 products with slug: 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Product ID: 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 13:04:21 UTC] show_products.php: Product slug in DB: محصول-نمونه-17603
+[05-Feb-2026 13:04:21 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 13:04:21 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Found 1 products with slug: 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Product ID: 741
+[05-Feb-2026 13:04:21 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 13:04:21 UTC] show_products.php: Product slug in DB: محصول-نمونه-17603
+[05-Feb-2026 13:04:23 UTC] get_all_slugs.php: Found 78 unique slugs
+[05-Feb-2026 13:04:23 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[05-Feb-2026 13:04:23 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[05-Feb-2026 13:04:23 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[05-Feb-2026 13:04:23 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[05-Feb-2026 13:04:23 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[05-Feb-2026 13:05:12 UTC] get_all_slugs.php: Found 78 unique slugs
+[05-Feb-2026 13:05:12 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[05-Feb-2026 13:05:12 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[05-Feb-2026 13:05:12 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[05-Feb-2026 13:05:12 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[05-Feb-2026 13:05:12 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[05-Feb-2026 13:05:12 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 13:05:12 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 13:05:12 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 13:05:12 UTC] show_products.php: Found 1 products with slug: 741
+[05-Feb-2026 13:05:12 UTC] show_products.php: Product ID: 741
+[05-Feb-2026 13:05:12 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 13:05:12 UTC] show_products.php: Product slug in DB: محصول-نمونه-17603
+[05-Feb-2026 13:11:10 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 13:11:10 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Found 1 products with slug: 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Product ID: 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 13:11:10 UTC] show_products.php: Product slug in DB: محصول-نمونه-17603
+[05-Feb-2026 13:11:10 UTC] show_products.php: Received slug (after decode): 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Slug length: 3
+[05-Feb-2026 13:11:10 UTC] show_products.php: Trying to find product by ID from slug: 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Found 1 products with slug: 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Product ID: 741
+[05-Feb-2026 13:11:10 UTC] show_products.php: Product title: محصول نمونه
+[05-Feb-2026 13:11:10 UTC] show_products.php: Product slug in DB: محصول-نمونه-17603
+[07-Feb-2026 06:12:24 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 200
+[07-Feb-2026 06:12:24 UTC] PHP Stack trace:
+[07-Feb-2026 06:12:24 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[07-Feb-2026 06:12:24 UTC] PHP Warning:  Undefined variable $products in C:\wamp64\www\ds_amin\api\show_products.php on line 209
+[07-Feb-2026 06:12:24 UTC] PHP Stack trace:
+[07-Feb-2026 06:12:24 UTC] PHP   1. {main}() C:\wamp64\www\ds_amin\api\show_products.php:0
+[07-Feb-2026 14:11:49 UTC] get_all_slugs.php: Found 11 unique slugs
+[07-Feb-2026 14:11:49 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[07-Feb-2026 14:11:49 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[07-Feb-2026 14:11:49 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[07-Feb-2026 14:11:49 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[07-Feb-2026 14:11:49 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356
+[07-Feb-2026 14:11:50 UTC] show_products.php: Received slug (after decode): 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Slug length: 3
+[07-Feb-2026 14:11:50 UTC] show_products.php: Trying to find product by ID from slug: 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Found 1 products with slug: 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Product ID: 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Product title: مته اهن (ترکس کبالت)
+[07-Feb-2026 14:11:50 UTC] show_products.php: Product slug in DB: مته-اهن-ترکس-کبالت-28356
+[07-Feb-2026 14:11:50 UTC] show_products.php: Received slug (after decode): 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Slug length: 3
+[07-Feb-2026 14:11:50 UTC] show_products.php: Trying to find product by ID from slug: 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Found 1 products with slug: 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Product ID: 244
+[07-Feb-2026 14:11:50 UTC] show_products.php: Product title: مته اهن (ترکس کبالت)
+[07-Feb-2026 14:11:50 UTC] show_products.php: Product slug in DB: مته-اهن-ترکس-کبالت-28356
+[07-Feb-2026 14:11:50 UTC] get_all_slugs.php: Found 11 unique slugs
+[07-Feb-2026 14:11:50 UTC] get_all_slugs.php: WARNING - Missing slug: مته-الماسه-7160
+[07-Feb-2026 14:11:50 UTC] get_all_slugs.php: First 10 slugs: مته-الماسه-53330, مته-الماسه-8-چيني-74699, مته-اهن-ترکس-کبالت-28356, مهره-ابکاري-5-76647, مهره-اهني-93565, پيچ-دو-سر-ريز-و-درشت-04745, پين-چاکدار-53302, رو-پلاک-تک-01962, محصول-نمونه-17603, محصول-نمونه-00849
+[07-Feb-2026 14:11:50 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-53330
+[07-Feb-2026 14:11:50 UTC] get_all_slugs.php: Found similar slug: مته-الماسه-8-چيني-74699
+[07-Feb-2026 14:11:50 UTC] get_all_slugs.php: Found similar slug: مته-اهن-ترکس-کبالت-28356

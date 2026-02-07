@@ -143,6 +143,7 @@ try {
             p.color,
             p.material,
             p.slot_count,
+            p.cat_id,
             c.name AS category_name
         FROM cart_items ci
         JOIN products p ON ci.product_id = p.id
@@ -166,8 +167,8 @@ try {
             ? (float)$item['discount_price'] 
             : null;
         
-        // اعمال قیمت‌گذاری حجمی
-        $bulkPricingInfo = getBulkPricingInfo($conn, $item['product_id'], $quantity, $originalPrice);
+        // اعمال قیمت‌گذاری حجمی (محصول و دسته‌بندی)
+        $bulkPricingInfo = getBulkPricingInfo($conn, $item['product_id'], $quantity, $originalPrice, $item['cat_id'] ?? null);
         
         // اگر قیمت‌گذاری حجمی اعمال شده، از آن استفاده کن
         // در غیر این صورت از تخفیف معمولی محصول استفاده کن

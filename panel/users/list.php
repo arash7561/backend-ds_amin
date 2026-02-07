@@ -40,6 +40,7 @@ try {
             u.created_at,
             u.role,
             u.invite_code,
+            u.is_marketer,
             (SELECT COUNT(*) FROM users u2 WHERE u2.invited_by = u.id) AS invited_count
         FROM users u
         ORDER BY u.created_at DESC
@@ -50,6 +51,7 @@ try {
 
     foreach ($users as &$row) {
         $row['id'] = (int) $row['id'];
+        $row['is_marketer'] = isset($row['is_marketer']) ? (int)$row['is_marketer'] : 0;
         $row['invited_count'] = (int) ($row['invited_count'] ?? 0);
     }
     unset($row);

@@ -100,42 +100,32 @@ try {
     $product = $stmt->fetch();
 
     // بررسی موجودی
-    // اگر stock برابر null یا خالی باشد، یعنی موجودی نامحدود است (همیشه موجود)
-    // فقط اگر stock یک عدد معتبر باشد و newQuantity بیشتر از آن باشد، خطا بده
+    // موجودی باید یک عدد مثبت باشد، در غیر این صورت موجودی کافی نیست
     if ($product) {
         $stock = $product['stock'];
         
-        // چک کردن اینکه آیا موجودی محدود است یا نامحدود
-        // null, '', 0, یا مقادیر غیر عددی = نامحدود
-        // فقط اعداد مثبت = موجودی محدود
-        $isUnlimited = false;
+        // تبدیل به عدد برای مقایسه دقیق‌تر
+        $stockInt = is_numeric($stock) ? (int)$stock : null;
         
-        if ($stock === null) {
-            $isUnlimited = true;
-        } elseif ($stock === '' || $stock === false) {
-            $isUnlimited = true;
-        } elseif ($stock === 0 || $stock === '0') {
-            // 0 = نامحدود (برای محصولات قدیمی که stock = 0 دارند)
-            $isUnlimited = true;
-        } elseif (!is_numeric($stock)) {
-            $isUnlimited = true;
-        }
-        
-        if (!$isUnlimited) {
+        // اگر موجودی null، undefined، خالی، یا غیر عددی است، به عنوان 0 در نظر بگیر
+        if ($stock === null || $stock === '' || $stock === false || !is_numeric($stock)) {
+            $stockValue = 0;
+        } else {
             $stockValue = (int)$stock;
-            if ($stockValue < 0) {
-                // موجودی منفی = ناموجود
-                http_response_code(400);
-                echo json_encode(['success' => false, 'error' => 'محصول موجود نیست.'], JSON_UNESCAPED_UNICODE);
-                exit;
-            } elseif ($newQuantity > $stockValue) {
-                // موجودی محدود و کافی نیست
-                http_response_code(400);
-                echo json_encode(['success' => false, 'error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
-                exit;
-            }
         }
-        // اگر نامحدود باشد، هیچ چکی نمی‌کنیم و اجازه می‌دهیم
+        
+        // بررسی موجودی: باید موجودی مثبت باشد و newQuantity کمتر یا مساوی موجودی باشد
+        if ($stockValue <= 0) {
+            // موجودی صفر یا منفی = موجودی کافی نیست
+            http_response_code(400);
+            echo json_encode(['success' => false, 'error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
+            exit;
+        } elseif ($newQuantity > $stockValue) {
+            // موجودی محدود و کافی نیست
+            http_response_code(400);
+            echo json_encode(['success' => false, 'error' => 'موجودی کافی نیست.'], JSON_UNESCAPED_UNICODE);
+            exit;
+        }
     }
 
     // بروزرسانی تعداد

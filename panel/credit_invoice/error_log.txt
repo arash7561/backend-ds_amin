@@ -1,0 +1,705 @@
+[05-Feb-2026 13:05:32 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:05:32 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:05:32 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:05:32 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:05:32 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:05:32 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:05:32 UTC] Credit invoice admin list error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aminin_ds_amini.marketer_credit_invoices' doesn't exist
+[05-Feb-2026 13:05:32 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:05:32 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:05:32 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:05:32 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:05:32 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:05:32 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:05:32 UTC] Credit invoice admin list error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aminin_ds_amini.marketer_credit_invoices' doesn't exist
+[05-Feb-2026 13:05:54 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:05:54 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:05:54 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:05:54 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:05:54 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:05:54 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:05:54 UTC] Credit invoice admin list error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aminin_ds_amini.marketer_credit_invoices' doesn't exist
+[05-Feb-2026 13:11:03 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:11:03 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:11:03 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:11:03 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:11:03 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:11:03 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:11:03 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:11:03 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:11:03 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:11:03 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:11:03 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:11:03 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770281164,"exp":1770367564,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:24:01 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:24:01 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:24:01 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:24:01 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:24:01 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:24:01 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:24:01 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:24:01 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:24:01 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:24:01 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:24:01 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:24:01 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:25:19 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:25:19 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:25:19 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:25:19 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:25:19 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:25:19 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:25:19 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:25:19 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:25:19 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:25:19 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:25:19 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:25:19 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:25:48 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:25:48 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:25:48 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:25:48 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:25:48 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:25:48 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:25:48 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:25:48 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:25:48 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:25:48 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:25:48 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:25:48 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:26:04 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:26:04 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:26:04 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:26:04 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:26:04 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:26:04 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:26:04 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:26:04 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:26:04 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:26:04 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:26:04 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:26:04 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:26:08 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:26:08 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:26:08 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:26:08 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:26:08 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:26:08 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:26:11 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:26:11 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:26:11 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:26:11 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:26:11 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:26:11 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:26:12 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:26:12 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:26:12 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:26:12 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:26:12 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:26:12 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770297831,"exp":1770384231,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:32:24 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:32:24 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:32:24 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:32:24 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:32:24 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:32:24 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:32:24 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:32:24 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:32:24 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:32:24 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:32:24 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:32:24 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:32:27 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:32:27 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:32:27 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:32:27 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:32:27 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:32:27 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:32:40 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:32:40 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:32:40 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:32:40 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:32:40 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:32:40 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:33:39 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:33:39 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:33:39 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:33:39 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:33:39 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:33:39 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:33:39 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:33:39 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:33:39 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:33:39 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:33:39 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:33:39 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:33:45 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:33:45 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:33:45 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:33:45 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:33:45 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:33:45 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:33:45 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:33:45 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:33:45 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:33:45 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:33:45 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:33:45 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:47:42 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:47:42 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:47:42 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:47:42 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:47:42 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:47:42 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:47:42 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:47:42 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:47:42 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:47:42 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:47:42 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:47:42 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:47:44 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:47:44 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:47:44 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:47:44 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:47:44 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:47:44 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:47:44 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:47:44 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:47:44 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:47:44 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:47:44 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:47:44 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:59:47 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:59:47 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:59:47 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:59:47 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:59:47 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:59:47 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 13:59:47 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 13:59:47 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 13:59:47 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 13:59:47 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 13:59:47 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 13:59:47 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:15:05 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:15:05 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:15:05 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:15:05 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:15:05 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:15:05 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:15:05 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:15:05 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:15:05 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:15:05 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:15:05 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:15:05 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:15:06 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:15:06 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:15:06 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:15:06 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:15:06 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:15:06 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:19:09 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:19:09 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:19:09 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:19:09 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:19:09 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:19:09 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:19:09 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:19:09 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:19:09 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:19:09 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:19:09 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:19:09 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:19:13 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:19:13 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:19:13 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:19:13 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:19:13 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:19:13 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:19:14 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:19:14 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:19:14 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:19:14 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:19:14 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:19:14 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:19:15 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:19:15 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:19:15 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:19:15 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:19:15 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:19:15 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:24:39 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:24:39 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:24:39 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:24:39 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:24:39 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:24:39 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:24:39 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:24:39 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:24:39 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:24:39 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:24:39 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:24:39 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:25:28 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:25:28 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:25:28 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:25:28 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:25:28 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:25:28 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:25:28 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:25:28 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:25:28 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:25:28 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:25:28 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:25:28 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:27:06 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:27:06 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:27:06 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:27:06 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:27:06 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:27:06 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:36:22 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:36:22 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:36:22 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:36:22 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:36:22 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:36:22 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:36:22 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:36:22 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:36:22 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:36:22 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:36:22 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:36:22 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:36:24 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:36:24 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:36:24 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:36:24 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:36:24 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:36:24 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:40:11 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:40:11 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:40:11 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:40:11 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:40:11 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:40:11 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:40:11 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:40:11 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:40:11 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:40:11 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:40:11 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:40:11 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:40:13 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:40:13 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:40:13 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:40:13 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:40:13 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:40:13 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:40:18 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:40:18 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:40:18 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:40:18 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:40:18 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:40:18 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:40:20 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:40:20 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:40:20 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:40:20 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:40:20 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:40:20 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:40:24 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:40:24 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:40:24 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:40:24 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:40:24 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:40:24 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:49:30 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:49:30 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:49:30 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:49:30 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:49:30 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:49:30 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:49:30 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:49:30 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:49:30 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:49:30 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:49:30 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:49:30 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 15:49:32 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 15:49:32 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 15:49:32 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 15:49:32 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 15:49:32 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 15:49:32 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770298328,"exp":1770384728,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:53:59 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:53:59 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:53:59 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:53:59 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:53:59 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:53:59 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:53:59 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:53:59 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:53:59 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:53:59 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:53:59 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:53:59 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:55:48 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:55:48 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:55:48 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:55:48 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:55:48 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:55:48 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:55:48 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:55:48 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:55:48 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:55:48 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:55:48 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:55:48 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:55:53 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:55:53 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:55:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:55:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:55:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:55:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:56:22 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:56:22 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:56:22 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:56:22 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:56:22 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:56:22 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:56:23 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:56:23 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:56:23 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:56:23 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:56:23 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:56:23 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:56:28 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:56:28 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:56:28 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:56:28 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:56:28 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:56:28 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[05-Feb-2026 16:56:30 UTC] checkJWT - Secret key type: string, length: 15
+[05-Feb-2026 16:56:30 UTC] checkJWT - JWT token length: 225
+[05-Feb-2026 16:56:30 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[05-Feb-2026 16:56:30 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[05-Feb-2026 16:56:30 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[05-Feb-2026 16:56:30 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770310133,"exp":1770396533,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:41:59 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:41:59 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:41:59 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:41:59 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:41:59 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:41:59 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:41:59 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:41:59 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:41:59 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:41:59 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:41:59 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:41:59 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:00 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:00 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:00 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:00 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:00 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:00 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:00 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:00 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:00 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:00 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:00 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:00 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:03 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:03 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:03 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:03 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:03 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:03 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:03 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:03 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:03 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:03 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:03 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:03 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:47 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:47 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:47 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:47 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:47 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:47 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:47 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:47 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:47 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:47 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:47 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:47 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:49 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:49 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:49 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:49 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:49 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:49 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:49 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:49 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:49 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:49 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:49 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:49 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:52 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:52 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:52 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:52 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:52 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:52 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:53 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:53 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:53 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:53 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:53 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:53 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:43:56 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:43:56 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:43:56 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:43:56 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:43:56 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:43:56 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:04 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:04 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:04 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:04 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:04 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:04 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:04 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:04 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:04 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:04 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:04 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:04 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:05 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:05 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:05 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:05 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:05 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:05 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:15 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:15 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:15 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:15 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:15 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:15 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:15 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:15 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:15 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:15 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:15 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:15 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:16 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:16 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:16 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:16 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:16 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:16 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:20 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:20 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:20 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:20 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:20 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:20 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:21 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:21 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:21 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:21 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:21 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:21 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:22 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:22 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:22 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:22 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:22 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:22 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:23 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:23 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:23 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:23 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:23 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:23 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:35 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:35 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:35 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:35 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:35 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:35 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:36 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:36 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:36 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:36 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:36 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:36 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:37 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:37 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:37 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:37 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:37 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:37 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:37 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:37 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:37 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:37 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:37 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:37 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:38 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:38 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:38 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:38 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:38 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:38 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:44:39 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:44:39 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:44:39 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:44:39 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:44:39 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:44:39 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:45:19 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:45:19 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:45:19 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:45:19 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:45:19 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:45:19 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:45:21 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:45:21 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:45:21 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:45:21 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:45:21 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:45:21 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:46:06 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:46:06 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:46:06 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:46:06 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:46:06 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:46:06 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:46:06 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:46:06 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:46:06 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:46:06 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:46:06 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:46:06 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:46:07 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:46:07 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:46:07 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:46:07 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:46:07 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:46:07 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:46:08 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:46:08 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:46:08 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:46:08 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:46:08 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:46:08 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:47:43 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:47:43 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:47:43 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:47:43 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:47:43 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:47:43 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:47:56 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:47:56 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:47:56 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:47:56 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:47:56 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:47:56 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:47:58 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:47:58 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:47:58 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:47:58 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:47:58 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:47:58 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:47:59 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:47:59 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:47:59 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:47:59 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:47:59 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:47:59 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:47:59 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:47:59 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:47:59 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:47:59 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:48:00 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:48:00 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:48:00 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:48:00 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:48:00 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:48:00 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:48:00 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:48:00 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:48:00 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:48:00 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:48:00 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:48:00 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:48:01 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:48:01 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:48:01 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:48:01 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:48:01 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:48:01 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:48:01 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:48:01 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:48:01 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:48:01 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:48:01 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:48:01 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:48:02 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:48:02 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:48:02 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:48:02 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:48:02 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:48:02 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:48:02 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:48:02 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:48:02 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:48:02 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:48:02 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:48:02 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 08:48:04 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 08:48:04 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 08:48:04 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 08:48:04 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 08:48:04 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 08:48:04 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 14:17:42 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 14:17:42 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 14:17:42 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 14:17:42 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 14:17:42 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 14:17:42 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 14:17:42 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 14:17:42 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 14:17:42 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 14:17:42 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 14:17:42 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 14:17:42 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 14:17:45 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 14:17:45 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 14:17:45 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 14:17:45 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 14:17:45 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 14:17:45 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 14:18:01 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 14:18:01 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 14:18:01 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 14:18:01 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 14:18:01 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 14:18:01 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
+[07-Feb-2026 14:18:02 UTC] checkJWT - Secret key type: string, length: 15
+[07-Feb-2026 14:18:02 UTC] checkJWT - JWT token length: 225
+[07-Feb-2026 14:18:02 UTC] checkJWT - JWT token first 50 chars: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJod
+[07-Feb-2026 14:18:02 UTC] checkJWT - Trying secret key: your-secre... (length: 15)
+[07-Feb-2026 14:18:02 UTC] checkJWT - JWT decoded successfully with secret key: your-secre...
+[07-Feb-2026 14:18:02 UTC] checkJWT - Decoded payload: {"iss":"http:\/\/localhost","iat":1770453679,"exp":1770540079,"aid":2,"mobile":"09339347561","role":"admin"}
